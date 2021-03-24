@@ -14,6 +14,10 @@ parameters:
     default: "msgraph-build-keyvault"
     displayName: Build Key vault
 
+  - name: BaseBranch
+    default: "dev"
+    displayName: "Base Branch"
+
 variables:
   AUTH_MODULE_NAME: 'Authentication'
   AUTH_MODULE_PATH: 'src\Authentication\Authentication'
@@ -31,6 +35,7 @@ variables:
   BUILDAGENT: ${{ parameters.BuildAgent }}
   AZURESUBSCRIPTION: ${{ parameters.AzureSubscription }}
   KEYVAULT: ${{ parameters.KeyVault }}
+  BASEBRANCH: ${{ parameters.BaseBranch }}
 
 pool: $(BUILDAGENT)
 
