@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemdriveitemcontent
 schema: 2.0.0
@@ -24,13 +24,13 @@ Get-MgShareListItemDriveItemContent -ListItemId <String> -SharedDriveItemId <Str
  [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity3
 ```
 Get-MgShareListItemDriveItemContent -InputObject <IFilesIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgShareListItemDriveItemContent -InputObject <IFilesIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -39,6 +39,8 @@ Get-MgShareListItemDriveItemContent -InputObject <IFilesIdentity> -OutFile <Stri
 ## DESCRIPTION
 Get media content for the navigation property driveItem from shares
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -46,8 +48,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity3
+Type: IFilesIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -61,7 +63,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -76,7 +78,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +93,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,8 +108,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Get2, Get3
+Type: String
+Parameter Sets: Get3, Get2
 Aliases:
 
 Required: True
@@ -155,4 +157,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/search-mgdrive
 schema: 2.0.0
@@ -25,13 +25,15 @@ Search-MgDrive -InputObject <IFilesIdentity> [<CommonParameters>]
 ## DESCRIPTION
 Invoke function search
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Search1
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Type: IFilesIdentity
 Parameter Sets: SearchViaIdentity1
 Aliases:
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 Usage: q={q}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Search1
 Aliases:
 
@@ -111,4 +113,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

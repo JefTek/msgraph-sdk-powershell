@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemanalyticbyref
 schema: 2.0.0
@@ -22,18 +22,20 @@ Get-MgShareListItemAnalyticByRef -SharedDriveItemId <String> [<CommonParameters>
 Get-MgShareListItemAnalyticByRef -ListItemId <String> -SharedDriveItemId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity3
 ```
 Get-MgShareListItemAnalyticByRef -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgShareListItemAnalyticByRef -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get ref of analytics from shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -42,8 +44,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity3
+Type: IFilesIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -57,7 +59,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -72,8 +74,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Get2, Get3
+Type: String
+Parameter Sets: Get3, Get2
 Aliases:
 
 Required: True
@@ -121,4 +123,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

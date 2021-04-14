@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdrivelistitemactivity
 schema: 2.0.0
@@ -19,13 +19,8 @@ Get-MgDriveListItemActivity -DriveId <String> -ListItemId <String> [<CommonParam
 
 ### Get2
 ```
-Get-MgDriveListItemActivity -DriveId <String> -EndDateTime <String> -Interval <String> -ListItemId <String>
+Get-MgDriveListItemActivity -DriveId <String> -ListItemId <String> -EndDateTime <String> -Interval <String>
  -StartDateTime <String> [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgDriveListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
@@ -33,8 +28,15 @@ Get-MgDriveListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 Get-MgDriveListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgDriveListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -42,7 +44,7 @@ Invoke function getActivitiesByInterval
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1, Get2
 Aliases:
 
@@ -57,7 +59,7 @@ Accept wildcard characters: False
 Usage: endDateTime={endDateTime}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -73,8 +75,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity2
+Type: IFilesIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -88,7 +90,7 @@ Accept wildcard characters: False
 Usage: interval={interval}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1, Get2
 Aliases:
 
@@ -118,7 +120,7 @@ Accept wildcard characters: False
 Usage: startDateTime={startDateTime}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2
 Aliases:
 
@@ -167,4 +169,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

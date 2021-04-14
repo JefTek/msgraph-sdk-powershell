@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgsharelistcontenttype
 schema: 2.0.0
@@ -17,20 +17,14 @@ Create new navigation property to contentTypes for shares
 New-MgShareListContentType -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-ColumnLinks <IMicrosoftGraphColumnLink[]>] [-Description <String>] [-Group <String>] [-Hidden]
  [-Id <String>] [-InheritedFrom <IMicrosoftGraphItemReference>] [-Name <String>]
- [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-ReadOnly] [-Sealed] [-Confirm] [-WhatIf]
+ [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-ReadOnly] [-Sealed] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgShareListContentType -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphContentType1> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgShareListContentType -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphContentType1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -38,12 +32,20 @@ New-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 New-MgShareListContentType -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-ColumnLinks <IMicrosoftGraphColumnLink[]>] [-Description <String>] [-Group <String>] [-Hidden]
  [-Id <String>] [-InheritedFrom <IMicrosoftGraphItemReference>] [-Name <String>]
- [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-ReadOnly] [-Sealed] [-Confirm] [-WhatIf]
+ [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-ReadOnly] [-Sealed] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Create new navigation property to contentTypes for shares
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +69,7 @@ contentType
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+Type: IMicrosoftGraphContentType1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -83,7 +85,7 @@ The collection of columns that are required by this content type
 To construct, see NOTES section for COLUMNLINKS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink[]
+Type: IMicrosoftGraphColumnLink[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -98,7 +100,7 @@ Accept wildcard characters: False
 The descriptive text for the item.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -114,7 +116,7 @@ The name of the group this content type belongs to.
 Helps organize related content types.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Indicates whether the content type is hidden in the list's 'New' menu.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -160,7 +162,7 @@ itemReference
 To construct, see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
+Type: IMicrosoftGraphItemReference
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -176,8 +178,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IFilesIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -191,7 +193,7 @@ Accept wildcard characters: False
 The name of the content type.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -207,7 +209,7 @@ contentTypeOrder
 To construct, see NOTES section for ORDER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentTypeOrder
+Type: IMicrosoftGraphContentTypeOrder
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -222,7 +224,7 @@ Accept wildcard characters: False
 The unique identifier of the content type.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -237,7 +239,7 @@ Accept wildcard characters: False
 If true, the content type cannot be modified unless this value is first set to false.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -253,7 +255,7 @@ If true, the content type cannot be modified by users or through push-down opera
 Only site collection administrators can seal or unseal content types.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -268,8 +270,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -283,7 +285,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -299,7 +301,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -414,4 +416,3 @@ ORDER <IMicrosoftGraphContentTypeOrder>: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
 
 ## RELATED LINKS
-
