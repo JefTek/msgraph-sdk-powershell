@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/ping-mgserviceprincipalssynchronization
 schema: 2.0.0
@@ -25,6 +25,8 @@ Ping-MgServicePrincipalsSynchronization -InputObject <IApplicationsIdentity> [<C
 ## DESCRIPTION
 Invoke function Ping
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -32,7 +34,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Type: IApplicationsIdentity
 Parameter Sets: PingViaIdentity
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Ping
 Aliases:
 
@@ -103,4 +105,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationtemplateschemadirectory
 schema: 2.0.0
@@ -15,17 +15,19 @@ Invoke action discover
 ### Discover (Default)
 ```
 Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory -DirectoryDefinitionId <String>
- -ServicePrincipalId <String> -SynchronizationTemplateId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -ServicePrincipalId <String> -SynchronizationTemplateId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DiscoverViaIdentity
 ```
-Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IApplicationsIdentity> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IApplicationsIdentity> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action discover
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Invoke action discover
 key: id of directoryDefinition
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Discover
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Type: IApplicationsIdentity
 Parameter Sets: DiscoverViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Discover
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of synchronizationTemplate
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Discover
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -110,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -166,4 +168,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

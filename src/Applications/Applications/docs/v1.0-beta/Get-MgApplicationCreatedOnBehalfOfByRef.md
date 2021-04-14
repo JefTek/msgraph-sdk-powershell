@@ -1,29 +1,31 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfofbyref
 schema: 2.0.0
 ---
 
-# Get-MgApplicationCreatedOnBehalfOfByRef
+# Get-MgApplicationConnectorGroupByRef
 
 ## SYNOPSIS
-Get ref of createdOnBehalfOf from applications
+Get ref of connectorGroup from applications
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgApplicationCreatedOnBehalfOfByRef -ApplicationId <String> [<CommonParameters>]
+Get-MgApplicationConnectorGroupByRef -ApplicationId <String> [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgApplicationCreatedOnBehalfOfByRef -InputObject <IApplicationsIdentity> [<CommonParameters>]
+Get-MgApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of createdOnBehalfOf from applications
+Get ref of connectorGroup from applications
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -31,7 +33,7 @@ Get ref of createdOnBehalfOf from applications
 key: id of application
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Type: IApplicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -72,8 +74,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ALIASES
-
-### Get-MgApplicationCreatedOnBehalfByRef
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -105,4 +105,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgonpremisepublishingprofileagentgroup
 schema: 2.0.0
@@ -15,44 +15,46 @@ Delete navigation property agentGroups for onPremisesPublishingProfiles
 ### Delete (Default)
 ```
 Remove-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
- -OnPremisesPublishingProfileId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ -OnPremisesPublishingProfileId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### Delete2
+```
+Remove-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
+ -OnPremisesPublishingProfileId <String> -OnPremisesAgentId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
- -OnPremisesAgentGroupId1 <String> -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
- [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Delete2
-```
-Remove-MgOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String>
- -OnPremisesPublishingProfileId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -OnPremisesPublishingProfileId <String> -OnPremisesAgentGroupId1 <String> -OnPremisesAgentId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity2
 ```
 Remove-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property agentGroups for onPremisesPublishingProfiles
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -60,7 +62,7 @@ Delete navigation property agentGroups for onPremisesPublishingProfiles
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -76,8 +78,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1, DeleteViaIdentity2
+Type: IApplicationsIdentity
+Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -91,8 +93,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2
+Type: String
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -106,7 +108,7 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1
 Aliases:
 
@@ -121,8 +123,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgent
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete1, Delete2
+Type: String
+Parameter Sets: Delete2, Delete1
 Aliases:
 
 Required: True
@@ -136,8 +138,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2
+Type: String
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -151,7 +153,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -166,7 +168,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -182,7 +184,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -238,4 +240,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

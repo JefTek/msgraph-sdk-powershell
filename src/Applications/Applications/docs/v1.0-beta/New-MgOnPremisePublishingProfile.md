@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofile
 schema: 2.0.0
@@ -18,18 +18,20 @@ New-MgOnPremisePublishingProfile [-AdditionalProperties <Hashtable>]
  [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-Agents <IMicrosoftGraphOnPremisesAgent[]>]
  [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>] [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <String>]
- [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-Confirm] [-WhatIf]
+ [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgOnPremisePublishingProfile -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgOnPremisePublishingProfile -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to onPremisesPublishingProfiles
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Add new entity to onPremisesPublishingProfiles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +57,7 @@ Nullable.
 To construct, see NOTES section for AGENTGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup[]
+Type: IMicrosoftGraphOnPremisesAgentGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +75,7 @@ Nullable.
 To construct, see NOTES section for AGENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent[]
+Type: IMicrosoftGraphOnPremisesAgent[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +91,7 @@ onPremisesPublishingProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesPublishingProfile
+Type: IMicrosoftGraphOnPremisesPublishingProfile
 Parameter Sets: Create
 Aliases:
 
@@ -107,7 +109,7 @@ Nullable.
 To construct, see NOTES section for CONNECTORGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectorGroup[]
+Type: IMicrosoftGraphConnectorGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -125,7 +127,7 @@ Nullable.
 To construct, see NOTES section for CONNECTORS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnector[]
+Type: IMicrosoftGraphConnector[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +143,7 @@ hybridAgentUpdaterConfiguration
 To construct, see NOTES section for HYBRIDAGENTUPDATERCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHybridAgentUpdaterConfiguration
+Type: IMicrosoftGraphHybridAgentUpdaterConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,7 +158,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +173,7 @@ Accept wildcard characters: False
 Represents if Azure AD Application Proxy is enabled for the tenant.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +191,7 @@ Nullable.
 To construct, see NOTES section for PUBLISHEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublishedResource[]
+Type: IMicrosoftGraphPublishedResource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1354,3 +1356,4 @@ PUBLISHEDRESOURCES <IMicrosoftGraphPublishedResource[]>: List of existing publis
 
 ## RELATED LINKS
 
+## RELATED LINKS
