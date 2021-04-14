@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgcommituserinsightusedresourcemicrosoftgraphmobileappcontentfile
 schema: 2.0.0
@@ -15,9 +15,8 @@ Invoke action commit
 ### CommitExpanded (Default)
 ```
 Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -UsedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>]
- [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Commit
@@ -25,25 +24,27 @@ Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -UsedIn
 Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -UsedInsightId <String>
  -UserId <String>
  -BodyParameter <IPaths1KjgbkgUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CommitViaIdentity
-```
-Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1KjgbkgUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CommitViaIdentityExpanded
 ```
 Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CommitViaIdentity
+```
+Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1KjgbkgUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action commit
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +52,7 @@ Invoke action commit
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CommitExpanded, CommitViaIdentityExpanded
 Aliases:
 
@@ -67,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1KjgbkgUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1KjgbkgUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Commit, CommitViaIdentity
 Aliases:
 
@@ -83,7 +84,7 @@ Contains properties for file encryption information for the content version of a
 To construct, see NOTES section for FILEENCRYPTIONINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFileEncryptionInfo
+Type: IMicrosoftGraphFileEncryptionInfo
 Parameter Sets: CommitExpanded, CommitViaIdentityExpanded
 Aliases:
 
@@ -99,8 +100,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: CommitViaIdentity, CommitViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: CommitViaIdentityExpanded, CommitViaIdentity
 Aliases:
 
 Required: True
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -129,8 +130,8 @@ Accept wildcard characters: False
 key: id of usedInsight
 
 ```yaml
-Type: System.String
-Parameter Sets: Commit, CommitExpanded
+Type: String
+Parameter Sets: CommitExpanded, Commit
 Aliases:
 
 Required: True
@@ -144,8 +145,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Commit, CommitExpanded
+Type: String
+Parameter Sets: CommitExpanded, Commit
 Aliases:
 
 Required: True
@@ -159,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -256,4 +257,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

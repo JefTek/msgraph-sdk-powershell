@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessagereplyall
 schema: 2.0.0
@@ -15,32 +15,34 @@ Invoke action createReplyAll
 ### CreateExpanded3 (Default)
 ```
 New-MgUserMailFolderMessageReplyAll -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create3
 ```
 New-MgUserMailFolderMessageReplyAll -MailFolderId <String> -MessageId <String> -UserId <String>
  -BodyParameter <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded3
+```
+New-MgUserMailFolderMessageReplyAll -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity3
 ```
 New-MgUserMailFolderMessageReplyAll -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded3
-```
-New-MgUserMailFolderMessageReplyAll -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createReplyAll
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -48,7 +50,7 @@ Invoke action createReplyAll
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema
+Type: IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create3, CreateViaIdentity3
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
@@ -95,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: CreateViaIdentity3, CreateViaIdentityExpanded3
+Type: IUsersActionsIdentity
+Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentity3
 Aliases:
 
 Required: True
@@ -110,8 +112,8 @@ Accept wildcard characters: False
 key: id of mailFolder
 
 ```yaml
-Type: System.String
-Parameter Sets: Create3, CreateExpanded3
+Type: String
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -126,7 +128,7 @@ message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
+Type: IMicrosoftGraphMessage1
 Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
@@ -141,8 +143,8 @@ Accept wildcard characters: False
 key: id of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Create3, CreateExpanded3
+Type: String
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -156,8 +158,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create3, CreateExpanded3
+Type: String
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -171,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -412,3 +414,4 @@ MESSAGE <IMicrosoftGraphMessage1>: message
 
 ## RELATED LINKS
 
+## RELATED LINKS

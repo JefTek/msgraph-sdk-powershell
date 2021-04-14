@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermessage
 schema: 2.0.0
@@ -15,31 +15,33 @@ Invoke action move
 ### MoveExpanded (Default)
 ```
 Move-MgUserMessage -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Move
 ```
 Move-MgUserMessage -MessageId <String> -UserId <String>
  -BodyParameter <IPaths46T88QUsersUserIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### MoveViaIdentityExpanded
+```
+Move-MgUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
 Move-MgUserMessage -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths46T88QUsersUserIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### MoveViaIdentityExpanded
-```
-Move-MgUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action move
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Invoke action move
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths46T88QUsersUserIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+Type: IPaths46T88QUsersUserIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Move, MoveViaIdentity
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -94,8 +96,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: MoveViaIdentity, MoveViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
 Aliases:
 
 Required: True
@@ -109,8 +111,8 @@ Accept wildcard characters: False
 key: id of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Move, MoveExpanded
+Type: String
+Parameter Sets: MoveExpanded, Move
 Aliases:
 
 Required: True
@@ -124,8 +126,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Move, MoveExpanded
+Type: String
+Parameter Sets: MoveExpanded, Move
 Aliases:
 
 Required: True
@@ -139,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -155,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -218,4 +220,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

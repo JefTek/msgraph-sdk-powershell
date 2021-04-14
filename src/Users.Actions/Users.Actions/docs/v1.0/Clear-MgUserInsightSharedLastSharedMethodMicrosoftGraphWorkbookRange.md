@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/clear-mguserinsightsharedlastsharedmethodmicrosoftgraphworkbookrange
 schema: 2.0.0
@@ -14,34 +14,34 @@ Invoke action clear
 
 ### ClearExpanded (Default)
 ```
-Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -SharedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-ApplyTo <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -SharedInsightId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ApplyTo <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Clear
 ```
-Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -SharedInsightId <String>
- -UserId <String>
+Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -SharedInsightId <String> -UserId <String>
  -BodyParameter <IPaths1BlgpcbUsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphWorkbookrangeMicrosoftGraphClearPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ClearViaIdentityExpanded
+```
+Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ApplyTo <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ClearViaIdentity
 ```
 Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1BlgpcbUsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphWorkbookrangeMicrosoftGraphClearPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ClearViaIdentityExpanded
-```
-Clear-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ApplyTo <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action clear
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +49,7 @@ Invoke action clear
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ClearExpanded, ClearViaIdentityExpanded
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ClearExpanded, ClearViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1BlgpcbUsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphWorkbookrangeMicrosoftGraphClearPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1BlgpcbUsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphWorkbookrangeMicrosoftGraphClearPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Clear, ClearViaIdentity
 Aliases:
 
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ClearViaIdentity, ClearViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: ClearViaIdentityExpanded, ClearViaIdentity
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: System.String
-Parameter Sets: Clear, ClearExpanded
+Type: String
+Parameter Sets: ClearExpanded, Clear
 Aliases:
 
 Required: True
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Clear, ClearExpanded
+Type: String
+Parameter Sets: ClearExpanded, Clear
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -235,4 +235,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

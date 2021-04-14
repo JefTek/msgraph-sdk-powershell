@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
 schema: 2.0.0
@@ -18,21 +18,14 @@ Find-MgUserMeetingTime -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
  [-LocationConstraint <IMicrosoftGraphLocationConstraint>] [-MaxCandidates <Int32>]
  [-MeetingDuration <TimeSpan>] [-MinimumAttendeePercentage <Double>] [-ReturnSuggestionReasons]
- [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Find1
 ```
 Find-MgUserMeetingTime -UserId <String>
  -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### FindViaIdentity1
-```
-Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### FindViaIdentityExpanded1
@@ -41,11 +34,20 @@ Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity> [-AdditionalProperti
  [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
  [-LocationConstraint <IMicrosoftGraphLocationConstraint>] [-MaxCandidates <Int32>]
  [-MeetingDuration <TimeSpan>] [-MinimumAttendeePercentage <Double>] [-ReturnSuggestionReasons]
- [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### FindViaIdentity1
+```
+Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action findMeetingTimes
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Invoke action findMeetingTimes
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -69,7 +71,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendeeBase[]
+Type: IMicrosoftGraphAttendeeBase[]
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -85,7 +87,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema
+Type: IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Find1, FindViaIdentity1
 Aliases:
 
@@ -101,8 +103,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: FindViaIdentity1, FindViaIdentityExpanded1
+Type: IUsersActionsIdentity
+Parameter Sets: FindViaIdentityExpanded1, FindViaIdentity1
 Aliases:
 
 Required: True
@@ -116,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -132,7 +134,7 @@ locationConstraint
 To construct, see NOTES section for LOCATIONCONSTRAINT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocationConstraint
+Type: IMicrosoftGraphLocationConstraint
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -147,7 +149,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -162,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -177,7 +179,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -192,7 +194,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -208,7 +210,7 @@ timeConstraint
 To construct, see NOTES section for TIMECONSTRAINT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeConstraint
+Type: IMicrosoftGraphTimeConstraint
 Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
 Aliases:
 
@@ -223,8 +225,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Find1, FindExpanded1
+Type: String
+Parameter Sets: FindExpanded1, Find1
 Aliases:
 
 Required: True
@@ -238,7 +240,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +256,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -410,4 +412,3 @@ TIMECONSTRAINT <IMicrosoftGraphTimeConstraint>: timeConstraint
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-
