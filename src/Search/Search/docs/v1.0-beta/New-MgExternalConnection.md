@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
@@ -19,18 +19,20 @@ New-MgExternalConnection [-AdditionalProperties <Hashtable>]
  [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
  [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
- [-Schema <IMicrosoftGraphExternalConnectorsSchema>] [-State <String>] [-Confirm] [-WhatIf]
+ [-Schema <IMicrosoftGraphExternalConnectorsSchema>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to connections for external
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -38,7 +40,7 @@ Create new navigation property to connections for external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +56,7 @@ externalConnection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+Type: IMicrosoftGraphExternalConnectorsExternalConnection
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +72,7 @@ configuration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConfiguration
+Type: IMicrosoftGraphExternalConnectorsConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +87,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +103,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup[]
+Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +118,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +134,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem[]
+Type: IMicrosoftGraphExternalConnectorsExternalItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +149,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +165,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation[]
+Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +181,7 @@ schema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
+Type: IMicrosoftGraphExternalConnectorsSchema
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +196,7 @@ Accept wildcard characters: False
 connectionState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +211,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -225,7 +227,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -379,4 +381,3 @@ SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
     - `[Type <String>]`: propertyType
 
 ## RELATED LINKS
-
