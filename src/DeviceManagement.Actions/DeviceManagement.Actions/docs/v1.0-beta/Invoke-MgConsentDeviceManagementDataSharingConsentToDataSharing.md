@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgconsentdevicemanagementdatasharingconsenttodatasharing
 schema: 2.0.0
@@ -14,18 +14,20 @@ Invoke action consentToDataSharing
 
 ### Consent (Default)
 ```
-Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing -DataSharingConsentId <String> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing -DataSharingConsentId <String> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ConsentViaIdentity
 ```
-Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing
- -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing -InputObject <IDeviceManagementActionsIdentity>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action consentToDataSharing
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Invoke action consentToDataSharing
 key: id of dataSharingConsent
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Consent
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Type: IDeviceManagementActionsIdentity
 Parameter Sets: ConsentViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +82,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,4 +162,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

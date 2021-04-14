@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgextenddevicemanagementdeviceconfigurationmicrosoftgraphwindowupdateforbusinessconfigurationfeatureupdatepause
 schema: 2.0.0
@@ -15,17 +15,19 @@ Invoke action extendFeatureUpdatesPause
 ### Extend (Default)
 ```
 Invoke-MgExtendDeviceManagementDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationFeatureUpdatePause
- -DeviceConfigurationId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -DeviceConfigurationId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExtendViaIdentity
 ```
 Invoke-MgExtendDeviceManagementDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationFeatureUpdatePause
- -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action extendFeatureUpdatesPause
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Invoke action extendFeatureUpdatesPause
 key: id of deviceConfiguration
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Extend
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Type: IDeviceManagementActionsIdentity
 Parameter Sets: ExtendViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -95,7 +97,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,4 +177,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

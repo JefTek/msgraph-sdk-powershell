@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
@@ -16,32 +16,34 @@ Invoke action assign
 ```
 Set-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign1
 ```
 Set-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
  -BodyParameter <IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AssignViaIdentity1
-```
-Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded1
 ```
 Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AssignViaIdentity1
+```
+Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyAssignment1[]
+Type: IMicrosoftGraphDeviceCompliancePolicyAssignment1[]
 Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: IPathsYydoy0DevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign1, AssignViaIdentity1
 Aliases:
 
@@ -96,8 +98,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Assign1, AssignExpanded1
+Type: String
+Parameter Sets: AssignExpanded1, Assign1
 Aliases:
 
 Required: True
@@ -112,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentity1, AssignViaIdentityExpanded1
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentityExpanded1, AssignViaIdentity1
 Aliases:
 
 Required: True
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -245,4 +247,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/test-mgdevicemanagementassignmentfilter
 schema: 2.0.0
@@ -15,19 +15,21 @@ Invoke action validateFilter
 ### ValidateExpanded (Default)
 ```
 Test-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>]
- [-DeviceAndAppManagementAssignmentFilter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DeviceAndAppManagementAssignmentFilter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgDeviceManagementAssignmentFilter
  -BodyParameter <IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action validateFilter
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Invoke action validateFilter
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -67,7 +69,7 @@ A class containing the properties used for Assignment Filter.
 To construct, see NOTES section for DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -154,4 +156,3 @@ DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER <IMicrosoftGraphDeviceAndAppManagementAss
   - `[Rule <String>]`: Rule definition of the Assignment Filter.
 
 ## RELATED LINKS
-

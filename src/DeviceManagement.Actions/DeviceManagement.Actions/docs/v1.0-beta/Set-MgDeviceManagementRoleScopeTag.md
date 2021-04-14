@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementrolescopetag
 schema: 2.0.0
@@ -15,32 +15,34 @@ Invoke action assign
 ### AssignExpanded (Default)
 ```
 Set-MgDeviceManagementRoleScopeTag -RoleScopeTagId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgDeviceManagementRoleScopeTag -RoleScopeTagId <String>
  -BodyParameter <IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AssignViaIdentityExpanded
+```
+Set-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AssignViaIdentityExpanded
-```
-Set-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -48,7 +50,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTagAutoAssignment[]
+Type: IMicrosoftGraphRoleScopeTagAutoAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -96,8 +98,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -111,8 +113,8 @@ Accept wildcard characters: False
 key: id of roleScopeTag
 
 ```yaml
-Type: System.String
-Parameter Sets: Assign, AssignExpanded
+Type: String
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,4 +242,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

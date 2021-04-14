@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mguploaddevicemanagementgrouppolicyuploadeddefinitionfilenewversion
 schema: 2.0.0
@@ -15,10 +15,9 @@ Invoke action uploadNewVersion
 ### UploadExpanded (Default)
 ```
 Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
- -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>]
- [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Upload
@@ -26,15 +25,7 @@ Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
  -GroupPolicyUploadedDefinitionFileId <String>
  -BodyParameter <IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UploadViaIdentity
-```
-Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
- -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentityExpanded
@@ -42,12 +33,22 @@ Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
 Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>]
- [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UploadViaIdentity
+```
+Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion
+ -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action uploadNewVersion
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -55,7 +56,7 @@ Invoke action uploadNewVersion
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -71,7 +72,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema
+Type: IPathsQaczrkDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphUploadnewversionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
@@ -86,7 +87,7 @@ Accept wildcard characters: False
 Input File for Content (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -101,8 +102,8 @@ Accept wildcard characters: False
 key: id of groupPolicyUploadedDefinitionFile
 
 ```yaml
-Type: System.String
-Parameter Sets: Upload, UploadExpanded
+Type: String
+Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
@@ -117,7 +118,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
+Type: IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -133,8 +134,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: UploadViaIdentity, UploadViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -148,7 +149,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -163,7 +164,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -179,7 +180,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -278,4 +279,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

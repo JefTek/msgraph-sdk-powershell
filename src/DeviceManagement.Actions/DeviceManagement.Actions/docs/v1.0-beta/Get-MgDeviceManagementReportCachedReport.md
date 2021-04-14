@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcachedreport
 schema: 2.0.0
@@ -16,18 +16,20 @@ Invoke action getCachedReport
 ```
 Get-MgDeviceManagementReportCachedReport -OutFile <String> [-AdditionalProperties <Hashtable>]
  [-GroupBy <String[]>] [-Id <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementReportCachedReport
+Get-MgDeviceManagementReportCachedReport -OutFile <String>
  -BodyParameter <IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema>
- -OutFile <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getCachedReport
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Invoke action getCachedReport
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreportPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases: Select
 
@@ -141,22 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: GetExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-.
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -171,7 +158,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases: OrderBy
 
@@ -186,7 +173,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: GetExpanded
 Aliases: Limit
 
@@ -201,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -217,9 +204,24 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+.
+
+```yaml
+Type: Int32
+Parameter Sets: GetExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -259,4 +261,3 @@ BODYPARAMETER <IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedreport
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-

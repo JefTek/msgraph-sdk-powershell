@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mghasdevicemanagementscriptpayloadlink
 schema: 2.0.0
@@ -15,18 +15,20 @@ Invoke action hasPayloadLinks
 ### HasExpanded (Default)
 ```
 Invoke-MgHasDeviceManagementScriptPayloadLink [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Has
 ```
 Invoke-MgHasDeviceManagementScriptPayloadLink
  -BodyParameter <IPathsHo5CjoDevicemanagementDevicemanagementscriptsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action hasPayloadLinks
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Invoke action hasPayloadLinks
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: HasExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsHo5CjoDevicemanagementDevicemanagementscriptsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+Type: IPathsHo5CjoDevicemanagementDevicemanagementscriptsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Has
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: HasExpanded
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,4 +134,3 @@ BODYPARAMETER <IPathsHo5CjoDevicemanagementDevicemanagementscriptsMicrosoftGraph
   - `[PayloadIds <String[]>]`: 
 
 ## RELATED LINKS
-

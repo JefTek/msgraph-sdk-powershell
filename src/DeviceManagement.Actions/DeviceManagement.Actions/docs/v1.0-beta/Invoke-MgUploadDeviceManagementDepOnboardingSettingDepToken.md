@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mguploaddevicemanagementdeponboardingsettingdeptoken
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action uploadDepToken
 ### UploadExpanded (Default)
 ```
 Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
- [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,25 +23,27 @@ Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettin
 ```
 Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
  -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UploadViaIdentityExpanded
+```
+Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
 ```
 Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UploadViaIdentityExpanded
-```
-Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action uploadDepToken
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Invoke action uploadDepToken
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
+Type: IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
@@ -95,8 +97,8 @@ Accept wildcard characters: False
 key: id of depOnboardingSetting
 
 ```yaml
-Type: System.String
-Parameter Sets: Upload, UploadExpanded
+Type: String
+Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
@@ -110,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -126,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: UploadViaIdentity, UploadViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -141,7 +143,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,4 +261,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

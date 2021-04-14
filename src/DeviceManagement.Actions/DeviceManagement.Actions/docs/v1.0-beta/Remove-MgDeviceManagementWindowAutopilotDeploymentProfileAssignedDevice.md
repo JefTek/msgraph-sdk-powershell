@@ -1,6 +1,6 @@
 ---
-external help file:
-Module Name: Microsoft.Graph.DeviceManagement.Actions
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementwindowautopilotdeploymentprofileassigneddevice
 schema: 2.0.0
 ---
@@ -12,69 +12,39 @@ Invoke action deleteDevices
 
 ## SYNTAX
 
-### DeleteExpanded (Default)
+### Delete (Default)
 ```
 Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
- -WindowsAutopilotDeploymentProfileId <String> [-AdditionalProperties <Hashtable>] [-SerialNumbers <String[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Delete
-```
-Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
- -WindowsAutopilotDeploymentProfileId <String>
- -BodyParameter <IPaths6Hyt5NDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -WindowsAutopilotDeploymentProfileId <String> -WindowsAutopilotDeviceIdentityId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
- -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths6Hyt5NDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentityExpanded
-```
-Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-SerialNumbers <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IDeviceManagementEnrolmentIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action deleteDevices
 
+## EXAMPLES
+
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -IfMatch
+ETag
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths6Hyt5NDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Delete, DeleteViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -83,8 +53,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: DeleteViaIdentity, DeleteViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -94,17 +64,17 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -SerialNumbers
-.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String[]
-Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -113,8 +83,23 @@ Accept wildcard characters: False
 key: id of windowsAutopilotDeploymentProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, DeleteExpanded
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsAutopilotDeviceIdentityId
+key: id of windowsAutopilotDeviceIdentity
+
+```yaml
+Type: String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -128,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,4 +215,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

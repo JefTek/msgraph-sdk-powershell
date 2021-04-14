@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice
 schema: 2.0.0
@@ -15,33 +15,35 @@ Invoke action wipe
 ### WipeExpanded (Default)
 ```
 Clear-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-UseProtectedWipe] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-UseProtectedWipe] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe
 ```
 Clear-MgDeviceManagementManagedDevice -ManagedDeviceId <String>
  -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### WipeViaIdentity
-```
-Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentityExpanded
 ```
 Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>]
- [-UseProtectedWipe] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UseProtectedWipe] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### WipeViaIdentity
+```
+Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action wipe
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Invoke action wipe
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema1
+Type: IPaths9Mjyr1DevicemanagementManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Wipe, WipeViaIdentity
 Aliases:
 
@@ -81,8 +83,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: WipeViaIdentity, WipeViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: WipeViaIdentityExpanded, WipeViaIdentity
 Aliases:
 
 Required: True
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -141,8 +143,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Wipe, WipeExpanded
+Type: String
+Parameter Sets: WipeExpanded, Wipe
 Aliases:
 
 Required: True
@@ -156,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -171,7 +173,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -186,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -291,4 +293,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

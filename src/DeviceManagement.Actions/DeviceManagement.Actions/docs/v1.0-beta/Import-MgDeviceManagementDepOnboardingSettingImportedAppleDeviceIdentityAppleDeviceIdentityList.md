@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementdeponboardingsettingimportedappledeviceidentityappledeviceidentitylist
 schema: 2.0.0
@@ -17,7 +17,7 @@ Invoke action importAppleDeviceIdentityList
 Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -DepOnboardingSettingId <String> [-AdditionalProperties <Hashtable>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
- [-OverwriteImportedDeviceIdentities] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OverwriteImportedDeviceIdentities] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Import
@@ -25,15 +25,7 @@ Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDev
 Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -DepOnboardingSettingId <String>
  -BodyParameter <IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ImportViaIdentity
-```
-Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
- -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentityExpanded
@@ -41,11 +33,21 @@ Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDev
 Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ImportedAppleDeviceIdentities <IMicrosoftGraphImportedAppleDeviceIdentity[]>]
- [-OverwriteImportedDeviceIdentities] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OverwriteImportedDeviceIdentities] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ImportViaIdentity
+```
+Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList
+ -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action importAppleDeviceIdentityList
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Invoke action importAppleDeviceIdentityList
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Ad4X1ZDevicemanagementDeponboardingsettingsDeponboardingsettingIdImportedappledeviceidentitiesMicrosoftGraphImportappledeviceidentitylistPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Import, ImportViaIdentity
 Aliases:
 
@@ -84,8 +86,8 @@ Accept wildcard characters: False
 key: id of depOnboardingSetting
 
 ```yaml
-Type: System.String
-Parameter Sets: Import, ImportExpanded
+Type: String
+Parameter Sets: ImportExpanded, Import
 Aliases:
 
 Required: True
@@ -100,7 +102,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity[]
+Type: IMicrosoftGraphImportedAppleDeviceIdentity[]
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -116,8 +118,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: ImportViaIdentity, ImportViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ImportViaIdentityExpanded, ImportViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +133,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -146,7 +148,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +164,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,4 +277,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

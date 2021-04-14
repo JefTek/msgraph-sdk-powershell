@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdevicehealthscriptdevicerunstatemanageddevicename
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action setDeviceName
 ```
 Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
  -DeviceHealthScriptDeviceStateId <String> -DeviceHealthScriptId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceName <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DeviceName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
@@ -24,7 +24,14 @@ Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
 Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
  -DeviceHealthScriptDeviceStateId <String> -DeviceHealthScriptId <String>
  -BodyParameter <IPaths19Ax8J0DevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphSetdevicenamePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-DeviceName <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
@@ -32,18 +39,13 @@ Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
 Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths19Ax8J0DevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphSetdevicenamePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-DeviceName <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action setDeviceName
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Invoke action setDeviceName
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths19Ax8J0DevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphSetdevicenamePostRequestbodyContentApplicationJsonSchema
+Type: IPaths19Ax8J0DevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphSetdevicenamePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -82,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScriptDeviceState
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -97,8 +99,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -128,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -260,4 +262,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

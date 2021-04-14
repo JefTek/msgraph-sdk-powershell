@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/connect-mgdevicemanagementchromeosonboardingsetting
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action connect
 ### ConnectExpanded (Default)
 ```
 Connect-MgDeviceManagementChromeOSOnboardingSetting [-AdditionalProperties <Hashtable>]
- [-OwnerUserPrincipalName <String>] [-ServiceAccountCredentials <String>] [-Confirm] [-WhatIf]
+ [-OwnerUserPrincipalName <String>] [-ServiceAccountCredentials <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,11 +23,13 @@ Connect-MgDeviceManagementChromeOSOnboardingSetting [-AdditionalProperties <Hash
 ```
 Connect-MgDeviceManagementChromeOSOnboardingSetting
  -BodyParameter <IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConnectPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action connect
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Invoke action connect
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ConnectExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConnectPostRequestbodyContentApplicationJsonSchema
+Type: IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConnectPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Connect
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ConnectExpanded
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ConnectExpanded
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +114,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -149,4 +151,3 @@ BODYPARAMETER <IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGr
   - `[ServiceAccountCredentials <String>]`: 
 
 ## RELATED LINKS
-

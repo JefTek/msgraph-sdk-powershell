@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementwindowautopilotdeviceidentitydevice
 schema: 2.0.0
@@ -15,18 +15,20 @@ Invoke action deleteDevices
 ### DeleteExpanded (Default)
 ```
 Remove-MgDeviceManagementWindowAutopilotDeviceIdentityDevice [-AdditionalProperties <Hashtable>]
- [-SerialNumbers <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SerialNumbers <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete
 ```
 Remove-MgDeviceManagementWindowAutopilotDeviceIdentityDevice
  -BodyParameter <IPathsJ256S2DevicemanagementWindowsautopilotdeviceidentitiesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action deleteDevices
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Invoke action deleteDevices
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: DeleteExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsJ256S2DevicemanagementWindowsautopilotdeviceidentitiesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema
+Type: IPathsJ256S2DevicemanagementWindowsautopilotdeviceidentitiesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Delete
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: DeleteExpanded
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,4 +134,3 @@ BODYPARAMETER <IPathsJ256S2DevicemanagementWindowsautopilotdeviceidentitiesMicro
   - `[SerialNumbers <String[]>]`: 
 
 ## RELATED LINKS
-

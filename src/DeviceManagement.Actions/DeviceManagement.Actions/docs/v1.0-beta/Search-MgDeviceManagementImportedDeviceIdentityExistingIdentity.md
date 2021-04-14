@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/search-mgdevicemanagementimporteddeviceidentityexistingidentity
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action searchExistingIdentities
 ### SearchExpanded (Default)
 ```
 Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity [-AdditionalProperties <Hashtable>]
- [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-Confirm] [-WhatIf]
+ [-ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,11 +23,13 @@ Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity [-AdditionalProp
 ```
 Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity
  -BodyParameter <IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action searchExistingIdentities
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Invoke action searchExistingIdentities
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SearchExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
+Type: IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Search
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity[]
+Type: IMicrosoftGraphImportedDeviceIdentity[]
 Parameter Sets: SearchExpanded
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -154,4 +156,3 @@ IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity[]>: .
   - `[Platform <String>]`: platform
 
 ## RELATED LINKS
-

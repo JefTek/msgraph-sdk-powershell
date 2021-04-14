@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementassignmentfilterstatusdetail
 schema: 2.0.0
@@ -16,18 +16,20 @@ Invoke action getAssignmentFiltersStatusDetails
 ```
 Get-MgDeviceManagementAssignmentFilterStatusDetail [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterIds <String[]>] [-ManagedDeviceId <String>] [-PayloadId <String>] [-Skip <Int32>]
- [-Top <Int32>] [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Top <Int32>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDeviceManagementAssignmentFilterStatusDetail
  -BodyParameter <IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getAssignmentFiltersStatusDetails
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Invoke action getAssignmentFiltersStatusDetails
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersstatusdetailsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -96,22 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: GetExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-.
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -126,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: GetExpanded
 Aliases: Limit
 
@@ -141,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -156,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,9 +159,24 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+.
+
+```yaml
+Type: Int32
+Parameter Sets: GetExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -213,4 +215,3 @@ BODYPARAMETER <IPaths1Dv3M96DevicemanagementMicrosoftGraphGetassignmentfiltersst
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
-
