@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworkappconfigurationschema
 schema: 2.0.0
@@ -16,21 +16,14 @@ Update the navigation property androidForWorkAppConfigurationSchemas in deviceMa
 ```
 Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -AndroidForWorkAppConfigurationSchemaId <String>
  [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
- [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -AndroidForWorkAppConfigurationSchemaId <String>
- -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,12 +31,21 @@ Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDev
 ```
 Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
- [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property androidForWorkAppConfigurationSchemas in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update the navigation property androidForWorkAppConfigurationSchemas in deviceMa
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,8 +68,8 @@ Accept wildcard characters: False
 key: id of androidForWorkAppConfigurationSchema
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -82,7 +84,7 @@ Schema describing an Android for Work application's custom configurations.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
+Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 Input File for ExampleJson (UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,7 +161,7 @@ Collection of items each representing a named configuration option in the schema
 To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]
+Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -362,3 +364,4 @@ SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collect
 
 ## RELATED LINKS
 
+## RELATED LINKS

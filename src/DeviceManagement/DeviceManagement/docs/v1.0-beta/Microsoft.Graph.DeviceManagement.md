@@ -1595,8 +1595,8 @@ Update the ref of navigation property userExperienceAnalyticsMetric in deviceMan
 ### [Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
 Update the ref of navigation property userExperienceAnalyticsMetric in deviceManagement
 
-### [Update-MgDeviceManagement](Update-MgDeviceManagement.md)
-Update deviceManagement
+### [Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
+Update the ref of navigation property userExperienceAnalyticsMetric in deviceManagement
 
 ### [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement

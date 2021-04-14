@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedappmanageddevicebyref
 schema: 2.0.0
@@ -14,30 +14,32 @@ Create new navigation property ref to managedDevices for deviceManagement
 
 ### CreateExpanded1 (Default)
 ```
-New-MgDeviceManagementDetectedAppManagedDeviceByRef -DetectedAppId <String>
- [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementDetectedAppManagedDeviceByRef -DetectedAppId <String> [-AdditionalProperties <Hashtable>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgDeviceManagementDetectedAppManagedDeviceByRef -DetectedAppId <String> -BodyParameter <Hashtable>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgDeviceManagementDetectedAppManagedDeviceByRef -InputObject <IDeviceManagementIdentity>
- -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgDeviceManagementDetectedAppManagedDeviceByRef -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgDeviceManagementDetectedAppManagedDeviceByRef -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property ref to managedDevices for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -45,7 +47,7 @@ Create new navigation property ref to managedDevices for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -60,7 +62,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -75,8 +77,8 @@ Accept wildcard characters: False
 key: id of detectedApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -91,8 +93,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -106,7 +108,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +124,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -264,3 +266,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

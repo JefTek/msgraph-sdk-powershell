@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledaction
 schema: 2.0.0
@@ -16,21 +16,14 @@ Create new navigation property to scheduledActionsForRule for deviceManagement
 ```
 New-MgDeviceManagementDeviceCompliancePolicyScheduledAction -DeviceCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
- [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>] [-Confirm] [-WhatIf]
+ [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgDeviceManagementDeviceCompliancePolicyScheduledAction -DeviceCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule1> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule1> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,12 +31,21 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDevic
 ```
 New-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
- [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>] [-Confirm] [-WhatIf]
+ [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to scheduledActionsForRule for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Create new navigation property to scheduledActionsForRule for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +69,7 @@ Scheduled Action for Rule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule1
+Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -82,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -113,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -128,7 +130,7 @@ Accept wildcard characters: False
 Name of the rule which this scheduled action applies to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -144,7 +146,7 @@ The list of scheduled action configurations for this compliance policy.
 To construct, see NOTES section for SCHEDULEDACTIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceActionItem1[]
+Type: IMicrosoftGraphDeviceComplianceActionItem1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -335,3 +337,4 @@ SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceComplianceActionItem1[]>: Th
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselinebestpracticemetric
 schema: 2.0.0
@@ -21,13 +21,14 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric
- -InputObject <IDeviceManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric -InputObject <IDeviceManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get bestPracticesMetrics from deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +36,7 @@ Get bestPracticesMetrics from deviceManagement
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +52,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Type: IDeviceManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -66,7 +67,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -81,7 +82,7 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsBaseline
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -221,3 +222,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

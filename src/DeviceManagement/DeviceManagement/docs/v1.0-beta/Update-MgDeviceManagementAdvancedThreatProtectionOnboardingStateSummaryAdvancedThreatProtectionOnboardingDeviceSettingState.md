@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate
 schema: 2.0.0
@@ -19,23 +19,15 @@ Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedT
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>] [-DeviceModel <String>]
  [-DeviceName <String>] [-Id <String>] [-PlatformType <String>] [-Setting <String>] [-SettingName <String>]
  [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
  -AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>
- -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,11 +37,21 @@ Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedT
  [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceId <String>] [-DeviceModel <String>]
  [-DeviceName <String>] [-Id <String>] [-PlatformType <String>] [-Setting <String>] [-SettingName <String>]
  [-State <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property advancedThreatProtectionOnboardingDeviceSettingStates in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -57,7 +59,7 @@ Update the navigation property advancedThreatProtectionOnboardingDeviceSettingSt
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,8 +74,8 @@ Accept wildcard characters: False
 key: id of advancedThreatProtectionOnboardingDeviceSettingState
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -88,7 +90,7 @@ ATP onboarding State for a given device.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
+Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 The DateTime when device compliance grace period expires
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +120,7 @@ Accept wildcard characters: False
 The Device Id that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +135,7 @@ Accept wildcard characters: False
 The device model that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +150,7 @@ Accept wildcard characters: False
 The Device Name that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +165,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,8 +181,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -194,7 +196,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -209,7 +211,7 @@ Accept wildcard characters: False
 deviceType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +226,7 @@ Accept wildcard characters: False
 The setting class name and property name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +241,7 @@ Accept wildcard characters: False
 The Setting Name that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +256,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +271,7 @@ Accept wildcard characters: False
 The User email address that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +286,7 @@ Accept wildcard characters: False
 The user Id that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +301,7 @@ Accept wildcard characters: False
 The User Name that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -314,7 +316,7 @@ Accept wildcard characters: False
 The User PrincipalName that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -329,7 +331,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -345,7 +347,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -503,3 +505,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

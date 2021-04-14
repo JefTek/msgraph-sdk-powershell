@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementintentcategorysetting
 schema: 2.0.0
@@ -15,32 +15,34 @@ Create new navigation property to settings for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementIntentCategorySetting -DeviceManagementIntentId <String>
- -DeviceManagementIntentSettingCategoryId <String> [-AdditionalProperties <Hashtable>]
- [-DefinitionId <String>] [-Id <String>] [-ValueJson <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -DeviceManagementIntentSettingCategoryId <String> [-AdditionalProperties <Hashtable>] [-DefinitionId <String>]
+ [-Id <String>] [-ValueJson <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementIntentCategorySetting -DeviceManagementIntentId <String>
  -DeviceManagementIntentSettingCategoryId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementSettingInstance> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementIntentCategorySetting -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementSettingInstance> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementSettingInstance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgDeviceManagementIntentCategorySetting -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DefinitionId <String>] [-Id <String>] [-ValueJson <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DefinitionId <String>] [-Id <String>] [-ValueJson <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementIntentCategorySetting -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementSettingInstance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to settings for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -48,7 +50,7 @@ Create new navigation property to settings for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -64,7 +66,7 @@ Base type for a setting instance
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance
+Type: IMicrosoftGraphDeviceManagementSettingInstance
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 The ID of the setting definition for this instance
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,8 +96,8 @@ Accept wildcard characters: False
 key: id of deviceManagementIntent
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -109,8 +111,8 @@ Accept wildcard characters: False
 key: id of deviceManagementIntentSettingCategory
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -124,7 +126,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +142,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -155,7 +157,7 @@ Accept wildcard characters: False
 JSON representation of the value
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -334,3 +336,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

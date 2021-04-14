@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticremoteconnection
 schema: 2.0.0
@@ -18,18 +18,20 @@ New-MgDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalPropert
  [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
  [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-Model <String>] [-RemoteSignInTime <Double>]
- [-VirtualNetwork <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Create new navigation property to userExperienceAnalyticsRemoteConnection for de
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +55,7 @@ The user experience analyte remote connection entity.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+Type: IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +71,7 @@ The sign in failure percentage of Cloud PC Device.
 Valid values 0 to 100
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +87,7 @@ The round tip time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +103,7 @@ The sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +119,7 @@ The core boot time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +135,7 @@ The core sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +151,7 @@ The count of remote connection.
 Valid values 0 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 The id of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +181,7 @@ Accept wildcard characters: False
 The name of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +196,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +211,7 @@ Accept wildcard characters: False
 The user experience analytics device model.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +227,7 @@ The remote sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +242,7 @@ Accept wildcard characters: False
 The user experience analytics virtual network.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +257,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -271,7 +273,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,4 +320,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>: The user
   - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance
 schema: 2.0.0
@@ -14,21 +14,23 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPer
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>]
- [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int32>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance [-AdditionalProperties <Hashtable>]
+ [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>] [-ProcessName <String>]
+ [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int32>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -36,7 +38,7 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPer
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ The user experience analytics device startup process performance.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 User experience analytics device startup process summarized count.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 User experience analytics device startup process median impact in milliseconds.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 User experience analytics device startup process name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 The user experience analytics device startup process product name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +144,7 @@ Accept wildcard characters: False
 The User experience analytics device startup process publisher.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +159,7 @@ Accept wildcard characters: False
 User experience analytics device startup process total impact in milliseconds.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,4 +232,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerform
   - `[TotalImpactInMS <Int32?>]`: User experience analytics device startup process total impact in milliseconds.
 
 ## RELATED LINKS
-

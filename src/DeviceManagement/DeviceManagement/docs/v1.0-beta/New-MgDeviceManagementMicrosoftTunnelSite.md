@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelsite
 schema: 2.0.0
@@ -18,17 +18,19 @@ New-MgDeviceManagementMicrosoftTunnelSite [-AdditionalProperties <Hashtable>] [-
  [-DisplayName <String>] [-Id <String>]
  [-MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]
  [-MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>] [-PublicAddress <String>]
- [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementMicrosoftTunnelSite -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementMicrosoftTunnelSite -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to microsoftTunnelSites for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -36,7 +38,7 @@ Create new navigation property to microsoftTunnelSites for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ Entity that represents a Microsoft Tunnel site
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
+Type: IMicrosoftGraphMicrosoftTunnelSite
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 The MicrosoftTunnelSite's description
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 The MicrosoftTunnelSite's display name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +115,7 @@ Entity that represents a collection of Microsoft Tunnel settings
 To construct, see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
+Type: IMicrosoftGraphMicrosoftTunnelConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 To construct, see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServer[]
+Type: IMicrosoftGraphMicrosoftTunnelServer[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 The MicrosoftTunnelSite's public domain name or IP address
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -276,4 +278,3 @@ MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer[]>: A list of Micro
   - `[TunnelServerHealthStatus <String>]`: microsoftTunnelServerHealthStatus
 
 ## RELATED LINKS
-

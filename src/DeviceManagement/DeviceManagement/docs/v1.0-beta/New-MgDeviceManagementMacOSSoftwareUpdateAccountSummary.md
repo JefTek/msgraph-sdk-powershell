@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmacossoftwareupdateaccountsummary
 schema: 2.0.0
@@ -18,18 +18,20 @@ New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary [-AdditionalProperties <
  [-CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>] [-DeviceId <String>]
  [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
- [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
+ [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Create new navigation property to macOSSoftwareUpdateAccountSummaries for device
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +55,7 @@ MacOS software update account summary report for a device and user
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
+Type: IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +71,7 @@ Summary of the updates by category.
 To construct, see NOTES section for CATEGORYSUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]
+Type: IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +86,7 @@ Accept wildcard characters: False
 The device ID.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 The device name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 The name of the report
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Number of failed updates on the device.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 Last date time the report for this device was updated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 The OS version.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +191,7 @@ Accept wildcard characters: False
 Number of successful updates on the device.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 Number of total updates on the device.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 The user ID.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +236,7 @@ Accept wildcard characters: False
 The user principal name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -265,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -348,4 +350,3 @@ CATEGORYSUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>: Summary
   - `[UserId <String>]`: The user ID.
 
 ## RELATED LINKS
-

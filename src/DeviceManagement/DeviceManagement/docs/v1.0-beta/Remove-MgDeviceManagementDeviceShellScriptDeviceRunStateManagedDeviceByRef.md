@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceshellscriptdevicerunstatemanageddevicebyref
 schema: 2.0.0
@@ -16,18 +16,20 @@ Delete ref of navigation property managedDevice for deviceManagement
 ```
 Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef
- -InputObject <IDeviceManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ -InputObject <IDeviceManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete ref of navigation property managedDevice for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Delete ref of navigation property managedDevice for deviceManagement
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 key: id of deviceShellScript
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +83,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Type: IDeviceManagementIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -267,3 +269,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

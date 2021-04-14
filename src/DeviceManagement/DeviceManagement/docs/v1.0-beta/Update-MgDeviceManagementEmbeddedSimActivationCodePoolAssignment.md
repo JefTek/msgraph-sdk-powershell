@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementembeddedsimactivationcodepoolassignment
 schema: 2.0.0
@@ -17,7 +17,7 @@ Update the navigation property assignments in deviceManagement
 Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment
  -EmbeddedSimActivationCodePoolAssignmentId <String> -EmbeddedSimActivationCodePoolId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,14 +25,7 @@ Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment
 ```
 Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment
  -EmbeddedSimActivationCodePoolAssignmentId <String> -EmbeddedSimActivationCodePoolId <String>
- -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,12 +33,21 @@ Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment -InputObject <I
 ```
 Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property assignments in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Update the navigation property assignments in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ The embedded SIM activation code pool assignment entity assigns a specific embed
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment
+Type: IMicrosoftGraphEmbeddedSimActivationCodePoolAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -84,8 +86,8 @@ Accept wildcard characters: False
 key: id of embeddedSIMActivationCodePoolAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -99,8 +101,8 @@ Accept wildcard characters: False
 key: id of embeddedSIMActivationCodePool
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +132,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -161,7 +163,7 @@ Base type for assignment targets.
 To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1
+Type: IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -347,3 +349,4 @@ TARGET <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>: Base type for a
 
 ## RELATED LINKS
 
+## RELATED LINKS

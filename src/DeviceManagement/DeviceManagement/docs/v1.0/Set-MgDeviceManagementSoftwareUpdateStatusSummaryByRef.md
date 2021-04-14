@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementsoftwareupdatestatussummarybyref
 schema: 2.0.0
@@ -15,17 +15,19 @@ Update the ref of navigation property softwareUpdateStatusSummary in deviceManag
 ### SetExpanded1 (Default)
 ```
 Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef [-AdditionalProperties <Hashtable>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set1
 ```
-Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef -BodyParameter <Hashtable> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the ref of navigation property softwareUpdateStatusSummary in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Update the ref of navigation property softwareUpdateStatusSummary in deviceManag
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded1
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Set1
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -94,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -121,4 +123,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-

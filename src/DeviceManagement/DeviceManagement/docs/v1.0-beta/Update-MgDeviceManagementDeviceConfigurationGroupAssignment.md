@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationgroupassignment
 schema: 2.0.0
@@ -17,33 +17,34 @@ Update the navigation property groupAssignments in deviceManagement
 Update-MgDeviceManagementDeviceConfigurationGroupAssignment -DeviceConfigurationGroupAssignmentId <String>
  -DeviceConfigurationId <String> [-AdditionalProperties <Hashtable>]
  [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>] [-ExcludeGroup] [-Id <String>]
- [-TargetGroupId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TargetGroupId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceConfigurationGroupAssignment -DeviceConfigurationGroupAssignmentId <String>
- -DeviceConfigurationId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -DeviceConfigurationId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]
- [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-ExcludeGroup] [-Id <String>] [-TargetGroupId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDeviceConfigurationGroupAssignment -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationGroupAssignment> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property groupAssignments in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +52,7 @@ Update the navigation property groupAssignments in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +68,7 @@ Device configuration group assignment.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationGroupAssignment
+Type: IMicrosoftGraphDeviceConfigurationGroupAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +84,7 @@ Device Configuration.
 To construct, see NOTES section for DEVICECONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
+Type: IMicrosoftGraphDeviceConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,8 +99,8 @@ Accept wildcard characters: False
 key: id of deviceConfigurationGroupAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -113,8 +114,8 @@ Accept wildcard characters: False
 key: id of deviceConfiguration
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -129,7 +130,7 @@ Indicates if this group is should be excluded.
 Defaults that the group should be included
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +145,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +161,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -175,7 +176,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -190,7 +191,7 @@ Accept wildcard characters: False
 The Id of the AAD group we are targeting the device configuration to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -221,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -546,3 +547,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

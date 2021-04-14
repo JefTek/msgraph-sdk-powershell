@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdatasharingconsent
 schema: 2.0.0
@@ -16,17 +16,19 @@ Create new navigation property to dataSharingConsents for deviceManagement
 ```
 New-MgDeviceManagementDataSharingConsent [-AdditionalProperties <Hashtable>] [-GrantDateTime <DateTime>]
  [-Granted] [-GrantedByUpn <String>] [-GrantedByUserId <String>] [-Id <String>] [-ServiceDisplayName <String>]
- [-TermsUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TermsUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to dataSharingConsents for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Create new navigation property to dataSharingConsents for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ Data sharing consent information.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
+Type: IMicrosoftGraphDataSharingConsent
 Parameter Sets: Create
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 The time consent was granted for this account
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 The granted state for the data sharing consent
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -95,7 +97,7 @@ Accept wildcard characters: False
 The Upn of the user that granted consent for this account
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -110,7 +112,7 @@ Accept wildcard characters: False
 The UserId of the user that granted consent for this account
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -125,7 +127,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +142,7 @@ Accept wildcard characters: False
 The display name of the service work flow
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +157,7 @@ Accept wildcard characters: False
 The TermsUrl for the data sharing consent
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,4 +230,3 @@ BODYPARAMETER <IMicrosoftGraphDataSharingConsent>: Data sharing consent informat
   - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
 
 ## RELATED LINKS
-

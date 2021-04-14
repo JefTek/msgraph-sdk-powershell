@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
@@ -16,25 +16,18 @@ Update the navigation property mobileAppTroubleshootingEvents in deviceManagemen
 ```
 Update-MgDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId <String>
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
  [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
- [-UserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId <String>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,16 +35,25 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
 ```
 Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagementIdentity>
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
  [-CorrelationId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
- [-UserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -60,7 +62,7 @@ A set of string key and string value pairs which provides additional information
 To construct, see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
+Type: IMicrosoftGraphKeyValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +77,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +92,7 @@ Accept wildcard characters: False
 Intune application identifier.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +108,7 @@ The collection property of AppLogUploadRequest.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest[]
+Type: IMicrosoftGraphAppLogCollectionRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +124,7 @@ MobileAppTroubleshootingEvent Entity.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+Type: IMicrosoftGraphMobileAppTroubleshootingEvent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -137,7 +139,7 @@ Accept wildcard characters: False
 Id used for tracing the failure in the service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +154,7 @@ Accept wildcard characters: False
 Time when the event occurred .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +170,7 @@ Event Name corresponding to the Troubleshooting Event.
 It is an Optional field
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +186,7 @@ Intune Mobile Application Troubleshooting History Item
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
+Type: IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +201,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,8 +217,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -230,7 +232,7 @@ Accept wildcard characters: False
 Device identifier created or collected by Intune.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -245,8 +247,8 @@ Accept wildcard characters: False
 key: id of mobileAppTroubleshootingEvent
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -260,7 +262,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -276,7 +278,7 @@ Object containing detailed information about the error and its remediation.
 To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
+Type: IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,7 +293,7 @@ Accept wildcard characters: False
 Identifier for the user that tried to enroll the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +308,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -322,7 +324,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -528,3 +530,4 @@ TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingError
 
 ## RELATED LINKS
 
+## RELATED LINKS

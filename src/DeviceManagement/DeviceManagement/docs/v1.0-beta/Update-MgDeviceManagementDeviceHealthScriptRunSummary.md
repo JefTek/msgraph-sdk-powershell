@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicehealthscriptrunsummary
 schema: 2.0.0
@@ -20,20 +20,13 @@ Update-MgDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <Str
  [-IssueRemediatedCumulativeDeviceCount <Int32>] [-IssueRemediatedDeviceCount <Int32>]
  [-IssueReoccurredDeviceCount <Int32>] [-LastScriptRunDateTime <DateTime>]
  [-NoIssueDetectedDeviceCount <Int32>] [-RemediationScriptErrorDeviceCount <Int32>]
- [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,11 +38,20 @@ Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManag
  [-IssueRemediatedCumulativeDeviceCount <Int32>] [-IssueRemediatedDeviceCount <Int32>]
  [-IssueReoccurredDeviceCount <Int32>] [-LastScriptRunDateTime <DateTime>]
  [-NoIssueDetectedDeviceCount <Int32>] [-RemediationScriptErrorDeviceCount <Int32>]
- [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property runSummary in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -57,7 +59,7 @@ Update the navigation property runSummary in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +75,7 @@ Contains properties for the run summary of a device management script.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
+Type: IMicrosoftGraphDeviceHealthScriptRunSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -88,7 +90,7 @@ Accept wildcard characters: False
 Number of devices on which the detection script execution encountered an error and did not complete
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 Number of devices which have not yet run the latest version of the device health script
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,8 +120,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -133,7 +135,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +151,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script found an issue
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +181,7 @@ Accept wildcard characters: False
 Number of devices that were remediated over the last 30 days
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +196,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script was able to resolve the detected issue
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +211,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script executed successfully but failed to resolve the detected issue
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +226,7 @@ Accept wildcard characters: False
 Last run time for the script across all devices
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +241,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script did not find an issue and the device is healthy
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +256,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -269,7 +271,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script execution encountered an error and did not complete
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +286,7 @@ Accept wildcard characters: False
 Number of devices for which remediation was skipped
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +301,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +317,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -471,3 +473,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmacossoftwareupdateaccountsummarycategorysummaryupdatestatesummary
 schema: 2.0.0
@@ -17,22 +17,15 @@ Create new navigation property to updateStateSummaries for deviceManagement
 New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
- [-ProductKey <String>] [-State <String>] [-UpdateCategory <String>] [-UpdateVersion <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-ProductKey <String>] [-State <String>] [-UpdateCategory <String>] [-UpdateVersion <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
- -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,11 +33,20 @@ New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStat
 New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-ProductKey <String>] [-State <String>]
- [-UpdateCategory <String>] [-UpdateVersion <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UpdateCategory <String>] [-UpdateVersion <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
+ -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to updateStateSummaries for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -52,7 +54,7 @@ Create new navigation property to updateStateSummaries for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ MacOS software update state summary for a device and user
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateStateSummary
+Type: IMicrosoftGraphMacOSSoftwareUpdateStateSummary
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 Human readable name of the software update
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +100,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,8 +116,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Last date time the report for this device and product key was updated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +146,8 @@ Accept wildcard characters: False
 key: id of macOSSoftwareUpdateAccountSummary
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -159,8 +161,8 @@ Accept wildcard characters: False
 key: id of macOSSoftwareUpdateCategorySummary
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 Product key of the software update.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +191,7 @@ Accept wildcard characters: False
 macOSSoftwareUpdateState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 macOSSoftwareUpdateCategory
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 Version of the software update
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -234,7 +236,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -250,7 +252,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -402,3 +404,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidmanagedstoreappconfigurationschema
 schema: 2.0.0
@@ -18,22 +18,15 @@ Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
  -AndroidManagedStoreAppConfigurationSchemaId <String> [-AdditionalProperties <Hashtable>]
  [-ExampleJsonInputFile <String>] [-Id <String>]
  [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
- [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema
  -AndroidManagedStoreAppConfigurationSchemaId <String>
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,12 +35,21 @@ Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject 
 Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ExampleJsonInputFile <String>] [-Id <String>]
  [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
- [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property androidManagedStoreAppConfigurationSchemas in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -55,7 +57,7 @@ Update the navigation property androidManagedStoreAppConfigurationSchemas in dev
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,8 +72,8 @@ Accept wildcard characters: False
 key: id of androidManagedStoreAppConfigurationSchema
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -86,7 +88,7 @@ Schema describing an Android application's custom configurations.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
+Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +103,7 @@ Accept wildcard characters: False
 Input File for ExampleJson (UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +118,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,8 +134,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -149,7 +151,7 @@ It contains a flat list of all configuration.
 To construct, see NOTES section for NESTEDSCHEMAITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
+Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -181,7 +183,7 @@ It only contains the root-level configuration.
 To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
+Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -404,3 +406,4 @@ SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>: Co
 
 ## RELATED LINKS
 
+## RELATED LINKS

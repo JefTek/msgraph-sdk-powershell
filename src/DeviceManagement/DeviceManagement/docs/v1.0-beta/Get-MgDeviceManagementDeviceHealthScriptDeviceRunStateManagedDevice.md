@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicehealthscriptdevicerunstatemanageddevice
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice -InputObject
 ## DESCRIPTION
 Get managedDevice from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceHealthScriptDeviceStateId
 key: id of deviceHealthScriptDeviceState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of deviceHealthScript
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -79,7 +81,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Type: IDeviceManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -234,3 +236,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

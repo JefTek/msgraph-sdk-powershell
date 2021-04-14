@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration
 schema: 2.0.0
@@ -17,7 +17,7 @@ Create new navigation property to scheduledActionConfigurations for deviceManage
 New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
  -DeviceCompliancePolicyId <String> -DeviceComplianceScheduledActionForRuleId <String> [-ActionType <String>]
  [-AdditionalProperties <Hashtable>] [-GracePeriodHours <Int32>] [-Id <String>]
- [-NotificationMessageCcList <String[]>] [-NotificationTemplateId <String>] [-Confirm] [-WhatIf]
+ [-NotificationMessageCcList <String[]>] [-NotificationTemplateId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,14 +25,7 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActio
 ```
 New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
  -DeviceCompliancePolicyId <String> -DeviceComplianceScheduledActionForRuleId <String>
- -BodyParameter <IMicrosoftGraphDeviceComplianceActionItem> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
- -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphDeviceComplianceActionItem>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceActionItem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,11 +33,20 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActio
 New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
  -InputObject <IDeviceManagementIdentity> [-ActionType <String>] [-AdditionalProperties <Hashtable>]
  [-GracePeriodHours <Int32>] [-Id <String>] [-NotificationMessageCcList <String[]>]
- [-NotificationTemplateId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-NotificationTemplateId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
+ -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphDeviceComplianceActionItem> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to scheduledActionConfigurations for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -52,7 +54,7 @@ Create new navigation property to scheduledActionConfigurations for deviceManage
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +85,7 @@ Scheduled Action Configuration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceActionItem
+Type: IMicrosoftGraphDeviceComplianceActionItem
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -98,8 +100,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -113,8 +115,8 @@ Accept wildcard characters: False
 key: id of deviceComplianceScheduledActionForRule
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -129,7 +131,7 @@ Number of hours to wait till the action will be enforced.
 Valid values 0 to 8760
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +162,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -175,7 +177,7 @@ Accept wildcard characters: False
 A list of group IDs to speicify who to CC this notification message to.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +192,7 @@ Accept wildcard characters: False
 What notification Message template to use
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -221,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -371,3 +373,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

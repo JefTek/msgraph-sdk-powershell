@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementtemplatemigratableto
 schema: 2.0.0
@@ -20,7 +20,7 @@ Update-MgDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <Strin
  [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
  [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <String>]
  [-PublishedDateTime <DateTime>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-TemplateSubtype <String>] [-TemplateType <String>] [-VersionInfo <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-TemplateSubtype <String>] [-TemplateType <String>] [-VersionInfo <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,14 +28,7 @@ Update-MgDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <Strin
 ```
 Update-MgDeviceManagementTemplateMigratableTo -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String> -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,12 +38,20 @@ Update-MgDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementIde
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IntentCount <Int32>] [-IsDeprecated]
  [-MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>] [-PlatformType <String>]
  [-PublishedDateTime <DateTime>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-TemplateSubtype <String>] [-TemplateType <String>] [-VersionInfo <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-TemplateSubtype <String>] [-TemplateType <String>] [-VersionInfo <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property migratableTo in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -58,7 +59,7 @@ Update the navigation property migratableTo in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +75,7 @@ Entity that represents a defined collection of device settings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplate
+Type: IMicrosoftGraphDeviceManagementTemplate
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +91,7 @@ Collection of setting categories within the template
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory[]
+Type: IMicrosoftGraphDeviceManagementTemplateSettingCategory[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +106,7 @@ Accept wildcard characters: False
 The template's description
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,8 +121,8 @@ Accept wildcard characters: False
 key: id of deviceManagementTemplate
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -135,8 +136,8 @@ Accept wildcard characters: False
 key: id of deviceManagementTemplate
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -150,7 +151,7 @@ Accept wildcard characters: False
 The template's display name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +166,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,8 +182,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -196,7 +197,7 @@ Accept wildcard characters: False
 Number of Intents created from this template.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +213,7 @@ The template is deprecated or not.
 Intents cannot be created from a deprecated template.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +229,7 @@ Collection of templates this template can migrate to
 To construct, see NOTES section for MIGRATABLETO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplate[]
+Type: IMicrosoftGraphDeviceManagementTemplate[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +244,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -258,7 +259,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +274,7 @@ Accept wildcard characters: False
 When the template was published
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +290,7 @@ Collection of all settings this template has
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +305,7 @@ Accept wildcard characters: False
 deviceManagementTemplateSubtype
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +320,7 @@ Accept wildcard characters: False
 deviceManagementTemplateType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -334,7 +335,7 @@ Accept wildcard characters: False
 The template's version information
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -349,7 +350,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -365,7 +366,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -611,3 +612,4 @@ SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: Collection of all s
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdevicemodelperformance
 schema: 2.0.0
@@ -17,18 +17,20 @@ Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPer
 New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance [-ActiveDeviceCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-Id <String>]
  [-MeanTimeToFailureInMinutes <Int32>] [-ModelAppHealthScore <Double>] [-ModelAppHealthStatus <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ The number of active devices for the model.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ The user experience analytics device model performance entity contains device mo
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 The manufacturer name of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +100,7 @@ Accept wildcard characters: False
 The model name of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ The mean time to failure for the model device in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +147,7 @@ The app health score of the device model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +162,7 @@ Accept wildcard characters: False
 The overall app health status of the device model.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -233,4 +235,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerform
   - `[ModelAppHealthStatus <String>]`: The overall app health status of the device model.
 
 ## RELATED LINKS
-

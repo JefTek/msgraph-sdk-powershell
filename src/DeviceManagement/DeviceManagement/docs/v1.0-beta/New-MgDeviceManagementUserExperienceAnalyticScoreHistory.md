@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticscorehistory
 schema: 2.0.0
@@ -15,17 +15,19 @@ Create new navigation property to userExperienceAnalyticsScoreHistory for device
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticScoreHistory [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-StartupDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StartupDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticScoreHistory
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsScoreHistory> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsScoreHistory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Create new navigation property to userExperienceAnalyticsScoreHistory for device
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -49,7 +51,7 @@ The user experience analytics device startup score history.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsScoreHistory
+Type: IMicrosoftGraphUserExperienceAnalyticsScoreHistory
 Parameter Sets: Create
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 The user experience analytics device startup date time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -110,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,4 +149,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsScoreHistory>: The user exp
   - `[StartupDateTime <DateTime?>]`: The user experience analytics device startup date time.
 
 ## RELATED LINKS
-

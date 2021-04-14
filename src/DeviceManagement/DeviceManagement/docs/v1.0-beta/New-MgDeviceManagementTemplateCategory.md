@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtemplatecategory
 schema: 2.0.0
@@ -14,24 +14,17 @@ Create new navigation property to categories for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementTemplateCategory -DeviceManagementTemplateId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
+New-MgDeviceManagementTemplateCategory -DeviceManagementTemplateId <String> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Confirm] [-WhatIf]
+ [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementTemplateCategory -DeviceManagementTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementTemplateCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,12 +33,21 @@ New-MgDeviceManagementTemplateCategory -InputObject <IDeviceManagementIdentity>
 New-MgDeviceManagementTemplateCategory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Confirm] [-WhatIf]
+ [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementTemplateCategory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to categories for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Create new navigation property to categories for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ Entity representing a template setting category
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
+Type: IMicrosoftGraphDeviceManagementTemplateSettingCategory
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,8 +86,8 @@ Accept wildcard characters: False
 key: id of deviceManagementTemplate
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 The category name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 The category contains top level required setting
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -161,7 +163,7 @@ The settings this category contains
 To construct, see NOTES section for RECOMMENDEDSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +179,7 @@ The setting definitions this category contains
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition[]
+Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -396,3 +398,4 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition[]>: The set
 
 ## RELATED LINKS
 
+## RELATED LINKS

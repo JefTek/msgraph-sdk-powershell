@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticbaselinedevicebootperformancemetricbyref
 schema: 2.0.0
@@ -27,6 +27,8 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricB
 ## DESCRIPTION
 Get ref of deviceBootPerformanceMetrics from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Type: IDeviceManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsBaseline
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -189,3 +191,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

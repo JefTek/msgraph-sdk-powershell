@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicydevicestatuses
 schema: 2.0.0
@@ -17,20 +17,14 @@ Create new navigation property to deviceStatuses for deviceManagement
 New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -DeviceCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
  [-DeviceDisplayName <String>] [-DeviceModel <String>] [-Id <String>] [-LastReportedDateTime <DateTime>]
- [-Platform <Int32>] [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Platform <Int32>] [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -DeviceCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,12 +32,20 @@ New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -InputObject <IDevice
 New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
  [-DeviceDisplayName <String>] [-DeviceModel <String>] [-Id <String>] [-LastReportedDateTime <DateTime>]
- [-Platform <Int32>] [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Platform <Int32>] [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceComplianceDeviceStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceStatuses for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Create new navigation property to deviceStatuses for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ deviceComplianceDeviceStatus
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceStatus
+Type: IMicrosoftGraphDeviceComplianceDeviceStatus
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 The DateTime when device compliance grace period expires
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,8 +99,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 Device name of the DevicePolicyStatus.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 The device model that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +144,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -173,7 +175,7 @@ Accept wildcard characters: False
 Last modified date time of the policy report.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 Platform of the device that is being reported
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +205,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +220,7 @@ Accept wildcard characters: False
 The User Name that is being reported
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +235,7 @@ Accept wildcard characters: False
 UserPrincipalName.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +250,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -264,7 +266,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -418,3 +420,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

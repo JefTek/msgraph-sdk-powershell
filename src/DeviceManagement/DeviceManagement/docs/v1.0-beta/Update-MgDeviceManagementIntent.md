@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementintent
 schema: 2.0.0
@@ -18,25 +18,19 @@ Update-MgDeviceManagementIntent -DeviceManagementIntentId <String> [-AdditionalP
  [-Assignments <IMicrosoftGraphDeviceManagementIntentAssignment[]>]
  [-Categories <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>] [-Description <String>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>]
- [-DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>]
- [-DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>] [-DisplayName <String>]
- [-Id <String>] [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>]
+ [-DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>] [-DisplayName <String>] [-Id <String>]
+ [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-TemplateId <String>]
- [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>]
- [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>] [-PassThru] [-Confirm] [-WhatIf]
+ [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]
+ [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementIntent -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementIntent -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,17 +39,25 @@ Update-MgDeviceManagementIntent -InputObject <IDeviceManagementIdentity> [-Addit
  [-Assignments <IMicrosoftGraphDeviceManagementIntentAssignment[]>]
  [-Categories <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>] [-Description <String>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>]
- [-DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>]
- [-DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>] [-DisplayName <String>]
- [-Id <String>] [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>]
+ [-DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>] [-DisplayName <String>] [-Id <String>]
+ [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-TemplateId <String>]
- [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>]
- [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>] [-PassThru] [-Confirm] [-WhatIf]
+ [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]
+ [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementIntent -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property intents in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -63,7 +65,7 @@ Update the navigation property intents in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +81,7 @@ Collection of assignments
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentAssignment[]
+Type: IMicrosoftGraphDeviceManagementIntentAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +97,7 @@ Entity that represents an intent to apply settings to a device
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+Type: IMicrosoftGraphDeviceManagementIntent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -111,7 +113,7 @@ Collection of setting categories within the intent
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory[]
+Type: IMicrosoftGraphDeviceManagementIntentSettingCategory[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 The user given description
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,8 +143,8 @@ Accept wildcard characters: False
 key: id of deviceManagementIntent
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -157,7 +159,7 @@ Collection of settings and their states and counts of devices that belong to cor
 To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]
+Type: IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +175,7 @@ Collection of states of all devices that the intent is applied to
 To construct, see NOTES section for DEVICESTATES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceState[]
+Type: IMicrosoftGraphDeviceManagementIntentDeviceState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +191,7 @@ Entity that represents device state summary for an intent
 To construct, see NOTES section for DEVICESTATESUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentDeviceStateSummary
+Type: IMicrosoftGraphDeviceManagementIntentDeviceStateSummary
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 The user given display name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,8 +237,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -250,7 +252,7 @@ Accept wildcard characters: False
 Signifies whether or not the intent is assigned to users
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +267,7 @@ Accept wildcard characters: False
 When the intent was last modified
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +282,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -295,7 +297,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +313,7 @@ Collection of all settings to be applied
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +328,7 @@ Accept wildcard characters: False
 The ID of the template this intent was created from (if any)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -342,7 +344,7 @@ Collection of states of all users that the intent is applied to
 To construct, see NOTES section for USERSTATES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentUserState[]
+Type: IMicrosoftGraphDeviceManagementIntentUserState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -358,7 +360,7 @@ Entity that represents user state summary for an intent
 To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentUserStateSummary
+Type: IMicrosoftGraphDeviceManagementIntentUserStateSummary
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -373,7 +375,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -389,7 +391,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -694,3 +696,4 @@ USERSTATESUMMARY <IMicrosoftGraphDeviceManagementIntentUserStateSummary>: Entity
 
 ## RELATED LINKS
 
+## RELATED LINKS

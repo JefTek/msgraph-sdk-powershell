@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementassignmentfilter
 schema: 2.0.0
@@ -17,20 +17,13 @@ Update the navigation property assignmentFilters in deviceManagement
 Update-MgDeviceManagementAssignmentFilter -DeviceAndAppManagementAssignmentFilterId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Platform <String>]
- [-RoleScopeTags <String[]>] [-Rule <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTags <String[]>] [-Rule <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAssignmentFilter -DeviceAndAppManagementAssignmentFilterId <String>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,11 +32,20 @@ Update-MgDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentit
 Update-MgDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Platform <String>]
- [-RoleScopeTags <String[]>] [-Rule <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTags <String[]>] [-Rule <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementAssignmentFilter -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property assignmentFilters in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update the navigation property assignmentFilters in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ A class containing the properties used for Assignment Filter.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 Creation time of the Assignment Filter.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 Description of the Assignment Filter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,8 +114,8 @@ Accept wildcard characters: False
 key: id of deviceAndAppManagementAssignmentFilter
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 DisplayName of the Assignment Filter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +144,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -173,7 +175,7 @@ Accept wildcard characters: False
 Last modified time of the Assignment Filter.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -203,7 +205,7 @@ Accept wildcard characters: False
 devicePlatformType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +220,7 @@ Accept wildcard characters: False
 RoleScopeTags of the Assignment Filter.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +235,7 @@ Accept wildcard characters: False
 Rule definition of the Assignment Filter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +250,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -264,7 +266,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -417,3 +419,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticdevicestartupprocess
 schema: 2.0.0
@@ -17,21 +17,14 @@ Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in 
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess
  -UserExperienceAnalyticsDeviceStartupProcessId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ManagedDeviceId <String>] [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>]
- [-StartupImpactInMS <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StartupImpactInMS <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess
  -UserExperienceAnalyticsDeviceStartupProcessId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,12 +32,21 @@ Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObject
 ```
 Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-ManagedDeviceId <String>] [-ProcessName <String>]
- [-ProductName <String>] [-Publisher <String>] [-StartupImpactInMS <Int32>] [-PassThru] [-Confirm] [-WhatIf]
+ [-ProductName <String>] [-Publisher <String>] [-StartupImpactInMS <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -52,7 +54,7 @@ Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in 
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ The user experience analytics device startup process details.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +101,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 The user experience analytics device id.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 User experience analytics device startup process name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 The user experience analytics device startup process product name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 The User experience analytics device startup process publisher.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +191,7 @@ Accept wildcard characters: False
 User experience analytics device startup process impact in milliseconds.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,8 +206,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsDeviceStartupProcess
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -235,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -386,3 +388,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

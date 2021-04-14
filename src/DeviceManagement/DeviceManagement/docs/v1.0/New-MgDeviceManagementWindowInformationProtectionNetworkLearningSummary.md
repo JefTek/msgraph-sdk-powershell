@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowinformationprotectionnetworklearningsummary
 schema: 2.0.0
@@ -15,18 +15,20 @@ Create new navigation property to windowsInformationProtectionNetworkLearningSum
 ### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary [-AdditionalProperties <Hashtable>]
- [-DeviceCount <Int32>] [-Id <String>] [-Url <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DeviceCount <Int32>] [-Id <String>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Create new navigation property to windowsInformationProtectionNetworkLearningSum
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -50,7 +52,7 @@ Windows Information Protection Network learning Summary entity.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary
+Type: IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary
 Parameter Sets: Create1
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 Device Count
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -95,7 +97,7 @@ Accept wildcard characters: False
 Website url
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -110,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,4 +166,3 @@ BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary
   - `[Url <String>]`: Website url
 
 ## RELATED LINKS
-

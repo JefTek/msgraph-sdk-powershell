@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmicrosofttunnelhealththreshold
 schema: 2.0.0
@@ -16,21 +16,14 @@ Update the navigation property microsoftTunnelHealthThresholds in deviceManageme
 ```
 Update-MgDeviceManagementMicrosoftTunnelHealthThreshold -MicrosoftTunnelHealthThresholdId <String>
  [-AdditionalProperties <Hashtable>] [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>]
- [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-PassThru] [-Confirm] [-WhatIf]
+ [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementMicrosoftTunnelHealthThreshold -MicrosoftTunnelHealthThresholdId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,12 +31,21 @@ Update-MgDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceMan
 ```
 Update-MgDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>]
- [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-PassThru] [-Confirm] [-WhatIf]
+ [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property microsoftTunnelHealthThresholds in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update the navigation property microsoftTunnelHealthThresholds in deviceManageme
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Entity that represents the health thresholds of a health metric.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
+Type: IMicrosoftGraphMicrosoftTunnelHealthThreshold
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 The default threshold for being healthy
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 The default threshold for being unhealthy
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 The threshold for being healthy
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -158,8 +160,8 @@ Accept wildcard characters: False
 key: id of microsoftTunnelHealthThreshold
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -173,7 +175,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 The threshold for being unhealthy
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -369,3 +371,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

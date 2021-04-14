@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconditionstatement
 schema: 2.0.0
@@ -18,20 +18,13 @@ Update-MgDeviceManagementConditionStatement -ManagementConditionStatementId <Str
  [-AdditionalProperties <Hashtable>] [-ApplicablePlatforms <String[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-ETag <String>] [-Expression <Hashtable>] [-Id <String>]
  [-ManagementConditions <IMicrosoftGraphManagementCondition[]>] [-ModifiedDateTime <DateTime>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementConditionStatement -ManagementConditionStatementId <String>
- -BodyParameter <IMicrosoftGraphManagementConditionStatement> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementConditionStatement -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagementConditionStatement> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagementConditionStatement> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,11 +34,20 @@ Update-MgDeviceManagementConditionStatement -InputObject <IDeviceManagementIdent
  [-AdditionalProperties <Hashtable>] [-ApplicablePlatforms <String[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-ETag <String>] [-Expression <Hashtable>] [-Id <String>]
  [-ManagementConditions <IMicrosoftGraphManagementCondition[]>] [-ModifiedDateTime <DateTime>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementConditionStatement -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphManagementConditionStatement> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managementConditionStatements in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Update the navigation property managementConditionStatements in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ Accept wildcard characters: False
 The applicable platforms for this management condition statement.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +86,7 @@ A management condition statement is a group of management conditions that enable
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementConditionStatement
+Type: IMicrosoftGraphManagementConditionStatement
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -100,7 +102,7 @@ The time the management condition statement was created.
 Generated service side.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +117,7 @@ Accept wildcard characters: False
 The admin defined description of the management condition statement.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +132,7 @@ Accept wildcard characters: False
 The admin defined name of the management condition statement.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +148,7 @@ ETag of the management condition statement.
 Updated service side.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +165,7 @@ one of true or false, indicating that a management condition statement is activa
 A management condition expression may be composed of a combination of the expression variables and boolean-valued expression operators.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +180,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,8 +196,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -210,7 +212,7 @@ The management conditions associated to the management condition statement.
 To construct, see NOTES section for MANAGEMENTCONDITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition[]
+Type: IMicrosoftGraphManagementCondition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,8 +227,8 @@ Accept wildcard characters: False
 key: id of managementConditionStatement
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -241,7 +243,7 @@ The time the management condition statement was last modified.
 Updated service side.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +258,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -271,7 +273,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -287,7 +289,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -472,3 +474,4 @@ MANAGEMENTCONDITIONS <IMicrosoftGraphManagementCondition[]>: The management cond
 
 ## RELATED LINKS
 
+## RELATED LINKS

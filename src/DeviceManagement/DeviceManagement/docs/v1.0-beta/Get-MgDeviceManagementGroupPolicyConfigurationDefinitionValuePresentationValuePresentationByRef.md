@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvaluepresentationbyref
 schema: 2.0.0
@@ -28,13 +28,15 @@ Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePr
 ## DESCRIPTION
 Get ref of presentation from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupPolicyConfigurationId
 key: id of groupPolicyConfiguration
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 key: id of groupPolicyDefinitionValue
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 key: id of groupPolicyPresentationValue
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -80,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Type: IDeviceManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -220,3 +222,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

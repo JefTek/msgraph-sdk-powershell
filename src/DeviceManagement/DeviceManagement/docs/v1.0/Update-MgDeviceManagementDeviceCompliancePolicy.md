@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
@@ -18,25 +18,19 @@ Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <Strin
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]
- [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>]
- [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>] [-Version <Int32>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>]
+ [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>] [-Version <Int32>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -45,17 +39,25 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]
- [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>]
- [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>] [-Version <Int32>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>]
+ [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>] [-Version <Int32>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceCompliancePolicies in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -63,7 +65,7 @@ Update the navigation property deviceCompliancePolicies in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -79,7 +81,7 @@ The collection of assignments for this compliance policy.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyAssignment1[]
+Type: IMicrosoftGraphDeviceCompliancePolicyAssignment1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -97,7 +99,7 @@ Compliance policies are platform specific and individual per-platform compliance
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy1
+Type: IMicrosoftGraphDeviceCompliancePolicy1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 DateTime the object was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 Admin provided description of the Device Configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -142,8 +144,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -158,7 +160,7 @@ Compliance Setting State Device Summary
 To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary[]
+Type: IMicrosoftGraphSettingStateDeviceSummary[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -174,7 +176,7 @@ List of DeviceComplianceDeviceStatus.
 To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceStatus1[]
+Type: IMicrosoftGraphDeviceComplianceDeviceStatus1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -190,7 +192,7 @@ deviceComplianceDeviceOverview
 To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceOverview1
+Type: IMicrosoftGraphDeviceComplianceDeviceOverview1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -205,7 +207,7 @@ Accept wildcard characters: False
 Admin provided name of the device configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -220,7 +222,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -236,8 +238,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -251,7 +253,7 @@ Accept wildcard characters: False
 DateTime the object was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -266,7 +268,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -282,7 +284,7 @@ The list of scheduled action for this rule
 To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]
+Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -298,7 +300,7 @@ List of DeviceComplianceUserStatus.
 To construct, see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserStatus[]
+Type: IMicrosoftGraphDeviceComplianceUserStatus[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -314,7 +316,7 @@ deviceComplianceUserOverview
 To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserOverview1
+Type: IMicrosoftGraphDeviceComplianceUserOverview1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -329,7 +331,7 @@ Accept wildcard characters: False
 Version of the device configuration.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -344,7 +346,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -360,7 +362,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -638,3 +640,4 @@ USERSTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceUserOverview1>: deviceComplia
 
 ## RELATED LINKS
 
+## RELATED LINKS

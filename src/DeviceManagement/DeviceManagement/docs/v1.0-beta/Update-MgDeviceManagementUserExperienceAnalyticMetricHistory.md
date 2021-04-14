@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticmetrichistory
 schema: 2.0.0
@@ -17,20 +17,13 @@ Update the navigation property userExperienceAnalyticsMetricHistory in deviceMan
 Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -UserExperienceAnalyticsMetricHistoryId <String>
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>]
  [-MetricType <String>] [-UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -UserExperienceAnalyticsMetricHistoryId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetricHistory> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetricHistory> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetricHistory> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,11 +32,20 @@ Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDevi
 Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>]
  [-MetricType <String>] [-UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetricHistory> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsMetricHistory in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update the navigation property userExperienceAnalyticsMetricHistory in deviceMan
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ The user experience analytics metric history.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
+Type: IMicrosoftGraphUserExperienceAnalyticsMetricHistory
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 The user experience analytics device id.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +130,7 @@ Accept wildcard characters: False
 The user experience analytics metric date time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 The user experience analytics metric type.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -174,7 +176,7 @@ The user experience analytics metric contains the score and units of a metric of
 To construct, see NOTES section for USEREXPERIENCEANALYTICSMETRIC properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
+Type: IMicrosoftGraphUserExperienceAnalyticsMetric
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,8 +191,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsMetricHistory
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -380,3 +382,4 @@ USEREXPERIENCEANALYTICSMETRIC <IMicrosoftGraphUserExperienceAnalyticsMetric>: Th
 
 ## RELATED LINKS
 
+## RELATED LINKS

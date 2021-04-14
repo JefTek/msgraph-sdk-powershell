@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcondition
 schema: 2.0.0
@@ -17,17 +17,19 @@ Create new navigation property to managementConditions for deviceManagement
 New-MgDeviceManagementCondition [-AdditionalProperties <Hashtable>] [-ApplicablePlatforms <String[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-ETag <String>] [-Id <String>]
  [-ManagementConditionStatements <IMicrosoftGraphManagementConditionStatement[]>]
- [-ModifiedDateTime <DateTime>] [-UniqueName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-UniqueName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementCondition -BodyParameter <IMicrosoftGraphManagementCondition> [-Confirm] [-WhatIf]
+New-MgDeviceManagementCondition -BodyParameter <IMicrosoftGraphManagementCondition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managementConditions for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Create new navigation property to managementConditions for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 The applicable platforms for this management condition.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ Management conditions are events that can be triggered dynamically such as geo-f
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition
+Type: IMicrosoftGraphManagementCondition
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +84,7 @@ The time the management condition was created.
 Generated service side.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 The admin defined description of the management condition.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 The admin defined name of the management condition.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +130,7 @@ ETag of the management condition.
 Updated service side.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +161,7 @@ The management condition statements associated to the management condition.
 To construct, see NOTES section for MANAGEMENTCONDITIONSTATEMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementConditionStatement[]
+Type: IMicrosoftGraphManagementConditionStatement[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +177,7 @@ The time the management condition was last modified.
 Updated service side.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +193,7 @@ Unique name for the management condition.
 Used in management condition expressions.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +208,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +224,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -297,4 +299,3 @@ MANAGEMENTCONDITIONSTATEMENTS <IMicrosoftGraphManagementConditionStatement[]>: T
   - `[ModifiedDateTime <DateTime?>]`: The time the management condition statement was last modified. Updated service side.
 
 ## RELATED LINKS
-
