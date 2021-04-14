@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgorganization
 schema: 2.0.0
@@ -14,17 +14,19 @@ Invoke action restore
 
 ### Restore (Default)
 ```
-Restore-MgOrganization -OrganizationId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+Restore-MgOrganization -OrganizationId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf]
+Restore-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action restore
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: RestoreViaIdentity
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of organization
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -79,7 +81,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -135,4 +137,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemembergroup
 schema: 2.0.0
@@ -15,31 +15,33 @@ Invoke action getMemberGroups
 ### GetExpanded1 (Default)
 ```
 Get-MgDirectoryRoleMemberGroup -DirectoryRoleId <String> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgDirectoryRoleMemberGroup -DirectoryRoleId <String>
  -BodyParameter <IPaths9Kz3QjDirectoryrolesDirectoryroleIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded1
+```
+Get-MgDirectoryRoleMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
 Get-MgDirectoryRoleMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths9Kz3QjDirectoryrolesDirectoryroleIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded1
-```
-Get-MgDirectoryRoleMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getMemberGroups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Invoke action getMemberGroups
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths9Kz3QjDirectoryrolesDirectoryroleIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths9Kz3QjDirectoryrolesDirectoryroleIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -78,8 +80,8 @@ Accept wildcard characters: False
 key: id of directoryRole
 
 ```yaml
-Type: System.String
-Parameter Sets: Get1, GetExpanded1
+Type: String
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -94,8 +96,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentityExpanded1
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -109,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
@@ -124,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -140,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -202,4 +204,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

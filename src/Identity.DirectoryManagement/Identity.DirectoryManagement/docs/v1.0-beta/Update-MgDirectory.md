@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
 schema: 2.0.0
@@ -18,18 +18,20 @@ Update-MgDirectory [-AdditionalProperties <Hashtable>]
  [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
  [-FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy[]>] [-Id <String>]
- [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update directory
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Update directory
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +55,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit[]
+Type: IMicrosoftGraphAdministrativeUnit[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ directory
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectory
+Type: IMicrosoftGraphDirectory
 Parameter Sets: Update
 Aliases:
 
@@ -87,7 +89,7 @@ Nullable.
 To construct, see NOTES section for DELETEDITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -103,7 +105,7 @@ Nullable.
 To construct, see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy[]
+Type: IMicrosoftGraphFeatureRolloutPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +120,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +135,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -149,7 +151,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedEmailDomain[]
+Type: IMicrosoftGraphSharedEmailDomain[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +182,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,4 +288,3 @@ SHAREDEMAILDOMAINS <IMicrosoftGraphSharedEmailDomain[]>: .
   - `[ProvisioningStatus <String>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorysettingtemplate
 schema: 2.0.0
@@ -16,17 +16,19 @@ Add new entity to directorySettingTemplates
 ```
 New-MgDirectorySettingTemplate [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectorySettingTemplate -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-Confirm] [-WhatIf]
+New-MgDirectorySettingTemplate -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to directorySettingTemplates
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Add new entity to directorySettingTemplates
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ The directoryObject type is the base type for many other directory entity types.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
+Type: IMicrosoftGraphDirectorySettingTemplate
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +84,7 @@ Description of the template.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +100,7 @@ Display name of the template.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +132,7 @@ Read-only.
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingTemplateValue[]
+Type: IMicrosoftGraphSettingTemplateValue[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,4 +213,3 @@ VALUES <IMicrosoftGraphSettingTemplateValue[]>: Collection of settingTemplateVal
   - `[Type <String>]`: Type of the setting. Read-only.
 
 ## RELATED LINKS
-

@@ -77,17 +77,17 @@ Invoke action getMemberGroups
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
 
-### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
-Get memberOf from contacts
+### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
+Invoke action getMemberObjects
 
-### [Get-MgContactMemberOfByRef](Get-MgContactMemberOfByRef.md)
-Get ref of memberOf from contacts
+### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
+Invoke action getMemberObjects
 
-### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
-Get transitiveMemberOf from contacts
+### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
+Invoke action getMemberObjects
 
-### [Get-MgContactTransitiveMemberOfByRef](Get-MgContactTransitiveMemberOfByRef.md)
-Get ref of transitiveMemberOf from contacts
+### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgContract](Get-MgContract.md)
 Get entity from contracts by key
@@ -122,11 +122,11 @@ Invoke action getMemberGroups
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
 
-### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
-Get memberOf from devices
+### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
+Invoke action getMemberObjects
 
-### [Get-MgDeviceMemberOfByRef](Get-MgDeviceMemberOfByRef.md)
-Get ref of memberOf from devices
+### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
 Get registeredOwners from devices
@@ -140,11 +140,11 @@ Get registeredUsers from devices
 ### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Get ref of registeredUsers from devices
 
-### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
-Get transitiveMemberOf from devices
+### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
+Get ref of registeredUsers from devices
 
-### [Get-MgDeviceTransitiveMemberOfByRef](Get-MgDeviceTransitiveMemberOfByRef.md)
-Get ref of transitiveMemberOf from devices
+### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
+Get ref of registeredUsers from devices
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
@@ -251,8 +251,8 @@ Invoke action getMemberObjects
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get entity from subscribedSkus by key
 
-### [Get-MgUserScopedRoleMemberOf](Get-MgUserScopedRoleMemberOf.md)
-Get scopedRoleMemberOf from users
+### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
+Get entity from subscribedSkus by key
 
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
 Invoke action forceDelete
@@ -263,11 +263,11 @@ Add new entity to contacts
 ### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
 Create new navigation property ref to directReports for contacts
 
-### [New-MgContactMemberOfByRef](New-MgContactMemberOfByRef.md)
-Create new navigation property ref to memberOf for contacts
+### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
+Create new navigation property ref to directReports for contacts
 
-### [New-MgContactTransitiveMemberOfByRef](New-MgContactTransitiveMemberOfByRef.md)
-Create new navigation property ref to transitiveMemberOf for contacts
+### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
+Create new navigation property ref to directReports for contacts
 
 ### [New-MgContract](New-MgContract.md)
 Add new entity to contracts
@@ -278,8 +278,8 @@ Add new entity to devices
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
 
-### [New-MgDeviceMemberOfByRef](New-MgDeviceMemberOfByRef.md)
-Create new navigation property ref to memberOf for devices
+### [New-MgDeviceExtension](New-MgDeviceExtension.md)
+Create new navigation property to extensions for devices
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Create new navigation property ref to registeredOwners for devices
@@ -287,8 +287,8 @@ Create new navigation property ref to registeredOwners for devices
 ### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
 Create new navigation property ref to registeredUsers for devices
 
-### [New-MgDeviceTransitiveMemberOfByRef](New-MgDeviceTransitiveMemberOfByRef.md)
-Create new navigation property ref to transitiveMemberOf for devices
+### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
+Create new navigation property ref to registeredUsers for devices
 
 ### [New-MgDirectoryAdministrativeUnit](New-MgDirectoryAdministrativeUnit.md)
 Create new navigation property to administrativeUnits for directory
@@ -338,8 +338,8 @@ Create new navigation property to extensions for organization
 ### [New-MgSubscribedSku](New-MgSubscribedSku.md)
 Add new entity to subscribedSkus
 
-### [New-MgUserScopedRoleMemberOf](New-MgUserScopedRoleMemberOf.md)
-Create new navigation property to scopedRoleMemberOf for users
+### [New-MgSubscribedSku](New-MgSubscribedSku.md)
+Add new entity to subscribedSkus
 
 ### [Remove-MgContact](Remove-MgContact.md)
 Delete entity from contacts
@@ -398,8 +398,8 @@ Delete navigation property extensions for organization
 ### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
 Delete entity from subscribedSkus
 
-### [Remove-MgUserScopedRoleMemberOf](Remove-MgUserScopedRoleMemberOf.md)
-Delete navigation property scopedRoleMemberOf for users
+### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
+Delete entity from subscribedSkus
 
 ### [Restore-MgContact](Restore-MgContact.md)
 Invoke action restore
@@ -503,6 +503,6 @@ Update the navigation property extensions in organization
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
 Update entity in subscribedSkus
 
-### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
-Update the navigation property scopedRoleMemberOf in users
+### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
+Update entity in subscribedSkus
 
