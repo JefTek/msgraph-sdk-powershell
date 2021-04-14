@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/export-mgdevicemanagementdeponboardingsettingenrollmentprofilemobileconfig
 schema: 2.0.0
@@ -27,13 +27,15 @@ Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig
 ## DESCRIPTION
 Invoke function exportMobileConfig
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Export
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of enrollmentProfile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Export
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+Type: IDeviceManagementFunctionsIdentity
 Parameter Sets: ExportViaIdentity
 Aliases:
 
@@ -128,4 +130,3 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Userid <String>]`: Usage: userid={userid}
 
 ## RELATED LINKS
-

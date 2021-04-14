@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/compare-mgdevicemanagementtemplatemigratableto
 schema: 2.0.0
@@ -27,13 +27,15 @@ Compare-MgDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementFu
 ## DESCRIPTION
 Invoke function compare
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId
 key: id of deviceManagementTemplate
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Compare
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of deviceManagementTemplate
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Compare
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+Type: IDeviceManagementFunctionsIdentity
 Parameter Sets: CompareViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Usage: templateId={templateId}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Compare
 Aliases:
 
@@ -143,4 +145,3 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Userid <String>]`: Usage: userid={userid}
 
 ## RELATED LINKS
-

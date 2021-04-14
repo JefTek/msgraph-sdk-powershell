@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementrolescopetagbyid
 schema: 2.0.0
@@ -19,13 +19,15 @@ Get-MgDeviceManagementRoleScopeTagById -Ids <String> [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getRoleScopeTagsByIds
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Ids
 Usage: ids={ids}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -50,4 +52,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-

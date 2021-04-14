@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementcomanagementeligibledevicesummary
 schema: 2.0.0
@@ -19,6 +19,8 @@ Get-MgDeviceManagementComanagementEligibleDeviceSummary [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getComanagementEligibleDevicesSummary
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### CommonParameters
@@ -35,4 +37,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-
