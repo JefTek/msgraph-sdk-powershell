@@ -38,11 +38,11 @@ Get manager from users
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 Get ref of manager from users
 
-### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
-Get memberOf from users
+### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
+Get ref of manager from users
 
-### [Get-MgUserMemberOfByRef](Get-MgUserMemberOfByRef.md)
-Get ref of memberOf from users
+### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
+Get ref of manager from users
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
 Get oauth2PermissionGrants from users
@@ -98,11 +98,11 @@ Get extensions from users
 ### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
 Get linkedResources from users
 
-### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
-Get transitiveMemberOf from users
+### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
+Get linkedResources from users
 
-### [Get-MgUserTransitiveMemberOfByRef](Get-MgUserTransitiveMemberOfByRef.md)
-Get ref of transitiveMemberOf from users
+### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
+Get linkedResources from users
 
 ### [New-MgUser](New-MgUser.md)
 Add new entity to users
@@ -119,8 +119,8 @@ Create new navigation property to extensions for users
 ### [New-MgUserLicenseDetail](New-MgUserLicenseDetail.md)
 Create new navigation property to licenseDetails for users
 
-### [New-MgUserMemberOfByRef](New-MgUserMemberOfByRef.md)
-Create new navigation property ref to memberOf for users
+### [New-MgUserLicenseDetail](New-MgUserLicenseDetail.md)
+Create new navigation property to licenseDetails for users
 
 ### [New-MgUserOauth2PermissionGrantByRef](New-MgUserOauth2PermissionGrantByRef.md)
 Create new navigation property ref to oauth2PermissionGrants for users
@@ -155,8 +155,8 @@ Create new navigation property to extensions for users
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 Create new navigation property to linkedResources for users
 
-### [New-MgUserTransitiveMemberOfByRef](New-MgUserTransitiveMemberOfByRef.md)
-Create new navigation property ref to transitiveMemberOf for users
+### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
+Create new navigation property to linkedResources for users
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete entity from users
