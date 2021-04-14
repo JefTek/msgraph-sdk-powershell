@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgcalendarusereventcalendarallowedcalendarsharingroles
 schema: 2.0.0
@@ -14,8 +14,8 @@ Invoke function allowedCalendarSharingRoles
 
 ### Calendar (Default)
 ```
-Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles -EventId <String> -User <String>
- -UserId <String> [<CommonParameters>]
+Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles -EventId <String> -User <String> -UserId <String>
+ [<CommonParameters>]
 ```
 
 ### CalendarViaIdentity
@@ -27,13 +27,15 @@ Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles -InputObject <IUse
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId
 key: id of event
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: CalendarViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Usage: User={User}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar
 Aliases:
 
@@ -143,4 +145,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

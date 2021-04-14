@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsightsharedresourcemicrosoftgraphworkbookrange
 schema: 2.0.0
@@ -21,13 +21,7 @@ Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange -SharedInsigh
 ### Range1
 ```
 Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange -SharedInsightId <String> -UserId <String>
- -ValuesOnly [<CommonParameters>]
-```
-
-### RangeViaIdentity
-```
-Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange -InputObject <IUsersFunctionsIdentity>
- [<CommonParameters>]
+ [-ValuesOnly] [<CommonParameters>]
 ```
 
 ### RangeViaIdentity1
@@ -36,8 +30,16 @@ Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange -InputObject 
  [<CommonParameters>]
 ```
 
+### RangeViaIdentity
+```
+Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange -InputObject <IUsersFunctionsIdentity>
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Invoke function usedRange
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -46,8 +48,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: RangeViaIdentity, RangeViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: RangeViaIdentity1, RangeViaIdentity
 Aliases:
 
 Required: True
@@ -61,7 +63,7 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Range, Range1
 Aliases:
 
@@ -76,7 +78,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Range, Range1
 Aliases:
 
@@ -91,7 +93,7 @@ Accept wildcard characters: False
 Usage: valuesOnly={valuesOnly}
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: Range1
 Aliases:
 
@@ -155,4 +157,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

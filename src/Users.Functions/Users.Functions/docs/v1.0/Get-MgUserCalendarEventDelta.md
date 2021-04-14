@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercalendareventdelta
 schema: 2.0.0
@@ -19,12 +19,7 @@ Get-MgUserCalendarEventDelta -UserId <String> [<CommonParameters>]
 
 ### Delta2
 ```
-Get-MgUserCalendarEventDelta -CalendarId <String> -UserId <String> [<CommonParameters>]
-```
-
-### DeltaViaIdentity1
-```
-Get-MgUserCalendarEventDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Get-MgUserCalendarEventDelta -UserId <String> -CalendarId <String> [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity2
@@ -32,8 +27,15 @@ Get-MgUserCalendarEventDelta -InputObject <IUsersFunctionsIdentity> [<CommonPara
 Get-MgUserCalendarEventDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
+### DeltaViaIdentity1
+```
+Get-MgUserCalendarEventDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -41,7 +43,7 @@ Invoke function delta
 key: id of calendar
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2
 Aliases:
 
@@ -57,8 +59,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity2
+Type: IUsersFunctionsIdentity
+Parameter Sets: DeltaViaIdentity2, DeltaViaIdentity1
 Aliases:
 
 Required: True
@@ -72,7 +74,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1, Delta2
 Aliases:
 
@@ -136,4 +138,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage
 schema: 2.0.0
@@ -25,6 +25,8 @@ Invoke-MgSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [<C
 ## DESCRIPTION
 Invoke function supportedLanguages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -32,7 +34,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: SupportedViaIdentity
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Supported
 Aliases:
 
@@ -111,4 +113,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

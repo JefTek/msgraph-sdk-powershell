@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure
 schema: 2.0.0
@@ -22,18 +22,20 @@ Get-MgUserManagedDeviceWithAppFailure -UserId <String> [<CommonParameters>]
 Get-MgUserManagedDeviceWithAppFailure -UserId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getManagedDevicesWithAppFailures
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -42,8 +44,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -57,7 +59,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -123,4 +125,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

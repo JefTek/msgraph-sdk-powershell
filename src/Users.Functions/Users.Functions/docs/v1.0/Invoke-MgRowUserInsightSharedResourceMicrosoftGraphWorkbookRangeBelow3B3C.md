@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrowuserinsightsharedresourcemicrosoftgraphworkbookrangebelow3b3c
 schema: 2.0.0
@@ -27,6 +27,8 @@ Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelow3B3C
 ## DESCRIPTION
 Invoke function rowsBelow
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: RowsViaIdentity
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Rows
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Rows
 Aliases:
 
@@ -128,4 +130,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

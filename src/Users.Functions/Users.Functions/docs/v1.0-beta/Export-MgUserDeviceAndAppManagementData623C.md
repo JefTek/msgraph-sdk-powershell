@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata623c
 schema: 2.0.0
@@ -27,6 +27,8 @@ Export-MgUserDeviceAndAppManagementData623C -InputObject <IUsersFunctionsIdentit
 ## DESCRIPTION
 Invoke function exportDeviceAndAppManagementData
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: ExportViaIdentity
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -75,26 +77,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Usage: skip={skip}
-
-```yaml
-Type: System.Int32
-Parameter Sets: Export
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Top
 Usage: top={top}
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Export
 Aliases: Limit
 
@@ -109,7 +96,22 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
+Parameter Sets: Export
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Usage: skip={skip}
+
+```yaml
+Type: Int32
 Parameter Sets: Export
 Aliases:
 
@@ -173,4 +175,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

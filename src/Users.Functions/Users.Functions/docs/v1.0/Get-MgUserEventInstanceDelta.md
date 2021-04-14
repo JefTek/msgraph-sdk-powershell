@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusereventinstancedelta
 schema: 2.0.0
@@ -25,13 +25,15 @@ Get-MgUserEventInstanceDelta -InputObject <IUsersFunctionsIdentity> [<CommonPara
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EventId
 key: id of event
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: DeltaViaIdentity1
 Aliases:
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -126,4 +128,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

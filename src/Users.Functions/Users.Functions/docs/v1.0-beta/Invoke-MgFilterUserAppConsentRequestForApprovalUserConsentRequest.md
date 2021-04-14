@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgfilteruserappconsentrequestforapprovaluserconsentrequest
 schema: 2.0.0
@@ -27,13 +27,15 @@ Invoke-MgFilterUserAppConsentRequestForApprovalUserConsentRequest -InputObject <
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId
 key: id of appConsentRequest
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: FilterViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Usage: on={on}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -143,4 +145,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsightsharedlastsharedmethodmicrosoftgraphworkbookrangeresized
 schema: 2.0.0
@@ -27,13 +27,15 @@ Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeResize
 ## DESCRIPTION
 Invoke function resizedRange
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeltaColumns
 Usage: deltaColumns={deltaColumns}
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Range
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 Usage: deltaRows={deltaRows}
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Range
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: RangeViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Range
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Range
 Aliases:
 
@@ -158,4 +160,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-

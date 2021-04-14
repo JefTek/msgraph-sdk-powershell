@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgcalendarusercalendarallowedcalendarsharingroles
 schema: 2.0.0
@@ -19,13 +19,7 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId 
 
 ### Calendar1
 ```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -CalendarId <String> -User <String> -UserId <String>
- [<CommonParameters>]
-```
-
-### CalendarViaIdentity
-```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
+Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> -CalendarId <String>
  [<CommonParameters>]
 ```
 
@@ -35,8 +29,16 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFun
  [<CommonParameters>]
 ```
 
+### CalendarViaIdentity
+```
+Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -44,7 +46,7 @@ Invoke function allowedCalendarSharingRoles
 key: id of calendar
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -60,8 +62,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity, CalendarViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: CalendarViaIdentity1, CalendarViaIdentity
 Aliases:
 
 Required: True
@@ -75,7 +77,7 @@ Accept wildcard characters: False
 Usage: User={User}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar, Calendar1
 Aliases:
 
@@ -90,7 +92,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar, Calendar1
 Aliases:
 
@@ -154,4 +156,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-
