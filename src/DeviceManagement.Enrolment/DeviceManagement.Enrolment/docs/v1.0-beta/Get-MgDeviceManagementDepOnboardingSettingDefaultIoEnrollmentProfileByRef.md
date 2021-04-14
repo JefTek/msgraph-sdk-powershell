@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementdeponboardingsettingdefaultioenrollmentprofilebyref
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef
 ## DESCRIPTION
 Get ref of defaultIosEnrollmentProfile from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
 key: id of depOnboardingSetting
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+Type: IDeviceManagementEnrolmentIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -123,4 +125,3 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS
-

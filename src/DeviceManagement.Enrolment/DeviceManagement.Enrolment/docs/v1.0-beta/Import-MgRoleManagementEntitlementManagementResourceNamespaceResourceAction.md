@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/import-mgrolemanagemententitlementmanagementresourcenamespaceresourceaction
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action importResourceActions
 ```
 Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceNamespaceId <String> [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OverwriteResourceNamespace] [-Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Import
@@ -24,7 +24,14 @@ Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IPathsJozeshRolemanagementEntitlementmanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ImportViaIdentityExpanded
+```
+Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
+ -InputObject <IDeviceManagementEnrolmentIdentity> [-AdditionalProperties <Hashtable>] [-Format <String>]
+ [-OverwriteResourceNamespace] [-Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
@@ -32,18 +39,13 @@ Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -InputObject <IDeviceManagementEnrolmentIdentity>
  -BodyParameter <IPathsJozeshRolemanagementEntitlementmanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ImportViaIdentityExpanded
-```
-Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
- -InputObject <IDeviceManagementEnrolmentIdentity> [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action importResourceActions
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Invoke action importResourceActions
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsJozeshRolemanagementEntitlementmanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsJozeshRolemanagementEntitlementmanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Import, ImportViaIdentity
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -98,8 +100,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: ImportViaIdentity, ImportViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: ImportViaIdentityExpanded, ImportViaIdentity
 Aliases:
 
 Required: True
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -128,8 +130,8 @@ Accept wildcard characters: False
 key: id of unifiedRbacResourceNamespace
 
 ```yaml
-Type: System.String
-Parameter Sets: Import, ImportExpanded
+Type: String
+Parameter Sets: ImportExpanded, Import
 Aliases:
 
 Required: True
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -256,4 +258,3 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS
-

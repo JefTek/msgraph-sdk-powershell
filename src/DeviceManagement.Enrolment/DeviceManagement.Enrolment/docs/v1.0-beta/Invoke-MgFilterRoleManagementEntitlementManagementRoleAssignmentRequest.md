@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgfilterrolemanagemententitlementmanagementroleassignmentrequest
 schema: 2.0.0
@@ -26,6 +26,8 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentRequest
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -33,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+Type: IDeviceManagementEnrolmentIdentity
 Parameter Sets: FilterViaIdentity
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 Usage: on={on}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -122,4 +124,3 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS
-

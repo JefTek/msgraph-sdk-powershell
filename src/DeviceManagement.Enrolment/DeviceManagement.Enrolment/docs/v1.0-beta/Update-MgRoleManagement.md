@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
 schema: 2.0.0
@@ -16,18 +16,20 @@ Update roleManagement
 ```
 Update-MgRoleManagement [-AdditionalProperties <Hashtable>]
  [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
- [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-PassThru] [-Confirm] [-WhatIf]
+ [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement1> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Update roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ roleManagement
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement1
+Type: IMicrosoftGraphRoleManagement1
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +69,7 @@ rbacApplicationMultiple
 To construct, see NOTES section for DEVICEMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
+Type: IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +85,7 @@ rbacApplication
 To construct, see NOTES section for DIRECTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
+Type: IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ rbacApplication
 To construct, see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
+Type: IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -891,3 +893,4 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
 
 ## RELATED LINKS
 
+## RELATED LINKS

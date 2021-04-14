@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementdirectory
 schema: 2.0.0
@@ -18,24 +18,26 @@ Update-MgRoleManagementDirectory [-AdditionalProperties <Hashtable>] [-Id <Strin
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]
  [-RoleAssignmentRequests <IMicrosoftGraphUnifiedRoleAssignmentRequest[]>]
- [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
  [-RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]
+ [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]
  [-RoleEligibilityRequests <IMicrosoftGraphUnifiedRoleEligibilityRequest[]>]
  [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]
- [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplication> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgRoleManagementDirectory -BodyParameter <IMicrosoftGraphRbacApplication> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property directory in roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -43,7 +45,7 @@ Update the navigation property directory in roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -59,7 +61,7 @@ rbacApplication
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
+Type: IMicrosoftGraphRbacApplication
 Parameter Sets: Update
 Aliases:
 
@@ -74,7 +76,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -89,7 +91,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +107,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace[]
+Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -121,7 +123,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTAPPROVALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval[]
+Type: IMicrosoftGraphApproval[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -137,7 +139,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentRequest[]
+Type: IMicrosoftGraphUnifiedRoleAssignmentRequest[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -153,7 +155,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment[]
+Type: IMicrosoftGraphUnifiedRoleAssignment[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -169,7 +171,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]
+Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -185,7 +187,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentSchedule[]
+Type: IMicrosoftGraphUnifiedRoleAssignmentSchedule[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -201,7 +203,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition[]
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -217,7 +219,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEELIGIBILITYREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityRequest[]
+Type: IMicrosoftGraphUnifiedRoleEligibilityRequest[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -233,7 +235,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULEINSTANCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]
+Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -249,7 +251,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEELIGIBILITYSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
+Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -264,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -280,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1051,3 +1053,4 @@ ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>: .
 
 ## RELATED LINKS
 
+## RELATED LINKS
