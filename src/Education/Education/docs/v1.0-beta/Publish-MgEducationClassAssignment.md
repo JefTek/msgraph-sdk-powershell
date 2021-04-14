@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/publish-mgeducationclassassignment
 schema: 2.0.0
@@ -14,17 +14,19 @@ Invoke action publish
 
 ### Publish (Default)
 ```
-Publish-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Publish-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### PublishViaIdentity
 ```
-Publish-MgEducationClassAssignment -InputObject <IEducationIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+Publish-MgEducationClassAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action publish
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -32,7 +34,7 @@ Invoke action publish
 key: id of educationAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Publish
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 key: id of educationClass
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Publish
 Aliases:
 
@@ -63,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: PublishViaIdentity
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -94,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -140,4 +142,3 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
-

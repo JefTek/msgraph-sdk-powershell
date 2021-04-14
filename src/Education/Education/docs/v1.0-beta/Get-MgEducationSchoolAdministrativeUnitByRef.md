@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunitbyref
 schema: 2.0.0
@@ -25,13 +25,15 @@ Get-MgEducationSchoolAdministrativeUnitByRef -InputObject <IEducationIdentity> [
 ## DESCRIPTION
 Get ref of administrativeUnit from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationSchoolId
 key: id of educationSchool
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -93,4 +95,3 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeuserbyref
 schema: 2.0.0
@@ -19,6 +19,8 @@ Get-MgEducationMeUserByRef [<CommonParameters>]
 ## DESCRIPTION
 Get ref of user from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### CommonParameters
@@ -35,4 +37,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-

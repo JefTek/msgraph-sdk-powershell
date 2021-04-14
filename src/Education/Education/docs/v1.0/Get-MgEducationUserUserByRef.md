@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationuseruserbyref
 schema: 2.0.0
@@ -25,13 +25,15 @@ Get-MgEducationUserUserByRef -InputObject <IEducationIdentity> [<CommonParameter
 ## DESCRIPTION
 Get ref of user from education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationUserId
 key: id of educationUser
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -93,4 +95,3 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
-
