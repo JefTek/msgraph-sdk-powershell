@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgofficeclientconfiguration
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action assign
 ### AssignExpanded (Default)
 ```
 Set-MgOfficeClientConfiguration -OfficeClientConfigurationId <String> [-AdditionalProperties <Hashtable>]
- [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-Confirm] [-WhatIf]
+ [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,26 +23,28 @@ Set-MgOfficeClientConfiguration -OfficeClientConfigurationId <String> [-Addition
 ```
 Set-MgOfficeClientConfiguration -OfficeClientConfigurationId <String>
  -BodyParameter <IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AssignViaIdentity
-```
-Set-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
 ```
 Set-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>]
- [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-Confirm] [-WhatIf]
+ [-OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -50,7 +52,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -82,8 +84,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -97,8 +99,8 @@ Accept wildcard characters: False
 key: id of officeClientConfiguration
 
 ```yaml
-Type: System.String
-Parameter Sets: Assign, AssignExpanded
+Type: String
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OFFICECONFIGURATIONASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfigurationAssignment[]
+Type: IMicrosoftGraphOfficeClientConfigurationAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -128,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -258,4 +260,3 @@ OFFICECONFIGURATIONASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignme
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-

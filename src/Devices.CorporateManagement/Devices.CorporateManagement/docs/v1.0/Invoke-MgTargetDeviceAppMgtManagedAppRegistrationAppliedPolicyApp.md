@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmgtmanagedappregistrationappliedpolicyapp
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action targetApps
 ```
 Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp -ManagedAppPolicyId <String>
  -ManagedAppRegistrationId <String> [-AdditionalProperties <Hashtable>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target1
@@ -24,7 +24,14 @@ Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp -ManagedAppPol
 Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp -ManagedAppPolicyId <String>
  -ManagedAppRegistrationId <String>
  -BodyParameter <IPathsVf2Dh9DeviceappmanagementManagedappregistrationsManagedappregistrationIdAppliedpoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### TargetViaIdentityExpanded1
+```
+Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity1
@@ -32,18 +39,13 @@ Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp -ManagedAppPol
 Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsVf2Dh9DeviceappmanagementManagedappregistrationsManagedappregistrationIdAppliedpoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### TargetViaIdentityExpanded1
-```
-Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action targetApps
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Invoke action targetApps
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp[]
+Type: IMicrosoftGraphManagedMobileApp[]
 Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsVf2Dh9DeviceappmanagementManagedappregistrationsManagedappregistrationIdAppliedpoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsVf2Dh9DeviceappmanagementManagedappregistrationsManagedappregistrationIdAppliedpoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Target1, TargetViaIdentity1
 Aliases:
 
@@ -99,8 +101,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: TargetViaIdentity1, TargetViaIdentityExpanded1
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: TargetViaIdentityExpanded1, TargetViaIdentity1
 Aliases:
 
 Required: True
@@ -114,8 +116,8 @@ Accept wildcard characters: False
 key: id of managedAppPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Target1, TargetExpanded1
+Type: String
+Parameter Sets: TargetExpanded1, Target1
 Aliases:
 
 Required: True
@@ -129,8 +131,8 @@ Accept wildcard characters: False
 key: id of managedAppRegistration
 
 ```yaml
-Type: System.String
-Parameter Sets: Target1, TargetExpanded1
+Type: String
+Parameter Sets: TargetExpanded1, Target1
 Aliases:
 
 Required: True
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -291,4 +293,3 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-

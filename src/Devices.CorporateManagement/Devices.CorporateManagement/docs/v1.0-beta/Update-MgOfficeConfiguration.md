@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgofficeconfiguration
 schema: 2.0.0
@@ -17,18 +17,20 @@ Update officeConfiguration
 Update-MgOfficeConfiguration [-AdditionalProperties <Hashtable>]
  [-ClientConfigurations <IMicrosoftGraphOfficeClientConfiguration[]>]
  [-TenantCheckinStatuses <IMicrosoftGraphOfficeClientCheckinStatus[]>]
- [-TenantUserCheckinSummary <IMicrosoftGraphOfficeUserCheckinSummary>] [-PassThru] [-Confirm] [-WhatIf]
+ [-TenantUserCheckinSummary <IMicrosoftGraphOfficeUserCheckinSummary>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgOfficeConfiguration -BodyParameter <IMicrosoftGraphOfficeConfiguration> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgOfficeConfiguration -BodyParameter <IMicrosoftGraphOfficeConfiguration> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update officeConfiguration
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -36,7 +38,7 @@ Update officeConfiguration
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ officeConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeConfiguration
+Type: IMicrosoftGraphOfficeConfiguration
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +70,7 @@ List of office Client configuration.
 To construct, see NOTES section for CLIENTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfiguration[]
+Type: IMicrosoftGraphOfficeClientConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -99,7 +101,7 @@ List of office Client check-in status.
 To construct, see NOTES section for TENANTCHECKINSTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientCheckinStatus[]
+Type: IMicrosoftGraphOfficeClientCheckinStatus[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -115,7 +117,7 @@ officeUserCheckinSummary
 To construct, see NOTES section for TENANTUSERCHECKINSUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeUserCheckinSummary
+Type: IMicrosoftGraphOfficeUserCheckinSummary
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,7 +132,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -146,7 +148,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,4 +252,3 @@ TENANTUSERCHECKINSUMMARY <IMicrosoftGraphOfficeUserCheckinSummary>: officeUserCh
   - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.
 
 ## RELATED LINKS
-

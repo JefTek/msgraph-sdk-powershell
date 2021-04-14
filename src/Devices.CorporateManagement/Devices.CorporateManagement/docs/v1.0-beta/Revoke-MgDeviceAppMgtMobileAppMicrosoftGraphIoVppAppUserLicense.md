@@ -1,79 +1,65 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/revoke-mgdeviceappmgtmobileappmicrosoftgraphiovppappuserlicense
 schema: 2.0.0
 ---
 
-# Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense
+# Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Invoke action revokeUserLicense
+Delete navigation property appLogCollectionRequests for users
 
 ## SYNTAX
 
-### RevokeExpanded (Default)
+### Delete (Default)
 ```
-Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense -MobileAppId <String>
- [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices] [-UserId <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Revoke
-```
-Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense -MobileAppId <String>
- -BodyParameter <IPaths797V6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphIosvppappMicrosoftGraphRevokeuserlicensePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest -AppLogCollectionRequestId <String>
+ -MobileAppTroubleshootingEventId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### RevokeViaIdentity
+### DeleteViaIdentity
 ```
-Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IPaths797V6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphIosvppappMicrosoftGraphRevokeuserlicensePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RevokeViaIdentityExpanded
-```
-Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-NotifyManagedDevices] [-UserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action revokeUserLicense
+Delete navigation property appLogCollectionRequests for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -AppLogCollectionRequestId
+key: id of appLogCollectionRequest
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
+Type: String
+Parameter Sets: Delete
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+### -IfMatch
+ETag
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths797V6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphIosvppappMicrosoftGraphRevokeuserlicensePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Revoke, RevokeViaIdentity
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -82,8 +68,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: RevokeViaIdentity, RevokeViaIdentityExpanded
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -93,30 +79,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MobileAppId
-key: id of mobileApp
+### -MobileAppTroubleshootingEventId
+key: id of mobileAppTroubleshootingEvent
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -NotifyManagedDevices
-.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -127,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -139,14 +110,14 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
+Type: String
+Parameter Sets: Delete
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -157,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,8 +162,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 
-### Microsoft.Graph.PowerShell.Models.IPaths797V6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphIosvppappMicrosoftGraphRevokeuserlicensePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
@@ -201,17 +170,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-### Revoke-MgDeviceAppManagementMobileAppMicrosoftGraphIoVppAppUserLicense
-
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-BODYPARAMETER <IPaths797V6DeviceappmanagementMobileappsMobileappIdMicrosoftGraphIosvppappMicrosoftGraphRevokeuserlicensePostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[NotifyManagedDevices <Boolean?>]`: 
-  - `[UserId <String>]`: 
 
 INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
@@ -282,4 +244,3 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-
