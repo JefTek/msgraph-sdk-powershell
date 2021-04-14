@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsiteonenotepagetosection
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action copyToSection
 ### CopyExpanded (Default)
 ```
 Copy-MgSiteOnenotePageToSection -OnenotePageId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-Confirm] [-WhatIf]
+ [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,25 +23,27 @@ Copy-MgSiteOnenotePageToSection -OnenotePageId <String> -SiteId <String> [-Addit
 ```
 Copy-MgSiteOnenotePageToSection -OnenotePageId <String> -SiteId <String>
  -BodyParameter <IPaths1LarwmeSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded
+```
+Copy-MgSiteOnenotePageToSection [-SiteId <String>] -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgSiteOnenotePageToSection -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1LarwmeSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CopyViaIdentityExpanded
-```
-Copy-MgSiteOnenotePageToSection -InputObject <ISitesIdentity> [-SiteId <String>]
- [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action copyToSection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Invoke action copyToSection
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1LarwmeSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1LarwmeSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -95,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -111,8 +113,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
 Aliases:
 
 Required: True
@@ -126,8 +128,8 @@ Accept wildcard characters: False
 key: id of onenotePage
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy, CopyExpanded
+Type: String
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -141,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -156,11 +158,23 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy, CopyExpanded, CopyViaIdentityExpanded
+Type: String
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: CopyViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -171,7 +185,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded
 Aliases:
 
@@ -186,7 +200,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +216,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -268,4 +282,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

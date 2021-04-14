@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitedelta
 schema: 2.0.0
@@ -19,6 +19,8 @@ Get-MgSiteDelta [<CommonParameters>]
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### CommonParameters
@@ -35,4 +37,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-

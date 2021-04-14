@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitecontenttypebase
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgSiteContentTypeBase -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Get base from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
 key: id of contentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -151,4 +153,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotepage
 schema: 2.0.0
@@ -25,6 +25,8 @@ Invoke-MgPreviewSiteOnenotePage -InputObject <ISitesIdentity> [<CommonParameters
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -32,7 +34,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: PreviewViaIdentity
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 key: id of onenotePage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Preview
 Aliases:
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Preview
 Aliases:
 
@@ -119,4 +121,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

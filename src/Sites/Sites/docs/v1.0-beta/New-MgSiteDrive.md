@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitedrive
 schema: 2.0.0
@@ -16,26 +16,19 @@ Create new navigation property to drives for sites
 ```
 New-MgSiteDrive -SiteId <String> [-Activities <IMicrosoftGraphItemActivityOld[]>]
  [-AdditionalProperties <Hashtable>] [-Bundles <IMicrosoftGraphDriveItem[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DriveType <String>] [-ETag <String>]
- [-Following <IMicrosoftGraphDriveItem[]>] [-Id <String>] [-Items <IMicrosoftGraphDriveItem[]>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
- [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphList>] [-Name <String>]
- [-Owner <IMicrosoftGraphIdentitySet>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DriveType <String>] [-ETag <String>] [-Following <IMicrosoftGraphDriveItem[]>]
+ [-Id <String>] [-Items <IMicrosoftGraphDriveItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphList>]
+ [-Name <String>] [-Owner <IMicrosoftGraphIdentitySet>] [-ParentReference <IMicrosoftGraphItemReference>]
  [-Quota <IMicrosoftGraphQuota>] [-Root <IMicrosoftGraphDriveItem>]
  [-SharePointIds <IMicrosoftGraphSharepointIds>] [-Special <IMicrosoftGraphDriveItem[]>] [-System <Hashtable>]
- [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgSiteDrive -SiteId <String> -BodyParameter <IMicrosoftGraphDrive> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgSiteDrive -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphDrive> [-Confirm] [-WhatIf]
+New-MgSiteDrive -SiteId <String> -BodyParameter <IMicrosoftGraphDrive> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -43,19 +36,26 @@ New-MgSiteDrive -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphDri
 ```
 New-MgSiteDrive -InputObject <ISitesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
  [-AdditionalProperties <Hashtable>] [-Bundles <IMicrosoftGraphDriveItem[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DriveType <String>] [-ETag <String>]
- [-Following <IMicrosoftGraphDriveItem[]>] [-Id <String>] [-Items <IMicrosoftGraphDriveItem[]>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
- [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphList>] [-Name <String>]
- [-Owner <IMicrosoftGraphIdentitySet>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DriveType <String>] [-ETag <String>] [-Following <IMicrosoftGraphDriveItem[]>]
+ [-Id <String>] [-Items <IMicrosoftGraphDriveItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphList>]
+ [-Name <String>] [-Owner <IMicrosoftGraphIdentitySet>] [-ParentReference <IMicrosoftGraphItemReference>]
  [-Quota <IMicrosoftGraphQuota>] [-Root <IMicrosoftGraphDriveItem>]
  [-SharePointIds <IMicrosoftGraphSharepointIds>] [-Special <IMicrosoftGraphDriveItem[]>] [-System <Hashtable>]
- [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgSiteDrive -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphDrive> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to drives for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ The list of recent activities that took place under this drive.
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld[]
+Type: IMicrosoftGraphItemActivityOld[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -95,7 +95,7 @@ drive
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
+Type: IMicrosoftGraphDrive
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -112,7 +112,7 @@ Only in personal OneDrive.
 To construct, see NOTES section for BUNDLES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem[]
+Type: IMicrosoftGraphDriveItem[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -128,7 +128,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -144,7 +144,7 @@ Represents an Azure Active Directory user object.
 To construct, see NOTES section for CREATEDBYUSER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
+Type: IMicrosoftGraphUser
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -160,7 +160,7 @@ Date and time of item creation.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -176,7 +176,7 @@ Provides a user-visible description of the item.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -195,7 +195,7 @@ SharePoint document libraries will return documentLibrary.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -211,7 +211,7 @@ ETag for the item.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -228,7 +228,7 @@ Only in OneDrive for Business.
 To construct, see NOTES section for FOLLOWING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem[]
+Type: IMicrosoftGraphDriveItem[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -259,8 +259,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ISitesIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -277,7 +277,7 @@ Nullable.
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem[]
+Type: IMicrosoftGraphDriveItem[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -293,7 +293,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -309,7 +309,7 @@ Represents an Azure Active Directory user object.
 To construct, see NOTES section for LASTMODIFIEDBYUSER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
+Type: IMicrosoftGraphUser
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -325,7 +325,7 @@ Date and time the item was last modified.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -341,7 +341,7 @@ list
 To construct, see NOTES section for LIST properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList
+Type: IMicrosoftGraphList
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -357,7 +357,7 @@ The name of the item.
 Read-write.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -373,7 +373,7 @@ identitySet
 To construct, see NOTES section for OWNER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -389,7 +389,7 @@ itemReference
 To construct, see NOTES section for PARENTREFERENCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
+Type: IMicrosoftGraphItemReference
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -405,7 +405,7 @@ quota
 To construct, see NOTES section for QUOTA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphQuota
+Type: IMicrosoftGraphQuota
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -421,7 +421,7 @@ driveItem
 To construct, see NOTES section for ROOT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
+Type: IMicrosoftGraphDriveItem
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -437,7 +437,7 @@ sharepointIds
 To construct, see NOTES section for SHAREPOINTIDS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointIds
+Type: IMicrosoftGraphSharepointIds
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -452,8 +452,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -470,7 +470,7 @@ Nullable.
 To construct, see NOTES section for SPECIAL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem[]
+Type: IMicrosoftGraphDriveItem[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -485,7 +485,7 @@ Accept wildcard characters: False
 systemFacet
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -501,7 +501,7 @@ URL that displays the resource in the browser.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -516,7 +516,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -532,7 +532,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -623,7 +623,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -648,7 +648,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -1084,7 +1084,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
           - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
         - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
           - `[Id <String>]`: Read-only.
-          - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+          - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
             - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
             - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
             - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -1194,7 +1194,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
           - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
           - `[Initials <String>]`: The contact's initials.
           - `[IsFavorite <Boolean?>]`: 
-          - `[JobTitle <String>]`: The contact’s job title.
+          - `[JobTitle <String>]`: The contact's job title.
           - `[Manager <String>]`: The name of the contact's manager.
           - `[MiddleName <String>]`: The contact's middle name.
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -1936,7 +1936,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Id <String>]`: Read-only.
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
       - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
         - `[DeletedDateTime <DateTime?>]`: 
@@ -2175,7 +2175,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
             - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
             - `[Title <String>]`: Required. Title of the plan.
         - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -2844,9 +2844,9 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
         - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
         - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-          - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-          - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+          - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+          - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+          - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
           - `[CellularTechnology <String>]`: Cellular technology of the device
           - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
           - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -3052,7 +3052,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
       - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
       - `[Notifications <IMicrosoftGraphNotification[]>]`: 
         - `[Id <String>]`: Read-only.
-        - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+        - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
         - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
         - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
         - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -3208,7 +3208,7 @@ ACTIVITIES <IMicrosoftGraphItemActivityOld[]>: The list of recent activities tha
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
         - `[Id <String>]`: Read-only.
@@ -4222,7 +4222,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -4247,7 +4247,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -4683,7 +4683,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -4793,7 +4793,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -5950,7 +5950,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -6189,7 +6189,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -6854,9 +6854,9 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -7062,7 +7062,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -7218,7 +7218,7 @@ BODYPARAMETER <IMicrosoftGraphDrive>: drive
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -7858,7 +7858,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -7883,7 +7883,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -8319,7 +8319,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -8429,7 +8429,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -9216,7 +9216,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -9455,7 +9455,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -10124,9 +10124,9 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -10332,7 +10332,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -10488,7 +10488,7 @@ BUNDLES <IMicrosoftGraphDriveItem[]>: Collection of [bundles][bundle] (albums an
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -11495,7 +11495,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
     - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
     - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
     - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
     - `[ContentInfo <IMicrosoftGraphJson>]`: Json
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -11520,7 +11520,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
         - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
         - `[AlternativeText <String>]`: 
         - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -11963,7 +11963,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
     - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
         - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -12073,7 +12073,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
       - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
       - `[Initials <String>]`: The contact's initials.
       - `[IsFavorite <Boolean?>]`: 
-      - `[JobTitle <String>]`: The contact’s job title.
+      - `[JobTitle <String>]`: The contact's job title.
       - `[Manager <String>]`: The name of the contact's manager.
       - `[MiddleName <String>]`: The contact's middle name.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -13265,7 +13265,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Id <String>]`: Read-only.
   - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-  - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+  - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
   - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
   - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
     - `[DeletedDateTime <DateTime?>]`: 
@@ -13504,7 +13504,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+        - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
         - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
         - `[Title <String>]`: Required. Title of the plan.
     - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -14169,9 +14169,9 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
     - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
     - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-      - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-      - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+      - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+      - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+      - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
       - `[CellularTechnology <String>]`: Cellular technology of the device
       - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
       - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -14377,7 +14377,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
   - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
   - `[Notifications <IMicrosoftGraphNotification[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+    - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
     - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
     - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
     - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -14533,7 +14533,7 @@ CREATEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory user o
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
     - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
   - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
   - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
     - `[Id <String>]`: Read-only.
@@ -15142,7 +15142,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -15167,7 +15167,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -15603,7 +15603,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -15713,7 +15713,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -16500,7 +16500,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -16739,7 +16739,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -17408,9 +17408,9 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -17616,7 +17616,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -17772,7 +17772,7 @@ FOLLOWING <IMicrosoftGraphDriveItem[]>: The list of items the user is following.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -18804,7 +18804,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -18829,7 +18829,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -19265,7 +19265,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -19375,7 +19375,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -20162,7 +20162,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -20401,7 +20401,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -21070,9 +21070,9 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -21278,7 +21278,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -21434,7 +21434,7 @@ ITEMS <IMicrosoftGraphDriveItem[]>: All items contained in the drive. Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -22441,7 +22441,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
     - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
     - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
     - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
     - `[ContentInfo <IMicrosoftGraphJson>]`: Json
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -22466,7 +22466,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
         - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
         - `[AlternativeText <String>]`: 
         - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -22909,7 +22909,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
     - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
         - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -23019,7 +23019,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
       - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
       - `[Initials <String>]`: The contact's initials.
       - `[IsFavorite <Boolean?>]`: 
-      - `[JobTitle <String>]`: The contact’s job title.
+      - `[JobTitle <String>]`: The contact's job title.
       - `[Manager <String>]`: The name of the contact's manager.
       - `[MiddleName <String>]`: The contact's middle name.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -24211,7 +24211,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Id <String>]`: Read-only.
   - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-  - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+  - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
   - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
   - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
     - `[DeletedDateTime <DateTime?>]`: 
@@ -24450,7 +24450,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+        - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
         - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
         - `[Title <String>]`: Required. Title of the plan.
     - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -25115,9 +25115,9 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
     - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
     - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-      - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-      - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+      - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+      - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+      - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
       - `[CellularTechnology <String>]`: Cellular technology of the device
       - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
       - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -25323,7 +25323,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
   - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
   - `[Notifications <IMicrosoftGraphNotification[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+    - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
     - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
     - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
     - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -25479,7 +25479,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser>: Represents an Azure Active Directory u
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
     - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
   - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
   - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
     - `[Id <String>]`: Read-only.
@@ -26089,7 +26089,7 @@ LIST <IMicrosoftGraphList>: list
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -26114,7 +26114,7 @@ LIST <IMicrosoftGraphList>: list
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -26550,7 +26550,7 @@ LIST <IMicrosoftGraphList>: list
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -26660,7 +26660,7 @@ LIST <IMicrosoftGraphList>: list
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -27825,7 +27825,7 @@ LIST <IMicrosoftGraphList>: list
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -28064,7 +28064,7 @@ LIST <IMicrosoftGraphList>: list
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -28729,9 +28729,9 @@ LIST <IMicrosoftGraphList>: list
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -28937,7 +28937,7 @@ LIST <IMicrosoftGraphList>: list
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -29093,7 +29093,7 @@ LIST <IMicrosoftGraphList>: list
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -29766,7 +29766,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -29791,7 +29791,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -30227,7 +30227,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -30337,7 +30337,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -31124,7 +31124,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -31363,7 +31363,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -32032,9 +32032,9 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -32240,7 +32240,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -32396,7 +32396,7 @@ ROOT <IMicrosoftGraphDriveItem>: driveItem
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -33413,7 +33413,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -33438,7 +33438,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -33874,7 +33874,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -33984,7 +33984,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
         - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
         - `[Initials <String>]`: The contact's initials.
         - `[IsFavorite <Boolean?>]`: 
-        - `[JobTitle <String>]`: The contact’s job title.
+        - `[JobTitle <String>]`: The contact's job title.
         - `[Manager <String>]`: The name of the contact's manager.
         - `[MiddleName <String>]`: The contact's middle name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
@@ -34771,7 +34771,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Id <String>]`: Read-only.
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Returned by default. Supports $filter.
     - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: Read-only. Nullable.
       - `[DeletedDateTime <DateTime?>]`: 
@@ -35010,7 +35010,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
@@ -35679,9 +35679,9 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[HardwareInformation <IMicrosoftGraphHardwareInformation>]`: Hardware information of a given device.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device’s current battery has gone through. Valid values 0 to 2147483647
-        - `[BatteryHealthPercentage <Int32?>]`: The device’s current battery’s health percentage. Valid values 0 to 100
-        - `[BatterySerialNumber <String>]`: The serial number of the device’s current battery
+        - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
+        - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
+        - `[BatterySerialNumber <String>]`: The serial number of the device's current battery
         - `[CellularTechnology <String>]`: Cellular technology of the device
         - `[DeviceFullQualifiedDomainName <String>]`: Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
         - `[DeviceGuardLocalSystemAuthorityCredentialGuardState <String>]`: deviceGuardLocalSystemAuthorityCredentialGuardState
@@ -35887,7 +35887,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Notifications <IMicrosoftGraphNotification[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform’s notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user’s Windows Action Center.
+      - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content will stay in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification will stay in the user's Windows Action Center.
       - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
       - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together.
       - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
@@ -36043,7 +36043,7 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: If true, at next sign-in, the user must change their password. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[PendingAccessReviewInstances <IMicrosoftGraphAccessReviewInstance[]>]`: Navigation property to get list of access reviews pending approval by reviewer.
       - `[Id <String>]`: Read-only.
@@ -37032,3 +37032,4 @@ SPECIAL <IMicrosoftGraphDriveItem[]>: Collection of common folders available in 
 
 ## RELATED LINKS
 
+## RELATED LINKS
