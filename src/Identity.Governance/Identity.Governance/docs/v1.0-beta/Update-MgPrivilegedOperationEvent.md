@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedoperationevent
 schema: 2.0.0
@@ -16,38 +16,38 @@ Update entity in privilegedOperationEvents
 ```
 Update-MgPrivilegedOperationEvent -PrivilegedOperationEventId <String> [-AdditionalInformation <String>]
  [-AdditionalProperties <Hashtable>] [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestorId <String>]
- [-RequestorName <String>] [-RequestType <String>] [-RoleId <String>] [-RoleName <String>]
- [-TenantId <String>] [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestType <String>]
+ [-RequestorId <String>] [-RequestorName <String>] [-RoleId <String>] [-RoleName <String>] [-TenantId <String>]
+ [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrivilegedOperationEvent -PrivilegedOperationEventId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity> [-AdditionalInformation <String>]
  [-AdditionalProperties <Hashtable>] [-CreationDateTime <DateTime>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestorId <String>]
- [-RequestorName <String>] [-RequestType <String>] [-RoleId <String>] [-RoleName <String>]
- [-TenantId <String>] [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-ReferenceKey <String>] [-ReferenceSystem <String>] [-RequestType <String>]
+ [-RequestorId <String>] [-RequestorName <String>] [-RoleId <String>] [-RoleName <String>] [-TenantId <String>]
+ [-UserId <String>] [-UserMail <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphPrivilegedOperationEvent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in privilegedOperationEvents
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -55,7 +55,7 @@ Update entity in privilegedOperationEvents
 Detailed human readable information for the event.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ privilegedOperationEvent
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedOperationEvent
+Type: IMicrosoftGraphPrivilegedOperationEvent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 Indicates the time when the event is created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 This is only used when the requestType is Activate, and it indicates the expiration time for the role activation.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -177,8 +177,8 @@ Accept wildcard characters: False
 key: id of privilegedOperationEvent
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -193,7 +193,7 @@ Incident/Request ticket number during role activation.
 The value is presented only if the ticket number is provided during role activation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +209,7 @@ Incident/Request ticketing system provided during tole activation.
 The value is presented only if the ticket system is provided during role activation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 The user id of the requestor who initiates the operation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 The user name of the requestor who initiates the operation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +255,7 @@ The request operation type.
 The requestType value can be: Assign (role assignment), Activate (role activation), Unassign (remove role assignment), Deactivate (role deactivation), ScanAlertsNow (scan security alerts), DismissAlert (dismiss security alert), FixAlertItem (fix a security alert issue), AccessReview_Review (review an Access Review), AccessReview_Create (create an Access Review) , AccessReview_Update (update an Access Review), AccessReview_Delete (delete an Access Review).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 The id of the role that is associated with the operation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 The name of the role.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 The tenant (organization) id.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -315,7 +315,7 @@ Accept wildcard characters: False
 The id of the user that is associated with the operation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,7 +330,7 @@ Accept wildcard characters: False
 The user's email.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -345,7 +345,7 @@ Accept wildcard characters: False
 The user's display name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -360,7 +360,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -376,7 +376,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -474,4 +474,3 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

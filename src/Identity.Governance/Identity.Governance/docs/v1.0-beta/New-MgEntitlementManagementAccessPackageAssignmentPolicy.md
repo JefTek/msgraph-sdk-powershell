@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicy
 schema: 2.0.0
@@ -21,19 +21,20 @@ New-MgEntitlementManagementAccessPackageAssignmentPolicy [-AccessPackageId <Stri
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion[]>]
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
- [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### CreateViaIdentityExpanded
 ```
-New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgEntitlementManagementAccessPackageAssignmentPolicy
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgEntitlementManagementAccessPackageAssignmentPolicy [-AccessPackageId <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-AccessPackage <IMicrosoftGraphAccessPackage>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
+ [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>] [-AdditionalProperties <Hashtable>]
+ [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion[]>]
+ [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
+ [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded
@@ -46,30 +47,31 @@ New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId <Strin
  [-Id <String>] [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>]
  [-Questions <IMicrosoftGraphAccessPackageQuestion[]>]
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
- [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId <String>
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### Create1
 ```
-New-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackageId <String>] [-AccessPackage <IMicrosoftGraphAccessPackage>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
- [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>] [-AdditionalProperties <Hashtable>]
- [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion[]>]
- [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
- [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgEntitlementManagementAccessPackageAssignmentPolicy
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to accessPackageAssignmentPolicies for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -78,8 +80,8 @@ accessPackage
 To construct, see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphAccessPackage
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -94,8 +96,8 @@ accessPackageCatalog
 To construct, see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphAccessPackageCatalog
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -109,8 +111,20 @@ Accept wildcard characters: False
 key: id of accessPackage
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -124,7 +138,7 @@ Accept wildcard characters: False
 ID of the access package.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,8 +154,8 @@ assignmentReviewSettings
 To construct, see NOTES section for ACCESSREVIEWSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentReviewSettings
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphAssignmentReviewSettings
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -155,8 +169,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -171,8 +185,8 @@ accessPackageAssignmentPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
-Parameter Sets: Create, Create1, CreateViaIdentity
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy
+Parameter Sets: Create, CreateViaIdentity, Create1
 Aliases:
 
 Required: True
@@ -186,8 +200,8 @@ Accept wildcard characters: False
 Indicates whether a user can extend the access package assignment duration after approval.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -201,8 +215,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -217,8 +231,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -232,8 +246,8 @@ Accept wildcard characters: False
 The description of the policy.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -247,8 +261,8 @@ Accept wildcard characters: False
 The display name of the policy.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -262,8 +276,8 @@ Accept wildcard characters: False
 The number of days in which assignments from this policy last until they are expired.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: Int32
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -279,8 +293,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -294,8 +308,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -310,8 +324,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -325,8 +339,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -341,8 +355,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -357,8 +371,8 @@ Questions that are posed to the requestor.
 To construct, see NOTES section for QUESTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageQuestion[]
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphAccessPackageQuestion[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -373,8 +387,8 @@ approvalSettings
 To construct, see NOTES section for REQUESTAPPROVALSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalSettings
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphApprovalSettings
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -389,8 +403,8 @@ requestorSettings
 To construct, see NOTES section for REQUESTORSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRequestorSettings
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphRequestorSettings
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateExpanded
 Aliases:
 
 Required: False
@@ -404,7 +418,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -420,7 +434,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -961,3 +975,4 @@ REQUESTORSETTINGS <IMicrosoftGraphRequestorSettings>: requestorSettings
 
 ## RELATED LINKS
 
+## RELATED LINKS

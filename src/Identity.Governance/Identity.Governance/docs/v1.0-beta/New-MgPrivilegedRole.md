@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedrole
 schema: 2.0.0
@@ -17,16 +17,18 @@ Add new entity to privilegedRoles
 New-MgPrivilegedRole [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>] [-Id <String>] [-Name <String>]
  [-Settings <IMicrosoftGraphPrivilegedRoleSettings>] [-Summary <IMicrosoftGraphPrivilegedRoleSummary>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgPrivilegedRole -BodyParameter <IMicrosoftGraphPrivilegedRole> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to privilegedRoles
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Add new entity to privilegedRoles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ Nullable.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment[]
+Type: IMicrosoftGraphPrivilegedRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ privilegedRole
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRole
+Type: IMicrosoftGraphPrivilegedRole
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +100,7 @@ Accept wildcard characters: False
 Role name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +116,7 @@ privilegedRoleSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
+Type: IMicrosoftGraphPrivilegedRoleSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +132,7 @@ privilegedRoleSummary
 To construct, see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
+Type: IMicrosoftGraphPrivilegedRoleSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -284,4 +286,3 @@ SUMMARY <IMicrosoftGraphPrivilegedRoleSummary>: privilegedRoleSummary
   - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
 
 ## RELATED LINKS
-

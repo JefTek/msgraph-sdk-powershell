@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgagreement
 schema: 2.0.0
@@ -18,16 +18,18 @@ New-MgAgreement [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>] [-Addition
  [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
  [-Files <IMicrosoftGraphAgreementFileLocalization[]>] [-Id <String>] [-IsPerDeviceAcceptanceRequired]
  [-IsViewingBeforeAcceptanceRequired] [-TermsExpiration <IMicrosoftGraphTermsExpiration>]
- [-UserReacceptRequiredFrequency <TimeSpan>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserReacceptRequiredFrequency <TimeSpan>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgAgreement -BodyParameter <IMicrosoftGraphAgreement> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgAgreement -BodyParameter <IMicrosoftGraphAgreement> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to agreements
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Information about acceptances of this agreement.
 To construct, see NOTES section for ACCEPTANCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance[]
+Type: IMicrosoftGraphAgreementAcceptance[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -52,7 +54,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -68,7 +70,7 @@ agreement
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement
+Type: IMicrosoftGraphAgreement
 Parameter Sets: Create1
 Aliases:
 
@@ -84,7 +86,7 @@ Display name of the agreement.
 The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -100,7 +102,7 @@ agreementFile
 To construct, see NOTES section for FILE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
+Type: IMicrosoftGraphAgreementFile
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -118,7 +120,7 @@ Use the file property instead.
 To construct, see NOTES section for FILES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization[]
+Type: IMicrosoftGraphAgreementFileLocalization[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -133,7 +135,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -149,7 +151,7 @@ This setting enables you to require end users to accept this agreement on every 
 The end user will be required to register their device in Azure AD, if they haven't already done so.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 Indicates whether the user has to expand the agreement before accepting.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -180,7 +182,7 @@ termsExpiration
 To construct, see NOTES section for TERMSEXPIRATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsExpiration
+Type: IMicrosoftGraphTermsExpiration
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -196,7 +198,7 @@ The duration after which the user must re-accept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -211,7 +213,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -227,7 +229,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -390,4 +392,3 @@ TERMSEXPIRATION <IMicrosoftGraphTermsExpiration>: termsExpiration
   - `[StartDateTime <DateTime?>]`: The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-

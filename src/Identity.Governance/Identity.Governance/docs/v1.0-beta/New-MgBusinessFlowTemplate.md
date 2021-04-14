@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgbusinessflowtemplate
 schema: 2.0.0
@@ -14,18 +14,20 @@ Add new entity to businessFlowTemplates
 
 ### CreateExpanded (Default)
 ```
-New-MgBusinessFlowTemplate [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBusinessFlowTemplate [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBusinessFlowTemplate -BodyParameter <IMicrosoftGraphBusinessFlowTemplate> [-Confirm] [-WhatIf]
+New-MgBusinessFlowTemplate -BodyParameter <IMicrosoftGraphBusinessFlowTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to businessFlowTemplates
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Add new entity to businessFlowTemplates
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -49,7 +51,7 @@ businessFlowTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBusinessFlowTemplate
+Type: IMicrosoftGraphBusinessFlowTemplate
 Parameter Sets: Create
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 The name of the business flow template
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -110,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,4 +149,3 @@ BODYPARAMETER <IMicrosoftGraphBusinessFlowTemplate>: businessFlowTemplate
   - `[DisplayName <String>]`: The name of the business flow template
 
 ## RELATED LINKS
-

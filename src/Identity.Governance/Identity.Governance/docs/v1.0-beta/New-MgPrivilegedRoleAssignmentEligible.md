@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedroleassignmenteligible
 schema: 2.0.0
@@ -14,18 +14,20 @@ Invoke action makeEligible
 
 ### Make (Default)
 ```
-New-MgPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId <String> [-Confirm] [-WhatIf]
+New-MgPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### MakeViaIdentity
 ```
-New-MgPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIdentity> [-Confirm] [-WhatIf]
+New-MgPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action makeEligible
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Type: IIdentityGovernanceIdentity
 Parameter Sets: MakeViaIdentity
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 key: id of privilegedRoleAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Make
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +82,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -158,4 +160,3 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

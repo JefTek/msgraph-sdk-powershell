@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgmyprivilegedroleassignmentrequest
 schema: 2.0.0
@@ -19,6 +19,8 @@ Invoke-MgMyPrivilegedRoleAssignmentRequest [<CommonParameters>]
 ## DESCRIPTION
 Invoke function my
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### CommonParameters
@@ -35,4 +37,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-
