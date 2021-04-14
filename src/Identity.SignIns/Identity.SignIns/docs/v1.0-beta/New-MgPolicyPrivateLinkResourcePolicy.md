@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyprivatelinkresourcepolicy
 schema: 2.0.0
@@ -16,18 +16,20 @@ Create new navigation property to privateLinkResourcePolicies for policies
 ```
 New-MgPolicyPrivateLinkResourcePolicy [-AdditionalProperties <Hashtable>] [-AllowedTenantIds <String[]>]
  [-DisplayName <String>] [-ExternalPrivateLinkId <String>] [-Id <String>]
- [-PrivateEndpointConnections <IMicrosoftGraphPrivateEndpointConnection[]>] [-Confirm] [-WhatIf]
+ [-PrivateEndpointConnections <IMicrosoftGraphPrivateEndpointConnection[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyPrivateLinkResourcePolicy -BodyParameter <IMicrosoftGraphPrivateLinkResourcePolicy> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgPolicyPrivateLinkResourcePolicy -BodyParameter <IMicrosoftGraphPrivateLinkResourcePolicy> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to privateLinkResourcePolicies for policies
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Create new navigation property to privateLinkResourcePolicies for policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ privateLinkResourcePolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivateLinkResourcePolicy
+Type: IMicrosoftGraphPrivateLinkResourcePolicy
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PRIVATEENDPOINTCONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivateEndpointConnection[]
+Type: IMicrosoftGraphPrivateEndpointConnection[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,4 +208,3 @@ PRIVATEENDPOINTCONNECTIONS <IMicrosoftGraphPrivateEndpointConnection[]>: .
   - `[PrivateLinkIds <Int64[]>]`: 
 
 ## RELATED LINKS
-

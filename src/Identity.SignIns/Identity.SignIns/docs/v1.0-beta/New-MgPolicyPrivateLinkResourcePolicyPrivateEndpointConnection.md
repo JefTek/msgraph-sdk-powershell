@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyprivatelinkresourcepolicyprivateendpointconnection
 schema: 2.0.0
@@ -16,30 +16,32 @@ Create new navigation property to privateEndpointConnections for policies
 ```
 New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection -PrivateLinkResourcePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-ExternalPrivateEndpointId <String>] [-Id <String>]
- [-PrivateLinkIds <Int64[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PrivateLinkIds <Int64[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection -PrivateLinkResourcePolicyId <String>
- -BodyParameter <IMicrosoftGraphPrivateEndpointConnection> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPrivateEndpointConnection> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivateEndpointConnection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-ExternalPrivateEndpointId <String>] [-Id <String>]
- [-PrivateLinkIds <Int64[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PrivateLinkIds <Int64[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPrivateEndpointConnection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to privateEndpointConnections for policies
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Create new navigation property to privateEndpointConnections for policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +65,7 @@ privateEndpointConnection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivateEndpointConnection
+Type: IMicrosoftGraphPrivateEndpointConnection
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +95,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -109,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -124,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int64[]
+Type: Int64[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -139,8 +141,8 @@ Accept wildcard characters: False
 key: id of privateLinkResourcePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -154,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -170,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -257,4 +259,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

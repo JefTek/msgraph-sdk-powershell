@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgdatapolicyoperation
 schema: 2.0.0
@@ -16,32 +16,34 @@ Update entity in dataPolicyOperations
 ```
 Update-MgDataPolicyOperation -DataPolicyOperationId <String> [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>] [-Status <String>]
- [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgDataPolicyOperation -DataPolicyOperationId <String>
- -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
  [-CompletedDateTime <DateTime>] [-Id <String>] [-Progress <Double>] [-Status <String>]
- [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-StorageLocation <String>] [-SubmittedDateTime <DateTime>] [-UserId <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in dataPolicyOperations
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Update entity in dataPolicyOperations
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -65,7 +67,7 @@ dataPolicyOperation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataPolicyOperation
+Type: IMicrosoftGraphDataPolicyOperation
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -82,7 +84,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Null until the operation completes.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -97,8 +99,8 @@ Accept wildcard characters: False
 key: id of dataPolicyOperation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -128,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 Specifies the progress of an operation.
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -173,7 +175,7 @@ Accept wildcard characters: False
 dataPolicyOperationStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 The URL location to where data is being exported for export requests.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -204,7 +206,7 @@ Represents when the request for this data operation was submitted, in UTC time, 
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 The id for the user on whom the operation is performed.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -234,7 +236,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -250,7 +252,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -341,4 +343,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/test-mginformationprotectionsensitivitylabelsublabel
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action evaluate
 ```
 Test-MgInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String>
  [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,26 +24,28 @@ Test-MgInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String
 ```
 Test-MgInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String>
  -BodyParameter <IPathsK62XddInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### EvaluateViaIdentity
-```
-Test-MgInformationProtectionSensitivityLabelSublabel -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IPathsK62XddInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
 Test-MgInformationProtectionSensitivityLabelSublabel -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### EvaluateViaIdentity
+```
+Test-MgInformationProtectionSensitivityLabelSublabel -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IPathsK62XddInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action evaluate
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Invoke action evaluate
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsK62XddInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+Type: IPathsK62XddInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -83,7 +85,7 @@ currentLabel
 To construct, see NOTES section for CURRENTLABEL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrentLabel
+Type: IMicrosoftGraphCurrentLabel
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDiscoveredSensitiveType[]
+Type: IMicrosoftGraphDiscoveredSensitiveType[]
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +117,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
 Aliases:
 
 Required: True
@@ -130,8 +132,8 @@ Accept wildcard characters: False
 key: id of sensitivityLabel
 
 ```yaml
-Type: System.String
-Parameter Sets: Evaluate, EvaluateExpanded
+Type: String
+Parameter Sets: EvaluateExpanded, Evaluate
 Aliases:
 
 Required: True
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,4 +271,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

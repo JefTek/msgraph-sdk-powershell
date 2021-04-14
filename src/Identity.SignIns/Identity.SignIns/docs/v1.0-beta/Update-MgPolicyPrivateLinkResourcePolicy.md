@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyprivatelinkresourcepolicy
 schema: 2.0.0
@@ -17,21 +17,14 @@ Update the navigation property privateLinkResourcePolicies in policies
 Update-MgPolicyPrivateLinkResourcePolicy -PrivateLinkResourcePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-AllowedTenantIds <String[]>] [-DisplayName <String>]
  [-ExternalPrivateLinkId <String>] [-Id <String>]
- [-PrivateEndpointConnections <IMicrosoftGraphPrivateEndpointConnection[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-PrivateEndpointConnections <IMicrosoftGraphPrivateEndpointConnection[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyPrivateLinkResourcePolicy -PrivateLinkResourcePolicyId <String>
- -BodyParameter <IMicrosoftGraphPrivateLinkResourcePolicy> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyPrivateLinkResourcePolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPrivateLinkResourcePolicy> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphPrivateLinkResourcePolicy> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,12 +33,21 @@ Update-MgPolicyPrivateLinkResourcePolicy -InputObject <IIdentitySignInsIdentity>
 Update-MgPolicyPrivateLinkResourcePolicy -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-AllowedTenantIds <String[]>] [-DisplayName <String>]
  [-ExternalPrivateLinkId <String>] [-Id <String>]
- [-PrivateEndpointConnections <IMicrosoftGraphPrivateEndpointConnection[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-PrivateEndpointConnections <IMicrosoftGraphPrivateEndpointConnection[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPolicyPrivateLinkResourcePolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPrivateLinkResourcePolicy> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property privateLinkResourcePolicies in policies
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Update the navigation property privateLinkResourcePolicies in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +86,7 @@ privateLinkResourcePolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivateLinkResourcePolicy
+Type: IMicrosoftGraphPrivateLinkResourcePolicy
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -160,7 +162,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -176,7 +178,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PRIVATEENDPOINTCONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivateEndpointConnection[]
+Type: IMicrosoftGraphPrivateEndpointConnection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,8 +193,8 @@ Accept wildcard characters: False
 key: id of privateLinkResourcePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -206,7 +208,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +224,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -319,4 +321,3 @@ PRIVATEENDPOINTCONNECTIONS <IMicrosoftGraphPrivateEndpointConnection[]>: .
   - `[PrivateLinkIds <Int64[]>]`: 
 
 ## RELATED LINKS
-

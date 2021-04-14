@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgbufferinformationprotectiondecrypt
 schema: 2.0.0
@@ -15,19 +15,21 @@ Invoke action decryptBuffer
 ### BufferExpanded (Default)
 ```
 Invoke-MgBufferInformationProtectionDecrypt -OutFile <String> [-AdditionalProperties <Hashtable>]
- [-EncryptedBufferInputFile <String>] [-PublishingLicenseInputFile <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-EncryptedBufferInputFile <String>] [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Buffer
 ```
-Invoke-MgBufferInformationProtectionDecrypt
+Invoke-MgBufferInformationProtectionDecrypt -OutFile <String>
  -BodyParameter <IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
- -OutFile <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action decryptBuffer
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -35,7 +37,7 @@ Invoke action decryptBuffer
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: BufferExpanded
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Type: IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Buffer
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 Input File for EncryptedBuffer (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: BufferExpanded
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 Input File for PublishingLicense (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: BufferExpanded
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,4 +181,3 @@ BODYPARAMETER <IPaths41K0CwInformationprotectionMicrosoftGraphDecryptbufferPostR
   - `[PublishingLicense <Byte[]>]`: 
 
 ## RELATED LINKS
-

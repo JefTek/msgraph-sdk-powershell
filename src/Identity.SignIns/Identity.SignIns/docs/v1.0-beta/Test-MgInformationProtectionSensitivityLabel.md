@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/test-mginformationprotectionsensitivitylabel
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action evaluate
 ```
 Test-MgInformationProtectionSensitivityLabel [-AdditionalProperties <Hashtable>]
  [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,11 +24,13 @@ Test-MgInformationProtectionSensitivityLabel [-AdditionalProperties <Hashtable>]
 ```
 Test-MgInformationProtectionSensitivityLabel
  -BodyParameter <IPaths184IgqyInformationprotectionSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action evaluate
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -36,7 +38,7 @@ Invoke action evaluate
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths184IgqyInformationprotectionSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+Type: IPaths184IgqyInformationprotectionSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate
 Aliases:
 
@@ -68,7 +70,7 @@ currentLabel
 To construct, see NOTES section for CURRENTLABEL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrentLabel
+Type: IMicrosoftGraphCurrentLabel
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -84,7 +86,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDiscoveredSensitiveType[]
+Type: IMicrosoftGraphDiscoveredSensitiveType[]
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +117,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,4 +176,3 @@ DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>: .
   - `[Id <String>]`: 
 
 ## RELATED LINKS
-

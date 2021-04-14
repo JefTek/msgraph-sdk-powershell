@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicyassignmentpolicybyref
 schema: 2.0.0
@@ -27,6 +27,8 @@ Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef -InputObject <IIdentitySig
 ## DESCRIPTION
 Get ref of policy from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 key: id of unifiedRoleManagementPolicyAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -128,4 +130,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

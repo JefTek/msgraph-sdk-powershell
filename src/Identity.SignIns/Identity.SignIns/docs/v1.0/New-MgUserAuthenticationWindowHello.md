@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationwindowhello
 schema: 2.0.0
@@ -16,32 +16,34 @@ Create new navigation property to windowsHelloForBusinessMethods for users
 ```
 New-MgUserAuthenticationWindowHello -UserId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Device <IMicrosoftGraphDevice1>] [-DisplayName <String>] [-Id <String>]
- [-KeyStrength <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-KeyStrength <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgUserAuthenticationWindowHello -UserId <String>
- -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserAuthenticationWindowHello -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
+New-MgUserAuthenticationWindowHello -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-Device <IMicrosoftGraphDevice1>] [-DisplayName <String>] [-Id <String>]
+ [-KeyStrength <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
 New-MgUserAuthenticationWindowHello -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Device <IMicrosoftGraphDevice1>]
- [-DisplayName <String>] [-Id <String>] [-KeyStrength <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsHelloForBusinessMethods for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Create new navigation property to windowsHelloForBusinessMethods for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -65,7 +67,7 @@ windowsHelloForBusinessAuthenticationMethod
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1
+Type: IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 The date and time that this Windows Hello for Business key was registered.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -97,7 +99,7 @@ The directoryObject type is the base type for many other directory entity types.
 To construct, see NOTES section for DEVICE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
+Type: IMicrosoftGraphDevice1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 The name of the device on which Windows Hello for Business is registered
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -143,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 authenticationMethodKeyStrength
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -173,8 +175,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +206,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -362,3 +364,4 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

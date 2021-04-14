@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionsensitivitylabel
 schema: 2.0.0
@@ -19,17 +19,19 @@ New-MgInformationProtectionSensitivityLabel [-AdditionalProperties <Hashtable>] 
  [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
  [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgInformationProtectionSensitivityLabel -BodyParameter <IMicrosoftGraphSensitivityLabel> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgInformationProtectionSensitivityLabel -BodyParameter <IMicrosoftGraphSensitivityLabel> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for informationProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Create new navigation property to sensitivityLabels for informationProtection
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +54,7 @@ Accept wildcard characters: False
 sensitivityLabelTarget
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 applicationMode
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ASSIGNEDPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLabelPolicy[]
+Type: IMicrosoftGraphLabelPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ autoLabeling
 To construct, see NOTES section for AUTOLABELING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAutoLabeling
+Type: IMicrosoftGraphAutoLabeling
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +117,7 @@ sensitivityLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabel
+Type: IMicrosoftGraphSensitivityLabel
 Parameter Sets: Create
 Aliases:
 
@@ -130,7 +132,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +162,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +177,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +192,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +208,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for LABELACTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLabelActionBase[]
+Type: IMicrosoftGraphLabelActionBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +223,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +238,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +254,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabel[]
+Type: IMicrosoftGraphSensitivityLabel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +269,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -282,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -298,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -387,4 +389,3 @@ SUBLABELS <IMicrosoftGraphSensitivityLabel[]>: .
   - `[ToolTip <String>]`: 
 
 ## RELATED LINKS
-
