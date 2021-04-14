@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupphotocontent
 schema: 2.0.0
@@ -23,12 +23,12 @@ Get-MgGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> -OutFile <Str
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity3
 ```
 Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
@@ -36,13 +36,15 @@ Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassT
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get2, Get3
 Aliases:
 
@@ -58,8 +60,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity3
+Type: IGroupsIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -73,7 +75,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -88,7 +90,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 key: id of profilePhoto
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get3
 Aliases:
 
@@ -158,4 +160,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

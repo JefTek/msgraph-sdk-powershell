@@ -80,11 +80,11 @@ Get multiValueExtendedProperties from groups
 ### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 Get singleValueExtendedProperties from groups
 
-### [Get-MgGroupCreatedOnBehalfOf](Get-MgGroupCreatedOnBehalfOf.md)
-Get createdOnBehalfOf from groups
+### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from groups
 
-### [Get-MgGroupCreatedOnBehalfOfByRef](Get-MgGroupCreatedOnBehalfOfByRef.md)
-Get ref of createdOnBehalfOf from groups
+### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+Get singleValueExtendedProperties from groups
 
 ### [Get-MgGroupDelta](Get-MgGroupDelta.md)
 Invoke function delta
@@ -404,8 +404,8 @@ Delete navigation property multiValueExtendedProperties for groups
 ### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for groups
 
-### [Remove-MgGroupCreatedOnBehalfOfByRef](Remove-MgGroupCreatedOnBehalfOfByRef.md)
-Delete ref of navigation property createdOnBehalfOf for groups
+### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
+Delete navigation property singleValueExtendedProperties for groups
 
 ### [Remove-MgGroupEndpoint](Remove-MgGroupEndpoint.md)
 Delete navigation property endpoints for groups
@@ -461,8 +461,8 @@ Invoke action resetUnseenCount
 ### [Restore-MgGroup](Restore-MgGroup.md)
 Invoke action restore
 
-### [Set-MgGroupCreatedOnBehalfOfByRef](Set-MgGroupCreatedOnBehalfOfByRef.md)
-Update the ref of navigation property createdOnBehalfOf in groups
+### [Restore-MgGroup](Restore-MgGroup.md)
+Invoke action restore
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
 Invoke action assignLicense

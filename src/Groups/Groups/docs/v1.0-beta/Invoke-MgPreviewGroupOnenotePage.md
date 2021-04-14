@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage
 schema: 2.0.0
@@ -25,13 +25,15 @@ Invoke-MgPreviewGroupOnenotePage -InputObject <IGroupsIdentity> [<CommonParamete
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Preview
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: PreviewViaIdentity
 Aliases:
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 key: id of onenotePage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Preview
 Aliases:
 
@@ -117,4 +119,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

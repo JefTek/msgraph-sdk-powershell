@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action forward
 ```
 Invoke-MgForwardGroupConversationThreadPostInReplyTo -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Forward
@@ -24,25 +24,27 @@ Invoke-MgForwardGroupConversationThreadPostInReplyTo -ConversationId <String> -C
 Invoke-MgForwardGroupConversationThreadPostInReplyTo -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ForwardViaIdentity
-```
-Invoke-MgForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentityExpanded
 ```
 Invoke-MgForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdentity>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ForwardViaIdentity
+```
+Invoke-MgForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action forward
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -50,7 +52,7 @@ Invoke action forward
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1TkyrqsGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -96,8 +98,8 @@ Accept wildcard characters: False
 key: id of conversation
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward, ForwardExpanded
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -111,8 +113,8 @@ Accept wildcard characters: False
 key: id of conversationThread
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward, ForwardExpanded
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -126,8 +128,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward, ForwardExpanded
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -142,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: ForwardViaIdentity, ForwardViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -157,7 +159,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -172,8 +174,8 @@ Accept wildcard characters: False
 key: id of post
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward, ForwardExpanded
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient[]
+Type: IMicrosoftGraphRecipient[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -203,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -291,4 +293,3 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-

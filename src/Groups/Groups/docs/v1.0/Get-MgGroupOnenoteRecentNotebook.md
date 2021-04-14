@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouponenoterecentnotebook
 schema: 2.0.0
@@ -14,7 +14,7 @@ Invoke function getRecentNotebooks
 
 ### Get1 (Default)
 ```
-Get-MgGroupOnenoteRecentNotebook -GroupId <String> -IncludePersonalNotebooks [<CommonParameters>]
+Get-MgGroupOnenoteRecentNotebook -GroupId <String> [-IncludePersonalNotebooks] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -25,13 +25,15 @@ Get-MgGroupOnenoteRecentNotebook -InputObject <IGroupsIdentity> [<CommonParamete
 ## DESCRIPTION
 Invoke function getRecentNotebooks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -46,7 +48,7 @@ Accept wildcard characters: False
 Usage: includePersonalNotebooks={includePersonalNotebooks}
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: Get1
 Aliases:
 
@@ -62,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -117,4 +119,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberwithlicenseerrorbyref
 schema: 2.0.0
@@ -14,30 +14,32 @@ Create new navigation property ref to memberOf for groups
 
 ### CreateExpanded5 (Default)
 ```
-New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create5
 ```
-New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity5
-```
-New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded5
 ```
 New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity5
+```
+New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property ref to memberOf for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -45,7 +47,7 @@ Create new navigation property ref to memberOf for groups
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded5, CreateViaIdentityExpanded5
 Aliases:
 
@@ -60,7 +62,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create5, CreateViaIdentity5
 Aliases:
 
@@ -75,8 +77,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Create5, CreateExpanded5
+Type: String
+Parameter Sets: CreateExpanded5, Create5
 Aliases:
 
 Required: True
@@ -91,8 +93,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: CreateViaIdentity5, CreateViaIdentityExpanded5
+Type: IGroupsIdentity
+Parameter Sets: CreateViaIdentityExpanded5, CreateViaIdentity5
 Aliases:
 
 Required: True
@@ -106,7 +108,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +124,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,4 +181,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
