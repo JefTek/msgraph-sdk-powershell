@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mgusermessagemention
 schema: 2.0.0
@@ -17,33 +17,35 @@ Update the navigation property mentions in users
 Update-MgUserMessageMention -MentionId <String> -MessageId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Application <String>] [-ClientReference <String>]
  [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>]
- [-Mentioned <IMicrosoftGraphEmailAddress>] [-MentionText <String>] [-ServerCreatedDateTime <DateTime>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserMessageMention -MentionId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMention> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMention> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserMessageMention -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
  [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
- [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-Mentioned <IMicrosoftGraphEmailAddress>]
- [-MentionText <String>] [-ServerCreatedDateTime <DateTime>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
+ [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property mentions in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update the navigation property mentions in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ Optional.
 Not used and defaulted as null for message.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +86,7 @@ mention
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMention
+Type: IMicrosoftGraphMention
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +103,7 @@ Optional.
 Not used and defaulted as null for message.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +119,7 @@ emailAddress
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
+Type: IMicrosoftGraphEmailAddress
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +134,7 @@ Accept wildcard characters: False
 The date and time that the mention is created on the client.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +151,7 @@ Optional.
 Not used and defaulted as null for message.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,8 +182,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IMailIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -196,7 +198,7 @@ emailAddress
 To construct, see NOTES section for MENTIONED properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
+Type: IMicrosoftGraphEmailAddress
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,8 +213,8 @@ Accept wildcard characters: False
 key: id of mention
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -228,7 +230,7 @@ Not used and defaulted as null for message.
 To get the mentions in a message, see the bodyPreview property of the message instead.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,8 +245,8 @@ Accept wildcard characters: False
 key: id of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -258,7 +260,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -275,7 +277,7 @@ Optional.
 Not used and defaulted as null for message.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -290,8 +292,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -305,7 +307,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -321,7 +323,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -394,4 +396,3 @@ MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
   - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-

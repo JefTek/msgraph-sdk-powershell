@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermessagecontent
 schema: 2.0.0
@@ -26,6 +26,8 @@ Get-MgUserMessageContent -InputObject <IMailIdentity> -OutFile <String> [-PassTh
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -33,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
+Type: IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of message
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -93,7 +95,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -139,4 +141,3 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride
 schema: 2.0.0
@@ -16,20 +16,13 @@ Update the navigation property overrides in users
 ```
 Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ClassifyAs <String>] [-Id <String>]
- [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,11 +30,20 @@ Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ```
 Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
  [-ClassifyAs <String>] [-Id <String>] [-SenderEmailAddress <IMicrosoftGraphEmailAddress>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
+ -BodyParameter <IMicrosoftGraphInferenceClassificationOverride> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property overrides in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Update the navigation property overrides in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +67,7 @@ inferenceClassificationOverride
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
+Type: IMicrosoftGraphInferenceClassificationOverride
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -80,7 +82,7 @@ Accept wildcard characters: False
 inferenceClassificationType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +97,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,8 +112,8 @@ Accept wildcard characters: False
 key: id of inferenceClassificationOverride
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -126,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IMailIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -141,7 +143,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,7 +159,7 @@ emailAddress
 To construct, see NOTES section for SENDEREMAILADDRESS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
+Type: IMicrosoftGraphEmailAddress
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,8 +174,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -187,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -265,4 +267,3 @@ SENDEREMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
   - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-
