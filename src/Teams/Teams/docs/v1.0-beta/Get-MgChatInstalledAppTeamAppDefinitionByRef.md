@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgchatinstalledappteamappdefinitionbyref
 schema: 2.0.0
@@ -26,13 +26,15 @@ Get-MgChatInstalledAppTeamAppDefinitionByRef -InputObject <ITeamsIdentity> [<Com
 ## DESCRIPTION
 Get ref of teamsAppDefinition from chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
 key: id of chat
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 key: id of teamsAppInstallation
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -126,4 +128,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

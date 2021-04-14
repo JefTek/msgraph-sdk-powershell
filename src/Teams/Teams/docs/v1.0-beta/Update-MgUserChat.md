@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mguserchat
 schema: 2.0.0
@@ -19,19 +19,13 @@ Update-MgUserChat -ChatId <String> -UserId <String> [-AdditionalProperties <Hash
  [-LastUpdatedDateTime <DateTime>] [-Members <IMicrosoftGraphConversationMember[]>]
  [-Messages <IMicrosoftGraphChatMessage[]>]
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
- [-Topic <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Topic <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserChat -ChatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgUserChat -ChatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,11 +35,19 @@ Update-MgUserChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtabl
  [-LastUpdatedDateTime <DateTime>] [-Members <IMicrosoftGraphConversationMember[]>]
  [-Messages <IMicrosoftGraphChatMessage[]>]
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
- [-Topic <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Topic <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property chats in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Update the navigation property chats in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ chat
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
+Type: IMicrosoftGraphChat
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -84,8 +86,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 chatType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +117,7 @@ Date and time at which the chat was created.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +132,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +148,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -163,7 +165,7 @@ Nullable.
 To construct, see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation[]
+Type: IMicrosoftGraphTeamsAppInstallation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +181,7 @@ Date and time at which the chat was renamed or list of members were last changed
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +198,7 @@ Nullable.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember[]
+Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +215,7 @@ Nullable.
 To construct, see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage[]
+Type: IMicrosoftGraphChatMessage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +230,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -244,7 +246,7 @@ A collection of permissions granted to apps for the chat.
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant[]
+Type: IMicrosoftGraphResourceSpecificPermissionGrant[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -260,7 +262,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TABS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab[]
+Type: IMicrosoftGraphTeamsTab[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -276,7 +278,7 @@ Accept wildcard characters: False
 Only available for group chats.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,8 +293,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -306,7 +308,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -322,7 +324,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -399,7 +401,7 @@ BODYPARAMETER <IMicrosoftGraphChat>: chat
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
   - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
     - `[Id <String>]`: Read-only.
-    - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+    - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
       - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
       - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
       - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -547,7 +549,7 @@ MEMBERS <IMicrosoftGraphConversationMember[]>: A collection of all the members i
 
 MESSAGES <IMicrosoftGraphChatMessage[]>: A collection of all the messages in the chat. Nullable.
   - `[Id <String>]`: Read-only.
-  - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+  - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
     - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
     - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
     - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -661,3 +663,4 @@ TABS <IMicrosoftGraphTeamsTab[]>: .
 
 ## RELATED LINKS
 
+## RELATED LINKS

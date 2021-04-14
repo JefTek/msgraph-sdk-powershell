@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgmessagechat
 schema: 2.0.0
@@ -19,6 +19,8 @@ Invoke-MgMessageChat [<CommonParameters>]
 ## DESCRIPTION
 Invoke function allMessages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### CommonParameters
@@ -35,4 +37,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-

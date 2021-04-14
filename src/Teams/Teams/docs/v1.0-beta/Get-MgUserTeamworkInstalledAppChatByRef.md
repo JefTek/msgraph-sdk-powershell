@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledappchatbyref
 schema: 2.0.0
@@ -26,6 +26,8 @@ Get-MgUserTeamworkInstalledAppChatByRef -InputObject <ITeamsIdentity> [<CommonPa
 ## DESCRIPTION
 Get ref of chat from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -33,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 key: id of userScopeTeamsAppInstallation
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -126,4 +128,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

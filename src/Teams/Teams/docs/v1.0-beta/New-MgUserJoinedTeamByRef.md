@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserjoinedteambyref
 schema: 2.0.0
@@ -14,30 +14,31 @@ Create new navigation property ref to joinedTeams for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserJoinedTeamByRef -UserId <String> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
+New-MgUserJoinedTeamByRef -UserId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserJoinedTeamByRef -UserId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserJoinedTeamByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgUserJoinedTeamByRef -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserJoinedTeamByRef -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgUserJoinedTeamByRef -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserJoinedTeamByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property ref to joinedTeams for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -45,7 +46,7 @@ Create new navigation property ref to joinedTeams for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -60,7 +61,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -76,8 +77,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -91,8 +92,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -106,7 +107,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +123,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -187,4 +188,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgchatinstalledapp
 schema: 2.0.0
@@ -14,44 +14,45 @@ Update the navigation property installedApps in chats
 
 ### UpdateExpanded (Default)
 ```
-Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>]
- [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-PassThru] [-Confirm] [-WhatIf]
+Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Upgrade
+```
+Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpgradeViaIdentity
 ```
-Update-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Upgrade
+### UpdateViaIdentity
 ```
-Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpgradeViaIdentity
-```
-Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property installedApps in chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -59,7 +60,7 @@ Update the navigation property installedApps in chats
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +76,7 @@ teamsAppInstallation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
+Type: IMicrosoftGraphTeamsAppInstallation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,8 +91,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded, Upgrade
+Type: String
+Parameter Sets: UpdateExpanded, Upgrade, Update
 Aliases:
 
 Required: True
@@ -105,7 +106,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,8 +122,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded, UpgradeViaIdentity
+Type: ITeamsIdentity
+Parameter Sets: UpgradeViaIdentity, UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -136,7 +137,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -152,7 +153,7 @@ teamsApp
 To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
+Type: IMicrosoftGraphTeamsApp
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +169,7 @@ teamsAppDefinition
 To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
+Type: IMicrosoftGraphTeamsAppDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,8 +184,8 @@ Accept wildcard characters: False
 key: id of teamsAppInstallation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded, Upgrade
+Type: String
+Parameter Sets: UpdateExpanded, Upgrade, Update
 Aliases:
 
 Required: True
@@ -198,7 +199,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +215,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -365,4 +366,3 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp
 schema: 2.0.0
@@ -15,17 +15,19 @@ Delete navigation property installedApps for users
 ### Delete (Default)
 ```
 Remove-MgUserTeamworkInstalledApp -UserId <String> -UserScopeTeamsAppInstallationId <String>
- [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property installedApps for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Delete navigation property installedApps for users
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 key: id of userScopeTeamsAppInstallation
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -109,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -125,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -188,4 +190,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

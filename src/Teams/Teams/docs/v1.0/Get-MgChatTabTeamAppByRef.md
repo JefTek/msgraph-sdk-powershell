@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgchattabteamappbyref
 schema: 2.0.0
@@ -25,13 +25,15 @@ Get-MgChatTabTeamAppByRef -InputObject <ITeamsIdentity> [<CommonParameters>]
 ## DESCRIPTION
 Get ref of teamsApp from chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
 key: id of chat
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 key: id of teamsTab
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -125,4 +127,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

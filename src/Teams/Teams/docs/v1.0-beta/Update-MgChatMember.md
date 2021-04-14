@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgchatmember
 schema: 2.0.0
@@ -16,30 +16,32 @@ Update the navigation property members in chats
 ```
 Update-MgChatMember -ChatId <String> -ConversationMemberId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgChatMember -ChatId <String> -ConversationMemberId <String>
- -BodyParameter <IMicrosoftGraphConversationMember> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphConversationMember>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConversationMember> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgChatMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphConversationMember>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property members in chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Update the navigation property members in chats
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -63,7 +65,7 @@ conversationMember
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
+Type: IMicrosoftGraphConversationMember
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -78,8 +80,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -93,8 +95,8 @@ Accept wildcard characters: False
 key: id of conversationMember
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -108,7 +110,7 @@ Accept wildcard characters: False
 The display name of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -123,7 +125,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -139,8 +141,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -154,7 +156,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -169,7 +171,7 @@ Accept wildcard characters: False
 The roles for that user.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -185,7 +187,7 @@ The timestamp denoting how far back a conversation's history is shared with the 
 This property is settable only for members of a chat.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -200,7 +202,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -216,7 +218,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -288,4 +290,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp
 schema: 2.0.0
@@ -16,30 +16,32 @@ Create new navigation property to installedApps for users
 ```
 New-MgUserTeamworkInstalledApp -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Chat <IMicrosoftGraphChat1>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>]
- [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgUserTeamworkInstalledApp -UserId <String> -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation1> [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Chat <IMicrosoftGraphChat1>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>]
- [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to installedApps for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Create new navigation property to installedApps for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -63,7 +65,7 @@ userScopeTeamsAppInstallation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation1
+Type: IMicrosoftGraphUserScopeTeamsAppInstallation1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -79,7 +81,7 @@ chat
 To construct, see NOTES section for CHAT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
+Type: IMicrosoftGraphChat1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -110,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -126,7 +128,7 @@ teamsApp
 To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -142,7 +144,7 @@ teamsAppDefinition
 To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1
+Type: IMicrosoftGraphTeamsAppDefinition1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -157,8 +159,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -172,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -268,7 +270,7 @@ BODYPARAMETER <IMicrosoftGraphUserScopeTeamsAppInstallation1>: userScopeTeamsApp
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
     - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
         - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -376,7 +378,7 @@ CHAT <IMicrosoftGraphChat1>: chat
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
   - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
     - `[Id <String>]`: Read-only.
-    - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+    - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
       - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
       - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
       - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -524,3 +526,4 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition1>: teamsAppDefinition
 
 ## RELATED LINKS
 
+## RELATED LINKS

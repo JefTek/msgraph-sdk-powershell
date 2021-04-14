@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkworkforceintegration
 schema: 2.0.0
@@ -19,20 +19,14 @@ Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String> [-Additio
  [-DisplayName <String>] [-EligibilityFilteringEnabledEntities <String>]
  [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>] [-Id <String>] [-IsActive]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId <String>
- -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,12 +36,20 @@ Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-Additional
  [-DisplayName <String>] [-EligibilityFilteringEnabledEntities <String>]
  [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>] [-Id <String>] [-IsActive]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property workforceIntegrations in teamwork
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -55,7 +57,7 @@ Update the navigation property workforceIntegrations in teamwork
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +73,7 @@ API version for the call back URL.
 Start with 1.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +89,7 @@ workforceIntegration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
+Type: IMicrosoftGraphWorkforceIntegration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,7 +105,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +121,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +136,7 @@ Accept wildcard characters: False
 Name of the workforce integration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +151,7 @@ Accept wildcard characters: False
 eligibilityFilteringEnabledEntities
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +167,7 @@ workforceIntegrationEncryption
 To construct, see NOTES section for ENCRYPTION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegrationEncryption
+Type: IMicrosoftGraphWorkforceIntegrationEncryption
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +182,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,8 +198,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -211,7 +213,7 @@ Accept wildcard characters: False
 Indicates whether this workforce integration is currently active and available.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +229,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +245,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -258,7 +260,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -273,7 +275,7 @@ Accept wildcard characters: False
 workforceIntegrationSupportedEntities
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +290,7 @@ Accept wildcard characters: False
 workforceIntegrationSupportedEntities
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +305,7 @@ Accept wildcard characters: False
 Workforce Integration URL for callbacks from the Shifts service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -318,8 +320,8 @@ Accept wildcard characters: False
 key: id of workforceIntegration
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -333,7 +335,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -349,7 +351,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -463,4 +465,3 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-

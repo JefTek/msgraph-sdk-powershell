@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift
 schema: 2.0.0
@@ -15,22 +15,15 @@ Create new navigation property to openShifts for teams
 ### CreateExpanded1 (Default)
 ```
 New-MgTeamScheduleOpenShift -TeamId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-SchedulingGroupId <String>]
+ [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgTeamScheduleOpenShift -TeamId <String> -BodyParameter <IMicrosoftGraphOpenShift1> [-Confirm] [-WhatIf]
+New-MgTeamScheduleOpenShift -TeamId <String> -BodyParameter <IMicrosoftGraphOpenShift1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -38,12 +31,20 @@ New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-Confirm] [-WhatIf]
+ [-SchedulingGroupId <String>] [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to openShifts for teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +52,7 @@ Create new navigation property to openShifts for teams
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +68,7 @@ openShift
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift1
+Type: IMicrosoftGraphOpenShift1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -83,7 +84,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -99,7 +100,7 @@ openShiftItem
 To construct, see NOTES section for DRAFTOPENSHIFT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShiftItem
+Type: IMicrosoftGraphOpenShiftItem
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -130,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -146,7 +147,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -162,7 +163,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -177,7 +178,7 @@ Accept wildcard characters: False
 ID for the scheduling group that the open shift belongs to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -193,7 +194,7 @@ openShiftItem
 To construct, see NOTES section for SHAREDOPENSHIFT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShiftItem
+Type: IMicrosoftGraphOpenShiftItem
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -208,8 +209,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -223,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -376,4 +377,3 @@ SHAREDOPENSHIFT <IMicrosoftGraphOpenShiftItem>: openShiftItem
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-

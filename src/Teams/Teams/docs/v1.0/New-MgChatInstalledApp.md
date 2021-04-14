@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgchatinstalledapp
 schema: 2.0.0
@@ -15,31 +15,33 @@ Create new navigation property to installedApps for chats
 ### CreateExpanded1 (Default)
 ```
 New-MgChatInstalledApp -ChatId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgChatInstalledApp -ChatId <String> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgChatInstalledApp -ChatId <String> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to installedApps for chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Create new navigation property to installedApps for chats
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -63,7 +65,7 @@ teamsAppInstallation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
+Type: IMicrosoftGraphTeamsAppInstallation1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -78,8 +80,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -93,7 +95,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -109,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -125,7 +127,7 @@ teamsApp
 To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -141,7 +143,7 @@ teamsAppDefinition
 To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1
+Type: IMicrosoftGraphTeamsAppDefinition1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -156,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -317,4 +319,3 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition1>: teamsAppDefinition
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-

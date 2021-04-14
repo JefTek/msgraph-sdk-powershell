@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mguserteamwork
 schema: 2.0.0
@@ -15,31 +15,33 @@ Update the navigation property teamwork in users
 ### UpdateExpanded1 (Default)
 ```
 Update-MgUserTeamwork -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgUserTeamwork -UserId <String> -BodyParameter <IMicrosoftGraphUserTeamwork1> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphUserTeamwork1> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgUserTeamwork -UserId <String> -BodyParameter <IMicrosoftGraphUserTeamwork1> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgUserTeamwork -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-InstalledApps <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphUserTeamwork1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property teamwork in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -47,7 +49,7 @@ Update the navigation property teamwork in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -63,7 +65,7 @@ userTeamwork
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserTeamwork1
+Type: IMicrosoftGraphUserTeamwork1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -94,8 +96,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -110,7 +112,7 @@ The apps installed in the personal scope of this user.
 To construct, see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation1[]
+Type: IMicrosoftGraphUserScopeTeamsAppInstallation1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -125,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -140,8 +142,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -155,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -171,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -253,7 +255,7 @@ BODYPARAMETER <IMicrosoftGraphUserTeamwork1>: userTeamwork
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -396,7 +398,7 @@ INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>: The apps instal
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
     - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only – sending attachments is not supported.
+      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
         - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -464,3 +466,4 @@ INSTALLEDAPPS <IMicrosoftGraphUserScopeTeamsAppInstallation1[]>: The apps instal
 
 ## RELATED LINKS
 
+## RELATED LINKS

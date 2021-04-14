@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannelmessagereply
 schema: 2.0.0
@@ -15,17 +15,19 @@ Delete navigation property replies for teams
 ### Delete (Default)
 ```
 Remove-MgTeamPrimaryChannelMessageReply -ChatMessageId <String> -ChatMessageId1 <String> -TeamId <String>
- [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property replies for teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Delete navigation property replies for teams
 key: id of chatMessage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of chatMessage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -109,7 +111,7 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -124,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -140,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,4 +205,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

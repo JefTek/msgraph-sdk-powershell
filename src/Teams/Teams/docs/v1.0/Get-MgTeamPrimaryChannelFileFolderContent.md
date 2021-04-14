@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelfilefoldercontent
 schema: 2.0.0
@@ -26,6 +26,8 @@ Get-MgTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> -OutFile
 ## DESCRIPTION
 Get media content for the navigation property filesFolder from teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -33,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -141,4 +143,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamownerbyref
 schema: 2.0.0
@@ -14,29 +14,31 @@ Create new navigation property ref to owners for teams
 
 ### CreateExpanded (Default)
 ```
-New-MgTeamOwnerByRef -TeamId <String> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
+New-MgTeamOwnerByRef -TeamId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamOwnerByRef -TeamId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgTeamOwnerByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgTeamOwnerByRef -TeamId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgTeamOwnerByRef -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
+New-MgTeamOwnerByRef -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTeamOwnerByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property ref to owners for teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -44,7 +46,7 @@ Create new navigation property ref to owners for teams
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -59,7 +61,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -75,8 +77,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -90,8 +92,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -105,7 +107,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -121,7 +123,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -186,4 +188,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

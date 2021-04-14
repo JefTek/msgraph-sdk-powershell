@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/confirm-mgteamscheduletimecard
 schema: 2.0.0
@@ -14,16 +14,18 @@ Invoke action confirm
 
 ### Confirm (Default)
 ```
-Confirm-MgTeamScheduleTimeCard -TeamId <String> -TimeCardId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+Confirm-MgTeamScheduleTimeCard -TeamId <String> -TimeCardId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ConfirmViaIdentity
 ```
-Confirm-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+Confirm-MgTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action confirm
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -32,7 +34,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: ConfirmViaIdentity
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Confirm
 Aliases:
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 key: id of timeCard
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Confirm
 Aliases:
 
@@ -77,7 +79,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -93,7 +95,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,4 +158,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

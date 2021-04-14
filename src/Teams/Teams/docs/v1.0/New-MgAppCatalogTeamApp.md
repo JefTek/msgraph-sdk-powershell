@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
 schema: 2.0.0
@@ -16,17 +16,18 @@ Create new navigation property to teamsApps for appCatalogs
 ```
 New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
  [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>] [-DisplayName <String>]
- [-DistributionMethod <String>] [-ExternalId <String>] [-Id <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-DistributionMethod <String>] [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp1> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to teamsApps for appCatalogs
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +35,7 @@ Create new navigation property to teamsApps for appCatalogs
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -50,7 +51,7 @@ The details for each version of the app.
 To construct, see NOTES section for APPDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1[]
+Type: IMicrosoftGraphTeamsAppDefinition1[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -66,7 +67,7 @@ teamsApp
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: Create1
 Aliases:
 
@@ -81,7 +82,7 @@ Accept wildcard characters: False
 The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -96,7 +97,7 @@ Accept wildcard characters: False
 teamsAppDistributionMethod
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -111,7 +112,7 @@ Accept wildcard characters: False
 The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -126,7 +127,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -141,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,4 +238,3 @@ BODYPARAMETER <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-
