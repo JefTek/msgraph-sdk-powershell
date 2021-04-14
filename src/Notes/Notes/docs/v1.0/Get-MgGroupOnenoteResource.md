@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgGroupOnenoteResource -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get resources from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.INotesIdentity
+Type: INotesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of onenoteResource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -137,4 +139,3 @@ INPUTOBJECT <INotesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
