@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycaseoperationmicrosoftgraphediscoverycaseexportoperationdownloadurl
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgComplianceEdiscoveryCaseOperationMicrosoftGraphEdiscoveryCaseExportOperati
 ## DESCRIPTION
 Invoke function getDownloadUrl
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId
 key: id of case
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of caseOperation
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Type: IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -111,4 +113,3 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-

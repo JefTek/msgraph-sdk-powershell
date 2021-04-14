@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasecustodianindex
 schema: 2.0.0
@@ -14,18 +14,20 @@ Invoke action updateIndex
 
 ### Update (Default)
 ```
-Update-MgComplianceEdiscoveryCaseCustodianIndex -CaseId <String> -CustodianId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgComplianceEdiscoveryCaseCustodianIndex -CaseId <String> -CustodianId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgComplianceEdiscoveryCaseCustodianIndex -InputObject <IComplianceIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgComplianceEdiscoveryCaseCustodianIndex -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action updateIndex
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Invoke action updateIndex
 key: id of case
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Update
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of custodian
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Update
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Type: IComplianceIdentity
 Parameter Sets: UpdateViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -110,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -157,4 +159,3 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-

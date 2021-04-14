@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasesetting
 schema: 2.0.0
@@ -17,33 +17,35 @@ Update the navigation property settings in compliance
 Update-MgComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-Confirm] [-WhatIf]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgComplianceEdiscoveryCaseSetting -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoverySettings>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
+ [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoverySettings> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
- [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoverySettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property settings in compliance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update the navigation property settings in compliance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ settings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySettings
+Type: IMicrosoftGraphEdiscoverySettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +84,8 @@ Accept wildcard characters: False
 key: id of case
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IComplianceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +131,7 @@ ocrSettings
 To construct, see NOTES section for OCR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryOcrSettings
+Type: IMicrosoftGraphEdiscoveryOcrSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -160,7 +162,7 @@ redundancyDetectionSettings
 To construct, see NOTES section for REDUNDANCYDETECTION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
+Type: IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +178,7 @@ topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTopicModelingSettings
+Type: IMicrosoftGraphEdiscoveryTopicModelingSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +193,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +209,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -297,4 +299,3 @@ TOPICMODELING <IMicrosoftGraphEdiscoveryTopicModelingSettings>: topicModelingSet
   - `[TopicCount <Int32?>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasecustodianunifiedgroupsourcegroupbyref
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef -InputObject
 ## DESCRIPTION
 Get ref of group from compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId
 key: id of case
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of custodian
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Type: IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of unifiedGroupSource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -126,4 +128,3 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-

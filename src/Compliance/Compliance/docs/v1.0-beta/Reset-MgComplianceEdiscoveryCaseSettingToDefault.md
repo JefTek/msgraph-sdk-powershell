@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/reset-mgcomplianceediscoverycasesettingtodefault
 schema: 2.0.0
@@ -14,18 +14,20 @@ Invoke action resetToDefault
 
 ### Reset (Default)
 ```
-Reset-MgComplianceEdiscoveryCaseSettingToDefault -CaseId <String> [-PassThru] [-Confirm] [-WhatIf]
+Reset-MgComplianceEdiscoveryCaseSettingToDefault -CaseId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgComplianceEdiscoveryCaseSettingToDefault -InputObject <IComplianceIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Reset-MgComplianceEdiscoveryCaseSettingToDefault -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action resetToDefault
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Invoke action resetToDefault
 key: id of case
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Reset
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Type: IComplianceIdentity
 Parameter Sets: ResetViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -95,7 +97,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -142,4 +144,3 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-
