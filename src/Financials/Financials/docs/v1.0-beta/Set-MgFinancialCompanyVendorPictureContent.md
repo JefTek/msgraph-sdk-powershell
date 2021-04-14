@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/set-mgfinancialcompanyvendorpicturecontent
 schema: 2.0.0
@@ -15,17 +15,19 @@ Update media content for the navigation property picture in financials
 ### Set (Default)
 ```
 Set-MgFinancialCompanyVendorPictureContent -CompanyId <String> -PictureId <String> -VendorId <String>
- -InFile <String> [-BodyParameter <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgFinancialCompanyVendorPictureContent -InputObject <IFinancialsIdentity> -InFile <String>
- [-BodyParameter <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgFinancialCompanyVendorPictureContent -InputObject <IFinancialsIdentity> [-BodyParameter <Stream>]
+ -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update media content for the navigation property picture in financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Update media content for the navigation property picture in financials
 .
 
 ```yaml
-Type: System.IO.Stream
+Type: Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 key: id of company
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -65,7 +67,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +83,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Type: IFinancialsIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 key: id of picture
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 key: id of vendor
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -141,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,4 +231,3 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-

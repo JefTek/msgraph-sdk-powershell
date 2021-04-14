@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/new-mgfinancialcompanyemployee
 schema: 2.0.0
@@ -19,20 +19,14 @@ New-MgFinancialCompanyEmployee -CompanyId <String> [-AdditionalProperties <Hasht
  [-Email <String>] [-EmploymentDate <DateTime>] [-GivenName <String>] [-Id <String>] [-JobTitle <String>]
  [-LastModifiedDateTime <DateTime>] [-MiddleName <String>] [-MobilePhone <String>] [-Number <String>]
  [-PersonalEmail <String>] [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
- [-StatisticsGroupCode <String>] [-Status <String>] [-Surname <String>] [-TerminationDate <DateTime>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StatisticsGroupCode <String>] [-Status <String>] [-Surname <String>] [-TerminationDate <DateTime>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgFinancialCompanyEmployee -CompanyId <String> -BodyParameter <IMicrosoftGraphEmployee> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgFinancialCompanyEmployee -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphEmployee>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgFinancialCompanyEmployee -CompanyId <String> -BodyParameter <IMicrosoftGraphEmployee> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -42,12 +36,20 @@ New-MgFinancialCompanyEmployee -InputObject <IFinancialsIdentity> [-AdditionalPr
  [-Email <String>] [-EmploymentDate <DateTime>] [-GivenName <String>] [-Id <String>] [-JobTitle <String>]
  [-LastModifiedDateTime <DateTime>] [-MiddleName <String>] [-MobilePhone <String>] [-Number <String>]
  [-PersonalEmail <String>] [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
- [-StatisticsGroupCode <String>] [-Status <String>] [-Surname <String>] [-TerminationDate <DateTime>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StatisticsGroupCode <String>] [-Status <String>] [-Surname <String>] [-TerminationDate <DateTime>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgFinancialCompanyEmployee -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphEmployee>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to employees for financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -55,7 +57,7 @@ Create new navigation property to employees for financials
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +73,7 @@ postalAddressType
 To construct, see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPostalAddressType
+Type: IMicrosoftGraphPostalAddressType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +88,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +104,7 @@ employee
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmployee
+Type: IMicrosoftGraphEmployee
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -117,8 +119,8 @@ Accept wildcard characters: False
 key: id of company
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -132,7 +134,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +149,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +179,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +194,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,8 +210,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IFinancialsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -223,7 +225,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +240,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +255,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -268,7 +270,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -283,7 +285,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -298,7 +300,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -313,7 +315,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -329,7 +331,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPicture[]
+Type: IMicrosoftGraphPicture[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -344,7 +346,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -359,7 +361,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -374,7 +376,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -389,7 +391,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -404,7 +406,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -420,7 +422,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -540,4 +542,3 @@ PICTURE <IMicrosoftGraphPicture[]>: .
   - `[Width <Int32?>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanyinformation
 schema: 2.0.0
@@ -18,20 +18,14 @@ Update-MgFinancialCompanyInformation -CompanyId <String> -CompanyInformationId <
  [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPostalAddressType>] [-CurrencyCode <String>]
  [-CurrentFiscalYearStartDate <DateTime>] [-DisplayName <String>] [-Email <String>] [-FaxNumber <String>]
  [-Id <String>] [-Industry <String>] [-LastModifiedDateTime <DateTime>] [-PhoneNumber <String>]
- [-PictureInputFile <String>] [-TaxRegistrationNumber <String>] [-Website <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-PictureInputFile <String>] [-TaxRegistrationNumber <String>] [-Website <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgFinancialCompanyInformation -CompanyId <String> -CompanyInformationId <String>
- -BodyParameter <IMicrosoftGraphCompanyInformation1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgFinancialCompanyInformation -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCompanyInformation1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCompanyInformation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,12 +34,20 @@ Update-MgFinancialCompanyInformation -InputObject <IFinancialsIdentity> [-Additi
  [-Address <IMicrosoftGraphPostalAddressType>] [-CurrencyCode <String>]
  [-CurrentFiscalYearStartDate <DateTime>] [-DisplayName <String>] [-Email <String>] [-FaxNumber <String>]
  [-Id <String>] [-Industry <String>] [-LastModifiedDateTime <DateTime>] [-PhoneNumber <String>]
- [-PictureInputFile <String>] [-TaxRegistrationNumber <String>] [-Website <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-PictureInputFile <String>] [-TaxRegistrationNumber <String>] [-Website <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgFinancialCompanyInformation -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphCompanyInformation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property companyInformation in financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,7 +55,7 @@ Update the navigation property companyInformation in financials
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ postalAddressType
 To construct, see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPostalAddressType
+Type: IMicrosoftGraphPostalAddressType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +87,7 @@ companyInformation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompanyInformation1
+Type: IMicrosoftGraphCompanyInformation1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -100,8 +102,8 @@ Accept wildcard characters: False
 key: id of company
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -115,8 +117,8 @@ Accept wildcard characters: False
 key: id of companyInformation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -130,7 +132,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +162,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +177,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +192,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +207,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -236,8 +238,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IFinancialsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -251,7 +253,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +268,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -281,7 +283,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +298,7 @@ Accept wildcard characters: False
 Input File for Picture (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +313,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +328,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -341,7 +343,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -357,7 +359,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -459,4 +461,3 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-

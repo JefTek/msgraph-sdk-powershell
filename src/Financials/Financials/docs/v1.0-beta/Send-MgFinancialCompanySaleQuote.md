@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/send-mgfinancialcompanysalequote
 schema: 2.0.0
@@ -14,18 +14,20 @@ Invoke action send
 
 ### Send (Default)
 ```
-Send-MgFinancialCompanySaleQuote -CompanyId <String> -SalesQuoteId <String> [-PassThru] [-Confirm] [-WhatIf]
+Send-MgFinancialCompanySaleQuote -CompanyId <String> -SalesQuoteId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
-Send-MgFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Send-MgFinancialCompanySaleQuote -InputObject <IFinancialsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action send
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Invoke action send
 key: id of company
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Send
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Type: IFinancialsIdentity
 Parameter Sets: SendViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 key: id of salesQuote
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Send
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -110,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,4 +182,3 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-

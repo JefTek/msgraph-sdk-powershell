@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancialcompanysalequotelineaccount
 schema: 2.0.0
@@ -20,14 +20,8 @@ Get-MgFinancialCompanySaleQuoteLineAccount -CompanyId <String> -SalesQuoteLineId
 
 ### Get1
 ```
-Get-MgFinancialCompanySaleQuoteLineAccount -CompanyId <String> -SalesQuoteId <String>
- -SalesQuoteLineId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgFinancialCompanySaleQuoteLineAccount -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgFinancialCompanySaleQuoteLineAccount -CompanyId <String> -SalesQuoteLineId <String>
+ -SalesQuoteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -36,8 +30,16 @@ Get-MgFinancialCompanySaleQuoteLineAccount -InputObject <IFinancialsIdentity> [-
  [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity
+```
+Get-MgFinancialCompanySaleQuoteLineAccount -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Get account from financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -45,7 +47,7 @@ Get account from financials
 key: id of company
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -60,7 +62,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -76,8 +78,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: IFinancialsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +93,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -106,7 +108,7 @@ Accept wildcard characters: False
 key: id of salesQuote
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -121,7 +123,7 @@ Accept wildcard characters: False
 key: id of salesQuoteLine
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -191,4 +193,3 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancialcompanysalecreditmemolineitempicturecontent
 schema: 2.0.0
@@ -20,12 +20,14 @@ Get-MgFinancialCompanySaleCreditMemoLineItemPictureContent -CompanyId <String> -
 
 ### GetViaIdentity
 ```
-Get-MgFinancialCompanySaleCreditMemoLineItemPictureContent -InputObject <IFinancialsIdentity>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgFinancialCompanySaleCreditMemoLineItemPictureContent -InputObject <IFinancialsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get media content for the navigation property picture from financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -33,7 +35,7 @@ Get media content for the navigation property picture from financials
 key: id of company
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Type: IFinancialsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 key: id of picture
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -109,7 +111,7 @@ Accept wildcard characters: False
 key: id of salesCreditMemoLine
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -179,4 +181,3 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-

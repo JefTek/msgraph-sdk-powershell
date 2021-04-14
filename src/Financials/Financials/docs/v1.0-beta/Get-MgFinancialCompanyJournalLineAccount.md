@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancialcompanyjournallineaccount
 schema: 2.0.0
@@ -20,14 +20,8 @@ Get-MgFinancialCompanyJournalLineAccount -CompanyId <String> -JournalLineId <Str
 
 ### Get1
 ```
-Get-MgFinancialCompanyJournalLineAccount -CompanyId <String> -JournalId <String> -JournalLineId <String>
+Get-MgFinancialCompanyJournalLineAccount -CompanyId <String> -JournalLineId <String> -JournalId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgFinancialCompanyJournalLineAccount -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -36,8 +30,16 @@ Get-MgFinancialCompanyJournalLineAccount -InputObject <IFinancialsIdentity> [-Ex
  [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity
+```
+Get-MgFinancialCompanyJournalLineAccount -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Get account from financials
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -45,7 +47,7 @@ Get account from financials
 key: id of company
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -60,7 +62,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -76,8 +78,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: IFinancialsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +93,7 @@ Accept wildcard characters: False
 key: id of journal
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -106,7 +108,7 @@ Accept wildcard characters: False
 key: id of journalLine
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -121,7 +123,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -191,4 +193,3 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
-
