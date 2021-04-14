@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityuserdetail05f1
 schema: 2.0.0
@@ -25,13 +25,15 @@ Get-MgReportOneDriveActivityUserDetail05F1 -InputObject <IReportsIdentity> [<Com
 ## DESCRIPTION
 Invoke function getOneDriveActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
 Usage: date={date}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Get1
 Aliases:
 
@@ -47,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Type: IReportsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -106,4 +108,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
-

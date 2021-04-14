@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportonedriveusageaccountcount
 schema: 2.0.0
@@ -26,6 +26,8 @@ Get-MgReportOneDriveUsageAccountCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getOneDriveUsageAccountCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -33,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Type: IReportsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -48,7 +50,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -63,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 Usage: period={period}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -137,4 +139,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob
 schema: 2.0.0
@@ -26,13 +26,15 @@ Get-MgReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [<CommonParame
 ## DESCRIPTION
 Invoke function getGroupArchivedPrintJobs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndDateTime
 Usage: endDateTime={endDateTime}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Get
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 Usage: groupId={groupId}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -63,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Type: IReportsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 Usage: startDateTime={startDateTime}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Get
 Aliases:
 
@@ -137,4 +139,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
-

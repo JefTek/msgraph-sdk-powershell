@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityuserdetailf3be
 schema: 2.0.0
@@ -27,13 +27,15 @@ Get-MgReportSharePointActivityUserDetailF3Be -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getSharePointActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
 Usage: date={date}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Type: IReportsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -138,4 +140,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
-

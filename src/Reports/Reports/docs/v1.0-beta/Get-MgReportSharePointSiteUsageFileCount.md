@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagefilecount
 schema: 2.0.0
@@ -25,6 +25,8 @@ Get-MgReportSharePointSiteUsageFileCount -InputObject <IReportsIdentity> [<Commo
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -32,7 +34,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Type: IReportsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -47,7 +49,7 @@ Accept wildcard characters: False
 Usage: period={period}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -106,4 +108,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
-

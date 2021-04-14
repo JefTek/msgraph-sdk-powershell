@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/invoke-mguserreportauthenticationmethodregistered
 schema: 2.0.0
@@ -17,26 +17,16 @@ Invoke function usersRegisteredByFeature
 Invoke-MgUserReportAuthenticationMethodRegistered [<CommonParameters>]
 ```
 
-### Users1
-```
-Invoke-MgUserReportAuthenticationMethodRegistered -IncludedUserRoles <String> -IncludedUserTypes <String>
- [<CommonParameters>]
-```
-
-### Users2
-```
-Invoke-MgUserReportAuthenticationMethodRegistered [<CommonParameters>]
-```
-
 ### Users3
 ```
 Invoke-MgUserReportAuthenticationMethodRegistered -IncludedUserRoles <String> -IncludedUserTypes <String>
  [<CommonParameters>]
 ```
 
-### UsersViaIdentity
+### Users1
 ```
-Invoke-MgUserReportAuthenticationMethodRegistered -InputObject <IReportsIdentity> [<CommonParameters>]
+Invoke-MgUserReportAuthenticationMethodRegistered -IncludedUserRoles <String> -IncludedUserTypes <String>
+ [<CommonParameters>]
 ```
 
 ### UsersViaIdentity1
@@ -44,8 +34,15 @@ Invoke-MgUserReportAuthenticationMethodRegistered -InputObject <IReportsIdentity
 Invoke-MgUserReportAuthenticationMethodRegistered -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
 
+### UsersViaIdentity
+```
+Invoke-MgUserReportAuthenticationMethodRegistered -InputObject <IReportsIdentity> [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Invoke function usersRegisteredByFeature
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -53,8 +50,8 @@ Invoke function usersRegisteredByFeature
 Usage: includedUserRoles={includedUserRoles}
 
 ```yaml
-Type: System.String
-Parameter Sets: Users1, Users3
+Type: String
+Parameter Sets: Users3, Users1
 Aliases:
 
 Required: True
@@ -68,8 +65,8 @@ Accept wildcard characters: False
 Usage: includedUserTypes={includedUserTypes}
 
 ```yaml
-Type: System.String
-Parameter Sets: Users1, Users3
+Type: String
+Parameter Sets: Users3, Users1
 Aliases:
 
 Required: True
@@ -84,8 +81,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
-Parameter Sets: UsersViaIdentity, UsersViaIdentity1
+Type: IReportsIdentity
+Parameter Sets: UsersViaIdentity1, UsersViaIdentity
 Aliases:
 
 Required: True
@@ -145,4 +142,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
-
