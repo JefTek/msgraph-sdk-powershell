@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: 804f073f-e282-4562-9171-7d6fe134987e
+Module Guid: 537815f7-27b6-4a0c-924a-da53fe339ef6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -44,6 +44,9 @@ Get entity from groups by key
 ### [Get-MgGroupAcceptedSender](Get-MgGroupAcceptedSender.md)
 Get acceptedSenders from groups
 
+### [Get-MgGroupAcceptedSenderByRef](Get-MgGroupAcceptedSenderByRef.md)
+Get ref of acceptedSenders from groups
+
 ### [Get-MgGroupById](Get-MgGroupById.md)
 Invoke action getByIds
 
@@ -77,10 +80,10 @@ Get multiValueExtendedProperties from groups
 ### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 Get singleValueExtendedProperties from groups
 
-### [Get-MgGroupCreatedOnBehalf](Get-MgGroupCreatedOnBehalf.md)
+### [Get-MgGroupCreatedOnBehalfOf](Get-MgGroupCreatedOnBehalfOf.md)
 Get createdOnBehalfOf from groups
 
-### [Get-MgGroupCreatedOnBehalfByRef](Get-MgGroupCreatedOnBehalfByRef.md)
+### [Get-MgGroupCreatedOnBehalfOfByRef](Get-MgGroupCreatedOnBehalfOfByRef.md)
 Get ref of createdOnBehalfOf from groups
 
 ### [Get-MgGroupDelta](Get-MgGroupDelta.md)
@@ -102,7 +105,7 @@ Get entity from groupLifecyclePolicies by key
 Get members from groups
 
 ### [Get-MgGroupMemberByRef](Get-MgGroupMemberByRef.md)
-Get ref of members from groups
+Get ref of membersWithLicenseErrors from groups
 
 ### [Get-MgGroupMemberGroup](Get-MgGroupMemberGroup.md)
 Invoke action getMemberGroups
@@ -114,13 +117,13 @@ Invoke action getMemberObjects
 Get memberOf from groups
 
 ### [Get-MgGroupMemberOfByRef](Get-MgGroupMemberOfByRef.md)
-Get ref of memberOf from groups
+Get ref of members from groups
 
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
 Get membersWithLicenseErrors from groups
 
 ### [Get-MgGroupMemberWithLicenseErrorByRef](Get-MgGroupMemberWithLicenseErrorByRef.md)
-Get ref of membersWithLicenseErrors from groups
+Get ref of memberOf from groups
 
 ### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
 Invoke action getNotebookFromWebUrl
@@ -140,8 +143,14 @@ Get permissionGrants from groups
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
 Get photo from groups
 
+### [Get-MgGroupPhotoContent](Get-MgGroupPhotoContent.md)
+Get media content for the navigation property photo from groups
+
 ### [Get-MgGroupRejectedSender](Get-MgGroupRejectedSender.md)
 Get rejectedSenders from groups
+
+### [Get-MgGroupRejectedSenderByRef](Get-MgGroupRejectedSenderByRef.md)
+Get ref of rejectedSenders from groups
 
 ### [Get-MgGroupSetting](Get-MgGroupSetting.md)
 Get settings from groups
@@ -272,8 +281,8 @@ Invoke action unsubscribeByMail
 ### [New-MgGroup](New-MgGroup.md)
 Add new entity to groups
 
-### [New-MgGroupAcceptedSender](New-MgGroupAcceptedSender.md)
-Create new navigation property to acceptedSenders for groups
+### [New-MgGroupAcceptedSenderByRef](New-MgGroupAcceptedSenderByRef.md)
+Create new navigation property ref to acceptedSenders for groups
 
 ### [New-MgGroupConversation](New-MgGroupConversation.md)
 Create new navigation property to conversations for groups
@@ -315,13 +324,13 @@ Add new entity to groupLifecyclePolicies
 Add a member to an Office 365 group or security group through the members navigation property.
 
 ### [New-MgGroupMemberByRef](New-MgGroupMemberByRef.md)
-Create new navigation property ref to members for groups
+Create new navigation property ref to membersWithLicenseErrors for groups
 
 ### [New-MgGroupMemberOfByRef](New-MgGroupMemberOfByRef.md)
-Create new navigation property ref to memberOf for groups
+Create new navigation property ref to members for groups
 
 ### [New-MgGroupMemberWithLicenseErrorByRef](New-MgGroupMemberWithLicenseErrorByRef.md)
-Create new navigation property ref to membersWithLicenseErrors for groups
+Create new navigation property ref to memberOf for groups
 
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
 Create new navigation property ref to owners for groups
@@ -332,8 +341,8 @@ Create new navigation property to permissionGrants for groups
 ### [New-MgGroupPhoto](New-MgGroupPhoto.md)
 Create new navigation property to photos for groups
 
-### [New-MgGroupRejectedSender](New-MgGroupRejectedSender.md)
-Create new navigation property to rejectedSenders for groups
+### [New-MgGroupRejectedSenderByRef](New-MgGroupRejectedSenderByRef.md)
+Create new navigation property ref to rejectedSenders for groups
 
 ### [New-MgGroupSetting](New-MgGroupSetting.md)
 Create new navigation property to settings for groups
@@ -371,9 +380,6 @@ Create new navigation property to joinedGroups for users
 ### [Remove-MgGroup](Remove-MgGroup.md)
 Delete entity from groups
 
-### [Remove-MgGroupAcceptedSender](Remove-MgGroupAcceptedSender.md)
-Delete navigation property acceptedSenders for groups
-
 ### [Remove-MgGroupConversation](Remove-MgGroupConversation.md)
 Delete navigation property conversations for groups
 
@@ -398,7 +404,7 @@ Delete navigation property multiValueExtendedProperties for groups
 ### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for groups
 
-### [Remove-MgGroupCreatedOnBehalfByRef](Remove-MgGroupCreatedOnBehalfByRef.md)
+### [Remove-MgGroupCreatedOnBehalfOfByRef](Remove-MgGroupCreatedOnBehalfOfByRef.md)
 Delete ref of navigation property createdOnBehalfOf for groups
 
 ### [Remove-MgGroupEndpoint](Remove-MgGroupEndpoint.md)
@@ -421,9 +427,6 @@ Delete navigation property permissionGrants for groups
 
 ### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
 Delete navigation property photo for groups
-
-### [Remove-MgGroupRejectedSender](Remove-MgGroupRejectedSender.md)
-Delete navigation property rejectedSenders for groups
 
 ### [Remove-MgGroupSetting](Remove-MgGroupSetting.md)
 Delete navigation property settings for groups
@@ -458,11 +461,14 @@ Invoke action resetUnseenCount
 ### [Restore-MgGroup](Restore-MgGroup.md)
 Invoke action restore
 
-### [Set-MgGroupCreatedOnBehalfByRef](Set-MgGroupCreatedOnBehalfByRef.md)
+### [Set-MgGroupCreatedOnBehalfOfByRef](Set-MgGroupCreatedOnBehalfOfByRef.md)
 Update the ref of navigation property createdOnBehalfOf in groups
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
 Invoke action assignLicense
+
+### [Set-MgGroupPhotoContent](Set-MgGroupPhotoContent.md)
+Update media content for the navigation property photo in groups
 
 ### [Stop-MgGroupCalendarEvent](Stop-MgGroupCalendarEvent.md)
 Invoke action cancel
@@ -478,9 +484,6 @@ Invoke action validateProperties
 
 ### [Update-MgGroup](Update-MgGroup.md)
 Update entity in groups
-
-### [Update-MgGroupAcceptedSender](Update-MgGroupAcceptedSender.md)
-Update the navigation property acceptedSenders in groups
 
 ### [Update-MgGroupConversation](Update-MgGroupConversation.md)
 Update the navigation property conversations in groups
@@ -523,9 +526,6 @@ Update the navigation property permissionGrants in groups
 
 ### [Update-MgGroupPhoto](Update-MgGroupPhoto.md)
 Update the navigation property photo in groups
-
-### [Update-MgGroupRejectedSender](Update-MgGroupRejectedSender.md)
-Update the navigation property rejectedSenders in groups
 
 ### [Update-MgGroupSetting](Update-MgGroupSetting.md)
 Update the navigation property settings in groups

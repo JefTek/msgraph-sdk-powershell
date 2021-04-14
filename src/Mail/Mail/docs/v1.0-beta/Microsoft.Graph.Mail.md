@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: ed688cdd-90b3-4926-85fc-2dba8de802d3
+Module Guid: 41db4d3d-fc7f-49ec-b207-0498d09f0752
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -28,6 +28,9 @@ Get messages from users
 
 ### [Get-MgUserMailFolderMessageAttachment](Get-MgUserMailFolderMessageAttachment.md)
 Get attachments from users
+
+### [Get-MgUserMailFolderMessageContent](Get-MgUserMailFolderMessageContent.md)
+Get media content for the navigation property messages from users
 
 ### [Get-MgUserMailFolderMessageExtension](Get-MgUserMailFolderMessageExtension.md)
 Get extensions from users
@@ -58,6 +61,9 @@ Get messages from users
 
 ### [Get-MgUserMessageAttachment](Get-MgUserMessageAttachment.md)
 Get attachments from users
+
+### [Get-MgUserMessageContent](Get-MgUserMessageContent.md)
+Get media content for the navigation property messages from users
 
 ### [Get-MgUserMessageExtension](Get-MgUserMessageExtension.md)
 Get extensions from users
@@ -187,6 +193,12 @@ Delete navigation property multiValueExtendedProperties for users
 
 ### [Remove-MgUserMessageSingleValueExtendedProperty](Remove-MgUserMessageSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
+
+### [Set-MgUserMailFolderMessageContent](Set-MgUserMailFolderMessageContent.md)
+Update media content for the navigation property messages in users
+
+### [Set-MgUserMessageContent](Set-MgUserMessageContent.md)
+Update media content for the navigation property messages in users
 
 ### [Update-MgUserInferenceClassification](Update-MgUserInferenceClassification.md)
 Update the navigation property inferenceClassification in users

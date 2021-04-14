@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: c98c22c6-c6b6-45eb-933c-1bf07aaf050c
+Module Guid: 3cfe18d3-c2fc-4b4c-8ee0-a378cce2c8bc
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -260,6 +260,12 @@ Get clientConfigurations from officeConfiguration
 ### [Get-MgOfficeClientConfigurationAssignment](Get-MgOfficeClientConfigurationAssignment.md)
 Get assignments from officeConfiguration
 
+### [Get-MgOfficeClientConfigurationPolicyPayload](Get-MgOfficeClientConfigurationPolicyPayload.md)
+Get media content for the navigation property clientConfigurations from officeConfiguration
+
+### [Get-MgOfficeClientConfigurationUserPerencePayloadByRef](Get-MgOfficeClientConfigurationUserPerencePayloadByRef.md)
+Get media content for the navigation property clientConfigurations from officeConfiguration
+
 ### [Get-MgOfficeConfiguration](Get-MgOfficeConfiguration.md)
 Get officeConfiguration
 
@@ -281,6 +287,9 @@ Get ref of managedAppRegistrations from users
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
 Get managedDevices from users
 
+### [Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
+Get assignmentFilterEvaluationStatusDetails from users
+
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
 Get deviceCategory from users
 
@@ -296,7 +305,7 @@ Get detectedApps from users
 ### [Get-MgUserManagedDeviceDetectedAppByRef](Get-MgUserManagedDeviceDetectedAppByRef.md)
 Get ref of detectedApps from users
 
-### [Get-MgUserManagedDeviceLogCollectionRequest](Get-MgUserManagedDeviceLogCollectionRequest.md)
+### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
 Get logCollectionRequests from users
 
 ### [Get-MgUserManagedDeviceMobileAppConfigurationState](Get-MgUserManagedDeviceMobileAppConfigurationState.md)
@@ -353,10 +362,19 @@ Invoke action hasPayloadLinks
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps
 
+### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp.md)
+Invoke action targetApps
+
 ### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp.md)
 Invoke action targetApps
 
+### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphManagedAppProtectionApp.md)
+Invoke action targetApps
+
 ### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyApp.md)
+Invoke action targetApps
+
+### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphManagedAppProtectionApp.md)
 Invoke action targetApps
 
 ### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
@@ -542,6 +560,9 @@ Create new navigation property ref to managedAppRegistrations for users
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
 Create new navigation property to managedDevices for users
 
+### [New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
+Create new navigation property to assignmentFilterEvaluationStatusDetails for users
+
 ### [New-MgUserManagedDeviceCompliancePolicyState](New-MgUserManagedDeviceCompliancePolicyState.md)
 Create new navigation property to deviceCompliancePolicyStates for users
 
@@ -551,7 +572,7 @@ Create new navigation property to deviceConfigurationStates for users
 ### [New-MgUserManagedDeviceDetectedAppByRef](New-MgUserManagedDeviceDetectedAppByRef.md)
 Create new navigation property ref to detectedApps for users
 
-### [New-MgUserManagedDeviceLogCollectionRequest](New-MgUserManagedDeviceLogCollectionRequest.md)
+### [New-MgUserManagedDeviceLogCollectionResponse](New-MgUserManagedDeviceLogCollectionResponse.md)
 Create new navigation property to logCollectionRequests for users
 
 ### [New-MgUserManagedDeviceMobileAppConfigurationState](New-MgUserManagedDeviceMobileAppConfigurationState.md)
@@ -794,6 +815,9 @@ Delete navigation property deviceManagementTroubleshootingEvents for users
 ### [Remove-MgUserManagedDevice](Remove-MgUserManagedDevice.md)
 Delete navigation property managedDevices for users
 
+### [Remove-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
+Delete navigation property assignmentFilterEvaluationStatusDetails for users
+
 ### [Remove-MgUserManagedDeviceCategory](Remove-MgUserManagedDeviceCategory.md)
 Delete navigation property deviceCategory for users
 
@@ -803,7 +827,7 @@ Delete navigation property deviceCompliancePolicyStates for users
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
 Delete navigation property deviceConfigurationStates for users
 
-### [Remove-MgUserManagedDeviceLogCollectionRequest](Remove-MgUserManagedDeviceLogCollectionRequest.md)
+### [Remove-MgUserManagedDeviceLogCollectionResponse](Remove-MgUserManagedDeviceLogCollectionResponse.md)
 Delete navigation property logCollectionRequests for users
 
 ### [Remove-MgUserManagedDeviceMobileAppConfigurationState](Remove-MgUserManagedDeviceMobileAppConfigurationState.md)
@@ -833,10 +857,55 @@ Delete navigation property mobileAppTroubleshootingEvents for users
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Delete navigation property appLogCollectionRequests for users
 
+### [Revoke-MgDeviceAppMgtMobileAppDeviceStatusesAppMicrosoftGraphIoVppAppDeviceLicense](Revoke-MgDeviceAppMgtMobileAppDeviceStatusesAppMicrosoftGraphIoVppAppDeviceLicense.md)
+Invoke action revokeDeviceLicense
+
+### [Revoke-MgDeviceAppMgtMobileAppDeviceStatusesAppMicrosoftGraphIoVppAppLicense](Revoke-MgDeviceAppMgtMobileAppDeviceStatusesAppMicrosoftGraphIoVppAppLicense.md)
+Invoke action revokeAllLicenses
+
+### [Revoke-MgDeviceAppMgtMobileAppDeviceStatusesAppMicrosoftGraphIoVppAppUserLicense](Revoke-MgDeviceAppMgtMobileAppDeviceStatusesAppMicrosoftGraphIoVppAppUserLicense.md)
+Invoke action revokeUserLicense
+
+### [Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppDeviceLicense](Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppDeviceLicense.md)
+Invoke action revokeDeviceLicense
+
+### [Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppLicense](Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppLicense.md)
+Invoke action revokeAllLicenses
+
+### [Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense](Revoke-MgDeviceAppMgtMobileAppMicrosoftGraphIoVppAppUserLicense.md)
+Invoke action revokeUserLicense
+
+### [Revoke-MgDeviceAppMgtMobileAppUserStatusesAppMicrosoftGraphIoVppAppDeviceLicense](Revoke-MgDeviceAppMgtMobileAppUserStatusesAppMicrosoftGraphIoVppAppDeviceLicense.md)
+Invoke action revokeDeviceLicense
+
+### [Revoke-MgDeviceAppMgtMobileAppUserStatusesAppMicrosoftGraphIoVppAppLicense](Revoke-MgDeviceAppMgtMobileAppUserStatusesAppMicrosoftGraphIoVppAppLicense.md)
+Invoke action revokeAllLicenses
+
+### [Revoke-MgDeviceAppMgtMobileAppUserStatusesAppMicrosoftGraphIoVppAppUserLicense](Revoke-MgDeviceAppMgtMobileAppUserStatusesAppMicrosoftGraphIoVppAppUserLicense.md)
+Invoke action revokeUserLicense
+
 ### [Revoke-MgDeviceAppMgtVppTokenLicense](Revoke-MgDeviceAppMgtVppTokenLicense.md)
 Invoke action revokeLicenses
 
 ### [Set-MgDeviceAppMgtiOSLobAppProvisioningConfiguration](Set-MgDeviceAppMgtiOSLobAppProvisioningConfiguration.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphWindowInformationProtection.md)
 Invoke action assign
 
 ### [Set-MgDeviceAppMgtManagedEBook](Set-MgDeviceAppMgtManagedEBook.md)
@@ -877,6 +946,12 @@ Update the ref of navigation property windowsManagementApp in deviceAppManagemen
 
 ### [Set-MgOfficeClientConfiguration](Set-MgOfficeClientConfiguration.md)
 Invoke action assign
+
+### [Set-MgOfficeClientConfigurationPolicyPayload](Set-MgOfficeClientConfigurationPolicyPayload.md)
+Update media content for the navigation property clientConfigurations in officeConfiguration
+
+### [Set-MgOfficeClientConfigurationUserPerencePayloadByRef](Set-MgOfficeClientConfigurationUserPerencePayloadByRef.md)
+Update media content for the navigation property clientConfigurations in officeConfiguration
 
 ### [Sync-MgDeviceAppMgtMicrosoftStore](Sync-MgDeviceAppMgtMicrosoftStore.md)
 Invoke action syncMicrosoftStoreForBusinessApps
@@ -1118,6 +1193,9 @@ Update the navigation property deviceManagementTroubleshootingEvents in users
 ### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
 Update the navigation property managedDevices in users
 
+### [Update-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
+Update the navigation property assignmentFilterEvaluationStatusDetails in users
+
 ### [Update-MgUserManagedDeviceCategory](Update-MgUserManagedDeviceCategory.md)
 Update the navigation property deviceCategory in users
 
@@ -1127,7 +1205,7 @@ Update the navigation property deviceCompliancePolicyStates in users
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
 Update the navigation property deviceConfigurationStates in users
 
-### [Update-MgUserManagedDeviceLogCollectionRequest](Update-MgUserManagedDeviceLogCollectionRequest.md)
+### [Update-MgUserManagedDeviceLogCollectionResponse](Update-MgUserManagedDeviceLogCollectionResponse.md)
 Update the navigation property logCollectionRequests in users
 
 ### [Update-MgUserManagedDeviceMobileAppConfigurationState](Update-MgUserManagedDeviceMobileAppConfigurationState.md)

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: e063f634-50e6-4dc4-b3d5-3f4930518ba7
+Module Guid: 0bf1d62d-7d9a-4c50-a771-3098a70b231c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
@@ -35,6 +35,9 @@ Get multiValueExtendedProperties from users
 ### [Get-MgUserContactFolderContactPhoto](Get-MgUserContactFolderContactPhoto.md)
 Get photo from users
 
+### [Get-MgUserContactFolderContactPhotoContent](Get-MgUserContactFolderContactPhotoContent.md)
+Get media content for the navigation property photo from users
+
 ### [Get-MgUserContactFolderContactSingleValueExtendedProperty](Get-MgUserContactFolderContactSingleValueExtendedProperty.md)
 Get singleValueExtendedProperties from users
 
@@ -49,6 +52,9 @@ Get multiValueExtendedProperties from users
 
 ### [Get-MgUserContactPhoto](Get-MgUserContactPhoto.md)
 Get photo from users
+
+### [Get-MgUserContactPhotoContent](Get-MgUserContactPhotoContent.md)
+Get media content for the navigation property photo from users
 
 ### [Get-MgUserContactSingleValueExtendedProperty](Get-MgUserContactSingleValueExtendedProperty.md)
 Get singleValueExtendedProperties from users
@@ -130,6 +136,12 @@ Delete navigation property photo for users
 
 ### [Remove-MgUserContactSingleValueExtendedProperty](Remove-MgUserContactSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for users
+
+### [Set-MgUserContactFolderContactPhotoContent](Set-MgUserContactFolderContactPhotoContent.md)
+Update media content for the navigation property photo in users
+
+### [Set-MgUserContactPhotoContent](Set-MgUserContactPhotoContent.md)
+Update media content for the navigation property photo in users
 
 ### [Update-MgUserContact](Update-MgUserContact.md)
 Update the navigation property contacts in users

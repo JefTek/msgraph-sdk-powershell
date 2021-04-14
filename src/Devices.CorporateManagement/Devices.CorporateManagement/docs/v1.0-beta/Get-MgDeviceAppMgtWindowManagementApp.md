@@ -19,26 +19,6 @@ Get-MgDeviceAppMgtWindowManagementApp [-ExpandProperty <String[]>] [-Property <S
 ## DESCRIPTION
 Get windowsManagementApp from deviceAppManagement
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty

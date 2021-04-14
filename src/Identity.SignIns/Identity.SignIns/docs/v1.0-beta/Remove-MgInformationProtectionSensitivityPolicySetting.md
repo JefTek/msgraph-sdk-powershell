@@ -20,26 +20,6 @@ Remove-MgInformationProtectionSensitivityPolicySetting [-IfMatch <String>] [-Pas
 ## DESCRIPTION
 Delete navigation property sensitivityPolicySettings for informationProtection
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -IfMatch

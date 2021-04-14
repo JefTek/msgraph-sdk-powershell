@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CloudPrint
-Module Guid: 057da9f3-a0e8-4f8f-892a-82e894271354
+Module Guid: cca44aca-5792-4ee4-ba57-d900b81cae16
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,12 +23,6 @@ Get operations from print
 ### [Get-MgPrintPrinter](Get-MgPrintPrinter.md)
 Get printers from print
 
-### [Get-MgPrintPrinterAllowedGroup](Get-MgPrintPrinterAllowedGroup.md)
-Get allowedGroups from print
-
-### [Get-MgPrintPrinterAllowedUser](Get-MgPrintPrinterAllowedUser.md)
-Get allowedUsers from print
-
 ### [Get-MgPrintPrinterCapability](Get-MgPrintPrinterCapability.md)
 Invoke function getCapabilities
 
@@ -44,8 +38,14 @@ Get share from print
 ### [Get-MgPrintPrinterShareAllowedGroup](Get-MgPrintPrinterShareAllowedGroup.md)
 Get allowedGroups from print
 
+### [Get-MgPrintPrinterShareAllowedGroupByRef](Get-MgPrintPrinterShareAllowedGroupByRef.md)
+Get ref of allowedGroups from print
+
 ### [Get-MgPrintPrinterShareAllowedUser](Get-MgPrintPrinterShareAllowedUser.md)
 Get allowedUsers from print
+
+### [Get-MgPrintPrinterShareAllowedUserByRef](Get-MgPrintPrinterShareAllowedUserByRef.md)
+Get ref of allowedUsers from print
 
 ### [Get-MgPrintPrinterShareByRef](Get-MgPrintPrinterShareByRef.md)
 Get ref of share from print
@@ -71,30 +71,6 @@ Get ref of definition from print
 ### [Get-MgPrintReport](Get-MgPrintReport.md)
 Get reports from print
 
-### [Get-MgPrintReportGroupArchivedPrintJob](Get-MgPrintReportGroupArchivedPrintJob.md)
-Invoke function getGroupArchivedPrintJobs
-
-### [Get-MgPrintReportGroupPrintUsageSummary](Get-MgPrintReportGroupPrintUsageSummary.md)
-Invoke function getGroupPrintUsageSummary
-
-### [Get-MgPrintReportOverallPrintUsageSummary](Get-MgPrintReportOverallPrintUsageSummary.md)
-Invoke function getOverallPrintUsageSummary
-
-### [Get-MgPrintReportPrinterArchivedPrintJob](Get-MgPrintReportPrinterArchivedPrintJob.md)
-Invoke function getPrinterArchivedPrintJobs
-
-### [Get-MgPrintReportPrinterUsageSummary](Get-MgPrintReportPrinterUsageSummary.md)
-Invoke function getPrinterUsageSummary
-
-### [Get-MgPrintReportPrintUsageSummary](Get-MgPrintReportPrintUsageSummary.md)
-Invoke function getPrintUsageSummariesByGroup
-
-### [Get-MgPrintReportUserArchivedPrintJob](Get-MgPrintReportUserArchivedPrintJob.md)
-Invoke function getUserArchivedPrintJobs
-
-### [Get-MgPrintReportUserPrintUsageSummary](Get-MgPrintReportUserPrintUsageSummary.md)
-Invoke function getUserPrintUsageSummary
-
 ### [Get-MgPrintService](Get-MgPrintService.md)
 Get services from print
 
@@ -107,8 +83,14 @@ Get shares from print
 ### [Get-MgPrintShareAllowedGroup](Get-MgPrintShareAllowedGroup.md)
 Get allowedGroups from print
 
+### [Get-MgPrintShareAllowedGroupByRef](Get-MgPrintShareAllowedGroupByRef.md)
+Get ref of allowedGroups from print
+
 ### [Get-MgPrintShareAllowedUser](Get-MgPrintShareAllowedUser.md)
 Get allowedUsers from print
+
+### [Get-MgPrintShareAllowedUserByRef](Get-MgPrintShareAllowedUserByRef.md)
+Get ref of allowedUsers from print
 
 ### [Get-MgPrintSharePrinter](Get-MgPrintSharePrinter.md)
 Get printer from print
@@ -140,29 +122,23 @@ Create new navigation property to connectors for print
 ### [New-MgPrintOperation](New-MgPrintOperation.md)
 Create new navigation property to operations for print
 
-### [New-MgPrintPrinterAllowedGroup](New-MgPrintPrinterAllowedGroup.md)
-Create new navigation property to allowedGroups for print
-
-### [New-MgPrintPrinterAllowedUser](New-MgPrintPrinterAllowedUser.md)
-Create new navigation property to allowedUsers for print
-
 ### [New-MgPrintPrinterConnectorByRef](New-MgPrintPrinterConnectorByRef.md)
 Create new navigation property ref to connectors for print
 
 ### [New-MgPrintPrinterShare](New-MgPrintPrinterShare.md)
 Create new navigation property to printerShares for print
 
-### [New-MgPrintPrinterShareAllowedGroup](New-MgPrintPrinterShareAllowedGroup.md)
-Create new navigation property to allowedGroups for print
+### [New-MgPrintPrinterShareAllowedGroupByRef](New-MgPrintPrinterShareAllowedGroupByRef.md)
+Create new navigation property ref to allowedGroups for print
 
-### [New-MgPrintPrinterShareAllowedUser](New-MgPrintPrinterShareAllowedUser.md)
-Create new navigation property to allowedUsers for print
+### [New-MgPrintPrinterShareAllowedUserByRef](New-MgPrintPrinterShareAllowedUserByRef.md)
+Create new navigation property ref to allowedUsers for print
+
+### [New-MgPrintPrinterShareByRef](New-MgPrintPrinterShareByRef.md)
+Create new navigation property ref to shares for print
 
 ### [New-MgPrintPrinterTaskTrigger](New-MgPrintPrinterTaskTrigger.md)
 Create new navigation property to taskTriggers for print
-
-### [New-MgPrintReport](New-MgPrintReport.md)
-Create new navigation property to reports for print
 
 ### [New-MgPrintService](New-MgPrintService.md)
 Create new navigation property to services for print
@@ -173,11 +149,11 @@ Create new navigation property to endpoints for print
 ### [New-MgPrintShare](New-MgPrintShare.md)
 Create new navigation property to shares for print
 
-### [New-MgPrintShareAllowedGroup](New-MgPrintShareAllowedGroup.md)
-Create new navigation property to allowedGroups for print
+### [New-MgPrintShareAllowedGroupByRef](New-MgPrintShareAllowedGroupByRef.md)
+Create new navigation property ref to allowedGroups for print
 
-### [New-MgPrintShareAllowedUser](New-MgPrintShareAllowedUser.md)
-Create new navigation property to allowedUsers for print
+### [New-MgPrintShareAllowedUserByRef](New-MgPrintShareAllowedUserByRef.md)
+Create new navigation property ref to allowedUsers for print
 
 ### [New-MgPrintTaskDefinition](New-MgPrintTaskDefinition.md)
 Create new navigation property to taskDefinitions for print
@@ -194,20 +170,8 @@ Delete navigation property operations for print
 ### [Remove-MgPrintPrinter](Remove-MgPrintPrinter.md)
 Delete navigation property printers for print
 
-### [Remove-MgPrintPrinterAllowedGroup](Remove-MgPrintPrinterAllowedGroup.md)
-Delete navigation property allowedGroups for print
-
-### [Remove-MgPrintPrinterAllowedUser](Remove-MgPrintPrinterAllowedUser.md)
-Delete navigation property allowedUsers for print
-
 ### [Remove-MgPrintPrinterShare](Remove-MgPrintPrinterShare.md)
 Delete navigation property printerShares for print
-
-### [Remove-MgPrintPrinterShareAllowedGroup](Remove-MgPrintPrinterShareAllowedGroup.md)
-Delete navigation property allowedGroups for print
-
-### [Remove-MgPrintPrinterShareAllowedUser](Remove-MgPrintPrinterShareAllowedUser.md)
-Delete navigation property allowedUsers for print
 
 ### [Remove-MgPrintPrinterShareByRef](Remove-MgPrintPrinterShareByRef.md)
 Delete ref of navigation property share for print
@@ -233,12 +197,6 @@ Delete navigation property endpoints for print
 ### [Remove-MgPrintShare](Remove-MgPrintShare.md)
 Delete navigation property shares for print
 
-### [Remove-MgPrintShareAllowedGroup](Remove-MgPrintShareAllowedGroup.md)
-Delete navigation property allowedGroups for print
-
-### [Remove-MgPrintShareAllowedUser](Remove-MgPrintShareAllowedUser.md)
-Delete navigation property allowedUsers for print
-
 ### [Remove-MgPrintSharePrinterByRef](Remove-MgPrintSharePrinterByRef.md)
 Delete ref of navigation property printer for print
 
@@ -262,6 +220,15 @@ Invoke action resetDefaults
 
 ### [Reset-MgPrintSharePrinterDefault](Reset-MgPrintSharePrinterDefault.md)
 Invoke action resetDefaults
+
+### [Restore-MgPrintPrinterFactoryDefault](Restore-MgPrintPrinterFactoryDefault.md)
+Invoke action restoreFactoryDefaults
+
+### [Restore-MgPrintPrinterSharePrinterFactoryDefault](Restore-MgPrintPrinterSharePrinterFactoryDefault.md)
+Invoke action restoreFactoryDefaults
+
+### [Restore-MgPrintSharePrinterFactoryDefault](Restore-MgPrintSharePrinterFactoryDefault.md)
+Invoke action restoreFactoryDefaults
 
 ### [Set-MgPrintPrinterShareByRef](Set-MgPrintPrinterShareByRef.md)
 Update the ref of navigation property share in print
@@ -293,20 +260,8 @@ Update the navigation property operations in print
 ### [Update-MgPrintPrinter](Update-MgPrintPrinter.md)
 Update the navigation property printers in print
 
-### [Update-MgPrintPrinterAllowedGroup](Update-MgPrintPrinterAllowedGroup.md)
-Update the navigation property allowedGroups in print
-
-### [Update-MgPrintPrinterAllowedUser](Update-MgPrintPrinterAllowedUser.md)
-Update the navigation property allowedUsers in print
-
 ### [Update-MgPrintPrinterShare](Update-MgPrintPrinterShare.md)
 Update the navigation property printerShares in print
-
-### [Update-MgPrintPrinterShareAllowedGroup](Update-MgPrintPrinterShareAllowedGroup.md)
-Update the navigation property allowedGroups in print
-
-### [Update-MgPrintPrinterShareAllowedUser](Update-MgPrintPrinterShareAllowedUser.md)
-Update the navigation property allowedUsers in print
 
 ### [Update-MgPrintPrinterTaskTrigger](Update-MgPrintPrinterTaskTrigger.md)
 Update the navigation property taskTriggers in print
@@ -322,12 +277,6 @@ Update the navigation property endpoints in print
 
 ### [Update-MgPrintShare](Update-MgPrintShare.md)
 Update the navigation property shares in print
-
-### [Update-MgPrintShareAllowedGroup](Update-MgPrintShareAllowedGroup.md)
-Update the navigation property allowedGroups in print
-
-### [Update-MgPrintShareAllowedUser](Update-MgPrintShareAllowedUser.md)
-Update the navigation property allowedUsers in print
 
 ### [Update-MgPrintTaskDefinition](Update-MgPrintTaskDefinition.md)
 Update the navigation property taskDefinitions in print

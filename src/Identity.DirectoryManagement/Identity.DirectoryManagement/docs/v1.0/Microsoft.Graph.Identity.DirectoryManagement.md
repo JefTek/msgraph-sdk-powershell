@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 6337ab02-706b-4234-903e-0e869d211f59
+Module Guid: 972091ba-254e-4562-b767-72f3f49fcc8d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -71,22 +71,22 @@ Get manager from contacts
 ### [Get-MgContactManagerByRef](Get-MgContactManagerByRef.md)
 Get ref of manager from contacts
 
-### [Get-MgContactMember](Get-MgContactMember.md)
-Get memberOf from contacts
-
-### [Get-MgContactMemberByRef](Get-MgContactMemberByRef.md)
-Get ref of memberOf from contacts
-
 ### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
 Invoke action getMemberGroups
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
 
-### [Get-MgContactTransitiveMember](Get-MgContactTransitiveMember.md)
+### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
+Get memberOf from contacts
+
+### [Get-MgContactMemberOfByRef](Get-MgContactMemberOfByRef.md)
+Get ref of memberOf from contacts
+
+### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
 Get transitiveMemberOf from contacts
 
-### [Get-MgContactTransitiveMemberByRef](Get-MgContactTransitiveMemberByRef.md)
+### [Get-MgContactTransitiveMemberOfByRef](Get-MgContactTransitiveMemberOfByRef.md)
 Get ref of transitiveMemberOf from contacts
 
 ### [Get-MgContract](Get-MgContract.md)
@@ -116,17 +116,17 @@ Get entity from devices by key
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 Get extensions from devices
 
-### [Get-MgDeviceMember](Get-MgDeviceMember.md)
-Get memberOf from devices
-
-### [Get-MgDeviceMemberByRef](Get-MgDeviceMemberByRef.md)
-Get ref of memberOf from devices
-
 ### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
 Invoke action getMemberGroups
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
+
+### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
+Get memberOf from devices
+
+### [Get-MgDeviceMemberOfByRef](Get-MgDeviceMemberOfByRef.md)
+Get ref of memberOf from devices
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
 Get registeredOwners from devices
@@ -140,14 +140,32 @@ Get registeredUsers from devices
 ### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Get ref of registeredUsers from devices
 
-### [Get-MgDeviceTransitiveMember](Get-MgDeviceTransitiveMember.md)
+### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
 Get transitiveMemberOf from devices
 
-### [Get-MgDeviceTransitiveMemberByRef](Get-MgDeviceTransitiveMemberByRef.md)
+### [Get-MgDeviceTransitiveMemberOfByRef](Get-MgDeviceTransitiveMemberOfByRef.md)
 Get ref of transitiveMemberOf from devices
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
+
+### [Get-MgDirectoryAdministrativeUnit](Get-MgDirectoryAdministrativeUnit.md)
+Get administrativeUnits from directory
+
+### [Get-MgDirectoryAdministrativeUnitDelta](Get-MgDirectoryAdministrativeUnitDelta.md)
+Invoke function delta
+
+### [Get-MgDirectoryAdministrativeUnitExtension](Get-MgDirectoryAdministrativeUnitExtension.md)
+Get extensions from directory
+
+### [Get-MgDirectoryAdministrativeUnitMember](Get-MgDirectoryAdministrativeUnitMember.md)
+Get members from directory
+
+### [Get-MgDirectoryAdministrativeUnitMemberByRef](Get-MgDirectoryAdministrativeUnitMemberByRef.md)
+Get ref of members from directory
+
+### [Get-MgDirectoryAdministrativeUnitScopedRoleMember](Get-MgDirectoryAdministrativeUnitScopedRoleMember.md)
+Get scopedRoleMembers from directory
 
 ### [Get-MgDirectoryDeletedItem](Get-MgDirectoryDeletedItem.md)
 Get deletedItems from directory
@@ -175,6 +193,9 @@ Invoke action getMemberGroups
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
+
+### [Get-MgDirectoryRoleScopedMember](Get-MgDirectoryRoleScopedMember.md)
+Get scopedMembers from directoryRoles
 
 ### [Get-MgDirectoryRoleTemplate](Get-MgDirectoryRoleTemplate.md)
 Get entity from directoryRoleTemplates by key
@@ -212,6 +233,9 @@ Get entity from organization by key
 ### [Get-MgOrganizationAvailableExtensionProperty](Get-MgOrganizationAvailableExtensionProperty.md)
 Invoke action getAvailableExtensionProperties
 
+### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
+Get branding from organization
+
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
 Invoke action getByIds
 
@@ -227,6 +251,9 @@ Invoke action getMemberObjects
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get entity from subscribedSkus by key
 
+### [Get-MgUserScopedRoleMemberOf](Get-MgUserScopedRoleMemberOf.md)
+Get scopedRoleMemberOf from users
+
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
 Invoke action forceDelete
 
@@ -236,10 +263,10 @@ Add new entity to contacts
 ### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
 Create new navigation property ref to directReports for contacts
 
-### [New-MgContactMemberByRef](New-MgContactMemberByRef.md)
+### [New-MgContactMemberOfByRef](New-MgContactMemberOfByRef.md)
 Create new navigation property ref to memberOf for contacts
 
-### [New-MgContactTransitiveMemberByRef](New-MgContactTransitiveMemberByRef.md)
+### [New-MgContactTransitiveMemberOfByRef](New-MgContactTransitiveMemberOfByRef.md)
 Create new navigation property ref to transitiveMemberOf for contacts
 
 ### [New-MgContract](New-MgContract.md)
@@ -251,7 +278,7 @@ Add new entity to devices
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
 
-### [New-MgDeviceMemberByRef](New-MgDeviceMemberByRef.md)
+### [New-MgDeviceMemberOfByRef](New-MgDeviceMemberOfByRef.md)
 Create new navigation property ref to memberOf for devices
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
@@ -260,8 +287,20 @@ Create new navigation property ref to registeredOwners for devices
 ### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
 Create new navigation property ref to registeredUsers for devices
 
-### [New-MgDeviceTransitiveMemberByRef](New-MgDeviceTransitiveMemberByRef.md)
+### [New-MgDeviceTransitiveMemberOfByRef](New-MgDeviceTransitiveMemberOfByRef.md)
 Create new navigation property ref to transitiveMemberOf for devices
+
+### [New-MgDirectoryAdministrativeUnit](New-MgDirectoryAdministrativeUnit.md)
+Create new navigation property to administrativeUnits for directory
+
+### [New-MgDirectoryAdministrativeUnitExtension](New-MgDirectoryAdministrativeUnitExtension.md)
+Create new navigation property to extensions for directory
+
+### [New-MgDirectoryAdministrativeUnitMemberByRef](New-MgDirectoryAdministrativeUnitMemberByRef.md)
+Create new navigation property ref to members for directory
+
+### [New-MgDirectoryAdministrativeUnitScopedRoleMember](New-MgDirectoryAdministrativeUnitScopedRoleMember.md)
+Create new navigation property to scopedRoleMembers for directory
 
 ### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
 Create new navigation property to deletedItems for directory
@@ -271,6 +310,9 @@ Add new entity to directoryRoles
 
 ### [New-MgDirectoryRoleMemberByRef](New-MgDirectoryRoleMemberByRef.md)
 Create new navigation property ref to members for directoryRoles
+
+### [New-MgDirectoryRoleScopedMember](New-MgDirectoryRoleScopedMember.md)
+Create new navigation property to scopedMembers for directoryRoles
 
 ### [New-MgDirectoryRoleTemplate](New-MgDirectoryRoleTemplate.md)
 Add new entity to directoryRoleTemplates
@@ -296,6 +338,9 @@ Create new navigation property to extensions for organization
 ### [New-MgSubscribedSku](New-MgSubscribedSku.md)
 Add new entity to subscribedSkus
 
+### [New-MgUserScopedRoleMemberOf](New-MgUserScopedRoleMemberOf.md)
+Create new navigation property to scopedRoleMemberOf for users
+
 ### [Remove-MgContact](Remove-MgContact.md)
 Delete entity from contacts
 
@@ -311,11 +356,23 @@ Delete entity from devices
 ### [Remove-MgDeviceExtension](Remove-MgDeviceExtension.md)
 Delete navigation property extensions for devices
 
+### [Remove-MgDirectoryAdministrativeUnit](Remove-MgDirectoryAdministrativeUnit.md)
+Delete navigation property administrativeUnits for directory
+
+### [Remove-MgDirectoryAdministrativeUnitExtension](Remove-MgDirectoryAdministrativeUnitExtension.md)
+Delete navigation property extensions for directory
+
+### [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](Remove-MgDirectoryAdministrativeUnitScopedRoleMember.md)
+Delete navigation property scopedRoleMembers for directory
+
 ### [Remove-MgDirectoryDeletedItem](Remove-MgDirectoryDeletedItem.md)
 Delete navigation property deletedItems for directory
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 Delete entity from directoryRoles
+
+### [Remove-MgDirectoryRoleScopedMember](Remove-MgDirectoryRoleScopedMember.md)
+Delete navigation property scopedMembers for directoryRoles
 
 ### [Remove-MgDirectoryRoleTemplate](Remove-MgDirectoryRoleTemplate.md)
 Delete entity from directoryRoleTemplates
@@ -332,11 +389,17 @@ Delete navigation property verificationDnsRecords for domains
 ### [Remove-MgOrganization](Remove-MgOrganization.md)
 Delete entity from organization
 
+### [Remove-MgOrganizationBranding](Remove-MgOrganizationBranding.md)
+Delete navigation property branding for organization
+
 ### [Remove-MgOrganizationExtension](Remove-MgOrganizationExtension.md)
 Delete navigation property extensions for organization
 
 ### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
 Delete entity from subscribedSkus
+
+### [Remove-MgUserScopedRoleMemberOf](Remove-MgUserScopedRoleMemberOf.md)
+Delete navigation property scopedRoleMemberOf for users
 
 ### [Restore-MgContact](Restore-MgContact.md)
 Invoke action restore
@@ -398,11 +461,23 @@ Update the navigation property extensions in devices
 ### [Update-MgDirectory](Update-MgDirectory.md)
 Update directory
 
+### [Update-MgDirectoryAdministrativeUnit](Update-MgDirectoryAdministrativeUnit.md)
+Update the navigation property administrativeUnits in directory
+
+### [Update-MgDirectoryAdministrativeUnitExtension](Update-MgDirectoryAdministrativeUnitExtension.md)
+Update the navigation property extensions in directory
+
+### [Update-MgDirectoryAdministrativeUnitScopedRoleMember](Update-MgDirectoryAdministrativeUnitScopedRoleMember.md)
+Update the navigation property scopedRoleMembers in directory
+
 ### [Update-MgDirectoryDeletedItem](Update-MgDirectoryDeletedItem.md)
 Update the navigation property deletedItems in directory
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 Update entity in directoryRoles
+
+### [Update-MgDirectoryRoleScopedMember](Update-MgDirectoryRoleScopedMember.md)
+Update the navigation property scopedMembers in directoryRoles
 
 ### [Update-MgDirectoryRoleTemplate](Update-MgDirectoryRoleTemplate.md)
 Update entity in directoryRoleTemplates
@@ -419,9 +494,15 @@ Update the navigation property verificationDnsRecords in domains
 ### [Update-MgOrganization](Update-MgOrganization.md)
 Update entity in organization
 
+### [Update-MgOrganizationBranding](Update-MgOrganizationBranding.md)
+Update the navigation property branding in organization
+
 ### [Update-MgOrganizationExtension](Update-MgOrganizationExtension.md)
 Update the navigation property extensions in organization
 
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
 Update entity in subscribedSkus
+
+### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
+Update the navigation property scopedRoleMemberOf in users
 

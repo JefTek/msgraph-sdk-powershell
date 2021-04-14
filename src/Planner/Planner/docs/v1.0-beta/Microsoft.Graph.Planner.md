@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: 2e32ec29-c1fe-4c32-a40f-5887ecc3312e
+Module Guid: 3a4acace-f147-4e63-8872-00d3544c80b6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner
 Help Version: 1.0.0.0
 Locale: en-US
@@ -113,6 +113,18 @@ Get details from planner
 ### [Get-MgPlannerPlanTaskProgressTaskBoardFormat](Get-MgPlannerPlanTaskProgressTaskBoardFormat.md)
 Get progressTaskBoardFormat from planner
 
+### [Get-MgPlannerRoster](Get-MgPlannerRoster.md)
+Get rosters from planner
+
+### [Get-MgPlannerRosterMember](Get-MgPlannerRosterMember.md)
+Get members from planner
+
+### [Get-MgPlannerRosterPlan](Get-MgPlannerRosterPlan.md)
+Get plans from planner
+
+### [Get-MgPlannerRosterPlanByRef](Get-MgPlannerRosterPlanByRef.md)
+Get ref of plans from planner
+
 ### [Get-MgPlannerTask](Get-MgPlannerTask.md)
 Get tasks from planner
 
@@ -182,6 +194,12 @@ Get recentPlans from users
 ### [Get-MgUserPlannerRecentPlanByRef](Get-MgUserPlannerRecentPlanByRef.md)
 Get ref of recentPlans from users
 
+### [Get-MgUserPlannerRosterPlan](Get-MgUserPlannerRosterPlan.md)
+Get rosterPlans from users
+
+### [Get-MgUserPlannerRosterPlanByRef](Get-MgUserPlannerRosterPlanByRef.md)
+Get ref of rosterPlans from users
+
 ### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
 Get tasks from users
 
@@ -227,6 +245,15 @@ Create new navigation property to tasks for planner
 ### [New-MgPlannerPlanTask](New-MgPlannerPlanTask.md)
 Create new navigation property to tasks for planner
 
+### [New-MgPlannerRoster](New-MgPlannerRoster.md)
+Create new navigation property to rosters for planner
+
+### [New-MgPlannerRosterMember](New-MgPlannerRosterMember.md)
+Create new navigation property to members for planner
+
+### [New-MgPlannerRosterPlanByRef](New-MgPlannerRosterPlanByRef.md)
+Create new navigation property ref to plans for planner
+
 ### [New-MgPlannerTask](New-MgPlannerTask.md)
 Create new navigation property to tasks for planner
 
@@ -247,6 +274,9 @@ Create new navigation property to tasks for users
 
 ### [New-MgUserPlannerRecentPlanByRef](New-MgUserPlannerRecentPlanByRef.md)
 Create new navigation property ref to recentPlans for users
+
+### [New-MgUserPlannerRosterPlanByRef](New-MgUserPlannerRosterPlanByRef.md)
+Create new navigation property ref to rosterPlans for users
 
 ### [New-MgUserPlannerTask](New-MgUserPlannerTask.md)
 Create new navigation property to tasks for users
@@ -349,6 +379,12 @@ Delete navigation property details for planner
 
 ### [Remove-MgPlannerPlanTaskProgressTaskBoardFormat](Remove-MgPlannerPlanTaskProgressTaskBoardFormat.md)
 Delete navigation property progressTaskBoardFormat for planner
+
+### [Remove-MgPlannerRoster](Remove-MgPlannerRoster.md)
+Delete navigation property rosters for planner
+
+### [Remove-MgPlannerRosterMember](Remove-MgPlannerRosterMember.md)
+Delete navigation property members for planner
 
 ### [Remove-MgPlannerTask](Remove-MgPlannerTask.md)
 Delete navigation property tasks for planner
@@ -523,6 +559,12 @@ Update the navigation property details in planner
 
 ### [Update-MgPlannerPlanTaskProgressTaskBoardFormat](Update-MgPlannerPlanTaskProgressTaskBoardFormat.md)
 Update the navigation property progressTaskBoardFormat in planner
+
+### [Update-MgPlannerRoster](Update-MgPlannerRoster.md)
+Update the navigation property rosters in planner
+
+### [Update-MgPlannerRosterMember](Update-MgPlannerRosterMember.md)
+Update the navigation property members in planner
 
 ### [Update-MgPlannerTask](Update-MgPlannerTask.md)
 Update the navigation property tasks in planner

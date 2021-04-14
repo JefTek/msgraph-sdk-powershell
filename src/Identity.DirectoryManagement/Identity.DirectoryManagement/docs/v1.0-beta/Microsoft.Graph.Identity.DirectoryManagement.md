@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 6337ab02-706b-4234-903e-0e869d211f59
+Module Guid: 972091ba-254e-4562-b767-72f3f49fcc8d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -110,22 +110,22 @@ Get manager from contacts
 ### [Get-MgContactManagerByRef](Get-MgContactManagerByRef.md)
 Get ref of manager from contacts
 
-### [Get-MgContactMember](Get-MgContactMember.md)
-Get memberOf from contacts
-
-### [Get-MgContactMemberByRef](Get-MgContactMemberByRef.md)
-Get ref of memberOf from contacts
-
 ### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
 Invoke action getMemberGroups
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
 
-### [Get-MgContactTransitiveMember](Get-MgContactTransitiveMember.md)
+### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
+Get memberOf from contacts
+
+### [Get-MgContactMemberOfByRef](Get-MgContactMemberOfByRef.md)
+Get ref of memberOf from contacts
+
+### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
 Get transitiveMemberOf from contacts
 
-### [Get-MgContactTransitiveMemberByRef](Get-MgContactTransitiveMemberByRef.md)
+### [Get-MgContactTransitiveMemberOfByRef](Get-MgContactTransitiveMemberOfByRef.md)
 Get ref of transitiveMemberOf from contacts
 
 ### [Get-MgContactUserOwnedObject](Get-MgContactUserOwnedObject.md)
@@ -158,17 +158,17 @@ Get commands from devices
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 Get extensions from devices
 
-### [Get-MgDeviceMember](Get-MgDeviceMember.md)
-Get memberOf from devices
-
-### [Get-MgDeviceMemberByRef](Get-MgDeviceMemberByRef.md)
-Get ref of memberOf from devices
-
 ### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
 Invoke action getMemberGroups
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
+
+### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
+Get memberOf from devices
+
+### [Get-MgDeviceMemberOfByRef](Get-MgDeviceMemberOfByRef.md)
+Get ref of memberOf from devices
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
 Get registeredOwners from devices
@@ -182,17 +182,23 @@ Get registeredUsers from devices
 ### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Get ref of registeredUsers from devices
 
-### [Get-MgDeviceTransitiveMember](Get-MgDeviceTransitiveMember.md)
+### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
 Get transitiveMemberOf from devices
 
-### [Get-MgDeviceTransitiveMemberByRef](Get-MgDeviceTransitiveMemberByRef.md)
+### [Get-MgDeviceTransitiveMemberOfByRef](Get-MgDeviceTransitiveMemberOfByRef.md)
 Get ref of transitiveMemberOf from devices
+
+### [Get-MgDeviceUsageRights](Get-MgDeviceUsageRights.md)
+Get usageRights from devices
 
 ### [Get-MgDeviceUserOwnedObject](Get-MgDeviceUserOwnedObject.md)
 Invoke action getUserOwnedObjects
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
+
+### [Get-MgDirectoryAdministrativeUnit](Get-MgDirectoryAdministrativeUnit.md)
+Get administrativeUnits from directory
 
 ### [Get-MgDirectoryDeletedItem](Get-MgDirectoryDeletedItem.md)
 Get deletedItems from directory
@@ -263,6 +269,9 @@ Invoke action getMemberObjects
 ### [Get-MgDirectorySettingTemplateUserOwnedObject](Get-MgDirectorySettingTemplateUserOwnedObject.md)
 Invoke action getUserOwnedObjects
 
+### [Get-MgDirectorySharedEmailDomain](Get-MgDirectorySharedEmailDomain.md)
+Get sharedEmailDomains from directory
+
 ### [Get-MgDomain](Get-MgDomain.md)
 Get entity from domains by key
 
@@ -275,6 +284,9 @@ Get ref of domainNameReferences from domains
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 Get serviceConfigurationRecords from domains
 
+### [Get-MgDomainSharedEmailDomainInvitation](Get-MgDomainSharedEmailDomainInvitation.md)
+Get sharedEmailDomainInvitations from domains
+
 ### [Get-MgDomainVerificationDnsRecord](Get-MgDomainVerificationDnsRecord.md)
 Get verificationDnsRecords from domains
 
@@ -282,7 +294,7 @@ Get verificationDnsRecords from domains
 Get entity from organization by key
 
 ### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
-Get brandings from organization
+Get branding from organization
 
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
 Invoke action getByIds
@@ -296,13 +308,22 @@ Invoke action getMemberGroups
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Invoke action getMemberObjects
 
+### [Get-MgOrganizationSetting](Get-MgOrganizationSetting.md)
+Get settings from organization
+
+### [Get-MgOrganizationSettingItemInsight](Get-MgOrganizationSettingItemInsight.md)
+Get itemInsights from organization
+
+### [Get-MgOrganizationSettingProfileCardProperty](Get-MgOrganizationSettingProfileCardProperty.md)
+Get profileCardProperties from organization
+
 ### [Get-MgOrganizationUserOwnedObject](Get-MgOrganizationUserOwnedObject.md)
 Invoke action getUserOwnedObjects
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get entity from subscribedSkus by key
 
-### [Get-MgUserScopedRoleMember](Get-MgUserScopedRoleMember.md)
+### [Get-MgUserScopedRoleMemberOf](Get-MgUserScopedRoleMemberOf.md)
 Get scopedRoleMemberOf from users
 
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
@@ -326,10 +347,10 @@ Add new entity to contacts
 ### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
 Create new navigation property ref to directReports for contacts
 
-### [New-MgContactMemberByRef](New-MgContactMemberByRef.md)
+### [New-MgContactMemberOfByRef](New-MgContactMemberOfByRef.md)
 Create new navigation property ref to memberOf for contacts
 
-### [New-MgContactTransitiveMemberByRef](New-MgContactTransitiveMemberByRef.md)
+### [New-MgContactTransitiveMemberOfByRef](New-MgContactTransitiveMemberOfByRef.md)
 Create new navigation property ref to transitiveMemberOf for contacts
 
 ### [New-MgContract](New-MgContract.md)
@@ -344,7 +365,7 @@ Create new navigation property to commands for devices
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
 
-### [New-MgDeviceMemberByRef](New-MgDeviceMemberByRef.md)
+### [New-MgDeviceMemberOfByRef](New-MgDeviceMemberOfByRef.md)
 Create new navigation property ref to memberOf for devices
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
@@ -353,8 +374,14 @@ Create new navigation property ref to registeredOwners for devices
 ### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
 Create new navigation property ref to registeredUsers for devices
 
-### [New-MgDeviceTransitiveMemberByRef](New-MgDeviceTransitiveMemberByRef.md)
+### [New-MgDeviceTransitiveMemberOfByRef](New-MgDeviceTransitiveMemberOfByRef.md)
 Create new navigation property ref to transitiveMemberOf for devices
+
+### [New-MgDeviceUsageRights](New-MgDeviceUsageRights.md)
+Create new navigation property to usageRights for devices
+
+### [New-MgDirectoryAdministrativeUnit](New-MgDirectoryAdministrativeUnit.md)
+Create new navigation property to administrativeUnits for directory
 
 ### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
 Create new navigation property to deletedItems for directory
@@ -383,6 +410,9 @@ Add new entity to settings
 ### [New-MgDirectorySettingTemplate](New-MgDirectorySettingTemplate.md)
 Add new entity to directorySettingTemplates
 
+### [New-MgDirectorySharedEmailDomain](New-MgDirectorySharedEmailDomain.md)
+Create new navigation property to sharedEmailDomains for directory
+
 ### [New-MgDomain](New-MgDomain.md)
 Add new entity to domains
 
@@ -392,22 +422,25 @@ Create new navigation property ref to domainNameReferences for domains
 ### [New-MgDomainServiceConfigurationRecord](New-MgDomainServiceConfigurationRecord.md)
 Create new navigation property to serviceConfigurationRecords for domains
 
+### [New-MgDomainSharedEmailDomainInvitation](New-MgDomainSharedEmailDomainInvitation.md)
+Create new navigation property to sharedEmailDomainInvitations for domains
+
 ### [New-MgDomainVerificationDnsRecord](New-MgDomainVerificationDnsRecord.md)
 Create new navigation property to verificationDnsRecords for domains
 
 ### [New-MgOrganization](New-MgOrganization.md)
 Add new entity to organization
 
-### [New-MgOrganizationBranding](New-MgOrganizationBranding.md)
-Create new navigation property to brandings for organization
-
 ### [New-MgOrganizationExtension](New-MgOrganizationExtension.md)
 Create new navigation property to extensions for organization
+
+### [New-MgOrganizationSettingProfileCardProperty](New-MgOrganizationSettingProfileCardProperty.md)
+Create new navigation property to profileCardProperties for organization
 
 ### [New-MgSubscribedSku](New-MgSubscribedSku.md)
 Add new entity to subscribedSkus
 
-### [New-MgUserScopedRoleMember](New-MgUserScopedRoleMember.md)
+### [New-MgUserScopedRoleMemberOf](New-MgUserScopedRoleMemberOf.md)
 Create new navigation property to scopedRoleMemberOf for users
 
 ### [Remove-MgAdministrativeUnit](Remove-MgAdministrativeUnit.md)
@@ -437,6 +470,12 @@ Delete navigation property commands for devices
 ### [Remove-MgDeviceExtension](Remove-MgDeviceExtension.md)
 Delete navigation property extensions for devices
 
+### [Remove-MgDeviceUsageRights](Remove-MgDeviceUsageRights.md)
+Delete navigation property usageRights for devices
+
+### [Remove-MgDirectoryAdministrativeUnit](Remove-MgDirectoryAdministrativeUnit.md)
+Delete navigation property administrativeUnits for directory
+
 ### [Remove-MgDirectoryDeletedItem](Remove-MgDirectoryDeletedItem.md)
 Delete navigation property deletedItems for directory
 
@@ -461,11 +500,17 @@ Delete entity from settings
 ### [Remove-MgDirectorySettingTemplate](Remove-MgDirectorySettingTemplate.md)
 Delete entity from directorySettingTemplates
 
+### [Remove-MgDirectorySharedEmailDomain](Remove-MgDirectorySharedEmailDomain.md)
+Delete navigation property sharedEmailDomains for directory
+
 ### [Remove-MgDomain](Remove-MgDomain.md)
 Delete entity from domains
 
 ### [Remove-MgDomainServiceConfigurationRecord](Remove-MgDomainServiceConfigurationRecord.md)
 Delete navigation property serviceConfigurationRecords for domains
+
+### [Remove-MgDomainSharedEmailDomainInvitation](Remove-MgDomainSharedEmailDomainInvitation.md)
+Delete navigation property sharedEmailDomainInvitations for domains
 
 ### [Remove-MgDomainVerificationDnsRecord](Remove-MgDomainVerificationDnsRecord.md)
 Delete navigation property verificationDnsRecords for domains
@@ -474,15 +519,24 @@ Delete navigation property verificationDnsRecords for domains
 Delete entity from organization
 
 ### [Remove-MgOrganizationBranding](Remove-MgOrganizationBranding.md)
-Delete navigation property brandings for organization
+Delete navigation property branding for organization
 
 ### [Remove-MgOrganizationExtension](Remove-MgOrganizationExtension.md)
 Delete navigation property extensions for organization
 
+### [Remove-MgOrganizationSetting](Remove-MgOrganizationSetting.md)
+Delete navigation property settings for organization
+
+### [Remove-MgOrganizationSettingItemInsight](Remove-MgOrganizationSettingItemInsight.md)
+Delete navigation property itemInsights for organization
+
+### [Remove-MgOrganizationSettingProfileCardProperty](Remove-MgOrganizationSettingProfileCardProperty.md)
+Delete navigation property profileCardProperties for organization
+
 ### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
 Delete entity from subscribedSkus
 
-### [Remove-MgUserScopedRoleMember](Remove-MgUserScopedRoleMember.md)
+### [Remove-MgUserScopedRoleMemberOf](Remove-MgUserScopedRoleMemberOf.md)
 Delete navigation property scopedRoleMemberOf for users
 
 ### [Restore-MgAdministrativeUnit](Restore-MgAdministrativeUnit.md)
@@ -566,8 +620,14 @@ Update the navigation property commands in devices
 ### [Update-MgDeviceExtension](Update-MgDeviceExtension.md)
 Update the navigation property extensions in devices
 
+### [Update-MgDeviceUsageRights](Update-MgDeviceUsageRights.md)
+Update the navigation property usageRights in devices
+
 ### [Update-MgDirectory](Update-MgDirectory.md)
 Update directory
+
+### [Update-MgDirectoryAdministrativeUnit](Update-MgDirectoryAdministrativeUnit.md)
+Update the navigation property administrativeUnits in directory
 
 ### [Update-MgDirectoryDeletedItem](Update-MgDirectoryDeletedItem.md)
 Update the navigation property deletedItems in directory
@@ -593,11 +653,17 @@ Update entity in settings
 ### [Update-MgDirectorySettingTemplate](Update-MgDirectorySettingTemplate.md)
 Update entity in directorySettingTemplates
 
+### [Update-MgDirectorySharedEmailDomain](Update-MgDirectorySharedEmailDomain.md)
+Update the navigation property sharedEmailDomains in directory
+
 ### [Update-MgDomain](Update-MgDomain.md)
 Update entity in domains
 
 ### [Update-MgDomainServiceConfigurationRecord](Update-MgDomainServiceConfigurationRecord.md)
 Update the navigation property serviceConfigurationRecords in domains
+
+### [Update-MgDomainSharedEmailDomainInvitation](Update-MgDomainSharedEmailDomainInvitation.md)
+Update the navigation property sharedEmailDomainInvitations in domains
 
 ### [Update-MgDomainVerificationDnsRecord](Update-MgDomainVerificationDnsRecord.md)
 Update the navigation property verificationDnsRecords in domains
@@ -606,14 +672,23 @@ Update the navigation property verificationDnsRecords in domains
 Update entity in organization
 
 ### [Update-MgOrganizationBranding](Update-MgOrganizationBranding.md)
-Update the navigation property brandings in organization
+Update the navigation property branding in organization
 
 ### [Update-MgOrganizationExtension](Update-MgOrganizationExtension.md)
 Update the navigation property extensions in organization
 
+### [Update-MgOrganizationSetting](Update-MgOrganizationSetting.md)
+Update the navigation property settings in organization
+
+### [Update-MgOrganizationSettingItemInsight](Update-MgOrganizationSettingItemInsight.md)
+Update the navigation property itemInsights in organization
+
+### [Update-MgOrganizationSettingProfileCardProperty](Update-MgOrganizationSettingProfileCardProperty.md)
+Update the navigation property profileCardProperties in organization
+
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
 Update entity in subscribedSkus
 
-### [Update-MgUserScopedRoleMember](Update-MgUserScopedRoleMember.md)
+### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
 Update the navigation property scopedRoleMemberOf in users
 

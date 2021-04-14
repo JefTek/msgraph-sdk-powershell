@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: c605bff5-3c5b-4a0e-a811-f367d7dd0081
+Module Guid: f075c5b8-2697-406f-b659-41cedb0352a6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,13 +18,13 @@ Invoke action applyDecisions
 Invoke action wipeAndBlockManagedApps
 
 ### [Clear-MgUserManagedAppRegistrationByDeviceTag](Clear-MgUserManagedAppRegistrationByDeviceTag.md)
-Invoke action wipeManagedAppRegistrationsByDeviceTag
+Invoke action wipeManagedAppRegistrationByDeviceTag
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
 Invoke action wipe
 
-### [Clear-MgUserWindowInformationProtectionDeviceRegistration](Clear-MgUserWindowInformationProtectionDeviceRegistration.md)
-Invoke action wipe
+### [Clear-MgUserPresence](Clear-MgUserPresence.md)
+Invoke action clearPresence
 
 ### [Complete-MgUserOutlookTask](Complete-MgUserOutlookTask.md)
 Invoke action complete
@@ -113,6 +113,9 @@ Invoke action getNotebookFromWebUrl
 ### [Get-MgUserOwnedObjectByType](Get-MgUserOwnedObjectByType.md)
 Invoke action getUserOwnedObjects
 
+### [Initialize-MgUserServicePlan](Initialize-MgUserServicePlan.md)
+Invoke action activateServicePlan
+
 ### [Invoke-MgAcceptUserEvent](Invoke-MgAcceptUserEvent.md)
 Invoke action accept
 
@@ -125,8 +128,29 @@ Invoke action tentativelyAccept
 ### [Invoke-MgAcceptUserEventTentatively](Invoke-MgAcceptUserEventTentatively.md)
 Invoke action tentativelyAccept
 
+### [Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphCalendarSharingMessage](Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphCalendarSharingMessage.md)
+Invoke action accept
+
+### [Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequest](Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequest.md)
+Invoke action accept
+
+### [Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequestTentatively](Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequestTentatively.md)
+Invoke action tentativelyAccept
+
+### [Invoke-MgAcceptUserMessageMicrosoftGraphCalendarSharingMessage](Invoke-MgAcceptUserMessageMicrosoftGraphCalendarSharingMessage.md)
+Invoke action accept
+
+### [Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequest](Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequest.md)
+Invoke action accept
+
+### [Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequestTentatively](Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequestTentatively.md)
+Invoke action tentativelyAccept
+
 ### [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation.md)
 Invoke action acceptRecommendations
+
+### [Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision.md)
+Invoke action batchRecordDecisions
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
 Invoke action cleanWindowsDevice
@@ -138,6 +162,12 @@ Invoke action createOrGet
 Invoke action decline
 
 ### [Invoke-MgDeclineUserEventInstance](Invoke-MgDeclineUserEventInstance.md)
+Invoke action decline
+
+### [Invoke-MgDeclineUserMailFolderMessageMicrosoftGraphEventMessageRequest](Invoke-MgDeclineUserMailFolderMessageMicrosoftGraphEventMessageRequest.md)
+Invoke action decline
+
+### [Invoke-MgDeclineUserMessageMicrosoftGraphEventMessageRequest](Invoke-MgDeclineUserMessageMicrosoftGraphEventMessageRequest.md)
 Invoke action decline
 
 ### [Invoke-MgDismissUserEventInstanceReminder](Invoke-MgDismissUserEventInstanceReminder.md)
@@ -254,8 +284,11 @@ Invoke action createReplyAll
 ### [New-MgUserManagedDeviceLogCollectionRequest](New-MgUserManagedDeviceLogCollectionRequest.md)
 Invoke action createDeviceLogCollectionRequest
 
-### [New-MgUserManagedDeviceLogCollectionRequestDownloadUrl](New-MgUserManagedDeviceLogCollectionRequestDownloadUrl.md)
+### [New-MgUserManagedDeviceLogCollectionResponseDownloadUrl](New-MgUserManagedDeviceLogCollectionResponseDownloadUrl.md)
 Invoke action createDownloadUrl
+
+### [New-MgUserManagedDeviceWindowsDefenderUpdateSignature](New-MgUserManagedDeviceWindowsDefenderUpdateSignature.md)
+Invoke action windowsDefenderUpdateSignatures
 
 ### [New-MgUserMessageAttachmentUploadSession](New-MgUserMessageAttachmentUploadSession.md)
 Invoke action createUploadSession
@@ -347,6 +380,9 @@ Invoke action assignLicense
 ### [Set-MgUserManagedDeviceName](Set-MgUserManagedDeviceName.md)
 Invoke action setDeviceName
 
+### [Set-MgUserPresence](Set-MgUserPresence.md)
+Invoke action setPresence
+
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
 Invoke action bypassActivationLock
 
@@ -373,9 +409,6 @@ Invoke action validateProperties
 
 ### [Unblock-MgUserManagedApp](Unblock-MgUserManagedApp.md)
 Invoke action unblockManagedApps
-
-### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
-Invoke action windowsDefenderUpdateSignatures
 
 ### [Update-MgUserManagedDeviceWindowDeviceAccount](Update-MgUserManagedDeviceWindowDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount

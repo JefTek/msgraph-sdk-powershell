@@ -36,32 +36,12 @@ New-MgDeviceAppMgtDefaultManagedAppProtection [-AdditionalProperties <Hashtable>
 
 ### Create1
 ```
-New-MgDeviceAppMgtDefaultManagedAppProtection -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection>
+New-MgDeviceAppMgtDefaultManagedAppProtection -BodyParameter <IMicrosoftGraphDefaultManagedAppProtection1>
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to defaultManagedAppProtections for deviceAppManagement
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 
@@ -176,7 +156,7 @@ Policy used to configure detailed management settings for a specified set of app
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection1
 Parameter Sets: Create1
 Aliases:
 
@@ -817,11 +797,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection1
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection1
 
 ## NOTES
 
@@ -840,7 +820,7 @@ APPS <IMicrosoftGraphManagedMobileApp[]>: List of apps to which the policy is de
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
-BODYPARAMETER <IMicrosoftGraphDefaultManagedAppProtection>: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
+BODYPARAMETER <IMicrosoftGraphDefaultManagedAppProtection1>: Policy used to configure detailed management settings for a specified set of apps for all users not targeted by a TargetedManagedAppProtection Policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedDataStorageLocations <String[]>]`: Data storage locations where a user may store managed data.
   - `[AllowedInboundDataTransferSources <String>]`: managedAppDataTransferLevel

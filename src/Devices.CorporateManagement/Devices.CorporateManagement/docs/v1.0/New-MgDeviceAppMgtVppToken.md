@@ -29,26 +29,6 @@ New-MgDeviceAppMgtVppToken -BodyParameter <IMicrosoftGraphVppToken1> [-Confirm] 
 ## DESCRIPTION
 Create new navigation property to vppTokens for deviceAppManagement
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -176,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastSyncDateTime
-The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume Purchase Program Token.
+The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
 
 ```yaml
 Type: System.DateTime
@@ -326,7 +306,7 @@ BODYPARAMETER <IMicrosoftGraphVppToken1>: You purchase multiple licenses for iOS
   - `[CountryOrRegion <String>]`: Whether or not apps for the VPP token will be automatically updated.
   - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the Apple Volume Purchase Program Token.
   - `[LastModifiedDateTime <DateTime?>]`: Last modification date time associated with the Apple Volume Purchase Program Token.
-  - `[LastSyncDateTime <DateTime?>]`: The last time when an application sync was done with the Apple volume purchase program service using the Apple Volume Purchase Program Token.
+  - `[LastSyncDateTime <DateTime?>]`: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
   - `[LastSyncStatus <String>]`: vppTokenSyncStatus
   - `[OrganizationName <String>]`: The organization associated with the Apple Volume Purchase Program Token
   - `[State <String>]`: 

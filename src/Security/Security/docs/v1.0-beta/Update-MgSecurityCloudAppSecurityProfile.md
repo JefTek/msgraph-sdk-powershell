@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityCloudAppSecurityProfile
 
 ## SYNOPSIS
-Update the navigation property cloudAppSecurityProfiles in Security
+Update the navigation property cloudAppSecurityProfiles in security
 
 ## SYNTAX
 
@@ -48,27 +48,7 @@ Update-MgSecurityCloudAppSecurityProfile -InputObject <ISecurityIdentity> [-Addi
 ```
 
 ## DESCRIPTION
-Update the navigation property cloudAppSecurityProfiles in Security
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Update the navigation property cloudAppSecurityProfiles in security
 
 ## PARAMETERS
 

@@ -27,26 +27,6 @@ Update-MgInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationP
 ## DESCRIPTION
 Update the navigation property policy in informationProtection
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -182,21 +162,41 @@ BODYPARAMETER <IMicrosoftGraphInformationProtectionPolicy>: informationProtectio
   - `[Id <String>]`: Read-only.
   - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Color <String>]`: 
-    - `[Description <String>]`: 
-    - `[IsActive <Boolean?>]`: 
-    - `[Name <String>]`: 
-    - `[Sensitivity <Int32?>]`: 
-    - `[Tooltip <String>]`: 
+    - `[Color <String>]`: The color that the UI should display for the label, if configured.
+    - `[Description <String>]`: The admin-defined description for the label.
+    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
+    - `[Name <String>]`: The plaintext name of the label.
+    - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Color <String>]`: 
+      - `[Description <String>]`: 
+      - `[Id <String>]`: 
+      - `[IsActive <Boolean?>]`: 
+      - `[Name <String>]`: 
+      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+      - `[Sensitivity <Int32?>]`: 
+      - `[Tooltip <String>]`: 
+    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 LABELS <IMicrosoftGraphInformationProtectionLabel[]>: .
   - `[Id <String>]`: Read-only.
-  - `[Color <String>]`: 
-  - `[Description <String>]`: 
-  - `[IsActive <Boolean?>]`: 
-  - `[Name <String>]`: 
-  - `[Sensitivity <Int32?>]`: 
-  - `[Tooltip <String>]`: 
+  - `[Color <String>]`: The color that the UI should display for the label, if configured.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
+  - `[Name <String>]`: The plaintext name of the label.
+  - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Color <String>]`: 
+    - `[Description <String>]`: 
+    - `[Id <String>]`: 
+    - `[IsActive <Boolean?>]`: 
+    - `[Name <String>]`: 
+    - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+    - `[Sensitivity <Int32?>]`: 
+    - `[Tooltip <String>]`: 
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
 

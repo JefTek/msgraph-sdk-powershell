@@ -19,26 +19,6 @@ Sync-MgDeviceAppMgtMicrosoftStore [-PassThru] [-Confirm] [-WhatIf] [<CommonParam
 ## DESCRIPTION
 Invoke action syncMicrosoftStoreForBusinessApps
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -PassThru

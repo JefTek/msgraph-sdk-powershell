@@ -47,26 +47,6 @@ New-MgFinancialCompanyInformation -InputObject <IFinancialsIdentity> [-Additiona
 ## DESCRIPTION
 Create new navigation property to companyInformation for financials
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties

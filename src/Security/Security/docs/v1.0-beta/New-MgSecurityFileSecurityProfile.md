@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityFileSecurityProfile
 
 ## SYNOPSIS
-Create new navigation property to fileSecurityProfiles for Security
+Create new navigation property to fileSecurityProfiles for security
 
 ## SYNTAX
 
@@ -30,27 +30,7 @@ New-MgSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurityPro
 ```
 
 ## DESCRIPTION
-Create new navigation property to fileSecurityProfiles for Security
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Create new navigation property to fileSecurityProfiles for security
 
 ## PARAMETERS
 

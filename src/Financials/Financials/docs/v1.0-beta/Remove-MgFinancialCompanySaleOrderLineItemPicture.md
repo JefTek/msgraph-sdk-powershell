@@ -40,26 +40,6 @@ Remove-MgFinancialCompanySaleOrderLineItemPicture -InputObject <IFinancialsIdent
 ## DESCRIPTION
 Delete navigation property picture for financials
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -CompanyId

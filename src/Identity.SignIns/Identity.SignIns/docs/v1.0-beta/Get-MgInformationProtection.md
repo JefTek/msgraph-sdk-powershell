@@ -19,26 +19,6 @@ Get-MgInformationProtection [-ExpandProperty <String[]>] [-Property <String[]>] 
 ## DESCRIPTION
 Get informationProtection
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,7 +58,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
 
 ## NOTES
 

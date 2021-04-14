@@ -12,13 +12,13 @@ Update the ref of navigation property windowsManagementApp in deviceAppManagemen
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### SetExpanded (Default)
 ```
 Set-MgDeviceAppMgtWindowManagementAppByRef [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
-### Update
+### Set
 ```
 Set-MgDeviceAppMgtWindowManagementAppByRef -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
@@ -27,26 +27,6 @@ Set-MgDeviceAppMgtWindowManagementAppByRef -BodyParameter <Hashtable> [-PassThru
 ## DESCRIPTION
 Update the ref of navigation property windowsManagementApp in deviceAppManagement
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -54,7 +34,7 @@ Additional Parameters
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded
+Parameter Sets: SetExpanded
 Aliases:
 
 Required: False
@@ -69,7 +49,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: Update
+Parameter Sets: Set
 Aliases:
 
 Required: True

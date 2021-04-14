@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: 6e301df7-fd37-43dc-8cc1-92035e17e74c
+Module Guid: 2a254c49-bdda-453b-9c87-0eaa4be1f6c7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,8 +17,14 @@ Get entity from drives by key
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 Get following from drives
 
+### [Get-MgDriveFollowingContent](Get-MgDriveFollowingContent.md)
+Get media content for the navigation property following from drives
+
 ### [Get-MgDriveItem](Get-MgDriveItem.md)
 Get items from drives
+
+### [Get-MgDriveItemContent](Get-MgDriveItemContent.md)
+Get media content for the navigation property items from drives
 
 ### [Get-MgDriveList](Get-MgDriveList.md)
 Get list from drives
@@ -50,6 +56,9 @@ Get ref of analytics from drives
 ### [Get-MgDriveListItemDriveItem](Get-MgDriveListItemDriveItem.md)
 Get driveItem from drives
 
+### [Get-MgDriveListItemDriveItemContent](Get-MgDriveListItemDriveItemContent.md)
+Get media content for the navigation property driveItem from drives
+
 ### [Get-MgDriveListItemField](Get-MgDriveListItemField.md)
 Get fields from drives
 
@@ -65,8 +74,14 @@ Get subscriptions from drives
 ### [Get-MgDriveRoot](Get-MgDriveRoot.md)
 Get root from drives
 
+### [Get-MgDriveRootContent](Get-MgDriveRootContent.md)
+Get media content for the navigation property root from drives
+
 ### [Get-MgDriveSpecial](Get-MgDriveSpecial.md)
 Get special from drives
+
+### [Get-MgDriveSpecialContent](Get-MgDriveSpecialContent.md)
+Get media content for the navigation property special from drives
 
 ### [Get-MgGroupDrive](Get-MgGroupDrive.md)
 Get drive from groups
@@ -74,8 +89,14 @@ Get drive from groups
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Get driveItem from shares
 
+### [Get-MgShareDriveItemContent](Get-MgShareDriveItemContent.md)
+Get media content for the navigation property driveItem from shares
+
 ### [Get-MgShareItem](Get-MgShareItem.md)
 Get items from shares
+
+### [Get-MgShareItemContent](Get-MgShareItemContent.md)
+Get media content for the navigation property items from shares
 
 ### [Get-MgShareList](Get-MgShareList.md)
 Get list from shares
@@ -107,6 +128,9 @@ Get ref of analytics from shares
 ### [Get-MgShareListItemDriveItem](Get-MgShareListItemDriveItem.md)
 Get driveItem from shares
 
+### [Get-MgShareListItemDriveItemContent](Get-MgShareListItemDriveItemContent.md)
+Get media content for the navigation property driveItem from shares
+
 ### [Get-MgShareListItemField](Get-MgShareListItemField.md)
 Get fields from shares
 
@@ -124,6 +148,9 @@ Get permission from shares
 
 ### [Get-MgShareRoot](Get-MgShareRoot.md)
 Get root from shares
+
+### [Get-MgShareRootContent](Get-MgShareRootContent.md)
+Get media content for the navigation property root from shares
 
 ### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
 Get entity from shares by key
@@ -323,11 +350,38 @@ Invoke action restoreVersion
 ### [Search-MgDrive](Search-MgDrive.md)
 Invoke function search
 
+### [Set-MgDriveFollowingContent](Set-MgDriveFollowingContent.md)
+Update media content for the navigation property following in drives
+
+### [Set-MgDriveItemContent](Set-MgDriveItemContent.md)
+Update media content for the navigation property items in drives
+
 ### [Set-MgDriveListItemAnalyticByRef](Set-MgDriveListItemAnalyticByRef.md)
 Update the ref of navigation property analytics in drives
 
+### [Set-MgDriveListItemDriveItemContent](Set-MgDriveListItemDriveItemContent.md)
+Update media content for the navigation property driveItem in drives
+
+### [Set-MgDriveRootContent](Set-MgDriveRootContent.md)
+Update media content for the navigation property root in drives
+
+### [Set-MgDriveSpecialContent](Set-MgDriveSpecialContent.md)
+Update media content for the navigation property special in drives
+
+### [Set-MgShareDriveItemContent](Set-MgShareDriveItemContent.md)
+Update media content for the navigation property driveItem in shares
+
+### [Set-MgShareItemContent](Set-MgShareItemContent.md)
+Update media content for the navigation property items in shares
+
 ### [Set-MgShareListItemAnalyticByRef](Set-MgShareListItemAnalyticByRef.md)
 Update the ref of navigation property analytics in shares
+
+### [Set-MgShareListItemDriveItemContent](Set-MgShareListItemDriveItemContent.md)
+Update media content for the navigation property driveItem in shares
+
+### [Set-MgShareRootContent](Set-MgShareRootContent.md)
+Update media content for the navigation property root in shares
 
 ### [Update-MgDrive](Update-MgDrive.md)
 Update entity in drives

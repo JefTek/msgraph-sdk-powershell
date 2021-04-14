@@ -18,7 +18,8 @@ New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtab
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
  [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -29,26 +30,6 @@ New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create new navigation property to connectedOrganizations for identityGovernance
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 
@@ -84,7 +65,8 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedBy
-.
+UPN of the user who created this resource.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -99,7 +81,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
 
 ```yaml
 Type: System.DateTime
@@ -114,7 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The description of the connected organization.
 
 ```yaml
 Type: System.String
@@ -129,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The display name of the connected organization.
 
 ```yaml
 Type: System.String
@@ -144,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalSponsors
-.
+Nullable.
 To construct, see NOTES section for EXTERNALSPONSORS properties and create a hash table.
 
 ```yaml
@@ -190,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -InternalSponsors
-.
+Nullable.
 To construct, see NOTES section for INTERNALSPONSORS properties and create a hash table.
 
 ```yaml
@@ -206,7 +190,8 @@ Accept wildcard characters: False
 ```
 
 ### -ModifiedBy
-.
+UPN of the user who last modified this resource.
+Read-only.
 
 ```yaml
 Type: System.String
@@ -221,10 +206,27 @@ Accept wildcard characters: False
 ```
 
 ### -ModifiedDateTime
-.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
 
 ```yaml
 Type: System.DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -State
+connectedOrganizationState
+
+```yaml
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,23 +291,24 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphConnectedOrganization>: connectedOrganization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[CreatedBy <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
+  - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[Description <String>]`: The description of the connected organization.
+  - `[DisplayName <String>]`: The display name of the connected organization.
+  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
   - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: 
-  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-  - `[ModifiedBy <String>]`: 
-  - `[ModifiedDateTime <DateTime?>]`: 
+  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
+  - `[ModifiedBy <String>]`: UPN of the user who last modified this resource. Read-only.
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[State <String>]`: connectedOrganizationState
 
-EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: .
+EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: Nullable.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
-INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: .
+INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: Nullable.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 

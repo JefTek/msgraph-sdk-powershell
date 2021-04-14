@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Education
-Module Guid: eb0bcbdd-70f9-41ed-be97-eb5ee26a73bb
+Module Guid: 8ce2ef08-e437-491d-861d-018d7ee0097a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education
 Help Version: 1.0.0.0
 Locale: en-US
@@ -20,6 +20,9 @@ Get assignments from education
 ### [Get-MgEducationClassAssignmentCategory](Get-MgEducationClassAssignmentCategory.md)
 Get categories from education
 
+### [Get-MgEducationClassAssignmentDefault](Get-MgEducationClassAssignmentDefault.md)
+Get assignmentDefaults from education
+
 ### [Get-MgEducationClassAssignmentResource](Get-MgEducationClassAssignmentResource.md)
 Get resources from education
 
@@ -28,6 +31,9 @@ Invoke function getResourcesFolderUrl
 
 ### [Get-MgEducationClassAssignmentRubric](Get-MgEducationClassAssignmentRubric.md)
 Get rubric from education
+
+### [Get-MgEducationClassAssignmentSetting](Get-MgEducationClassAssignmentSetting.md)
+Get assignmentSettings from education
 
 ### [Get-MgEducationClassAssignmentSubmission](Get-MgEducationClassAssignmentSubmission.md)
 Get submissions from education
@@ -407,11 +413,17 @@ Delete navigation property assignments for education
 ### [Remove-MgEducationClassAssignmentCategory](Remove-MgEducationClassAssignmentCategory.md)
 Delete navigation property assignmentCategories for education
 
+### [Remove-MgEducationClassAssignmentDefault](Remove-MgEducationClassAssignmentDefault.md)
+Delete navigation property assignmentDefaults for education
+
 ### [Remove-MgEducationClassAssignmentResource](Remove-MgEducationClassAssignmentResource.md)
 Delete navigation property resources for education
 
 ### [Remove-MgEducationClassAssignmentRubric](Remove-MgEducationClassAssignmentRubric.md)
 Delete navigation property rubric for education
+
+### [Remove-MgEducationClassAssignmentSetting](Remove-MgEducationClassAssignmentSetting.md)
+Delete navigation property assignmentSettings for education
 
 ### [Remove-MgEducationClassAssignmentSubmission](Remove-MgEducationClassAssignmentSubmission.md)
 Delete navigation property submissions for education
@@ -551,11 +563,17 @@ Update the navigation property assignments in education
 ### [Update-MgEducationClassAssignmentCategory](Update-MgEducationClassAssignmentCategory.md)
 Update the navigation property assignmentCategories in education
 
+### [Update-MgEducationClassAssignmentDefault](Update-MgEducationClassAssignmentDefault.md)
+Update the navigation property assignmentDefaults in education
+
 ### [Update-MgEducationClassAssignmentResource](Update-MgEducationClassAssignmentResource.md)
 Update the navigation property resources in education
 
 ### [Update-MgEducationClassAssignmentRubric](Update-MgEducationClassAssignmentRubric.md)
 Update the navigation property rubric in education
+
+### [Update-MgEducationClassAssignmentSetting](Update-MgEducationClassAssignmentSetting.md)
+Update the navigation property assignmentSettings in education
 
 ### [Update-MgEducationClassAssignmentSubmission](Update-MgEducationClassAssignmentSubmission.md)
 Update the navigation property submissions in education

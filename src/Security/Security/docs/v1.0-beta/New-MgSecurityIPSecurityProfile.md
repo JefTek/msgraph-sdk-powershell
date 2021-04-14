@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityIPSecurityProfile
 
 ## SYNOPSIS
-Create new navigation property to ipSecurityProfiles for Security
+Create new navigation property to ipSecurityProfiles for security
 
 ## SYNTAX
 
@@ -29,27 +29,7 @@ New-MgSecurityIPSecurityProfile -BodyParameter <IMicrosoftGraphIPSecurityProfile
 ```
 
 ## DESCRIPTION
-Create new navigation property to ipSecurityProfiles for Security
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Create new navigation property to ipSecurityProfiles for security
 
 ## PARAMETERS
 
@@ -363,7 +343,7 @@ BODYPARAMETER <IMicrosoftGraphIPSecurityProfile>: ipSecurityProfile
     - `[Name <String>]`: 
     - `[Vendor <String>]`: 
   - `[IPReferenceData <IMicrosoftGraphIPReferenceData[]>]`: 
-    - `[Asn <Int32?>]`: 
+    - `[Asn <Int64?>]`: 
     - `[City <String>]`: 
     - `[CountryOrRegionCode <String>]`: 
     - `[Organization <String>]`: 
@@ -385,7 +365,7 @@ IPCATEGORIES <IMicrosoftGraphIPCategory[]>: .
   - `[Vendor <String>]`: 
 
 IPREFERENCEDATA <IMicrosoftGraphIPReferenceData[]>: .
-  - `[Asn <Int32?>]`: 
+  - `[Asn <Int64?>]`: 
   - `[City <String>]`: 
   - `[CountryOrRegionCode <String>]`: 
   - `[Organization <String>]`: 

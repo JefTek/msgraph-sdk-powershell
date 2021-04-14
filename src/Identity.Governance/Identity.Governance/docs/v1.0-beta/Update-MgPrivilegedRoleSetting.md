@@ -45,26 +45,6 @@ Update-MgPrivilegedRoleSetting -InputObject <IIdentityGovernanceIdentity> [-Addi
 ## DESCRIPTION
 Update the navigation property settings in privilegedRoles
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -83,7 +63,8 @@ Accept wildcard characters: False
 ```
 
 ### -ApprovalOnElevation
-.
+true if the approval is required when activate the role.
+false if the approval is not required when activate the role.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -98,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApproverIds
-.
+List of Approval ids, if approval is required for activation.
 
 ```yaml
 Type: System.String[]
@@ -129,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -ElevationDuration
-.
+The duration when the role is activated.
 
 ```yaml
 Type: System.TimeSpan
@@ -175,7 +156,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsMfaOnElevationConfigurable
-.
+true if mfaOnElevation is configurable.
+false if mfaOnElevation is not configurable.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -190,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastGlobalAdmin
-.
+Internal used only.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -205,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -MaxElavationDuration
-.
+Maximal duration for the activated role.
 
 ```yaml
 Type: System.TimeSpan
@@ -220,7 +202,8 @@ Accept wildcard characters: False
 ```
 
 ### -MfaOnElevation
-.
+true if MFA is required to activate the role.
+false if MFA is not required to activate the role.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -235,7 +218,7 @@ Accept wildcard characters: False
 ```
 
 ### -MinElevationDuration
-.
+Minimal duration for the activated role.
 
 ```yaml
 Type: System.TimeSpan
@@ -250,7 +233,8 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationToUserOnElevation
-.
+true if send notification to the end user when the role is activated.
+false if do not send notification when the role is activated.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -295,7 +279,8 @@ Accept wildcard characters: False
 ```
 
 ### -TicketingInfoOnElevation
-.
+true if the ticketing information is required when activate the role.
+false if the ticketing information is not required when activate the role.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -365,16 +350,16 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[ApprovalOnElevation <Boolean?>]`: 
-  - `[ApproverIds <String[]>]`: 
-  - `[ElevationDuration <TimeSpan?>]`: 
-  - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
-  - `[LastGlobalAdmin <Boolean?>]`: 
-  - `[MaxElavationDuration <TimeSpan?>]`: 
-  - `[MfaOnElevation <Boolean?>]`: 
-  - `[MinElevationDuration <TimeSpan?>]`: 
-  - `[NotificationToUserOnElevation <Boolean?>]`: 
-  - `[TicketingInfoOnElevation <Boolean?>]`: 
+  - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
+  - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
+  - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
+  - `[IsMfaOnElevationConfigurable <Boolean?>]`: true if mfaOnElevation is configurable. false if mfaOnElevation is not configurable.
+  - `[LastGlobalAdmin <Boolean?>]`: Internal used only.
+  - `[MaxElavationDuration <TimeSpan?>]`: Maximal duration for the activated role.
+  - `[MfaOnElevation <Boolean?>]`: true if MFA is required to activate the role. false if MFA is not required to activate the role.
+  - `[MinElevationDuration <TimeSpan?>]`: Minimal duration for the activated role.
+  - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
+  - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
 
 INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
@@ -383,6 +368,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
   - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
   - `[AccessPackageId <String>]`: key: id of accessPackage
+  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
   - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
@@ -396,7 +382,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
   - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
   - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
+  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
   - `[AgreementId <String>]`: key: id of agreement
+  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
+  - `[ApprovalId <String>]`: key: id of approval
+  - `[ApprovalStepId <String>]`: key: id of approvalStep
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
@@ -405,6 +395,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent

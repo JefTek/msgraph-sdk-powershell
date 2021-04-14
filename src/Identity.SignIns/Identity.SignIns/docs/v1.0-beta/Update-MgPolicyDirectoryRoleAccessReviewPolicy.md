@@ -28,26 +28,6 @@ Update-MgPolicyDirectoryRoleAccessReviewPolicy -BodyParameter <IMicrosoftGraphDi
 ## DESCRIPTION
 Update the navigation property directoryRoleAccessReviewPolicy in policies
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -183,20 +163,20 @@ BODYPARAMETER <IMicrosoftGraphDirectoryRoleAccessReviewPolicy>: directoryRoleAcc
   - `[Id <String>]`: Read-only.
   - `[Settings <IMicrosoftGraphAccessReviewScheduleSettings>]`: accessReviewScheduleSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]`: 
-    - `[AutoApplyDecisionsEnabled <Boolean?>]`: 
-    - `[DefaultDecision <String>]`: 
-    - `[DefaultDecisionEnabled <Boolean?>]`: 
-    - `[InstanceDurationInDays <Int32?>]`: 
-    - `[JustificationRequiredOnApproval <Boolean?>]`: 
-    - `[MailNotificationsEnabled <Boolean?>]`: 
-    - `[RecommendationsEnabled <Boolean?>]`: 
+    - `[ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]`: Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: removeAccessApplyAction (default) and disableAndDeleteUserApplyAction. Field only needs to be specified in the case of disableAndDeleteUserApplyAction. See accessReviewApplyAction.
+    - `[AutoApplyDecisionsEnabled <Boolean?>]`: Flag to indicate whether auto-apply feature is enabled.
+    - `[DefaultDecision <String>]`: Decision chosen if defaultDecisionEnabled is enabled. Can be one of 'Approve', 'Deny', or 'Recommendation'.
+    - `[DefaultDecisionEnabled <Boolean?>]`: Flag to indicate whether default decision is enabled/disabled when reviewers do not respond.
+    - `[InstanceDurationInDays <Int32?>]`: Duration of each recurrence of review (accessReviewInstance) in number of days.
+    - `[JustificationRequiredOnApproval <Boolean?>]`: Flag to indicate whether reviewers are required to provide justification with their decision.
+    - `[MailNotificationsEnabled <Boolean?>]`: Flag to indicate whether emails are enabled/disabled.
+    - `[RecommendationsEnabled <Boolean?>]`: Flag to indicate whether decision recommendations are enabled/disabled.
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -209,24 +189,24 @@ BODYPARAMETER <IMicrosoftGraphDirectoryRoleAccessReviewPolicy>: directoryRoleAcc
         - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
         - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
         - `[Type <String>]`: recurrenceRangeType
-    - `[ReminderNotificationsEnabled <Boolean?>]`: 
+    - `[ReminderNotificationsEnabled <Boolean?>]`: Flag to indicate whether reminders are enabled/disabled.
 
 SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]`: 
-  - `[AutoApplyDecisionsEnabled <Boolean?>]`: 
-  - `[DefaultDecision <String>]`: 
-  - `[DefaultDecisionEnabled <Boolean?>]`: 
-  - `[InstanceDurationInDays <Int32?>]`: 
-  - `[JustificationRequiredOnApproval <Boolean?>]`: 
-  - `[MailNotificationsEnabled <Boolean?>]`: 
-  - `[RecommendationsEnabled <Boolean?>]`: 
+  - `[ApplyActions <IMicrosoftGraphAccessReviewApplyAction[]>]`: Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: removeAccessApplyAction (default) and disableAndDeleteUserApplyAction. Field only needs to be specified in the case of disableAndDeleteUserApplyAction. See accessReviewApplyAction.
+  - `[AutoApplyDecisionsEnabled <Boolean?>]`: Flag to indicate whether auto-apply feature is enabled.
+  - `[DefaultDecision <String>]`: Decision chosen if defaultDecisionEnabled is enabled. Can be one of 'Approve', 'Deny', or 'Recommendation'.
+  - `[DefaultDecisionEnabled <Boolean?>]`: Flag to indicate whether default decision is enabled/disabled when reviewers do not respond.
+  - `[InstanceDurationInDays <Int32?>]`: Duration of each recurrence of review (accessReviewInstance) in number of days.
+  - `[JustificationRequiredOnApproval <Boolean?>]`: Flag to indicate whether reviewers are required to provide justification with their decision.
+  - `[MailNotificationsEnabled <Boolean?>]`: Flag to indicate whether emails are enabled/disabled.
+  - `[RecommendationsEnabled <Boolean?>]`: Flag to indicate whether decision recommendations are enabled/disabled.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
       - `[FirstDayOfWeek <String>]`: dayOfWeek
       - `[Index <String>]`: weekIndex
       - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -239,7 +219,7 @@ SETTINGS <IMicrosoftGraphAccessReviewScheduleSettings>: accessReviewScheduleSett
       - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
       - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
       - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderNotificationsEnabled <Boolean?>]`: 
+  - `[ReminderNotificationsEnabled <Boolean?>]`: Flag to indicate whether reminders are enabled/disabled.
 
 ## RELATED LINKS
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Notes
-Module Guid: f7652540-2624-49a4-a0fe-73b90c047308
+Module Guid: cac097cf-9429-485f-ad9c-84f9d7b4b629
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes
 Help Version: 1.0.0.0
 Locale: en-US
@@ -26,8 +26,14 @@ Get operations from groups
 ### [Get-MgGroupOnenotePage](Get-MgGroupOnenotePage.md)
 Get pages from groups
 
+### [Get-MgGroupOnenotePageContent](Get-MgGroupOnenotePageContent.md)
+Get media content for the navigation property pages from groups
+
 ### [Get-MgGroupOnenoteResource](Get-MgGroupOnenoteResource.md)
 Get resources from groups
+
+### [Get-MgGroupOnenoteResourceContent](Get-MgGroupOnenoteResourceContent.md)
+Get media content for the navigation property resources from groups
 
 ### [Get-MgGroupOnenoteSection](Get-MgGroupOnenoteSection.md)
 Get sections from groups
@@ -56,8 +62,14 @@ Get operations from sites
 ### [Get-MgSiteOnenotePage](Get-MgSiteOnenotePage.md)
 Get pages from sites
 
+### [Get-MgSiteOnenotePageContent](Get-MgSiteOnenotePageContent.md)
+Get media content for the navigation property pages from sites
+
 ### [Get-MgSiteOnenoteResource](Get-MgSiteOnenoteResource.md)
 Get resources from sites
+
+### [Get-MgSiteOnenoteResourceContent](Get-MgSiteOnenoteResourceContent.md)
+Get media content for the navigation property resources from sites
 
 ### [Get-MgSiteOnenoteSection](Get-MgSiteOnenoteSection.md)
 Get sections from sites
@@ -86,8 +98,14 @@ Get operations from users
 ### [Get-MgUserOnenotePage](Get-MgUserOnenotePage.md)
 Get pages from users
 
+### [Get-MgUserOnenotePageContent](Get-MgUserOnenotePageContent.md)
+Get media content for the navigation property pages from users
+
 ### [Get-MgUserOnenoteResource](Get-MgUserOnenoteResource.md)
 Get resources from users
+
+### [Get-MgUserOnenoteResourceContent](Get-MgUserOnenoteResourceContent.md)
+Get media content for the navigation property resources from users
 
 ### [Get-MgUserOnenoteSection](Get-MgUserOnenoteSection.md)
 Get sections from users
@@ -208,6 +226,33 @@ Delete navigation property sections for users
 
 ### [Remove-MgUserOnenoteSectionGroup](Remove-MgUserOnenoteSectionGroup.md)
 Delete navigation property sectionGroups for users
+
+### [Set-MgGroupOnenotePageContent](Set-MgGroupOnenotePageContent.md)
+Update media content for the navigation property pages in groups
+
+### [Set-MgGroupOnenoteResourceContent](Set-MgGroupOnenoteResourceContent.md)
+Update media content for the navigation property resources in groups
+
+### [Set-MgGroupOnenoteSectionPageContent](Set-MgGroupOnenoteSectionPageContent.md)
+Update media content for the navigation property pages in groups
+
+### [Set-MgSiteOnenotePageContent](Set-MgSiteOnenotePageContent.md)
+Update media content for the navigation property pages in sites
+
+### [Set-MgSiteOnenoteResourceContent](Set-MgSiteOnenoteResourceContent.md)
+Update media content for the navigation property resources in sites
+
+### [Set-MgSiteOnenoteSectionPageContent](Set-MgSiteOnenoteSectionPageContent.md)
+Update media content for the navigation property pages in sites
+
+### [Set-MgUserOnenotePageContent](Set-MgUserOnenotePageContent.md)
+Update media content for the navigation property pages in users
+
+### [Set-MgUserOnenoteResourceContent](Set-MgUserOnenoteResourceContent.md)
+Update media content for the navigation property resources in users
+
+### [Set-MgUserOnenoteSectionPageContent](Set-MgUserOnenoteSectionPageContent.md)
+Update media content for the navigation property pages in users
 
 ### [Update-MgGroupOnenoteNotebook](Update-MgGroupOnenoteNotebook.md)
 Update the navigation property notebooks in groups

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 70b3f08c-45fa-4741-b125-441e3cce9f9f
+Module Guid: 23bb2f27-85d2-447c-a394-436fd3a3ffb5
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,8 +17,8 @@ Invoke action confirmCompromised
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
 Get entity from dataPolicyOperations by key
 
-### [Get-MgIdentityConditionalAccess](Get-MgIdentityConditionalAccess.md)
-Get conditionalAccess from identity
+### [Get-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](Get-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
+Get authenticationContextClassReferences from identity
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
 Get namedLocations from identity
@@ -34,6 +34,9 @@ Get userFlows from identity
 
 ### [Get-MgInformationProtection](Get-MgInformationProtection.md)
 Get informationProtection
+
+### [Get-MgInformationProtectionBitlocker](Get-MgInformationProtectionBitlocker.md)
+Get bitlocker from informationProtection
 
 ### [Get-MgInformationProtectionDataLossPreventionPolicy](Get-MgInformationProtectionDataLossPreventionPolicy.md)
 Get dataLossPreventionPolicies from informationProtection
@@ -59,15 +62,6 @@ Get threatAssessmentRequests from informationProtection
 ### [Get-MgInformationProtectionThreatAssessmentRequestResult](Get-MgInformationProtectionThreatAssessmentRequestResult.md)
 Get results from informationProtection
 
-### [Get-MgInvitation](Get-MgInvitation.md)
-Get entity from invitations by key
-
-### [Get-MgInvitationInvitedUser](Get-MgInvitationInvitedUser.md)
-Get invitedUser from invitations
-
-### [Get-MgInvitationInvitedUserByRef](Get-MgInvitationInvitedUserByRef.md)
-Get ref of invitedUser from invitations
-
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
 Get entity from oauth2PermissionGrants by key
 
@@ -89,20 +83,26 @@ Get adminConsentRequestPolicy from policies
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
 Get authenticationFlowsPolicy from policies
 
+### [Get-MgPolicyAuthenticationMethodPolicy](Get-MgPolicyAuthenticationMethodPolicy.md)
+Get authenticationMethodsPolicy from policies
+
 ### [Get-MgPolicyAuthorizationPolicy](Get-MgPolicyAuthorizationPolicy.md)
 Get authorizationPolicy from policies
+
+### [Get-MgPolicyB2CAuthenticationMethodPolicy](Get-MgPolicyB2CAuthenticationMethodPolicy.md)
+Get b2cAuthenticationMethodsPolicy from policies
 
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
 Get claimsMappingPolicies from policies
 
-### [Get-MgPolicyConditionalAccessPolicy](Get-MgPolicyConditionalAccessPolicy.md)
-Get conditionalAccessPolicies from policies
-
-### [Get-MgPolicyDeviceRegistrationPolicy](Get-MgPolicyDeviceRegistrationPolicy.md)
-Get deviceRegistrationPolicy from policies
-
 ### [Get-MgPolicyDirectoryRoleAccessReviewPolicy](Get-MgPolicyDirectoryRoleAccessReviewPolicy.md)
 Get directoryRoleAccessReviewPolicy from policies
+
+### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
+Get featureRolloutPolicies from policies
+
+### [Get-MgPolicyFeatureRolloutPolicyApplyTo](Get-MgPolicyFeatureRolloutPolicyApplyTo.md)
+Get appliesTo from policies
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from policies
@@ -119,8 +119,29 @@ Get excludes from policies
 ### [Get-MgPolicyPermissionGrantPolicyInclude](Get-MgPolicyPermissionGrantPolicyInclude.md)
 Get includes from policies
 
-### [Get-MgPolicyRoot](Get-MgPolicyRoot.md)
-Get policies
+### [Get-MgPolicyPrivateLinkResourcePolicy](Get-MgPolicyPrivateLinkResourcePolicy.md)
+Get privateLinkResourcePolicies from policies
+
+### [Get-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](Get-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
+Get privateEndpointConnections from policies
+
+### [Get-MgPolicyRoleManagementPolicy](Get-MgPolicyRoleManagementPolicy.md)
+Get roleManagementPolicies from policies
+
+### [Get-MgPolicyRoleManagementPolicyAssignment](Get-MgPolicyRoleManagementPolicyAssignment.md)
+Get roleManagementPolicyAssignments from policies
+
+### [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](Get-MgPolicyRoleManagementPolicyAssignmentPolicy.md)
+Get policy from policies
+
+### [Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
+Get ref of policy from policies
+
+### [Get-MgPolicyRoleManagementPolicyEffectiveRule](Get-MgPolicyRoleManagementPolicyEffectiveRule.md)
+Get effectiveRules from policies
+
+### [Get-MgPolicyRoleManagementPolicyRule](Get-MgPolicyRoleManagementPolicyRule.md)
+Get rules from policies
 
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
 Get tokenIssuancePolicies from policies
@@ -149,8 +170,8 @@ Invoke function getActiveKey
 ### [Get-MgTrustFrameworkPolicy](Get-MgTrustFrameworkPolicy.md)
 Get policies from trustFramework
 
-### [Get-MgUserAuthentication](Get-MgUserAuthentication.md)
-Get authentication from users
+### [Get-MgTrustFrameworkPolicyContent](Get-MgTrustFrameworkPolicyContent.md)
+Get media content for the navigation property policies from trustFramework
 
 ### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
 Get emailMethods from users
@@ -164,8 +185,8 @@ Get methods from users
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](Get-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
 Get microsoftAuthenticatorMethods from users
 
-### [Get-MgUserAuthenticationOathMethod](Get-MgUserAuthenticationOathMethod.md)
-Get oathMethods from users
+### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
+Get device from users
 
 ### [Get-MgUserAuthenticationOperation](Get-MgUserAuthenticationOperation.md)
 Get operations from users
@@ -173,23 +194,35 @@ Get operations from users
 ### [Get-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Get-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Get passwordlessMicrosoftAuthenticatorMethods from users
 
+### [Get-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Get device from users
+
 ### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
 Get passwordMethods from users
 
 ### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
 Get phoneMethods from users
 
-### [Get-MgUserAuthenticationSecurityQuestionMethod](Get-MgUserAuthenticationSecurityQuestionMethod.md)
-Get securityQuestionMethods from users
-
 ### [Get-MgUserAuthenticationTemporaryAccessPassMethod](Get-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Get temporaryAccessPassMethods from users
+
+### [Get-MgUserAuthenticationWindowHello](Get-MgUserAuthenticationWindowHello.md)
+Get windowsHelloForBusinessMethods from users
+
+### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
+Get device from users
 
 ### [Get-MgUserInformationProtection](Get-MgUserInformationProtection.md)
 Get informationProtection from users
 
 ### [Invoke-MgAvailableIdentityProviderType](Invoke-MgAvailableIdentityProviderType.md)
 Invoke function availableProviderTypes
+
+### [Invoke-MgBufferInformationProtectionDecrypt](Invoke-MgBufferInformationProtectionDecrypt.md)
+Invoke action decryptBuffer
+
+### [Invoke-MgBufferInformationProtectionEncrypt](Invoke-MgBufferInformationProtectionEncrypt.md)
+Invoke action encryptBuffer
 
 ### [Invoke-MgDismissRiskyUser](Invoke-MgDismissRiskyUser.md)
 Invoke action dismiss
@@ -208,6 +241,9 @@ Invoke action uploadSecret
 
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
+
+### [New-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](New-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
+Create new navigation property to authenticationContextClassReferences for identity
 
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
 Create new navigation property to namedLocations for identity
@@ -257,8 +293,11 @@ Create new navigation property to authorizationPolicy for policies
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
 Create new navigation property to claimsMappingPolicies for policies
 
-### [New-MgPolicyConditionalAccessPolicy](New-MgPolicyConditionalAccessPolicy.md)
-Create new navigation property to conditionalAccessPolicies for policies
+### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
+Create new navigation property to featureRolloutPolicies for policies
+
+### [New-MgPolicyFeatureRolloutPolicyApplyTo](New-MgPolicyFeatureRolloutPolicyApplyTo.md)
+Create new navigation property to appliesTo for policies
 
 ### [New-MgPolicyHomeRealmDiscoveryPolicy](New-MgPolicyHomeRealmDiscoveryPolicy.md)
 Create new navigation property to homeRealmDiscoveryPolicies for policies
@@ -271,6 +310,24 @@ Create new navigation property to excludes for policies
 
 ### [New-MgPolicyPermissionGrantPolicyInclude](New-MgPolicyPermissionGrantPolicyInclude.md)
 Create new navigation property to includes for policies
+
+### [New-MgPolicyPrivateLinkResourcePolicy](New-MgPolicyPrivateLinkResourcePolicy.md)
+Create new navigation property to privateLinkResourcePolicies for policies
+
+### [New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
+Create new navigation property to privateEndpointConnections for policies
+
+### [New-MgPolicyRoleManagementPolicy](New-MgPolicyRoleManagementPolicy.md)
+Create new navigation property to roleManagementPolicies for policies
+
+### [New-MgPolicyRoleManagementPolicyAssignment](New-MgPolicyRoleManagementPolicyAssignment.md)
+Create new navigation property to roleManagementPolicyAssignments for policies
+
+### [New-MgPolicyRoleManagementPolicyEffectiveRule](New-MgPolicyRoleManagementPolicyEffectiveRule.md)
+Create new navigation property to effectiveRules for policies
+
+### [New-MgPolicyRoleManagementPolicyRule](New-MgPolicyRoleManagementPolicyRule.md)
+Create new navigation property to rules for policies
 
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
 Create new navigation property to tokenIssuancePolicies for policies
@@ -308,9 +365,6 @@ Create new navigation property to methods for users
 ### [New-MgUserAuthenticationMicrosoftAuthenticatorMethod](New-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
 Create new navigation property to microsoftAuthenticatorMethods for users
 
-### [New-MgUserAuthenticationOathMethod](New-MgUserAuthenticationOathMethod.md)
-Create new navigation property to oathMethods for users
-
 ### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
 Create new navigation property to operations for users
 
@@ -323,17 +377,17 @@ Create new navigation property to passwordMethods for users
 ### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
 Create new navigation property to phoneMethods for users
 
-### [New-MgUserAuthenticationSecurityQuestionMethod](New-MgUserAuthenticationSecurityQuestionMethod.md)
-Create new navigation property to securityQuestionMethods for users
-
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Create new navigation property to temporaryAccessPassMethods for users
+
+### [New-MgUserAuthenticationWindowHello](New-MgUserAuthenticationWindowHello.md)
+Create new navigation property to windowsHelloForBusinessMethods for users
 
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
 
-### [Remove-MgIdentityConditionalAccess](Remove-MgIdentityConditionalAccess.md)
-Delete navigation property conditionalAccess for identity
+### [Remove-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](Remove-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
+Delete navigation property authenticationContextClassReferences for identity
 
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 Delete navigation property namedLocations for identity
@@ -346,6 +400,9 @@ Delete entity from identityProviders
 
 ### [Remove-MgIdentityUserFlow](Remove-MgIdentityUserFlow.md)
 Delete navigation property userFlows for identity
+
+### [Remove-MgInformationProtectionBitlocker](Remove-MgInformationProtectionBitlocker.md)
+Delete navigation property bitlocker for informationProtection
 
 ### [Remove-MgInformationProtectionDataLossPreventionPolicy](Remove-MgInformationProtectionDataLossPreventionPolicy.md)
 Delete navigation property dataLossPreventionPolicies for informationProtection
@@ -371,12 +428,6 @@ Delete navigation property threatAssessmentRequests for informationProtection
 ### [Remove-MgInformationProtectionThreatAssessmentRequestResult](Remove-MgInformationProtectionThreatAssessmentRequestResult.md)
 Delete navigation property results for informationProtection
 
-### [Remove-MgInvitation](Remove-MgInvitation.md)
-Delete entity from invitations
-
-### [Remove-MgInvitationInvitedUserByRef](Remove-MgInvitationInvitedUserByRef.md)
-Delete ref of navigation property invitedUser for invitations
-
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
 Delete entity from oauth2PermissionGrants
 
@@ -389,20 +440,26 @@ Delete navigation property adminConsentRequestPolicy for policies
 ### [Remove-MgPolicyAuthenticationFlowPolicy](Remove-MgPolicyAuthenticationFlowPolicy.md)
 Delete navigation property authenticationFlowsPolicy for policies
 
+### [Remove-MgPolicyAuthenticationMethodPolicy](Remove-MgPolicyAuthenticationMethodPolicy.md)
+Delete navigation property authenticationMethodsPolicy for policies
+
 ### [Remove-MgPolicyAuthorizationPolicy](Remove-MgPolicyAuthorizationPolicy.md)
 Delete navigation property authorizationPolicy for policies
+
+### [Remove-MgPolicyB2CAuthenticationMethodPolicy](Remove-MgPolicyB2CAuthenticationMethodPolicy.md)
+Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
 ### [Remove-MgPolicyClaimMappingPolicy](Remove-MgPolicyClaimMappingPolicy.md)
 Delete navigation property claimsMappingPolicies for policies
 
-### [Remove-MgPolicyConditionalAccessPolicy](Remove-MgPolicyConditionalAccessPolicy.md)
-Delete navigation property conditionalAccessPolicies for policies
-
-### [Remove-MgPolicyDeviceRegistrationPolicy](Remove-MgPolicyDeviceRegistrationPolicy.md)
-Delete navigation property deviceRegistrationPolicy for policies
-
 ### [Remove-MgPolicyDirectoryRoleAccessReviewPolicy](Remove-MgPolicyDirectoryRoleAccessReviewPolicy.md)
 Delete navigation property directoryRoleAccessReviewPolicy for policies
+
+### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
+Delete navigation property featureRolloutPolicies for policies
+
+### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
+Delete navigation property appliesTo for policies
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
 Delete navigation property homeRealmDiscoveryPolicies for policies
@@ -418,6 +475,27 @@ Delete navigation property excludes for policies
 
 ### [Remove-MgPolicyPermissionGrantPolicyInclude](Remove-MgPolicyPermissionGrantPolicyInclude.md)
 Delete navigation property includes for policies
+
+### [Remove-MgPolicyPrivateLinkResourcePolicy](Remove-MgPolicyPrivateLinkResourcePolicy.md)
+Delete navigation property privateLinkResourcePolicies for policies
+
+### [Remove-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](Remove-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
+Delete navigation property privateEndpointConnections for policies
+
+### [Remove-MgPolicyRoleManagementPolicy](Remove-MgPolicyRoleManagementPolicy.md)
+Delete navigation property roleManagementPolicies for policies
+
+### [Remove-MgPolicyRoleManagementPolicyAssignment](Remove-MgPolicyRoleManagementPolicyAssignment.md)
+Delete navigation property roleManagementPolicyAssignments for policies
+
+### [Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
+Delete ref of navigation property policy for policies
+
+### [Remove-MgPolicyRoleManagementPolicyEffectiveRule](Remove-MgPolicyRoleManagementPolicyEffectiveRule.md)
+Delete navigation property effectiveRules for policies
+
+### [Remove-MgPolicyRoleManagementPolicyRule](Remove-MgPolicyRoleManagementPolicyRule.md)
+Delete navigation property rules for policies
 
 ### [Remove-MgPolicyTokenIssuancePolicy](Remove-MgPolicyTokenIssuancePolicy.md)
 Delete navigation property tokenIssuancePolicies for policies
@@ -440,9 +518,6 @@ Delete navigation property keySets for trustFramework
 ### [Remove-MgTrustFrameworkPolicy](Remove-MgTrustFrameworkPolicy.md)
 Delete navigation property policies for trustFramework
 
-### [Remove-MgUserAuthentication](Remove-MgUserAuthentication.md)
-Delete navigation property authentication for users
-
 ### [Remove-MgUserAuthenticationEmailMethod](Remove-MgUserAuthenticationEmailMethod.md)
 Delete navigation property emailMethods for users
 
@@ -455,8 +530,8 @@ Delete navigation property methods for users
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
 Delete navigation property microsoftAuthenticatorMethods for users
 
-### [Remove-MgUserAuthenticationOathMethod](Remove-MgUserAuthenticationOathMethod.md)
-Delete navigation property oathMethods for users
+### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
+Delete navigation property device for users
 
 ### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
 Delete navigation property operations for users
@@ -464,29 +539,35 @@ Delete navigation property operations for users
 ### [Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Delete navigation property passwordlessMicrosoftAuthenticatorMethods for users
 
+### [Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Delete navigation property device for users
+
 ### [Remove-MgUserAuthenticationPasswordMethod](Remove-MgUserAuthenticationPasswordMethod.md)
 Delete navigation property passwordMethods for users
 
 ### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
 Delete navigation property phoneMethods for users
 
-### [Remove-MgUserAuthenticationSecurityQuestionMethod](Remove-MgUserAuthenticationSecurityQuestionMethod.md)
-Delete navigation property securityQuestionMethods for users
-
 ### [Remove-MgUserAuthenticationTemporaryAccessPassMethod](Remove-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Delete navigation property temporaryAccessPassMethods for users
+
+### [Remove-MgUserAuthenticationWindowHello](Remove-MgUserAuthenticationWindowHello.md)
+Delete navigation property windowsHelloForBusinessMethods for users
+
+### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
+Delete navigation property device for users
 
 ### [Remove-MgUserInformationProtection](Remove-MgUserInformationProtection.md)
 Delete navigation property informationProtection for users
 
-### [Set-MgInvitationInvitedUserByRef](Set-MgInvitationInvitedUserByRef.md)
-Update the ref of navigation property invitedUser in invitations
+### [Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
+Update the ref of navigation property policy in policies
+
+### [Set-MgTrustFrameworkPolicyContent](Set-MgTrustFrameworkPolicyContent.md)
+Update media content for the navigation property policies in trustFramework
 
 ### [Test-MgInformationProtectionDataLossPreventionPolicy](Test-MgInformationProtectionDataLossPreventionPolicy.md)
 Invoke action evaluate
-
-### [Test-MgInformationProtectionLabelAndPolicy](Test-MgInformationProtectionLabelAndPolicy.md)
-Invoke action evaluateLabelsAndPolicies
 
 ### [Test-MgInformationProtectionPolicyLabelApplication](Test-MgInformationProtectionPolicyLabelApplication.md)
 Invoke action evaluateApplication
@@ -506,8 +587,8 @@ Invoke action evaluate
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
 
-### [Update-MgIdentityConditionalAccess](Update-MgIdentityConditionalAccess.md)
-Update the navigation property conditionalAccess in identity
+### [Update-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](Update-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
+Update the navigation property authenticationContextClassReferences in identity
 
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
 Update the navigation property namedLocations in identity
@@ -523,6 +604,9 @@ Update the navigation property userFlows in identity
 
 ### [Update-MgInformationProtection](Update-MgInformationProtection.md)
 Update informationProtection
+
+### [Update-MgInformationProtectionBitlocker](Update-MgInformationProtectionBitlocker.md)
+Update the navigation property bitlocker in informationProtection
 
 ### [Update-MgInformationProtectionDataLossPreventionPolicy](Update-MgInformationProtectionDataLossPreventionPolicy.md)
 Update the navigation property dataLossPreventionPolicies in informationProtection
@@ -548,9 +632,6 @@ Update the navigation property threatAssessmentRequests in informationProtection
 ### [Update-MgInformationProtectionThreatAssessmentRequestResult](Update-MgInformationProtectionThreatAssessmentRequestResult.md)
 Update the navigation property results in informationProtection
 
-### [Update-MgInvitation](Update-MgInvitation.md)
-Update entity in invitations
-
 ### [Update-MgOauth2PermissionGrant](Update-MgOauth2PermissionGrant.md)
 Update entity in oauth2PermissionGrants
 
@@ -563,20 +644,26 @@ Update the navigation property adminConsentRequestPolicy in policies
 ### [Update-MgPolicyAuthenticationFlowPolicy](Update-MgPolicyAuthenticationFlowPolicy.md)
 Update the navigation property authenticationFlowsPolicy in policies
 
+### [Update-MgPolicyAuthenticationMethodPolicy](Update-MgPolicyAuthenticationMethodPolicy.md)
+Update the navigation property authenticationMethodsPolicy in policies
+
 ### [Update-MgPolicyAuthorizationPolicy](Update-MgPolicyAuthorizationPolicy.md)
 Update the navigation property authorizationPolicy in policies
+
+### [Update-MgPolicyB2CAuthenticationMethodPolicy](Update-MgPolicyB2CAuthenticationMethodPolicy.md)
+Update the navigation property b2cAuthenticationMethodsPolicy in policies
 
 ### [Update-MgPolicyClaimMappingPolicy](Update-MgPolicyClaimMappingPolicy.md)
 Update the navigation property claimsMappingPolicies in policies
 
-### [Update-MgPolicyConditionalAccessPolicy](Update-MgPolicyConditionalAccessPolicy.md)
-Update the navigation property conditionalAccessPolicies in policies
-
-### [Update-MgPolicyDeviceRegistrationPolicy](Update-MgPolicyDeviceRegistrationPolicy.md)
-Update the navigation property deviceRegistrationPolicy in policies
-
 ### [Update-MgPolicyDirectoryRoleAccessReviewPolicy](Update-MgPolicyDirectoryRoleAccessReviewPolicy.md)
 Update the navigation property directoryRoleAccessReviewPolicy in policies
+
+### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
+Update the navigation property featureRolloutPolicies in policies
+
+### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
+Update the navigation property appliesTo in policies
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
 Update the navigation property homeRealmDiscoveryPolicies in policies
@@ -593,8 +680,23 @@ Update the navigation property excludes in policies
 ### [Update-MgPolicyPermissionGrantPolicyInclude](Update-MgPolicyPermissionGrantPolicyInclude.md)
 Update the navigation property includes in policies
 
-### [Update-MgPolicyRoot](Update-MgPolicyRoot.md)
-Update policies
+### [Update-MgPolicyPrivateLinkResourcePolicy](Update-MgPolicyPrivateLinkResourcePolicy.md)
+Update the navigation property privateLinkResourcePolicies in policies
+
+### [Update-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](Update-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
+Update the navigation property privateEndpointConnections in policies
+
+### [Update-MgPolicyRoleManagementPolicy](Update-MgPolicyRoleManagementPolicy.md)
+Update the navigation property roleManagementPolicies in policies
+
+### [Update-MgPolicyRoleManagementPolicyAssignment](Update-MgPolicyRoleManagementPolicyAssignment.md)
+Update the navigation property roleManagementPolicyAssignments in policies
+
+### [Update-MgPolicyRoleManagementPolicyEffectiveRule](Update-MgPolicyRoleManagementPolicyEffectiveRule.md)
+Update the navigation property effectiveRules in policies
+
+### [Update-MgPolicyRoleManagementPolicyRule](Update-MgPolicyRoleManagementPolicyRule.md)
+Update the navigation property rules in policies
 
 ### [Update-MgPolicyTokenIssuancePolicy](Update-MgPolicyTokenIssuancePolicy.md)
 Update the navigation property tokenIssuancePolicies in policies
@@ -620,9 +722,6 @@ Update the navigation property keySets in trustFramework
 ### [Update-MgTrustFrameworkPolicy](Update-MgTrustFrameworkPolicy.md)
 Update the navigation property policies in trustFramework
 
-### [Update-MgUserAuthentication](Update-MgUserAuthentication.md)
-Update the navigation property authentication in users
-
 ### [Update-MgUserAuthenticationEmailMethod](Update-MgUserAuthenticationEmailMethod.md)
 Update the navigation property emailMethods in users
 
@@ -635,8 +734,8 @@ Update the navigation property methods in users
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethod](Update-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
 Update the navigation property microsoftAuthenticatorMethods in users
 
-### [Update-MgUserAuthenticationOathMethod](Update-MgUserAuthenticationOathMethod.md)
-Update the navigation property oathMethods in users
+### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
+Update the navigation property device in users
 
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 Update the navigation property operations in users
@@ -644,17 +743,23 @@ Update the navigation property operations in users
 ### [Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Update the navigation property passwordlessMicrosoftAuthenticatorMethods in users
 
+### [Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Update the navigation property device in users
+
 ### [Update-MgUserAuthenticationPasswordMethod](Update-MgUserAuthenticationPasswordMethod.md)
 Update the navigation property passwordMethods in users
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
 Update the navigation property phoneMethods in users
 
-### [Update-MgUserAuthenticationSecurityQuestionMethod](Update-MgUserAuthenticationSecurityQuestionMethod.md)
-Update the navigation property securityQuestionMethods in users
-
 ### [Update-MgUserAuthenticationTemporaryAccessPassMethod](Update-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Update the navigation property temporaryAccessPassMethods in users
+
+### [Update-MgUserAuthenticationWindowHello](Update-MgUserAuthenticationWindowHello.md)
+Update the navigation property windowsHelloForBusinessMethods in users
+
+### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
+Update the navigation property device in users
 
 ### [Update-MgUserInformationProtection](Update-MgUserInformationProtection.md)
 Update the navigation property informationProtection in users

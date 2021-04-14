@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: c98c22c6-c6b6-45eb-933c-1bf07aaf050c
+Module Guid: 3cfe18d3-c2fc-4b4c-8ee0-a378cce2c8bc
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -155,10 +155,19 @@ Get deviceConfigurationStates from users
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps
 
+### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp.md)
+Invoke action targetApps
+
 ### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp.md)
 Invoke action targetApps
 
+### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphManagedAppProtectionApp.md)
+Invoke action targetApps
+
 ### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyApp.md)
+Invoke action targetApps
+
+### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphManagedAppProtectionApp.md)
 Invoke action targetApps
 
 ### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
@@ -397,6 +406,24 @@ Delete navigation property deviceCompliancePolicyStates for users
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
 Delete navigation property deviceConfigurationStates for users
+
+### [Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
+
+### [Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
 
 ### [Set-MgDeviceAppMgtManagedEBook](Set-MgDeviceAppMgtManagedEBook.md)
 Invoke action assign

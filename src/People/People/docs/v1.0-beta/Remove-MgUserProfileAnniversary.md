@@ -14,7 +14,7 @@ Delete navigation property anniversaries for users
 
 ### Delete (Default)
 ```
-Remove-MgUserProfileAnniversary -PersonAnniversaryId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
+Remove-MgUserProfileAnniversary -PersonAnnualEventId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -26,26 +26,6 @@ Remove-MgUserProfileAnniversary -InputObject <IPeopleIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete navigation property anniversaries for users
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 
@@ -95,8 +75,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PersonAnniversaryId
-key: id of personAnniversary
+### -PersonAnnualEventId
+key: id of personAnnualEvent
 
 ```yaml
 Type: System.String
@@ -185,8 +165,8 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[ItemPhoneId <String>]`: key: id of itemPhone
   - `[ItemPublicationId <String>]`: key: id of itemPublication
   - `[LanguageProficiencyId <String>]`: key: id of languageProficiency
-  - `[PersonAnniversaryId <String>]`: key: id of personAnniversary
   - `[PersonAnnotationId <String>]`: key: id of personAnnotation
+  - `[PersonAnnualEventId <String>]`: key: id of personAnnualEvent
   - `[PersonAwardId <String>]`: key: id of personAward
   - `[PersonCertificationId <String>]`: key: id of personCertification
   - `[PersonId <String>]`: key: id of person

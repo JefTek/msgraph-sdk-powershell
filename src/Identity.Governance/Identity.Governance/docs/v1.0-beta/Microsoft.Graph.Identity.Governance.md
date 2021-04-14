@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 4ab68625-d33a-42dd-a77d-aa44d506a54f
+Module Guid: bd18a284-1c17-489a-8be4-7659dffb496e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -44,80 +44,32 @@ Get file from agreements
 ### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
 Get localizations from agreements
 
+### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
+Get versions from agreements
+
+### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
+Get versions from agreements
+
 ### [Get-MgBusinessFlowTemplate](Get-MgBusinessFlowTemplate.md)
 Get entity from businessFlowTemplates by key
 
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
 Get accessPackages from identityGovernance
 
-### [Get-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef](Get-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef.md)
-Get ref of accessPackageCatalog from identityGovernance
-
 ### [Get-MgEntitlementManagementAccessPackageAssignment](Get-MgEntitlementManagementAccessPackageAssignment.md)
 Get accessPackageAssignments from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentAccessPackage](Get-MgEntitlementManagementAccessPackageAssignmentAccessPackage.md)
-Get accessPackage from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentPolicy.md)
-Get accessPackageAssignmentPolicy from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest](Get-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest.md)
-Get accessPackageAssignmentRequests from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole](Get-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole.md)
-Get accessPackageAssignmentResourceRoles from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Get accessPackageAssignmentPolicies from identityGovernance
 
-### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackage](Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackage.md)
-Get accessPackage from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef](Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef.md)
-Get ref of accessPackage from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalog](Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalog.md)
-Get accessPackageCatalog from identityGovernance
-
 ### [Get-MgEntitlementManagementAccessPackageAssignmentRequest](Get-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Get accessPackageAssignmentRequests from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackage](Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackage.md)
-Get accessPackage from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignment](Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignment.md)
-Get accessPackageAssignment from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef](Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef.md)
-Get ref of accessPackage from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentRequestRequestor](Get-MgEntitlementManagementAccessPackageAssignmentRequestRequestor.md)
-Get requestor from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRole](Get-MgEntitlementManagementAccessPackageAssignmentResourceRole.md)
 Get accessPackageAssignmentResourceRoles from identityGovernance
 
-### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment](Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment.md)
-Get accessPackageAssignments from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceRole](Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceRole.md)
-Get accessPackageResourceRole from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceScope](Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceScope.md)
-Get accessPackageResourceScope from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageSubject](Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageSubject.md)
-Get accessPackageSubject from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentTarget](Get-MgEntitlementManagementAccessPackageAssignmentTarget.md)
-Get target from identityGovernance
-
 ### [Get-MgEntitlementManagementAccessPackageCatalog](Get-MgEntitlementManagementAccessPackageCatalog.md)
 Get accessPackageCatalogs from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackage](Get-MgEntitlementManagementAccessPackageCatalogAccessPackage.md)
-Get accessPackages from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource](Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource.md)
 Get accessPackageResources from identityGovernance
@@ -131,26 +83,11 @@ Get accessPackageResourceScopes from identityGovernance
 ### [Get-MgEntitlementManagementAccessPackageResource](Get-MgEntitlementManagementAccessPackageResource.md)
 Get accessPackageResources from identityGovernance
 
-### [Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole](Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole.md)
-Get accessPackageResourceRoles from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope](Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope.md)
-Get accessPackageResourceScopes from identityGovernance
+### [Get-MgEntitlementManagementAccessPackageResourceEnvironment](Get-MgEntitlementManagementAccessPackageResourceEnvironment.md)
+Get accessPackageResourceEnvironments from identityGovernance
 
 ### [Get-MgEntitlementManagementAccessPackageResourceRequest](Get-MgEntitlementManagementAccessPackageResourceRequest.md)
 Get accessPackageResourceRequests from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResource](Get-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResource.md)
-Get accessPackageResource from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Get-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
-Get ref of accessPackageResource from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageResourceRequestRequestor](Get-MgEntitlementManagementAccessPackageResourceRequestRequestor.md)
-Get requestor from identityGovernance
-
-### [Get-MgEntitlementManagementAccessPackageResourceRoleScope](Get-MgEntitlementManagementAccessPackageResourceRoleScope.md)
-Get accessPackageResourceRoleScopes from identityGovernance
 
 ### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
 Get connectedOrganizations from identityGovernance
@@ -242,11 +179,26 @@ Get ref of agreementAcceptances from users
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation.md)
 Invoke action acceptRecommendations
 
-### [Invoke-MgMyEntitlementManagementAccessPackageAssignment](Invoke-MgMyEntitlementManagementAccessPackageAssignment.md)
-Invoke function My
+### [Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision.md)
+Invoke action batchRecordDecisions
 
-### [Invoke-MgMyEntitlementManagementAccessPackageAssignmentRequest](Invoke-MgMyEntitlementManagementAccessPackageAssignmentRequest.md)
-Invoke function My
+### [Invoke-MgFilterEntitlementManagementAccessPackage](Invoke-MgFilterEntitlementManagementAccessPackage.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementAccessPackageAssignment](Invoke-MgFilterEntitlementManagementAccessPackageAssignment.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentRequest](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAppConsentRequest](Invoke-MgFilterIdentityGovernanceAppConsentRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequest](Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequest.md)
+Invoke function filterByCurrentUser
 
 ### [Invoke-MgMyEntitlementManagementAccessPackageAssignmentResourceRole](Invoke-MgMyEntitlementManagementAccessPackageAssignmentResourceRole.md)
 Invoke function My
@@ -293,20 +245,17 @@ Create new navigation property to files for agreements
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
 Create new navigation property to localizations for agreements
 
+### [New-MgAgreementFileLocalizationVersion](New-MgAgreementFileLocalizationVersion.md)
+Create new navigation property to versions for agreements
+
+### [New-MgAgreementFileVersion](New-MgAgreementFileVersion.md)
+Create new navigation property to versions for agreements
+
 ### [New-MgBusinessFlowTemplate](New-MgBusinessFlowTemplate.md)
 Add new entity to businessFlowTemplates
 
 ### [New-MgEntitlementManagementAccessPackage](New-MgEntitlementManagementAccessPackage.md)
 Create new navigation property to accessPackages for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageAssignment](New-MgEntitlementManagementAccessPackageAssignment.md)
-Create new navigation property to accessPackageAssignments for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest](New-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest.md)
-Create new navigation property to accessPackageAssignmentRequests for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole](New-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole.md)
-Create new navigation property to accessPackageAssignmentResourceRoles for identityGovernance
 
 ### [New-MgEntitlementManagementAccessPackageAssignmentPolicy](New-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Create new navigation property to accessPackageAssignmentPolicies for identityGovernance
@@ -314,35 +263,8 @@ Create new navigation property to accessPackageAssignmentPolicies for identityGo
 ### [New-MgEntitlementManagementAccessPackageAssignmentRequest](New-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Create new navigation property to accessPackageAssignmentRequests for identityGovernance
 
-### [New-MgEntitlementManagementAccessPackageAssignmentResourceRole](New-MgEntitlementManagementAccessPackageAssignmentResourceRole.md)
-Create new navigation property to accessPackageAssignmentResourceRoles for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment](New-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment.md)
-Create new navigation property to accessPackageAssignments for identityGovernance
-
 ### [New-MgEntitlementManagementAccessPackageCatalog](New-MgEntitlementManagementAccessPackageCatalog.md)
 Create new navigation property to accessPackageCatalogs for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageCatalogAccessPackage](New-MgEntitlementManagementAccessPackageCatalogAccessPackage.md)
-Create new navigation property to accessPackages for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageCatalogAccessPackageResource](New-MgEntitlementManagementAccessPackageCatalogAccessPackageResource.md)
-Create new navigation property to accessPackageResources for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](New-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole.md)
-Create new navigation property to accessPackageResourceRoles for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](New-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope.md)
-Create new navigation property to accessPackageResourceScopes for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageResource](New-MgEntitlementManagementAccessPackageResource.md)
-Create new navigation property to accessPackageResources for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole](New-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole.md)
-Create new navigation property to accessPackageResourceRoles for identityGovernance
-
-### [New-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope](New-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope.md)
-Create new navigation property to accessPackageResourceScopes for identityGovernance
 
 ### [New-MgEntitlementManagementAccessPackageResourceRequest](New-MgEntitlementManagementAccessPackageResourceRequest.md)
 Create new navigation property to accessPackageResourceRequests for identityGovernance
@@ -440,101 +362,38 @@ Delete navigation property file for agreements
 ### [Remove-MgAgreementFileLocalization](Remove-MgAgreementFileLocalization.md)
 Delete navigation property localizations for agreements
 
+### [Remove-MgAgreementFileLocalizationVersion](Remove-MgAgreementFileLocalizationVersion.md)
+Delete navigation property versions for agreements
+
+### [Remove-MgAgreementFileVersion](Remove-MgAgreementFileVersion.md)
+Delete navigation property versions for agreements
+
 ### [Remove-MgBusinessFlowTemplate](Remove-MgBusinessFlowTemplate.md)
 Delete entity from businessFlowTemplates
 
 ### [Remove-MgEntitlementManagementAccessPackage](Remove-MgEntitlementManagementAccessPackage.md)
 Delete navigation property accessPackages for identityGovernance
 
-### [Remove-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef](Remove-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef.md)
-Delete ref of navigation property accessPackageCatalog for identityGovernance
-
 ### [Remove-MgEntitlementManagementAccessPackageAssignment](Remove-MgEntitlementManagementAccessPackageAssignment.md)
 Delete navigation property accessPackageAssignments for identityGovernance
 
-### [Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackage](Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackage.md)
-Delete navigation property accessPackage for identityGovernance
+### [Remove-MgEntitlementManagementAccessPackageAssignmentApproval](Remove-MgEntitlementManagementAccessPackageAssignmentApproval.md)
+Delete navigation property accessPackageAssignmentApprovals for identityGovernance
 
-### [Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentPolicy.md)
-Delete navigation property accessPackageAssignmentPolicy for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest](Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest.md)
-Delete navigation property accessPackageAssignmentRequests for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole](Remove-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole.md)
-Delete navigation property accessPackageAssignmentResourceRoles for identityGovernance
+### [Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStep](Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStep.md)
+Delete navigation property steps for identityGovernance
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Delete navigation property accessPackageAssignmentPolicies for identityGovernance
 
-### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef.md)
-Delete ref of navigation property accessPackage for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalog](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalog.md)
-Delete navigation property accessPackageCatalog for identityGovernance
-
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentRequest](Remove-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Delete navigation property accessPackageAssignmentRequests for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignment](Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignment.md)
-Delete navigation property accessPackageAssignment for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef](Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef.md)
-Delete ref of navigation property accessPackage for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentRequestRequestor](Remove-MgEntitlementManagementAccessPackageAssignmentRequestRequestor.md)
-Delete navigation property requestor for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentResourceRole](Remove-MgEntitlementManagementAccessPackageAssignmentResourceRole.md)
-Delete navigation property accessPackageAssignmentResourceRoles for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment](Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment.md)
-Delete navigation property accessPackageAssignments for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceRole](Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceRole.md)
-Delete navigation property accessPackageResourceRole for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceScope](Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceScope.md)
-Delete navigation property accessPackageResourceScope for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageSubject](Remove-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageSubject.md)
-Delete navigation property accessPackageSubject for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentTarget](Remove-MgEntitlementManagementAccessPackageAssignmentTarget.md)
-Delete navigation property target for identityGovernance
 
 ### [Remove-MgEntitlementManagementAccessPackageCatalog](Remove-MgEntitlementManagementAccessPackageCatalog.md)
 Delete navigation property accessPackageCatalogs for identityGovernance
 
-### [Remove-MgEntitlementManagementAccessPackageCatalogAccessPackage](Remove-MgEntitlementManagementAccessPackageCatalogAccessPackage.md)
-Delete navigation property accessPackages for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageCatalogAccessPackageResource](Remove-MgEntitlementManagementAccessPackageCatalogAccessPackageResource.md)
-Delete navigation property accessPackageResources for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](Remove-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole.md)
-Delete navigation property accessPackageResourceRoles for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](Remove-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope.md)
-Delete navigation property accessPackageResourceScopes for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageResource](Remove-MgEntitlementManagementAccessPackageResource.md)
-Delete navigation property accessPackageResources for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole](Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole.md)
-Delete navigation property accessPackageResourceRoles for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope](Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope.md)
-Delete navigation property accessPackageResourceScopes for identityGovernance
-
 ### [Remove-MgEntitlementManagementAccessPackageResourceRequest](Remove-MgEntitlementManagementAccessPackageResourceRequest.md)
 Delete navigation property accessPackageResourceRequests for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Remove-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
-Delete ref of navigation property accessPackageResource for identityGovernance
-
-### [Remove-MgEntitlementManagementAccessPackageResourceRequestRequestor](Remove-MgEntitlementManagementAccessPackageResourceRequestRequestor.md)
-Delete navigation property requestor for identityGovernance
 
 ### [Remove-MgEntitlementManagementAccessPackageResourceRoleScope](Remove-MgEntitlementManagementAccessPackageResourceRoleScope.md)
 Delete navigation property accessPackageResourceRoleScopes for identityGovernance
@@ -547,9 +406,6 @@ Delete navigation property externalSponsors for identityGovernance
 
 ### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
 Delete navigation property internalSponsors for identityGovernance
-
-### [Remove-MgEntitlementManagementSetting](Remove-MgEntitlementManagementSetting.md)
-Delete navigation property settings for identityGovernance
 
 ### [Remove-MgPrivilegedAccess](Remove-MgPrivilegedAccess.md)
 Delete entity from privilegedAccess
@@ -620,29 +476,11 @@ Invoke action resetDecisions
 ### [Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision.md)
 Invoke action resetDecisions
 
-### [Search-MgEntitlementManagementAccessPackage](Search-MgEntitlementManagementAccessPackage.md)
-Invoke function Search
-
-### [Search-MgEntitlementManagementAccessPackageCatalog](Search-MgEntitlementManagementAccessPackageCatalog.md)
-Invoke function Search
-
 ### [Send-MgAccessReviewReminder](Send-MgAccessReviewReminder.md)
 Invoke action sendReminder
 
 ### [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder.md)
 Invoke action sendReminder
-
-### [Set-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef](Set-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef.md)
-Update the ref of navigation property accessPackageCatalog in identityGovernance
-
-### [Set-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef](Set-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef.md)
-Update the ref of navigation property accessPackage in identityGovernance
-
-### [Set-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef](Set-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef.md)
-Update the ref of navigation property accessPackage in identityGovernance
-
-### [Set-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Set-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
-Update the ref of navigation property accessPackageResource in identityGovernance
 
 ### [Set-MgPrivilegedApprovalRequestByRef](Set-MgPrivilegedApprovalRequestByRef.md)
 Update the ref of navigation property request in privilegedApproval
@@ -651,7 +489,7 @@ Update the ref of navigation property request in privilegedApproval
 Invoke action stop
 
 ### [Stop-MgEntitlementManagementAccessPackageAssignmentRequest](Stop-MgEntitlementManagementAccessPackageAssignmentRequest.md)
-Invoke action Cancel
+Invoke action cancel
 
 ### [Stop-MgIdentityGovernanceAccessReviewDefinition](Stop-MgIdentityGovernanceAccessReviewDefinition.md)
 Invoke action stop
@@ -692,6 +530,12 @@ Update the navigation property file in agreements
 ### [Update-MgAgreementFileLocalization](Update-MgAgreementFileLocalization.md)
 Update the navigation property localizations in agreements
 
+### [Update-MgAgreementFileLocalizationVersion](Update-MgAgreementFileLocalizationVersion.md)
+Update the navigation property versions in agreements
+
+### [Update-MgAgreementFileVersion](Update-MgAgreementFileVersion.md)
+Update the navigation property versions in agreements
+
 ### [Update-MgBusinessFlowTemplate](Update-MgBusinessFlowTemplate.md)
 Update entity in businessFlowTemplates
 
@@ -701,80 +545,23 @@ Update the navigation property accessPackages in identityGovernance
 ### [Update-MgEntitlementManagementAccessPackageAssignment](Update-MgEntitlementManagementAccessPackageAssignment.md)
 Update the navigation property accessPackageAssignments in identityGovernance
 
-### [Update-MgEntitlementManagementAccessPackageAssignmentAccessPackage](Update-MgEntitlementManagementAccessPackageAssignmentAccessPackage.md)
-Update the navigation property accessPackage in identityGovernance
+### [Update-MgEntitlementManagementAccessPackageAssignmentApproval](Update-MgEntitlementManagementAccessPackageAssignmentApproval.md)
+Update the navigation property accessPackageAssignmentApprovals in identityGovernance
 
-### [Update-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentPolicy](Update-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentPolicy.md)
-Update the navigation property accessPackageAssignmentPolicy in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest](Update-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentRequest.md)
-Update the navigation property accessPackageAssignmentRequests in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole](Update-MgEntitlementManagementAccessPackageAssignmentAccessPackageAssignmentResourceRole.md)
-Update the navigation property accessPackageAssignmentResourceRoles in identityGovernance
+### [Update-MgEntitlementManagementAccessPackageAssignmentApprovalStep](Update-MgEntitlementManagementAccessPackageAssignmentApprovalStep.md)
+Update the navigation property steps in identityGovernance
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentPolicy](Update-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
-### [Update-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalog](Update-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalog.md)
-Update the navigation property accessPackageCatalog in identityGovernance
-
 ### [Update-MgEntitlementManagementAccessPackageAssignmentRequest](Update-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Update the navigation property accessPackageAssignmentRequests in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignment](Update-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignment.md)
-Update the navigation property accessPackageAssignment in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentRequestRequestor](Update-MgEntitlementManagementAccessPackageAssignmentRequestRequestor.md)
-Update the navigation property requestor in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentResourceRole](Update-MgEntitlementManagementAccessPackageAssignmentResourceRole.md)
-Update the navigation property accessPackageAssignmentResourceRoles in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment](Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignment.md)
-Update the navigation property accessPackageAssignments in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceRole](Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceRole.md)
-Update the navigation property accessPackageResourceRole in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceScope](Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageResourceScope.md)
-Update the navigation property accessPackageResourceScope in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageSubject](Update-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageSubject.md)
-Update the navigation property accessPackageSubject in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageAssignmentTarget](Update-MgEntitlementManagementAccessPackageAssignmentTarget.md)
-Update the navigation property target in identityGovernance
 
 ### [Update-MgEntitlementManagementAccessPackageCatalog](Update-MgEntitlementManagementAccessPackageCatalog.md)
 Update the navigation property accessPackageCatalogs in identityGovernance
 
-### [Update-MgEntitlementManagementAccessPackageCatalogAccessPackage](Update-MgEntitlementManagementAccessPackageCatalogAccessPackage.md)
-Update the navigation property accessPackages in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageCatalogAccessPackageResource](Update-MgEntitlementManagementAccessPackageCatalogAccessPackageResource.md)
-Update the navigation property accessPackageResources in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](Update-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole.md)
-Update the navigation property accessPackageResourceRoles in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](Update-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope.md)
-Update the navigation property accessPackageResourceScopes in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageResource](Update-MgEntitlementManagementAccessPackageResource.md)
-Update the navigation property accessPackageResources in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole](Update-MgEntitlementManagementAccessPackageResourceAccessPackageResourceRole.md)
-Update the navigation property accessPackageResourceRoles in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope](Update-MgEntitlementManagementAccessPackageResourceAccessPackageResourceScope.md)
-Update the navigation property accessPackageResourceScopes in identityGovernance
-
 ### [Update-MgEntitlementManagementAccessPackageResourceRequest](Update-MgEntitlementManagementAccessPackageResourceRequest.md)
 Update the navigation property accessPackageResourceRequests in identityGovernance
-
-### [Update-MgEntitlementManagementAccessPackageResourceRequestRequestor](Update-MgEntitlementManagementAccessPackageResourceRequestRequestor.md)
-Update the navigation property requestor in identityGovernance
 
 ### [Update-MgEntitlementManagementAccessPackageResourceRoleScope](Update-MgEntitlementManagementAccessPackageResourceRoleScope.md)
 Update the navigation property accessPackageResourceRoleScopes in identityGovernance

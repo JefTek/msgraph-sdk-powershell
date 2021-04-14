@@ -29,26 +29,6 @@ Test-MgInformationProtectionDataLossPreventionPolicy
 ## DESCRIPTION
 Invoke action evaluate
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -190,6 +170,9 @@ BODYPARAMETER <IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicro
       - `[ApplicationMode <String>]`: applicationMode
       - `[Id <String>]`: 
     - `[DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>]`: 
+      - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute[]>]`: 
+        - `[Confidence <Int32?>]`: 
+        - `[Count <Int32?>]`: 
       - `[Confidence <Int32?>]`: 
       - `[Count <Int32?>]`: 
       - `[Id <String>]`: 
@@ -206,6 +189,9 @@ EVALUATIONINPUT <IMicrosoftGraphDlpEvaluationInput>: dlpEvaluationInput
     - `[ApplicationMode <String>]`: applicationMode
     - `[Id <String>]`: 
   - `[DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>]`: 
+    - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute[]>]`: 
+      - `[Confidence <Int32?>]`: 
+      - `[Count <Int32?>]`: 
     - `[Confidence <Int32?>]`: 
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 

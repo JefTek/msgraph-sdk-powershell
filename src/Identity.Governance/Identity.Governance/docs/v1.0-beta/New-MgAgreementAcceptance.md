@@ -46,26 +46,6 @@ New-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-Agreement
 ## DESCRIPTION
 Create new navigation property to acceptances for agreements
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -84,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementFileId
-.
+ID of the agreement file accepted by the user.
 
 ```yaml
 Type: System.String
@@ -114,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementId1
-.
+ID of the agreement.
 
 ```yaml
 Type: System.String
@@ -145,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceDisplayName
-.
+The display name of the device used for accepting the agreement.
 
 ```yaml
 Type: System.String
@@ -160,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-.
+The unique identifier of the device used for accepting the agreement.
 
 ```yaml
 Type: System.String
@@ -175,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSType
-.
+The operating system used for accepting the agreement.
 
 ```yaml
 Type: System.String
@@ -190,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSVersion
-.
+The operating system version of the device used for accepting the agreement.
 
 ```yaml
 Type: System.String
@@ -205,7 +185,9 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
-.
+The expiration date time of the acceptance.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: System.DateTime
@@ -251,7 +233,8 @@ Accept wildcard characters: False
 ```
 
 ### -RecordedDateTime
-.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: System.DateTime
@@ -281,7 +264,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserDisplayName
-.
+Display name of the user when the acceptance was recorded.
 
 ```yaml
 Type: System.String
@@ -296,7 +279,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserEmail
-.
+Email of the user when the acceptance was recorded.
 
 ```yaml
 Type: System.String
@@ -311,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+ID of the user who accepted the agreement.
 
 ```yaml
 Type: System.String
@@ -326,7 +309,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-.
+UPN of the user when the acceptance was recorded.
 
 ```yaml
 Type: System.String
@@ -396,19 +379,19 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphAgreementAcceptance>: agreementAcceptance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AgreementFileId <String>]`: 
-  - `[AgreementId <String>]`: 
-  - `[DeviceDisplayName <String>]`: 
-  - `[DeviceId <String>]`: 
-  - `[DeviceOSType <String>]`: 
-  - `[DeviceOSVersion <String>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[RecordedDateTime <DateTime?>]`: 
+  - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
+  - `[AgreementId <String>]`: ID of the agreement.
+  - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
+  - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
+  - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
+  - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
+  - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[State <String>]`: agreementAcceptanceState
-  - `[UserDisplayName <String>]`: 
-  - `[UserEmail <String>]`: 
-  - `[UserId <String>]`: 
-  - `[UserPrincipalName <String>]`: 
+  - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
+  - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
+  - `[UserId <String>]`: ID of the user who accepted the agreement.
+  - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
 INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
@@ -417,6 +400,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
   - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
   - `[AccessPackageId <String>]`: key: id of accessPackage
+  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
   - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
@@ -430,7 +414,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
   - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
   - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
+  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
   - `[AgreementId <String>]`: key: id of agreement
+  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
+  - `[ApprovalId <String>]`: key: id of approval
+  - `[ApprovalStepId <String>]`: key: id of approvalStep
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
@@ -439,6 +427,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent

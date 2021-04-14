@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityProviderTenantSetting
 
 ## SYNOPSIS
-Delete navigation property providerTenantSettings for Security
+Delete navigation property providerTenantSettings for security
 
 ## SYNTAX
 
@@ -25,27 +25,7 @@ Remove-MgSecurityProviderTenantSetting -InputObject <ISecurityIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property providerTenantSettings for Security
-
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Delete navigation property providerTenantSettings for security
 
 ## PARAMETERS
 

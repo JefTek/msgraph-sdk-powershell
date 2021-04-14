@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: 6e301df7-fd37-43dc-8cc1-92035e17e74c
+Module Guid: 2a254c49-bdda-453b-9c87-0eaa4be1f6c7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,30 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Files Cmdlets
+### [Add-MgDriveListContentTypeBaseTypeCopy](Add-MgDriveListContentTypeBaseTypeCopy.md)
+Invoke action addCopy
+
+### [Add-MgDriveListContentTypeCopy](Add-MgDriveListContentTypeCopy.md)
+Invoke action addCopy
+
+### [Add-MgShareListContentTypeBaseTypeCopy](Add-MgShareListContentTypeBaseTypeCopy.md)
+Invoke action addCopy
+
+### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
+Invoke action addCopy
+
+### [Copy-MgDriveListContentTypeBaseToDefaultContentLocation](Copy-MgDriveListContentTypeBaseToDefaultContentLocation.md)
+Invoke action copyToDefaultContentLocation
+
+### [Copy-MgDriveListContentTypeToDefaultContentLocation](Copy-MgDriveListContentTypeToDefaultContentLocation.md)
+Invoke action copyToDefaultContentLocation
+
+### [Copy-MgShareListContentTypeBaseToDefaultContentLocation](Copy-MgShareListContentTypeBaseToDefaultContentLocation.md)
+Invoke action copyToDefaultContentLocation
+
+### [Copy-MgShareListContentTypeToDefaultContentLocation](Copy-MgShareListContentTypeToDefaultContentLocation.md)
+Invoke action copyToDefaultContentLocation
+
 ### [Get-MgDrive](Get-MgDrive.md)
 Get entity from drives by key
 
@@ -20,11 +44,20 @@ Get activities from drives
 ### [Get-MgDriveBundle](Get-MgDriveBundle.md)
 Get bundles from drives
 
+### [Get-MgDriveBundleContent](Get-MgDriveBundleContent.md)
+Get media content for the navigation property bundles from drives
+
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 Get following from drives
 
+### [Get-MgDriveFollowingContent](Get-MgDriveFollowingContent.md)
+Get media content for the navigation property following from drives
+
 ### [Get-MgDriveItem](Get-MgDriveItem.md)
 Get items from drives
+
+### [Get-MgDriveItemContent](Get-MgDriveItemContent.md)
+Get media content for the navigation property items from drives
 
 ### [Get-MgDriveList](Get-MgDriveList.md)
 Get list from drives
@@ -35,11 +68,44 @@ Get activities from drives
 ### [Get-MgDriveListColumn](Get-MgDriveListColumn.md)
 Get columns from drives
 
+### [Get-MgDriveListColumnSourceColumn](Get-MgDriveListColumnSourceColumn.md)
+Get sourceColumn from drives
+
+### [Get-MgDriveListColumnSourceColumnByRef](Get-MgDriveListColumnSourceColumnByRef.md)
+Get ref of sourceColumn from drives
+
 ### [Get-MgDriveListContentType](Get-MgDriveListContentType.md)
 Get contentTypes from drives
 
+### [Get-MgDriveListContentTypeBase](Get-MgDriveListContentTypeBase.md)
+Get base from drives
+
+### [Get-MgDriveListContentTypeBaseByRef](Get-MgDriveListContentTypeBaseByRef.md)
+Get ref of base from drives
+
+### [Get-MgDriveListContentTypeBaseType](Get-MgDriveListContentTypeBaseType.md)
+Get baseTypes from drives
+
+### [Get-MgDriveListContentTypeBaseTypeByRef](Get-MgDriveListContentTypeBaseTypeByRef.md)
+Get ref of baseTypes from drives
+
+### [Get-MgDriveListContentTypeColumn](Get-MgDriveListContentTypeColumn.md)
+Get columns from drives
+
 ### [Get-MgDriveListContentTypeColumnLink](Get-MgDriveListContentTypeColumnLink.md)
 Get columnLinks from drives
+
+### [Get-MgDriveListContentTypeColumnPosition](Get-MgDriveListContentTypeColumnPosition.md)
+Get columnPositions from drives
+
+### [Get-MgDriveListContentTypeColumnPositionByRef](Get-MgDriveListContentTypeColumnPositionByRef.md)
+Get ref of columnPositions from drives
+
+### [Get-MgDriveListContentTypeColumnSourceColumn](Get-MgDriveListContentTypeColumnSourceColumn.md)
+Get sourceColumn from drives
+
+### [Get-MgDriveListContentTypeColumnSourceColumnByRef](Get-MgDriveListContentTypeColumnSourceColumnByRef.md)
+Get ref of sourceColumn from drives
 
 ### [Get-MgDriveListDrive](Get-MgDriveListDrive.md)
 Get drive from drives
@@ -59,6 +125,9 @@ Get ref of analytics from drives
 ### [Get-MgDriveListItemDriveItem](Get-MgDriveListItemDriveItem.md)
 Get driveItem from drives
 
+### [Get-MgDriveListItemDriveItemContent](Get-MgDriveListItemDriveItemContent.md)
+Get media content for the navigation property driveItem from drives
+
 ### [Get-MgDriveListItemField](Get-MgDriveListItemField.md)
 Get fields from drives
 
@@ -74,8 +143,14 @@ Get subscriptions from drives
 ### [Get-MgDriveRoot](Get-MgDriveRoot.md)
 Get root from drives
 
+### [Get-MgDriveRootContent](Get-MgDriveRootContent.md)
+Get media content for the navigation property root from drives
+
 ### [Get-MgDriveSpecial](Get-MgDriveSpecial.md)
 Get special from drives
+
+### [Get-MgDriveSpecialContent](Get-MgDriveSpecialContent.md)
+Get media content for the navigation property special from drives
 
 ### [Get-MgGroupDrive](Get-MgGroupDrive.md)
 Get drive from groups
@@ -83,8 +158,14 @@ Get drive from groups
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Get driveItem from shares
 
+### [Get-MgShareDriveItemContent](Get-MgShareDriveItemContent.md)
+Get media content for the navigation property driveItem from shares
+
 ### [Get-MgShareItem](Get-MgShareItem.md)
 Get items from shares
+
+### [Get-MgShareItemContent](Get-MgShareItemContent.md)
+Get media content for the navigation property items from shares
 
 ### [Get-MgShareList](Get-MgShareList.md)
 Get list from shares
@@ -95,11 +176,44 @@ Get activities from shares
 ### [Get-MgShareListColumn](Get-MgShareListColumn.md)
 Get columns from shares
 
+### [Get-MgShareListColumnSourceColumn](Get-MgShareListColumnSourceColumn.md)
+Get sourceColumn from shares
+
+### [Get-MgShareListColumnSourceColumnByRef](Get-MgShareListColumnSourceColumnByRef.md)
+Get ref of sourceColumn from shares
+
 ### [Get-MgShareListContentType](Get-MgShareListContentType.md)
 Get contentTypes from shares
 
+### [Get-MgShareListContentTypeBase](Get-MgShareListContentTypeBase.md)
+Get base from shares
+
+### [Get-MgShareListContentTypeBaseByRef](Get-MgShareListContentTypeBaseByRef.md)
+Get ref of base from shares
+
+### [Get-MgShareListContentTypeBaseType](Get-MgShareListContentTypeBaseType.md)
+Get baseTypes from shares
+
+### [Get-MgShareListContentTypeBaseTypeByRef](Get-MgShareListContentTypeBaseTypeByRef.md)
+Get ref of baseTypes from shares
+
+### [Get-MgShareListContentTypeColumn](Get-MgShareListContentTypeColumn.md)
+Get columns from shares
+
 ### [Get-MgShareListContentTypeColumnLink](Get-MgShareListContentTypeColumnLink.md)
 Get columnLinks from shares
+
+### [Get-MgShareListContentTypeColumnPosition](Get-MgShareListContentTypeColumnPosition.md)
+Get columnPositions from shares
+
+### [Get-MgShareListContentTypeColumnPositionByRef](Get-MgShareListContentTypeColumnPositionByRef.md)
+Get ref of columnPositions from shares
+
+### [Get-MgShareListContentTypeColumnSourceColumn](Get-MgShareListContentTypeColumnSourceColumn.md)
+Get sourceColumn from shares
+
+### [Get-MgShareListContentTypeColumnSourceColumnByRef](Get-MgShareListContentTypeColumnSourceColumnByRef.md)
+Get ref of sourceColumn from shares
 
 ### [Get-MgShareListDrive](Get-MgShareListDrive.md)
 Get drive from shares
@@ -119,6 +233,9 @@ Get ref of analytics from shares
 ### [Get-MgShareListItemDriveItem](Get-MgShareListItemDriveItem.md)
 Get driveItem from shares
 
+### [Get-MgShareListItemDriveItemContent](Get-MgShareListItemDriveItemContent.md)
+Get media content for the navigation property driveItem from shares
+
 ### [Get-MgShareListItemField](Get-MgShareListItemField.md)
 Get fields from shares
 
@@ -136,6 +253,9 @@ Get permission from shares
 
 ### [Get-MgShareRoot](Get-MgShareRoot.md)
 Get root from shares
+
+### [Get-MgShareRootContent](Get-MgShareRootContent.md)
+Get media content for the navigation property root from shares
 
 ### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
 Get entity from shares by key
@@ -155,6 +275,18 @@ Invoke function recent
 ### [Invoke-MgSharedDrive](Invoke-MgSharedDrive.md)
 Invoke function sharedWithMe
 
+### [Join-MgDriveListContentType](Join-MgDriveListContentType.md)
+Invoke action associateWithHubSites
+
+### [Join-MgDriveListContentTypeBase](Join-MgDriveListContentTypeBase.md)
+Invoke action associateWithHubSites
+
+### [Join-MgShareListContentType](Join-MgShareListContentType.md)
+Invoke action associateWithHubSites
+
+### [Join-MgShareListContentTypeBase](Join-MgShareListContentTypeBase.md)
+Invoke action associateWithHubSites
+
 ### [New-MgDrive](New-MgDrive.md)
 Add new entity to drives
 
@@ -173,11 +305,23 @@ Create new navigation property to columns for drives
 ### [New-MgDriveListContentType](New-MgDriveListContentType.md)
 Create new navigation property to contentTypes for drives
 
+### [New-MgDriveListContentTypeBaseTypeByRef](New-MgDriveListContentTypeBaseTypeByRef.md)
+Create new navigation property ref to baseTypes for drives
+
+### [New-MgDriveListContentTypeColumn](New-MgDriveListContentTypeColumn.md)
+Create new navigation property to columns for drives
+
 ### [New-MgDriveListContentTypeColumnLink](New-MgDriveListContentTypeColumnLink.md)
 Create new navigation property to columnLinks for drives
 
+### [New-MgDriveListContentTypeColumnPositionByRef](New-MgDriveListContentTypeColumnPositionByRef.md)
+Create new navigation property ref to columnPositions for drives
+
 ### [New-MgDriveListItem](New-MgDriveListItem.md)
 Create new navigation property to items for drives
+
+### [New-MgDriveListItemLink](New-MgDriveListItemLink.md)
+Invoke action createLink
 
 ### [New-MgDriveListItemVersion](New-MgDriveListItemVersion.md)
 Create new navigation property to versions for drives
@@ -200,8 +344,17 @@ Create new navigation property to columns for shares
 ### [New-MgShareListContentType](New-MgShareListContentType.md)
 Create new navigation property to contentTypes for shares
 
+### [New-MgShareListContentTypeBaseTypeByRef](New-MgShareListContentTypeBaseTypeByRef.md)
+Create new navigation property ref to baseTypes for shares
+
+### [New-MgShareListContentTypeColumn](New-MgShareListContentTypeColumn.md)
+Create new navigation property to columns for shares
+
 ### [New-MgShareListContentTypeColumnLink](New-MgShareListContentTypeColumnLink.md)
 Create new navigation property to columnLinks for shares
+
+### [New-MgShareListContentTypeColumnPositionByRef](New-MgShareListContentTypeColumnPositionByRef.md)
+Create new navigation property ref to columnPositions for shares
 
 ### [New-MgShareListItem](New-MgShareListItem.md)
 Create new navigation property to items for shares
@@ -217,6 +370,18 @@ Add new entity to shares
 
 ### [New-MgUserDrive](New-MgUserDrive.md)
 Create new navigation property to drives for users
+
+### [Publish-MgDriveListContentType](Publish-MgDriveListContentType.md)
+Invoke action publish
+
+### [Publish-MgDriveListContentTypeBase](Publish-MgDriveListContentTypeBase.md)
+Invoke action publish
+
+### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
+Invoke action publish
+
+### [Publish-MgShareListContentTypeBase](Publish-MgShareListContentTypeBase.md)
+Invoke action publish
 
 ### [Remove-MgDrive](Remove-MgDrive.md)
 Delete entity from drives
@@ -236,11 +401,23 @@ Delete navigation property list for drives
 ### [Remove-MgDriveListColumn](Remove-MgDriveListColumn.md)
 Delete navigation property columns for drives
 
+### [Remove-MgDriveListColumnSourceColumnByRef](Remove-MgDriveListColumnSourceColumnByRef.md)
+Delete ref of navigation property sourceColumn for drives
+
 ### [Remove-MgDriveListContentType](Remove-MgDriveListContentType.md)
 Delete navigation property contentTypes for drives
 
+### [Remove-MgDriveListContentTypeBaseByRef](Remove-MgDriveListContentTypeBaseByRef.md)
+Delete ref of navigation property base for drives
+
+### [Remove-MgDriveListContentTypeColumn](Remove-MgDriveListContentTypeColumn.md)
+Delete navigation property columns for drives
+
 ### [Remove-MgDriveListContentTypeColumnLink](Remove-MgDriveListContentTypeColumnLink.md)
 Delete navigation property columnLinks for drives
+
+### [Remove-MgDriveListContentTypeColumnSourceColumnByRef](Remove-MgDriveListContentTypeColumnSourceColumnByRef.md)
+Delete ref of navigation property sourceColumn for drives
 
 ### [Remove-MgDriveListDrive](Remove-MgDriveListDrive.md)
 Delete navigation property drive for drives
@@ -287,11 +464,23 @@ Delete navigation property list for shares
 ### [Remove-MgShareListColumn](Remove-MgShareListColumn.md)
 Delete navigation property columns for shares
 
+### [Remove-MgShareListColumnSourceColumnByRef](Remove-MgShareListColumnSourceColumnByRef.md)
+Delete ref of navigation property sourceColumn for shares
+
 ### [Remove-MgShareListContentType](Remove-MgShareListContentType.md)
 Delete navigation property contentTypes for shares
 
+### [Remove-MgShareListContentTypeBaseByRef](Remove-MgShareListContentTypeBaseByRef.md)
+Delete ref of navigation property base for shares
+
+### [Remove-MgShareListContentTypeColumn](Remove-MgShareListContentTypeColumn.md)
+Delete navigation property columns for shares
+
 ### [Remove-MgShareListContentTypeColumnLink](Remove-MgShareListContentTypeColumnLink.md)
 Delete navigation property columnLinks for shares
+
+### [Remove-MgShareListContentTypeColumnSourceColumnByRef](Remove-MgShareListContentTypeColumnSourceColumnByRef.md)
+Delete ref of navigation property sourceColumn for shares
 
 ### [Remove-MgShareListDrive](Remove-MgShareListDrive.md)
 Delete navigation property drive for shares
@@ -338,14 +527,89 @@ Invoke action restoreVersion
 ### [Restore-MgShareListItemVersion](Restore-MgShareListItemVersion.md)
 Invoke action restoreVersion
 
+### [Revoke-MgSharePermissionGrant](Revoke-MgSharePermissionGrant.md)
+Invoke action revokeGrants
+
 ### [Search-MgDrive](Search-MgDrive.md)
 Invoke function search
+
+### [Set-MgDriveBundleContent](Set-MgDriveBundleContent.md)
+Update media content for the navigation property bundles in drives
+
+### [Set-MgDriveFollowingContent](Set-MgDriveFollowingContent.md)
+Update media content for the navigation property following in drives
+
+### [Set-MgDriveItemContent](Set-MgDriveItemContent.md)
+Update media content for the navigation property items in drives
+
+### [Set-MgDriveListColumnSourceColumnByRef](Set-MgDriveListColumnSourceColumnByRef.md)
+Update the ref of navigation property sourceColumn in drives
+
+### [Set-MgDriveListContentTypeBaseByRef](Set-MgDriveListContentTypeBaseByRef.md)
+Update the ref of navigation property base in drives
+
+### [Set-MgDriveListContentTypeColumnSourceColumnByRef](Set-MgDriveListContentTypeColumnSourceColumnByRef.md)
+Update the ref of navigation property sourceColumn in drives
 
 ### [Set-MgDriveListItemAnalyticByRef](Set-MgDriveListItemAnalyticByRef.md)
 Update the ref of navigation property analytics in drives
 
+### [Set-MgDriveListItemDriveItemContent](Set-MgDriveListItemDriveItemContent.md)
+Update media content for the navigation property driveItem in drives
+
+### [Set-MgDriveRootContent](Set-MgDriveRootContent.md)
+Update media content for the navigation property root in drives
+
+### [Set-MgDriveSpecialContent](Set-MgDriveSpecialContent.md)
+Update media content for the navigation property special in drives
+
+### [Set-MgShareDriveItemContent](Set-MgShareDriveItemContent.md)
+Update media content for the navigation property driveItem in shares
+
+### [Set-MgShareItemContent](Set-MgShareItemContent.md)
+Update media content for the navigation property items in shares
+
+### [Set-MgShareListColumnSourceColumnByRef](Set-MgShareListColumnSourceColumnByRef.md)
+Update the ref of navigation property sourceColumn in shares
+
+### [Set-MgShareListContentTypeBaseByRef](Set-MgShareListContentTypeBaseByRef.md)
+Update the ref of navigation property base in shares
+
+### [Set-MgShareListContentTypeColumnSourceColumnByRef](Set-MgShareListContentTypeColumnSourceColumnByRef.md)
+Update the ref of navigation property sourceColumn in shares
+
 ### [Set-MgShareListItemAnalyticByRef](Set-MgShareListItemAnalyticByRef.md)
 Update the ref of navigation property analytics in shares
+
+### [Set-MgShareListItemDriveItemContent](Set-MgShareListItemDriveItemContent.md)
+Update media content for the navigation property driveItem in shares
+
+### [Set-MgShareRootContent](Set-MgShareRootContent.md)
+Update media content for the navigation property root in shares
+
+### [Test-MgDriveListContentTypeBasePublished](Test-MgDriveListContentTypeBasePublished.md)
+Invoke function isPublished
+
+### [Test-MgDriveListContentTypePublished](Test-MgDriveListContentTypePublished.md)
+Invoke function isPublished
+
+### [Test-MgShareListContentTypeBasePublished](Test-MgShareListContentTypeBasePublished.md)
+Invoke function isPublished
+
+### [Test-MgShareListContentTypePublished](Test-MgShareListContentTypePublished.md)
+Invoke function isPublished
+
+### [Unpublish-MgDriveListContentType](Unpublish-MgDriveListContentType.md)
+Invoke action unpublish
+
+### [Unpublish-MgDriveListContentTypeBase](Unpublish-MgDriveListContentTypeBase.md)
+Invoke action unpublish
+
+### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
+Invoke action unpublish
+
+### [Unpublish-MgShareListContentTypeBase](Unpublish-MgShareListContentTypeBase.md)
+Invoke action unpublish
 
 ### [Update-MgDrive](Update-MgDrive.md)
 Update entity in drives
@@ -367,6 +631,9 @@ Update the navigation property columns in drives
 
 ### [Update-MgDriveListContentType](Update-MgDriveListContentType.md)
 Update the navigation property contentTypes in drives
+
+### [Update-MgDriveListContentTypeColumn](Update-MgDriveListContentTypeColumn.md)
+Update the navigation property columns in drives
 
 ### [Update-MgDriveListContentTypeColumnLink](Update-MgDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in drives
@@ -415,6 +682,9 @@ Update the navigation property columns in shares
 
 ### [Update-MgShareListContentType](Update-MgShareListContentType.md)
 Update the navigation property contentTypes in shares
+
+### [Update-MgShareListContentTypeColumn](Update-MgShareListContentTypeColumn.md)
+Update the navigation property columns in shares
 
 ### [Update-MgShareListContentTypeColumnLink](Update-MgShareListContentTypeColumnLink.md)
 Update the navigation property columnLinks in shares

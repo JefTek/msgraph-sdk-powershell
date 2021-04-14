@@ -46,26 +46,6 @@ Update-MgUserMailFolderMessageMention -InputObject <IMailIdentity> [-AdditionalP
 ## DESCRIPTION
 Update the navigation property mentions in users
 
-## EXAMPLES
-
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -84,7 +64,9 @@ Accept wildcard characters: False
 ```
 
 ### -Application
-.
+The name of the application where the mention is created.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
 Type: System.String
@@ -115,7 +97,9 @@ Accept wildcard characters: False
 ```
 
 ### -ClientReference
-.
+A unique identifier that represents a parent of the resource instance.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
 Type: System.String
@@ -146,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time that the mention is created on the client.
 
 ```yaml
 Type: System.DateTime
@@ -161,7 +145,9 @@ Accept wildcard characters: False
 ```
 
 ### -DeepLink
-.
+A deep web link to the context of the mention in the resource instance.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
 Type: System.String
@@ -253,7 +239,9 @@ Accept wildcard characters: False
 ```
 
 ### -MentionText
-.
+Optional.
+Not used and defaulted as null for message.
+To get the mentions in a message, see the bodyPreview property of the message instead.
 
 ```yaml
 Type: System.String
@@ -298,7 +286,9 @@ Accept wildcard characters: False
 ```
 
 ### -ServerCreatedDateTime
-.
+The date and time that the mention is created on the server.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
 Type: System.DateTime
@@ -383,22 +373,22 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphMention>: mention
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Application <String>]`: 
-  - `[ClientReference <String>]`: 
+  - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
+  - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
   - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DeepLink <String>]`: 
-  - `[MentionText <String>]`: 
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
+  - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
+  - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
+  - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
   - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[ServerCreatedDateTime <DateTime?>]`: 
+  - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
 CREATEDBY <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
@@ -416,8 +406,8 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
 
 MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
 

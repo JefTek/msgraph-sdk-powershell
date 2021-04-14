@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 77e1512a-dd5b-47c8-9f02-e54fc5ef6c88
+Module Guid: 781999a7-9017-4f24-871e-44aeceaa8f1f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -38,17 +38,20 @@ Get manager from users
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 Get ref of manager from users
 
-### [Get-MgUserMember](Get-MgUserMember.md)
+### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 Get memberOf from users
 
-### [Get-MgUserMemberByRef](Get-MgUserMemberByRef.md)
+### [Get-MgUserMemberOfByRef](Get-MgUserMemberOfByRef.md)
 Get ref of memberOf from users
 
 ### [Get-MgUserNotification](Get-MgUserNotification.md)
 Get notifications from users
 
-### [Get-MgUserOutlook](Get-MgUserOutlook.md)
-Get outlook from users
+### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
+Get oauth2PermissionGrants from users
+
+### [Get-MgUserOauth2PermissionGrantByRef](Get-MgUserOauth2PermissionGrantByRef.md)
+Get ref of oauth2PermissionGrants from users
 
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
 Get masterCategories from users
@@ -125,6 +128,9 @@ Get ref of ownedObjects from users
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
 Get photo from users
 
+### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
+Get media content for the navigation property photo from users
+
 ### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
 Get registeredDevices from users
 
@@ -134,16 +140,34 @@ Get ref of registeredDevices from users
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 Get settings from users
 
+### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
+Get itemInsights from users
+
 ### [Get-MgUserSettingRegionalAndLanguageSetting](Get-MgUserSettingRegionalAndLanguageSetting.md)
 Get regionalAndLanguageSettings from users
 
 ### [Get-MgUserSettingShiftPerenceByRef](Get-MgUserSettingShiftPerenceByRef.md)
 Get shiftPreferences from users
 
-### [Get-MgUserTransitiveMember](Get-MgUserTransitiveMember.md)
+### [Get-MgUserTodoList](Get-MgUserTodoList.md)
+Get lists from users
+
+### [Get-MgUserTodoListExtension](Get-MgUserTodoListExtension.md)
+Get extensions from users
+
+### [Get-MgUserTodoListTask](Get-MgUserTodoListTask.md)
+Get tasks from users
+
+### [Get-MgUserTodoListTaskExtension](Get-MgUserTodoListTaskExtension.md)
+Get extensions from users
+
+### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
+Get linkedResources from users
+
+### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
 Get transitiveMemberOf from users
 
-### [Get-MgUserTransitiveMemberByRef](Get-MgUserTransitiveMemberByRef.md)
+### [Get-MgUserTransitiveMemberOfByRef](Get-MgUserTransitiveMemberOfByRef.md)
 Get ref of transitiveMemberOf from users
 
 ### [New-MgUser](New-MgUser.md)
@@ -161,11 +185,14 @@ Create new navigation property to extensions for users
 ### [New-MgUserLicenseDetail](New-MgUserLicenseDetail.md)
 Create new navigation property to licenseDetails for users
 
-### [New-MgUserMemberByRef](New-MgUserMemberByRef.md)
+### [New-MgUserMemberOfByRef](New-MgUserMemberOfByRef.md)
 Create new navigation property ref to memberOf for users
 
 ### [New-MgUserNotification](New-MgUserNotification.md)
 Create new navigation property to notifications for users
+
+### [New-MgUserOauth2PermissionGrantByRef](New-MgUserOauth2PermissionGrantByRef.md)
+Create new navigation property ref to oauth2PermissionGrants for users
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create new navigation property to masterCategories for users
@@ -239,7 +266,22 @@ Create new navigation property to photos for users
 ### [New-MgUserRegisteredDeviceByRef](New-MgUserRegisteredDeviceByRef.md)
 Create new navigation property ref to registeredDevices for users
 
-### [New-MgUserTransitiveMemberByRef](New-MgUserTransitiveMemberByRef.md)
+### [New-MgUserTodoList](New-MgUserTodoList.md)
+Create new navigation property to lists for users
+
+### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserTodoListTask](New-MgUserTodoListTask.md)
+Create new navigation property to tasks for users
+
+### [New-MgUserTodoListTaskExtension](New-MgUserTodoListTaskExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
+Create new navigation property to linkedResources for users
+
+### [New-MgUserTransitiveMemberOfByRef](New-MgUserTransitiveMemberOfByRef.md)
 Create new navigation property ref to transitiveMemberOf for users
 
 ### [Remove-MgUser](Remove-MgUser.md)
@@ -256,9 +298,6 @@ Delete ref of navigation property manager for users
 
 ### [Remove-MgUserNotification](Remove-MgUserNotification.md)
 Delete navigation property notifications for users
-
-### [Remove-MgUserOutlook](Remove-MgUserOutlook.md)
-Delete navigation property outlook for users
 
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
 Delete navigation property masterCategories for users
@@ -326,14 +365,35 @@ Delete navigation property photo for users
 ### [Remove-MgUserSetting](Remove-MgUserSetting.md)
 Delete navigation property settings for users
 
+### [Remove-MgUserSettingItemInsight](Remove-MgUserSettingItemInsight.md)
+Delete navigation property itemInsights for users
+
 ### [Remove-MgUserSettingRegionalAndLanguageSetting](Remove-MgUserSettingRegionalAndLanguageSetting.md)
 Delete navigation property regionalAndLanguageSettings for users
 
 ### [Remove-MgUserSettingShiftPerenceByRef](Remove-MgUserSettingShiftPerenceByRef.md)
 Delete navigation property shiftPreferences for users
 
+### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
+Delete navigation property lists for users
+
+### [Remove-MgUserTodoListExtension](Remove-MgUserTodoListExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserTodoListTask](Remove-MgUserTodoListTask.md)
+Delete navigation property tasks for users
+
+### [Remove-MgUserTodoListTaskExtension](Remove-MgUserTodoListTaskExtension.md)
+Delete navigation property extensions for users
+
+### [Remove-MgUserTodoListTaskLinkedResource](Remove-MgUserTodoListTaskLinkedResource.md)
+Delete navigation property linkedResources for users
+
 ### [Set-MgUserManagerByRef](Set-MgUserManagerByRef.md)
 Update the ref of navigation property manager in users
+
+### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
+Update media content for the navigation property photo in users
 
 ### [Update-MgUser](Update-MgUser.md)
 Update entity in users
@@ -346,9 +406,6 @@ Update the navigation property licenseDetails in users
 
 ### [Update-MgUserNotification](Update-MgUserNotification.md)
 Update the navigation property notifications in users
-
-### [Update-MgUserOutlook](Update-MgUserOutlook.md)
-Update the navigation property outlook in users
 
 ### [Update-MgUserOutlookMasterCategory](Update-MgUserOutlookMasterCategory.md)
 Update the navigation property masterCategories in users
@@ -416,9 +473,27 @@ Update the navigation property photo in users
 ### [Update-MgUserSetting](Update-MgUserSetting.md)
 Update the navigation property settings in users
 
+### [Update-MgUserSettingItemInsight](Update-MgUserSettingItemInsight.md)
+Update the navigation property itemInsights in users
+
 ### [Update-MgUserSettingRegionalAndLanguageSetting](Update-MgUserSettingRegionalAndLanguageSetting.md)
 Update the navigation property regionalAndLanguageSettings in users
 
 ### [Update-MgUserSettingShiftPerenceByRef](Update-MgUserSettingShiftPerenceByRef.md)
 Update the navigation property shiftPreferences in users
+
+### [Update-MgUserTodoList](Update-MgUserTodoList.md)
+Update the navigation property lists in users
+
+### [Update-MgUserTodoListExtension](Update-MgUserTodoListExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
+Update the navigation property tasks in users
+
+### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
+Update the navigation property linkedResources in users
 

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 72e06a17-d496-4b87-b1e8-eba6dc96cc9e
+Module Guid: 915e16f8-b9dc-4e08-a04c-e40b9cfb236f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -83,6 +83,9 @@ Get ref of analytics from sites
 ### [Get-MgSiteListItemDriveItem](Get-MgSiteListItemDriveItem.md)
 Get driveItem from sites
 
+### [Get-MgSiteListItemDriveItemContent](Get-MgSiteListItemDriveItemContent.md)
+Get media content for the navigation property driveItem from sites
+
 ### [Get-MgSiteListItemField](Get-MgSiteListItemField.md)
 Get fields from sites
 
@@ -98,6 +101,9 @@ Get subscriptions from sites
 ### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
 Invoke action getNotebookFromWebUrl
 
+### [Get-MgSitePermission](Get-MgSitePermission.md)
+Get permissions from sites
+
 ### [Get-MgSiteRecentNotebook](Get-MgSiteRecentNotebook.md)
 Invoke function getRecentNotebooks
 
@@ -109,6 +115,9 @@ Get followedSites from users
 
 ### [Get-MgUserFollowedSiteByRef](Get-MgUserFollowedSiteByRef.md)
 Get ref of followedSites from users
+
+### [Grant-MgSitePermission](Grant-MgSitePermission.md)
+Invoke action grant
 
 ### [Invoke-MgPreviewSiteOnenotePage](Invoke-MgPreviewSiteOnenotePage.md)
 Invoke function preview
@@ -151,6 +160,9 @@ Create new navigation property to versions for sites
 
 ### [New-MgSiteListSubscription](New-MgSiteListSubscription.md)
 Create new navigation property to subscriptions for sites
+
+### [New-MgSitePermission](New-MgSitePermission.md)
+Create new navigation property to permissions for sites
 
 ### [New-MgSubSite](New-MgSubSite.md)
 Create new navigation property to sites for sites
@@ -212,6 +224,9 @@ Delete navigation property fields for sites
 ### [Remove-MgSiteListSubscription](Remove-MgSiteListSubscription.md)
 Delete navigation property subscriptions for sites
 
+### [Remove-MgSitePermission](Remove-MgSitePermission.md)
+Delete navigation property permissions for sites
+
 ### [Restore-MgSiteListItemVersion](Restore-MgSiteListItemVersion.md)
 Invoke action restoreVersion
 
@@ -220,6 +235,9 @@ Update the ref of navigation property analytics in sites
 
 ### [Set-MgSiteListItemAnalyticByRef](Set-MgSiteListItemAnalyticByRef.md)
 Update the ref of navigation property analytics in sites
+
+### [Set-MgSiteListItemDriveItemContent](Set-MgSiteListItemDriveItemContent.md)
+Update media content for the navigation property driveItem in sites
 
 ### [Update-MgGroupSite](Update-MgGroupSite.md)
 Update the navigation property sites in groups
@@ -274,6 +292,9 @@ Update the navigation property subscriptions in sites
 
 ### [Update-MgSiteOnenotePageContent](Update-MgSiteOnenotePageContent.md)
 Invoke action onenotePatchContent
+
+### [Update-MgSitePermission](Update-MgSitePermission.md)
+Update the navigation property permissions in sites
 
 ### [Update-MgSubSite](Update-MgSubSite.md)
 Update the navigation property sites in sites
