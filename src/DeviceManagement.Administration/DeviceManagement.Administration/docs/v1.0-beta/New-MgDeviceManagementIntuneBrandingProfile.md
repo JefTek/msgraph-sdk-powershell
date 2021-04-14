@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementintunebrandingprofile
 schema: 2.0.0
@@ -16,29 +16,30 @@ Create new navigation property to intuneBrandingProfiles for deviceManagement
 ```
 New-MgDeviceManagementIntuneBrandingProfile [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
- [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>]
- [-ContactItEmailAddress <String>] [-ContactItName <String>] [-ContactItNotes <String>]
- [-ContactItPhoneNumber <String>] [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>]
- [-CustomCantSeePrivacyMessage <String>] [-CustomPrivacyMessage <String>] [-DisableClientTelemetry]
- [-DisplayName <String>] [-EnrollmentAvailability <String>] [-Id <String>] [-IsDefaultProfile]
- [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
- [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
- [-LightBackgroundLogo <IMicrosoftGraphMimeContent>] [-OnlineSupportSiteName <String>]
- [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>]
- [-ProfileName <String>] [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification]
- [-ShowAzureAdEnterpriseApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
- [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
+ [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
+ [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
+ [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisplayName <String>]
+ [-EnrollmentAvailability <String>] [-Id <String>] [-IsDefaultProfile] [-IsFactoryResetDisabled]
+ [-IsRemoveDeviceDisabled] [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>]
+ [-LastModifiedDateTime <DateTime>] [-LightBackgroundLogo <IMicrosoftGraphMimeContent>]
+ [-OnlineSupportSiteName <String>] [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>]
+ [-ProfileDescription <String>] [-ProfileName <String>] [-RoleScopeTagIds <String[]>]
+ [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowDisplayNameNextToLogo]
+ [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
+ [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementIntuneBrandingProfile -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementIntuneBrandingProfile -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to intuneBrandingProfiles for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -46,7 +47,7 @@ Create new navigation property to intuneBrandingProfiles for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -62,7 +63,7 @@ The list of group assignments for the branding profile
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfileAssignment[]
+Type: IMicrosoftGraphIntuneBrandingProfileAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -78,7 +79,7 @@ This entity contains data which is used in customizing the tenant level appearan
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
+Type: IMicrosoftGraphIntuneBrandingProfile
 Parameter Sets: Create
 Aliases:
 
@@ -94,7 +95,7 @@ Collection of blocked actions on the company portal as per platform and device o
 To construct, see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompanyPortalBlockedAction[]
+Type: IMicrosoftGraphCompanyPortalBlockedAction[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,7 +110,7 @@ Accept wildcard characters: False
 E-mail address of the person/organization responsible for IT support
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +125,7 @@ Accept wildcard characters: False
 Name of the person/organization responsible for IT support
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +140,7 @@ Accept wildcard characters: False
 Text comments regarding the person/organization responsible for IT support
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +155,7 @@ Accept wildcard characters: False
 Phone number of the person/organization responsible for IT support
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +170,7 @@ Accept wildcard characters: False
 Time when the BrandingProfile was created
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +185,7 @@ Accept wildcard characters: False
 Text comments regarding what the admin has access to on the device
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +200,7 @@ Accept wildcard characters: False
 Text comments regarding what the admin doesn't have access to on the device
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,7 +215,7 @@ Accept wildcard characters: False
 Text comments regarding what the admin doesn't have access to on the device
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -230,7 +231,7 @@ Applies to telemetry sent from all clients to the Intune service.
 When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -245,7 +246,7 @@ Accept wildcard characters: False
 Company/organization name that is displayed to end users
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -260,7 +261,7 @@ Accept wildcard characters: False
 enrollmentAvailabilityOptions
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -275,7 +276,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +291,7 @@ Accept wildcard characters: False
 Boolean that represents whether the profile is used as default or not
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +306,7 @@ Accept wildcard characters: False
 Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -320,7 +321,7 @@ Accept wildcard characters: False
 Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -336,7 +337,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LANDINGPAGECUSTOMIZEDIMAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
+Type: IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -351,7 +352,7 @@ Accept wildcard characters: False
 Time when the BrandingProfile was last modified
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -367,7 +368,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LIGHTBACKGROUNDLOGO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
+Type: IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -379,10 +380,10 @@ Accept wildcard characters: False
 ```
 
 ### -OnlineSupportSiteName
-Display name of the company/organization’s IT helpdesk site
+Display name of the company/organization's IT helpdesk site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -394,10 +395,10 @@ Accept wildcard characters: False
 ```
 
 ### -OnlineSupportSiteUrl
-URL to the company/organization’s IT helpdesk site
+URL to the company/organization's IT helpdesk site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -409,10 +410,10 @@ Accept wildcard characters: False
 ```
 
 ### -PrivacyUrl
-URL to the company/organization’s privacy policy
+URL to the company/organization's privacy policy
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -427,7 +428,7 @@ Accept wildcard characters: False
 Description of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -442,7 +443,7 @@ Accept wildcard characters: False
 Name of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -457,7 +458,7 @@ Accept wildcard characters: False
 List of scope tags assigned to the branding profile
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -472,7 +473,7 @@ Accept wildcard characters: False
 Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -487,7 +488,7 @@ Accept wildcard characters: False
 Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -502,7 +503,7 @@ Accept wildcard characters: False
 Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -517,7 +518,7 @@ Accept wildcard characters: False
 Boolean that represents whether the administrator-supplied logo images are shown or not
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -532,7 +533,7 @@ Accept wildcard characters: False
 Boolean that indicates if Office WebApps will be shown in Company Portal
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -548,7 +549,7 @@ Color in RGB.
 To construct, see NOTES section for THEMECOLOR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRgbColor
+Type: IMicrosoftGraphRgbColor
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -564,7 +565,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for THEMECOLORLOGO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
+Type: IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -579,7 +580,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -595,7 +596,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -666,9 +667,9 @@ BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data 
     - `[Value <Byte[]>]`: The byte array that contains the actual content.
   - `[LastModifiedDateTime <DateTime?>]`: Time when the BrandingProfile was last modified
   - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization’s IT helpdesk site
-  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization’s IT helpdesk site
-  - `[PrivacyUrl <String>]`: URL to the company/organization’s privacy policy
+  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site
+  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site
+  - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy
   - `[ProfileDescription <String>]`: Description of the profile
   - `[ProfileName <String>]`: Name of the profile
   - `[RoleScopeTagIds <String[]>]`: List of scope tags assigned to the branding profile
@@ -711,4 +712,3 @@ THEMECOLORLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic m
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-

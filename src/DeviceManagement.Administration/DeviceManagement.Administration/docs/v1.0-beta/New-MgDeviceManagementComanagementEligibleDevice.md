@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcomanagementeligibledevice
 schema: 2.0.0
@@ -19,17 +19,19 @@ New-MgDeviceManagementComanagementEligibleDevice [-AdditionalProperties <Hashtab
  [-Id <String>] [-ManagementAgents <String>] [-ManagementState <String>] [-Manufacturer <String>]
  [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <String>]
  [-ReferenceId <String>] [-SerialNumber <String>] [-Status <String>] [-Upn <String>] [-UserEmail <String>]
- [-UserId <String>] [-UserName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementComanagementEligibleDevice -BodyParameter <IMicrosoftGraphComanagementEligibleDevice>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to comanagementEligibleDevices for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -37,7 +39,7 @@ Create new navigation property to comanagementEligibleDevices for deviceManageme
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +55,7 @@ Device Co-Management eligibility state
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+Type: IMicrosoftGraphComanagementEligibleDevice
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +70,7 @@ Accept wildcard characters: False
 deviceRegistrationState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +85,7 @@ Accept wildcard characters: False
 DeviceName
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +100,7 @@ Accept wildcard characters: False
 deviceType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 EntitySource
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +130,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 managementAgentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 managementState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +175,7 @@ Accept wildcard characters: False
 Manufacturer
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +190,7 @@ Accept wildcard characters: False
 MDMStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +205,7 @@ Accept wildcard characters: False
 Model
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +220,7 @@ Accept wildcard characters: False
 OSDescription
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -233,7 +235,7 @@ Accept wildcard characters: False
 OSVersion
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -248,7 +250,7 @@ Accept wildcard characters: False
 ownerType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -263,7 +265,7 @@ Accept wildcard characters: False
 ReferenceId
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -278,7 +280,7 @@ Accept wildcard characters: False
 SerialNumber
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -293,7 +295,7 @@ Accept wildcard characters: False
 comanagementEligibleType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -308,7 +310,7 @@ Accept wildcard characters: False
 UPN
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -323,7 +325,7 @@ Accept wildcard characters: False
 UserEmail
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -338,7 +340,7 @@ Accept wildcard characters: False
 UserId
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -353,7 +355,7 @@ Accept wildcard characters: False
 UserName
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -368,7 +370,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -384,7 +386,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -439,4 +441,3 @@ BODYPARAMETER <IMicrosoftGraphComanagementEligibleDevice>: Device Co-Management 
   - `[UserName <String>]`: UserName
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
@@ -23,20 +23,13 @@ Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartne
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
  [-PartnerState <String>]
  [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId <String>
- -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,11 +44,20 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
  [-PartnerState <String>]
  [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property complianceManagementPartners in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -63,7 +65,7 @@ Update the navigation property complianceManagementPartners in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +81,7 @@ User groups which enroll Android devices through partner.
 To construct, see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment1[]
+Type: IMicrosoftGraphComplianceManagementPartnerAssignment1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Partner onboarded for Android devices.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +112,7 @@ Compliance management partner for all platforms
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+Type: IMicrosoftGraphComplianceManagementPartner1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -125,8 +127,8 @@ Accept wildcard characters: False
 key: id of complianceManagementPartner
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -140,7 +142,7 @@ Accept wildcard characters: False
 Partner display name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +157,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +173,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -187,7 +189,7 @@ User groups which enroll ios devices through partner.
 To construct, see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment1[]
+Type: IMicrosoftGraphComplianceManagementPartnerAssignment1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -202,7 +204,7 @@ Accept wildcard characters: False
 Partner onboarded for ios devices.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -217,7 +219,7 @@ Accept wildcard characters: False
 Timestamp of last heartbeat after admin onboarded to the compliance management partner
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +235,7 @@ User groups which enroll Mac devices through partner.
 To construct, see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment1[]
+Type: IMicrosoftGraphComplianceManagementPartnerAssignment1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +250,7 @@ Accept wildcard characters: False
 Partner onboarded for Mac devices.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,7 +265,7 @@ Accept wildcard characters: False
 deviceManagementPartnerTenantState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +280,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -294,7 +296,7 @@ User groups which enroll Windows devices through partner.
 To construct, see NOTES section for WINDOWSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment1[]
+Type: IMicrosoftGraphComplianceManagementPartnerAssignment1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -309,7 +311,7 @@ Accept wildcard characters: False
 Partner onboarded for Windows devices.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +326,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -340,7 +342,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -457,4 +459,3 @@ WINDOWSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignme
     - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
 
 ## RELATED LINKS
-

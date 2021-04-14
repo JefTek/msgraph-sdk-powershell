@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition
 schema: 2.0.0
@@ -17,18 +17,20 @@ Create new navigation property to roleDefinitions for deviceManagement
 New-MgDeviceManagementRoleDefinition [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-IsBuiltInRoleDefinition]
  [-Permissions <IMicrosoftGraphRolePermission1[]>] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
- [-RolePermissions <IMicrosoftGraphRolePermission1[]>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf]
+ [-RolePermissions <IMicrosoftGraphRolePermission1[]>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition1> [-Confirm] [-WhatIf]
+New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleDefinitions for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -36,7 +38,7 @@ Create new navigation property to roleDefinitions for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -58,7 +60,7 @@ Create custom roles if you want to define a role that allows any of the availabl
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition1
+Type: IMicrosoftGraphRoleDefinition1
 Parameter Sets: Create
 Aliases:
 
@@ -73,7 +75,7 @@ Accept wildcard characters: False
 Description of the Role definition.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +90,7 @@ Accept wildcard characters: False
 Display Name of the Role definition.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +121,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +137,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +154,7 @@ These must match the actionName that is defined as part of the rolePermission.
 To construct, see NOTES section for PERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRolePermission1[]
+Type: IMicrosoftGraphRolePermission1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,7 +170,7 @@ List of Role assignments for this role definition.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleAssignment[]
+Type: IMicrosoftGraphRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +187,7 @@ These must match the actionName that is defined as part of the rolePermission.
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRolePermission1[]
+Type: IMicrosoftGraphRolePermission1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +202,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -215,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -231,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -321,4 +323,3 @@ ROLEPERMISSIONS <IMicrosoftGraphRolePermission1[]>: List of Role Permissions thi
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-

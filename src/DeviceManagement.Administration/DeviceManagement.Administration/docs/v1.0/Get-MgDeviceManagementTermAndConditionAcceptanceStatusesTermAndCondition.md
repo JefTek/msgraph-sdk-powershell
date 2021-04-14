@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionacceptancestatusestermandcondition
 schema: 2.0.0
@@ -29,13 +29,15 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition
 ## DESCRIPTION
 Get termsAndConditions from deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +53,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Type: IDeviceManagementAdministrationIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 key: id of termsAndConditionsAcceptanceStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 key: id of termsAndConditions
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -168,4 +170,3 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementgrouppolicydefinitionpresentationdefinitionbyref
 schema: 2.0.0
@@ -15,33 +15,35 @@ Update the ref of navigation property definition in deviceManagement
 ### SetExpanded (Default)
 ```
 Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef -GroupPolicyDefinitionId <String>
- -GroupPolicyPresentationId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf]
+ -GroupPolicyPresentationId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef -GroupPolicyDefinitionId <String>
- -GroupPolicyPresentationId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
+ -GroupPolicyPresentationId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### SetViaIdentity
-```
-Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef
- -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <Hashtable> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef
+ -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the ref of navigation property definition in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -49,7 +51,7 @@ Update the ref of navigation property definition in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -79,8 +81,8 @@ Accept wildcard characters: False
 key: id of groupPolicyDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -94,8 +96,8 @@ Accept wildcard characters: False
 key: id of groupPolicyPresentation
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -110,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Type: IDeviceManagementAdministrationIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -125,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -140,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,4 +232,3 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
-

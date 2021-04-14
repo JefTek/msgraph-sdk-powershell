@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
@@ -16,19 +16,21 @@ Update the navigation property applePushNotificationCertificate in deviceManagem
 ```
 Update-MgDeviceManagementApplePushNotificationCertificate [-AdditionalProperties <Hashtable>]
  [-AppleIdentifier <String>] [-Certificate <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-TopicIdentifier <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-TopicIdentifier <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgDeviceManagementApplePushNotificationCertificate
- -BodyParameter <IMicrosoftGraphApplePushNotificationCertificate> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphApplePushNotificationCertificate> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property applePushNotificationCertificate in deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -36,7 +38,7 @@ Update the navigation property applePushNotificationCertificate in deviceManagem
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 Apple Id of the account used to create the MDM push certificate.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -67,7 +69,7 @@ Apple push notification certificate.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+Type: IMicrosoftGraphApplePushNotificationCertificate
 Parameter Sets: Update1
 Aliases:
 
@@ -82,7 +84,7 @@ Accept wildcard characters: False
 Not yet documented
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 The expiration date and time for Apple push notification certificate.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -112,7 +114,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -127,7 +129,7 @@ Accept wildcard characters: False
 Last modified date and time for Apple push notification certificate.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -142,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,7 +159,7 @@ Accept wildcard characters: False
 Topic Id.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -172,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,4 +231,3 @@ BODYPARAMETER <IMicrosoftGraphApplePushNotificationCertificate>: Apple push noti
   - `[TopicIdentifier <String>]`: Topic Id.
 
 ## RELATED LINKS
-

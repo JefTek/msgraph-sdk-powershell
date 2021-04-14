@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementdeviceconfigurationmanageddevicecertificatestate
 schema: 2.0.0
@@ -19,18 +19,20 @@ New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-Additio
  [-CertificateIssuanceDateTime <DateTime>] [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
  [-CertificateRevokeStatus <String>] [-CertificateRevokeStatusLastChangeDateTime <DateTime>]
  [-CertificateSerialNumber <String>] [-CertificateSubjectName <String>] [-CertificateThumbprint <String>]
- [-Id <String>] [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
- -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -38,7 +40,7 @@ Create new navigation property to deviceConfigurationsAllManagedDeviceCertificat
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +56,7 @@ managedAllDeviceCertificateState
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
+Type: IMicrosoftGraphManagedAllDeviceCertificateState
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +71,7 @@ Accept wildcard characters: False
 Certificate expiry date
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +86,7 @@ Accept wildcard characters: False
 Enhanced Key Usage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ Accept wildcard characters: False
 Issuance date
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 Issuer
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Key Usage
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 certificateRevocationStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +161,7 @@ Accept wildcard characters: False
 The time the revoke status was last changed
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +176,7 @@ Accept wildcard characters: False
 Serial number
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +191,7 @@ Accept wildcard characters: False
 Certificate subject name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 Thumbprint
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +236,7 @@ Accept wildcard characters: False
 Device display name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +251,7 @@ Accept wildcard characters: False
 User principal name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -280,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -328,4 +330,3 @@ BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>: managedAllDevic
   - `[UserPrincipalName <String>]`: User principal name
 
 ## RELATED LINKS
-

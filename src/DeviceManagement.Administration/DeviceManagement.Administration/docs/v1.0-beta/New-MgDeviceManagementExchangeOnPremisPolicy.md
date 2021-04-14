@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementexchangeonpremispolicy
 schema: 2.0.0
@@ -19,18 +19,20 @@ New-MgDeviceManagementExchangeOnPremisPolicy
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
  [-DefaultAccessLevel <String>] [-Id <String>]
  [-KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]
- [-NotificationContentInputFile <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-NotificationContentInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementExchangeOnPremisPolicy
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -40,7 +42,7 @@ The access rules apply globally to the entire Exchange organization
 To construct, see NOTES section for ACCESSRULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeAccessRule[]
+Type: IMicrosoftGraphDeviceManagementExchangeAccessRule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +57,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +73,7 @@ Singleton entity which represents the Exchange OnPremises policy configured for 
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
+Type: IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +89,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 To construct, see NOTES section for CONDITIONALACCESSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
+Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +104,7 @@ Accept wildcard characters: False
 deviceManagementExchangeAccessLevel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +119,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +135,7 @@ The list of device classes known to Exchange
 To construct, see NOTES section for KNOWNDEVICECLASSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeDeviceClass[]
+Type: IMicrosoftGraphDeviceManagementExchangeDeviceClass[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +151,7 @@ Input File for NotificationContent (Notification text that will be sent to users
 This is UTF8 encoded byte array HTML.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +166,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +182,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,4 +253,3 @@ KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>: The l
   - `[Type <String>]`: deviceManagementExchangeAccessRuleType
 
 ## RELATED LINKS
-

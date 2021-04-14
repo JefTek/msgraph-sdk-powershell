@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementrolescopetag
 schema: 2.0.0
@@ -16,17 +16,19 @@ Create new navigation property to roleScopeTags for deviceManagement
 ```
 New-MgDeviceManagementRoleScopeTag [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-IsBuiltIn] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-IsBuiltIn] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> [-Confirm] [-WhatIf]
+New-MgDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleScopeTags for deviceManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Create new navigation property to roleScopeTags for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +52,7 @@ The list of assignments for this Role Scope Tag.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTagAutoAssignment[]
+Type: IMicrosoftGraphRoleScopeTagAutoAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ Role Scope Tag
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTag
+Type: IMicrosoftGraphRoleScopeTag
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 Description of the Role Scope Tag.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 The display or friendly name of the Role Scope Tag.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 Description of the Role Scope Tag.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,4 +211,3 @@ BODYPARAMETER <IMicrosoftGraphRoleScopeTag>: Role Scope Tag
   - `[IsBuiltIn <Boolean?>]`: Description of the Role Scope Tag.
 
 ## RELATED LINKS
-
