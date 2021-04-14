@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
 schema: 2.0.0
@@ -17,16 +17,18 @@ Create new navigation property to connectors for print
 New-MgPrintConnector [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
  [-DeviceHealth <IMicrosoftGraphDeviceHealth>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>]
  [-Id <String>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Name <String>] [-OperatingSystem <String>]
- [-RegisteredDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RegisteredDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector1> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to connectors for print
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Create new navigation property to connectors for print
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 The connector's version.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -65,7 +67,7 @@ printConnector
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
+Type: IMicrosoftGraphPrintConnector1
 Parameter Sets: Create1
 Aliases:
 
@@ -81,7 +83,7 @@ deviceHealth
 To construct, see NOTES section for DEVICEHEALTH properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealth
+Type: IMicrosoftGraphDeviceHealth
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 The name of the connector.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 The connector machine's hostname.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -142,7 +144,7 @@ printerLocation
 To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterLocation1
+Type: IMicrosoftGraphPrinterLocation1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -157,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -172,7 +174,7 @@ Accept wildcard characters: False
 The connector machine's operating system version.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -187,7 +189,7 @@ Accept wildcard characters: False
 The DateTimeOffset when the connector was registered.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -202,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -218,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -310,4 +312,3 @@ LOCATION <IMicrosoftGraphPrinterLocation1>: printerLocation
   - `[Subunit <String[]>]`: 
 
 ## RELATED LINKS
-

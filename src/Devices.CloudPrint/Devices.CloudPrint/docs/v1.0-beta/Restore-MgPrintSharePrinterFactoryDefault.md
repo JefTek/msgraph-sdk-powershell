@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/restore-mgprintshareprinterfactorydefault
 schema: 2.0.0
@@ -14,18 +14,20 @@ Invoke action restoreFactoryDefaults
 
 ### Restore1 (Default)
 ```
-Restore-MgPrintSharePrinterFactoryDefault -PrinterShareId <String> [-PassThru] [-Confirm] [-WhatIf]
+Restore-MgPrintSharePrinterFactoryDefault -PrinterShareId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity1
 ```
-Restore-MgPrintSharePrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Restore-MgPrintSharePrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action restoreFactoryDefaults
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+Type: IDevicesCloudPrintIdentity
 Parameter Sets: RestoreViaIdentity1
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 key: id of printerShare
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore1
 Aliases:
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -95,7 +97,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -138,4 +140,3 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[PrinterShareId <String>]`: key: id of printerShare
 
 ## RELATED LINKS
-
