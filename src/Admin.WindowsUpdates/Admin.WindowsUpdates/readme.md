@@ -38,43 +38,56 @@ subject-prefix: ''
 
 ``` yaml
 directive:
-# Remove cmdlets
+# Remove invalid paths.
+  - remove-path-by-operation: ^admin(_.*Windows|.windows_.*Updates|.windows.updates.deployments_.*Audience)$
+# Pluralize.
   - where:
-      verb: Update
-      subject: ^AdminWindowUpdateDeploymentAudience$
-      variant: ^Update$|^UpdateExpanded$|^UpdateViaIdentity$|^UpdateViaIdentityExpanded$
-    remove: true
-# Rename cmdlets
+      subject: (.*)WindowUpdate(.*)
+    set:
+      subject: $1WindowsUpdates$2
+# Rename cmdlets.
   - where:
       verb: Add
-      subject: ^(AdminWindowUpdate)(DeploymentAudienceExclusion|DeploymentAudience|UpdatableAsset)(Member)$
+      subject: ^(AdminWindowsUpdates)(DeploymentAudienceExclusion|DeploymentAudience|UpdatableAsset)(Member)$
       variant: ^Add1$|^AddExpanded1$|^AddViaIdentity1$|^AddViaIdentityExpanded1$
     set:
       subject: $1$2$3ById
   - where:
       verb: Remove
-      subject: ^(AdminWindowUpdate)(DeploymentAudienceExclusion|DeploymentAudience|UpdatableAsset)(Member)$
+      subject: ^(AdminWindowsUpdates)(DeploymentAudienceExclusion|DeploymentAudience|UpdatableAsset)(Member)$
       variant: ^Remove1$|^RemoveExpanded1$|^RemoveViaIdentity1$|^RemoveViaIdentityExpanded1$
     set:
       subject: $1$2$3ById
   - where:
       verb: Invoke
-      subject: ^(EnrollAdminWindowUpdate)(DeploymentAudienceExclusion|DeploymentAudienceMember|Updatable)(Asset)$
+      subject: ^(EnrollAdminWindowsUpdates)(DeploymentAudienceExclusion|DeploymentAudienceMember|Updatable)(Asset)$
       variant: ^Enroll1$|^EnrollExpanded1$|^EnrollViaIdentity1$|^EnrollViaIdentityExpanded1$
     set:
       subject: $1$2$3ById
   - where:
       verb: Invoke
-      subject: ^(UnenrollAdminWindowUpdate)(DeploymentAudienceExclusion|DeploymentAudienceMember|Updatable)(Asset)$
+      subject: ^(UnenrollAdminWindowsUpdates)(DeploymentAudienceExclusion|DeploymentAudienceMember|Updatable)(Asset)$
       variant: ^Unenroll1$|^UnenrollExpanded1$|^UnenrollViaIdentity1$|^UnenrollViaIdentityExpanded1$
     set:
       subject: $1$2$3ById
   - where:
       verb: Update
-      subject: ^(AdminWindowUpdateDeploymentAudience)$
-      variant: ^Update2$|^UpdateExpanded2$|^UpdateViaIdentity2$|^UpdateViaIdentityExpanded2$
+      subject: ^(AdminWindowsUpdatesDeploymentAudience)$
+      variant: ^Update1$|^UpdateExpanded1$|^UpdateViaIdentity1$|^UpdateViaIdentityExpanded1$
     set:
       subject: $1ById
+# Alias cmdlets.
+# NB: We have to rename the command to the desired alias name, alias based on the rename, then undo the rename due to:
+# - https://github.com/Azure/autorest.powershell/issues/769
+  - where:
+      subject: (.*)(AdminWindowsUpdates)(.*)
+    set:
+      subject: $1WU$3
+      alias: ${verb}-Mg${subject}
+  - where:
+      subject: (.*)(WU)(.*)
+    set:
+      subject: $1AdminWindowsUpdates$3
 ```
 
 ### Versioning
