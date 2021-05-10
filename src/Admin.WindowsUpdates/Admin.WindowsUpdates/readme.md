@@ -1,10 +1,10 @@
 <!-- region Generated -->
-# Microsoft.Graph.Admin
-This directory contains the PowerShell module for the Admin service.
+# Microsoft.Graph.Admin.WindowsUpdates
+This directory contains the PowerShell module for the AdminWindowsUpdates service.
 
 ---
 ## Status
-[![Microsoft.Graph.Admin](https://img.shields.io/powershellgallery/v/Microsoft.Graph.Admin.svg?style=flat-square&label=Microsoft.Graph.Admin "Microsoft.Graph.Admin")](https://www.powershellgallery.com/packages/Microsoft.Graph.Admin/)
+[![Microsoft.Graph.Admin.WindowsUpdates](https://img.shields.io/powershellgallery/v/Microsoft.Graph.Admin.WindowsUpdates.svg?style=flat-square&label=Microsoft.Graph.Admin.WindowsUpdates "Microsoft.Graph.Admin.WindowsUpdates")](https://www.powershellgallery.com/packages/Microsoft.Graph.Admin.WindowsUpdates/)
 
 ## Info
 - Modifiable: yes
@@ -17,7 +17,7 @@ This directory contains the PowerShell module for the Admin service.
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
 ## Development
-For information on how to develop for `Microsoft.Graph.Admin`, see [how-to.md](how-to.md).
+For information on how to develop for `Microsoft.Graph.Admin.WindowsUpdates`, see [how-to.md](how-to.md).
 <!-- endregion -->
 
 ### AutoRest Configuration
@@ -76,6 +76,7 @@ directive:
     set:
       subject: $1ById
 ```
+
 ### Versioning
 
 ``` yaml
